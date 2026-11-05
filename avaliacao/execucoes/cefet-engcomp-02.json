@@ -1,0 +1,2248 @@
+{
+  "sucesso": true,
+  "payload_gradment": {
+    "curso_id": 1,
+    "preview": {
+      "curso": {
+        "nome_curso": "Engenharia de Computação",
+        "ano_periodo": "2026.1"
+      },
+      "disciplinas": [
+        {
+          "codigo": "APCO0",
+          "codigo_externo": "APCO0",
+          "nome": "Algoritmos e Programação de Computadores",
+          "periodo": 1,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 60,
+          "ementa": "Algoritmos: conceito e representação. Pseudocódigo e linguagens de programação. Elementos básicos de programação: constante, variáveis, operadores e expressões, comando de atribuição, entrada, saída e bloco de comandos. Estruturas de controle: sequencial, condicional e repetição. Introdução a estruturas de dados: estruturas de dados homogêneas e estruturas de dados heterogêneas. Módulos funcionais: refinamentos sucessivos, procedimentos, funções, passagem de parâmetros por valor e por referência, escopo de identificadores, ciclo de vida de variáveis. Funções e procedimentos. Introdução a funções e procedimentos recursivos.",
+          "plano_curso": "Algoritmos: conceito e representação. Pseudocódigo e linguagens de programação. Elementos básicos de programação: constante, variáveis, operadores e expressões, comando de atribuição, entrada, saída e bloco de comandos. Estruturas de controle: sequencial, condicional e repetição. Introdução a estruturas de dados: estruturas de dados homogêneas e estruturas de dados heterogêneas. Módulos funcionais: refinamentos sucessivos, procedimentos, funções, passagem de parâmetros por valor e por referência, escopo de identificadores, ciclo de vida de variáveis. Funções e procedimentos. Introdução a funções e procedimentos recursivos."
+        },
+        {
+          "codigo": "CFVR0",
+          "codigo_externo": "CFVR0",
+          "nome": "Cálculo com Funções de uma Variável Real",
+          "periodo": 1,
+          "eixo": "Matemática",
+          "carga_horaria": 90,
+          "ementa": "Funções Reais: polinomiais, modulares, exponenciais e logarítmicas, trigonométricas e trigonométricas inversas. Limites e continuidade. Derivadas: conceito, regras de derivação e diferenciais. Aplicações de derivadas: taxas relacionadas, esboço de gráficos e otimização. Primitivas elementares.",
+          "plano_curso": "Funções Reais: polinomiais, modulares, exponenciais e logarítmicas, trigonométricas e trigonométricas inversas. Limites e continuidade. Derivadas: conceito, regras de derivação e diferenciais. Aplicações de derivadas: taxas relacionadas, esboço de gráficos e otimização. Primitivas elementares."
+        },
+        {
+          "codigo": "CSPEC0",
+          "codigo_externo": "CSPEC0",
+          "nome": "Contexto Social e Profissional da Engenharia de Computação",
+          "periodo": 1,
+          "eixo": "Prática Profissional e Formação Diversificada",
+          "carga_horaria": 30,
+          "ementa": "O curso de Engenharia de Computação e o espaço de atuação do engenheiro de Computação; cenários da engenharia de computação no Brasil e no mundo; conceituação e áreas da engenharia de Computação. O sistema profissional da Engenharia de Computação: regulamentos, normas e ética profissional; desenvolvimento tecnológico e o processo de estudo e de pesquisa; interação com outros ramos da área tecnológica; mercado de trabalho; ética e cidadania.",
+          "plano_curso": "O curso de Engenharia de Computação e o espaço de atuação do engenheiro de Computação; cenários da engenharia de computação no Brasil e no mundo; conceituação e áreas da engenharia de Computação. O sistema profissional da Engenharia de Computação: regulamentos, normas e ética profissional; desenvolvimento tecnológico e o processo de estudo e de pesquisa; interação com outros ramos da área tecnológica; mercado de trabalho; ética e cidadania."
+        },
+        {
+          "codigo": "GAAL0",
+          "codigo_externo": "GAAL0",
+          "nome": "Geometria Analítica e Álgebra Linear",
+          "periodo": 1,
+          "eixo": "Matemática",
+          "carga_horaria": 60,
+          "ementa": "Matrizes, sistemas de equações lineares e determinantes. Álgebra vetorial. Retas e planos. Espaços vetoriais em R2 e R3. Autovalores e autovetores de matrizes. Diagonalização de matrizes. Cônicas.",
+          "plano_curso": "Matrizes, sistemas de equações lineares e determinantes. Álgebra vetorial. Retas e planos. Espaços vetoriais em R2 e R3. Autovalores e autovetores de matrizes. Diagonalização de matrizes. Cônicas."
+        },
+        {
+          "codigo": "IEEC0",
+          "codigo_externo": "IEEC0",
+          "nome": "Introdução à Experimentação em Engenharia de Computação",
+          "periodo": 1,
+          "eixo": "Prática Profissional e Formação Diversificada",
+          "carga_horaria": 30,
+          "ementa": "Orientação à concepção, planejamento e construção de projetos experimentais com temáticas pertinentes para a Engenharia de Computação.",
+          "plano_curso": "Orientação à concepção, planejamento e construção de projetos experimentais com temáticas pertinentes para a Engenharia de Computação."
+        },
+        {
+          "codigo": "IINS1",
+          "codigo_externo": "IINS1",
+          "nome": "Inglês Instrumental I",
+          "periodo": 1,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "Compreensão e produção escrita de textos em língua inglesa de gêneros textuais variados, com foco nos gêneros acadêmicos, científicos e profissionais. Reconhecimento das características dos gêneros textuais. Desenvolvimento de habilidades de leitura (competências e conhecimentos) através da aplicação de estratégias, produção e retextualização escrita de gêneros textuais.",
+          "plano_curso": "Compreensão e produção escrita de textos em língua inglesa de gêneros textuais variados, com foco nos gêneros acadêmicos, científicos e profissionais. Reconhecimento das características dos gêneros textuais. Desenvolvimento de habilidades de leitura (competências e conhecimentos) através da aplicação de estratégias, produção e retextualização escrita de gêneros textuais."
+        },
+        {
+          "codigo": "LFCO0",
+          "codigo_externo": "LFCO0",
+          "nome": "Lógica e Fundamentos para Computação",
+          "periodo": 1,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 60,
+          "ementa": "Proposições: valores lógicos, proposições simples e compostas. Conectivos e operações lógicas sobre proposições: negação, conjunção, disjunção, disjunção exclusiva, condicional e bicondicional. Construção de tabelas-verdade, tabela-verdade de uma proposição composta, número de linhas, tautologia, contradições e contingências. Implicação lógica: propriedades, tautologia e equivalência lógica, proposições associadas a uma condicional, negação conjunta e disjunta de duas proposições. Álgebra das proposições. Formas Normais: princípio da dualidade. Argumentos: definição, validade, argumentos válidos e regras de inferência. Cálculo de predicados: quantificadores e variáveis, regras de inferência para o quantificador universal, regras de inferência para o quantificador existencial, teoremas e regras de equivalência dos quantificadores.",
+          "plano_curso": "Proposições: valores lógicos, proposições simples e compostas. Conectivos e operações lógicas sobre proposições: negação, conjunção, disjunção, disjunção exclusiva, condicional e bicondicional. Construção de tabelas-verdade, tabela-verdade de uma proposição composta, número de linhas, tautologia, contradições e contingências. Implicação lógica: propriedades, tautologia e equivalência lógica, proposições associadas a uma condicional, negação conjunta e disjunta de duas proposições. Álgebra das proposições. Formas Normais: princípio da dualidade. Argumentos: definição, validade, argumentos válidos e regras de inferência. Cálculo de predicados: quantificadores e variáveis, regras de inferência para o quantificador universal, regras de inferência para o quantificador existencial, teoremas e regras de equivalência dos quantificadores."
+        },
+        {
+          "codigo": "AEDA0",
+          "codigo_externo": "AEDA0",
+          "nome": "Algoritmos e Estruturas de Dados",
+          "periodo": 2,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 60,
+          "ementa": "Não há ementa detalhada no PPC.",
+          "plano_curso": "Não há ementa detalhada no PPC."
+        },
+        {
+          "codigo": "CFVV1",
+          "codigo_externo": "CFVV1",
+          "nome": "Cálculo com Funções de Várias Variáveis I",
+          "periodo": 2,
+          "eixo": "Matemática",
+          "carga_horaria": 60,
+          "ementa": "Coordenadas polares. Superfícies quádricas. Funções reais de várias variáveis: limites, continuidade, gráficos, curvas e superfícies de níveis. Derivadas parciais: conceito, cálculo e aplicações. Introdução aos Números Complexos e Fórmula de Euler.",
+          "plano_curso": "Coordenadas polares. Superfícies quádricas. Funções reais de várias variáveis: limites, continuidade, gráficos, curvas e superfícies de níveis. Derivadas parciais: conceito, cálculo e aplicações. Introdução aos Números Complexos e Fórmula de Euler."
+        },
+        {
+          "codigo": "DWEB1",
+          "codigo_externo": "DWEB1",
+          "nome": "Desenvolvimento Web I",
+          "periodo": 2,
+          "eixo": "Engenharia de Software e Banco de Dados",
+          "carga_horaria": 30,
+          "ementa": "Conceitos fundamentais do desenvolvimento web: internet, browsers, protocolo de endereçamento e protocolo de transporte. Arquitetura de software para Web. Usabilidade em projetos web. Linguagem de Marcação de Hipertexto (HTML): histórico, sintaxe da linguagem, principais tags. Folha de Estilo em Cascatas (CSS): histórico, sintaxe, principais recursos e características. JavaScript: características da linguagem, sintaxe, tipos de dados, variáveis, expressões, comandos, funções, arrays, estruturas de controle de fluxo.",
+          "plano_curso": "Conceitos fundamentais do desenvolvimento web: internet, browsers, protocolo de endereçamento e protocolo de transporte. Arquitetura de software para Web. Usabilidade em projetos web. Linguagem de Marcação de Hipertexto (HTML): histórico, sintaxe da linguagem, principais tags. Folha de Estilo em Cascatas (CSS): histórico, sintaxe, principais recursos e características. JavaScript: características da linguagem, sintaxe, tipos de dados, variáveis, expressões, comandos, funções, arrays, estruturas de controle de fluxo."
+        },
+        {
+          "codigo": "FEME0",
+          "codigo_externo": "FEME0",
+          "nome": "Física Experimental - Mecânica",
+          "periodo": 2,
+          "eixo": "Física e Química",
+          "carga_horaria": 30,
+          "ementa": "Práticas em laboratório de temas e tópicos abordados nas disciplinas básicas de Física, mais especificamente, experimentos na área de Mecânica.",
+          "plano_curso": "Práticas em laboratório de temas e tópicos abordados nas disciplinas básicas de Física, mais especificamente, experimentos na área de Mecânica."
+        },
+        {
+          "codigo": "FMEC0",
+          "codigo_externo": "FMEC0",
+          "nome": "Fundamentos de Mecânica",
+          "periodo": 2,
+          "eixo": "Física e Química",
+          "carga_horaria": 60,
+          "ementa": "Cinemática em uma dimensão e no espaço; princípios da dinâmica; aplicações das leis de Newton; trabalho e energia mecânica; conservação da energia; momento linear e conservação do momento linear; momento angular e conservação do momento angular; dinâmica dos corpos rígidos. Equilíbrio e Elasticidade.",
+          "plano_curso": "Cinemática em uma dimensão e no espaço; princípios da dinâmica; aplicações das leis de Newton; trabalho e energia mecânica; conservação da energia; momento linear e conservação do momento linear; momento angular e conservação do momento angular; dinâmica dos corpos rígidos. Equilíbrio e Elasticidade."
+        },
+        {
+          "codigo": "ISER0",
+          "codigo_externo": "ISER0",
+          "nome": "Integração e Séries",
+          "periodo": 2,
+          "eixo": "Matemática",
+          "carga_horaria": 60,
+          "ementa": "Integrais definidas: conceito, Teorema Fundamental do Cálculo e aplicações. Integrais indefinidas: conceito e métodos de integração. Integrais impróprias. Sequências e séries numéricas. Séries de potências, séries de Taylor e aplicações.",
+          "plano_curso": "Integrais definidas: conceito, Teorema Fundamental do Cálculo e aplicações. Integrais indefinidas: conceito e métodos de integração. Integrais impróprias. Sequências e séries numéricas. Séries de potências, séries de Taylor e aplicações."
+        },
+        {
+          "codigo": "MDIS0",
+          "codigo_externo": "MDIS0",
+          "nome": "Matemática Discreta",
+          "periodo": 2,
+          "eixo": "Matemática",
+          "carga_horaria": 60,
+          "ementa": "Métodos de demonstração: diretas, por contraposição, redução ao absurdo, por casos. Indução e Recursão: Sequências e Somatórios. Definições Recursivas, indução matemática, indução completa e boa ordenação. Conjuntos: definições, tipos de conjuntos, operações e propriedades. Introdução a Grafos: grafos orientados e não orientados, representação, árvores, caminhos, ciclos e conectividade. Relações: relações e suas propriedades, relações de equivalência, relações de ordem, funções. Contagem: princípio fundamental da contagem, arranjos e permutações, combinações e princípio da casa dos pombos.",
+          "plano_curso": "Métodos de demonstração: diretas, por contraposição, redução ao absurdo, por casos. Indução e Recursão: Sequências e Somatórios. Definições Recursivas, indução matemática, indução completa e boa ordenação. Conjuntos: definições, tipos de conjuntos, operações e propriedades. Introdução a Grafos: grafos orientados e não orientados, representação, árvores, caminhos, ciclos e conectividade. Relações: relações e suas propriedades, relações de equivalência, relações de ordem, funções. Contagem: princípio fundamental da contagem, arranjos e permutações, combinações e princípio da casa dos pombos."
+        },
+        {
+          "codigo": "BDAD0",
+          "codigo_externo": "BDAD0",
+          "nome": "Banco de Dados",
+          "periodo": 3,
+          "eixo": "Engenharia de Software e Banco de Dados",
+          "carga_horaria": 60,
+          "ementa": "Conceitos básicos de banco de dados. Sistema de Gerenciamento de Banco de Dados (SGBD). Arquitetura de um SGBD. Modelagem de dados. Linguagens de definição dos dados. Linguagens de manipulação dos dados. Modelagem e modelos de dados. Projeto de banco de dados relacional: dependência funcional, chaves, normalização, visões. Transações. Interface com o usuário. Atividades práticas envolvendo: especificação dos requisitos e análise de estudo de caso; metodologias, ambientes e ferramentas para o desenvolvimento de bases de dados; modelos de projeto; processo de modelagem de bases de dados.",
+          "plano_curso": "Conceitos básicos de banco de dados. Sistema de Gerenciamento de Banco de Dados (SGBD). Arquitetura de um SGBD. Modelagem de dados. Linguagens de definição dos dados. Linguagens de manipulação dos dados. Modelagem e modelos de dados. Projeto de banco de dados relacional: dependência funcional, chaves, normalização, visões. Transações. Interface com o usuário. Atividades práticas envolvendo: especificação dos requisitos e análise de estudo de caso; metodologias, ambientes e ferramentas para o desenvolvimento de bases de dados; modelos de projeto; processo de modelagem de bases de dados."
+        },
+        {
+          "codigo": "CFVV2",
+          "codigo_externo": "CFVV2",
+          "nome": "Cálculo com Funções de Várias Variáveis II",
+          "periodo": 3,
+          "eixo": "Matemática",
+          "carga_horaria": 60,
+          "ementa": "Integrais duplas: conceito, cálculo, mudanças de coordenadas cartesianas para polares e aplicações. Integrais triplas: conceito, cálculo, mudanças de coordenadas cartesianas para cilíndricas e esféricas, e aplicações. Comprimento de arco de curva parametrizada. Campos vetoriais, campo gradiente, Rotacional e Divergente. Integrais curvilíneas e de superfície. Teoremas integrais: Green, Gauss e Stokes.",
+          "plano_curso": "Integrais duplas: conceito, cálculo, mudanças de coordenadas cartesianas para polares e aplicações. Integrais triplas: conceito, cálculo, mudanças de coordenadas cartesianas para cilíndricas e esféricas, e aplicações. Comprimento de arco de curva parametrizada. Campos vetoriais, campo gradiente, Rotacional e Divergente. Integrais curvilíneas e de superfície. Teoremas integrais: Green, Gauss e Stokes."
+        },
+        {
+          "codigo": "EDOR0",
+          "codigo_externo": "EDOR0",
+          "nome": "Equações Diferenciais Ordinárias",
+          "periodo": 3,
+          "eixo": "Matemática",
+          "carga_horaria": 60,
+          "ementa": "Equações diferenciais ordinárias de primeira ordem: resolução e aplicações; Equações diferenciais ordinárias de segunda ordem: resolução e aplicações; e Equações diferenciais ordinárias de ordem superior; sistemas de equações diferenciais; Transformada de Laplace e sua aplicação em equações diferenciais.",
+          "plano_curso": "Equações diferenciais ordinárias de primeira ordem: resolução e aplicações; Equações diferenciais ordinárias de segunda ordem: resolução e aplicações; e Equações diferenciais ordinárias de ordem superior; sistemas de equações diferenciais; Transformada de Laplace e sua aplicação em equações diferenciais."
+        },
+        {
+          "codigo": "ESTA0",
+          "codigo_externo": "ESTA0",
+          "nome": "Estatística",
+          "periodo": 3,
+          "eixo": "Matemática",
+          "carga_horaria": 60,
+          "ementa": "Estatística descritiva; Elementos de probabilidade; variáveis aleatórias discretas e contínuas; distribuições de probabilidades; distribuições amostrais; estimação pontual e intervalar; teste de hipóteses; correlação e regressão linear simples.",
+          "plano_curso": "Estatística descritiva; Elementos de probabilidade; variáveis aleatórias discretas e contínuas; distribuições de probabilidades; distribuições amostrais; estimação pontual e intervalar; teste de hipóteses; correlação e regressão linear simples."
+        },
+        {
+          "codigo": "FEOF0",
+          "codigo_externo": "FEOF0",
+          "nome": "Física Experimental - Oscilações, Fluidos e Termodinâmica (OFT)",
+          "periodo": 3,
+          "eixo": "Física e Química",
+          "carga_horaria": 30,
+          "ementa": "Práticas em laboratório de temas e tópicos abordados nas disciplinas básicas de Física, mais especificamente, experimentos nas áreas de Oscilações, Fluidos e Termodinâmica.",
+          "plano_curso": "Práticas em laboratório de temas e tópicos abordados nas disciplinas básicas de Física, mais especificamente, experimentos nas áreas de Oscilações, Fluidos e Termodinâmica."
+        },
+        {
+          "codigo": "FOFT0",
+          "codigo_externo": "FOFT0",
+          "nome": "Fundamentos de Oscilações, Fluidos e Termodinâmica (OFT)",
+          "periodo": 3,
+          "eixo": "Física e Química",
+          "carga_horaria": 60,
+          "ementa": "Estática e dinâmica dos fluidos; Movimento periódico; Ondas Mecânicas; Som e Audição; Temperatura; calor; 1ª e 2ª leis da termodinâmica; Propriedade dos gases; Teoria cinética dos gases; Transferência de calor e massa.",
+          "plano_curso": "Estática e dinâmica dos fluidos; Movimento periódico; Ondas Mecânicas; Som e Audição; Temperatura; calor; 1ª e 2ª leis da termodinâmica; Propriedade dos gases; Teoria cinética dos gases; Transferência de calor e massa."
+        },
+        {
+          "codigo": "FTEC0",
+          "codigo_externo": "FTEC0",
+          "nome": "Filosofia da Tecnologia",
+          "periodo": 3,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "Estudo dos fundamentos filosóficos necessários à compreensão da tecnologia, tratando de questões ontológicas, epistemológicas, estéticas, éticas e políticas, abordando: a distinção entre o natural e o artificial, bem como o lugar ocupado pela produção técnica/tecnológica entre as áreas do conhecimento; o domínio humano da natureza por meio dos saberes técnicos e científicos e suas consequências; a relação da tecnologia com o trabalho, compreendido como atividade humana fundamental para produção dos meios de vida; a subordinação dos desenvolvimentos tecnológicos ao modo de produção capitalista; a crítica à modernidade e à tecnociência.",
+          "plano_curso": "Estudo dos fundamentos filosóficos necessários à compreensão da tecnologia, tratando de questões ontológicas, epistemológicas, estéticas, éticas e políticas, abordando: a distinção entre o natural e o artificial, bem como o lugar ocupado pela produção técnica/tecnológica entre as áreas do conhecimento; o domínio humano da natureza por meio dos saberes técnicos e científicos e suas consequências; a relação da tecnologia com o trabalho, compreendido como atividade humana fundamental para produção dos meios de vida; a subordinação dos desenvolvimentos tecnológicos ao modo de produção capitalista; a crítica à modernidade e à tecnociência."
+        },
+        {
+          "codigo": "POOB0",
+          "codigo_externo": "POOB0",
+          "nome": "Programação Orientada a Objetos",
+          "periodo": 3,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 60,
+          "ementa": "Não há ementa detalhada no PPC.",
+          "plano_curso": "Não há ementa detalhada no PPC."
+        },
+        {
+          "codigo": "ACEL1",
+          "codigo_externo": "ACEL1",
+          "nome": "Análise de Circuitos Elétricos I",
+          "periodo": 4,
+          "eixo": "Eletricidade",
+          "carga_horaria": 60,
+          "ementa": "Conceitos básicos de eletricidade, grandezas elétricas, leis fundamentais; resistência; capacitância e indutância. Medidas de grandezas elétricas. Fontes ideais independentes e dependente. Análise de circuitos em corrente contínua e análise de circuitos de corrente alternada. Regime permanente senoidal. Potência e energia em corrente alternada. Transformadores.",
+          "plano_curso": "Conceitos básicos de eletricidade, grandezas elétricas, leis fundamentais; resistência; capacitância e indutância. Medidas de grandezas elétricas. Fontes ideais independentes e dependente. Análise de circuitos em corrente contínua e análise de circuitos de corrente alternada. Regime permanente senoidal. Potência e energia em corrente alternada. Transformadores."
+        },
+        {
+          "codigo": "ALIN0",
+          "codigo_externo": "ALIN0",
+          "nome": "Álgebra Linear",
+          "periodo": 4,
+          "eixo": "Matemática",
+          "carga_horaria": 60,
+          "ementa": "Espaços vetoriais, subespaços, base, dimensão. Transformações lineares e matriz de uma Transformação Linear. Teorema do Núcleo e da Imagem. Autovalores e Autovetores; produto interno; ortonormalização; diagonalização de operadores, Teorema de Cayley- Hamilton e Teorema Espectral; Formas quadráticas; aplicações.",
+          "plano_curso": "Espaços vetoriais, subespaços, base, dimensão. Transformações lineares e matriz de uma Transformação Linear. Teorema do Núcleo e da Imagem. Autovalores e Autovetores; produto interno; ortonormalização; diagonalização de operadores, Teorema de Cayley- Hamilton e Teorema Espectral; Formas quadráticas; aplicações."
+        },
+        {
+          "codigo": "APAL0",
+          "codigo_externo": "APAL0",
+          "nome": "Análise e Projeto de Algoritmos",
+          "periodo": 4,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 60,
+          "ementa": "Não há ementa detalhada no PPC.",
+          "plano_curso": "Não há ementa detalhada no PPC."
+        },
+        {
+          "codigo": "DWEB2",
+          "codigo_externo": "DWEB2",
+          "nome": "Desenvolvimento Web II",
+          "periodo": 4,
+          "eixo": "Engenharia de Software e Banco de Dados",
+          "carga_horaria": 60,
+          "ementa": "Revisão da arquitetura de software para web. Visão geral do estilo arquitetural MVC. Elaboração de páginas dinâmicas: manipulação de formulários, envio de dados via GET e POST, manipulação de cookies e sessões. Persistência de dados em Banco de Dados. Definição e utilização de APIs para web, utilizando padrões de comunicação atuais. Frameworks para web.",
+          "plano_curso": "Revisão da arquitetura de software para web. Visão geral do estilo arquitetural MVC. Elaboração de páginas dinâmicas: manipulação de formulários, envio de dados via GET e POST, manipulação de cookies e sessões. Persistência de dados em Banco de Dados. Definição e utilização de APIs para web, utilizando padrões de comunicação atuais. Frameworks para web."
+        },
+        {
+          "codigo": "FEEL0",
+          "codigo_externo": "FEEL0",
+          "nome": "Física Experimental - Eletromagnetismo",
+          "periodo": 4,
+          "eixo": "Física e Química",
+          "carga_horaria": 30,
+          "ementa": "Práticas em laboratório de temas e tópicos abordados nas disciplinas básicas de Física, mais especificamente, experimentos na área de Eletromagnetismo.",
+          "plano_curso": "Práticas em laboratório de temas e tópicos abordados nas disciplinas básicas de Física, mais especificamente, experimentos na área de Eletromagnetismo."
+        },
+        {
+          "codigo": "FELE0",
+          "codigo_externo": "FELE0",
+          "nome": "Fundamentos de Eletromagnetismo",
+          "periodo": 4,
+          "eixo": "Física e Química",
+          "carga_horaria": 60,
+          "ementa": "Carga elétrica e matéria; lei de Coulomb; o campo elétrico; fluxo elétrico e lei de Gauss; potencial elétrico; capacitores e dielétricos; corrente elétrica; resistência elétrica; força eletromotriz; circuitos de corrente contínua e regras de Kirchhoff; campo magnético; lei de Biot-Savart; lei de Ampère; indução eletromagnética; lei de Faraday; indutância e energia do campo magnético; circuitos de corrente alternada; equações de Maxwell.",
+          "plano_curso": "Carga elétrica e matéria; lei de Coulomb; o campo elétrico; fluxo elétrico e lei de Gauss; potencial elétrico; capacitores e dielétricos; corrente elétrica; resistência elétrica; força eletromotriz; circuitos de corrente contínua e regras de Kirchhoff; campo magnético; lei de Biot-Savart; lei de Ampère; indução eletromagnética; lei de Faraday; indutância e energia do campo magnético; circuitos de corrente alternada; equações de Maxwell."
+        },
+        {
+          "codigo": "LCEL0",
+          "codigo_externo": "LCEL0",
+          "nome": "Laboratório de Circuitos Elétricos",
+          "periodo": 4,
+          "eixo": "Eletricidade",
+          "carga_horaria": 30,
+          "ementa": "Atividades de laboratório relacionadas à Análise de Circuitos Elétricos.",
+          "plano_curso": "Atividades de laboratório relacionadas à Análise de Circuitos Elétricos."
+        },
+        {
+          "codigo": "LSDI0",
+          "codigo_externo": "LSDI0",
+          "nome": "Laboratório de Sistemas Digitais",
+          "periodo": 4,
+          "eixo": "Eletrônica",
+          "carga_horaria": 30,
+          "ementa": "Atividades de laboratório relacionadas a Sistemas Digitais.",
+          "plano_curso": "Atividades de laboratório relacionadas a Sistemas Digitais."
+        },
+        {
+          "codigo": "ELET1",
+          "codigo_externo": "ELET1",
+          "nome": "Eletrônica I",
+          "periodo": 5,
+          "eixo": "Eletrônica",
+          "carga_horaria": 60,
+          "ementa": "Sistemas eletrônicos. Diodos: estrutura atômica, dopagem e junção PN; diodo ideal; modelos linearizados; análise de circuitos com diodos; diodo Zener; diodo emissor de luz; circuitos grampeadores, ceifadores e multiplicadores de tensão; circuitos retificadores. Circuitos retificadores com filtro a capacitor. Transistor bipolar de junção: princípios de operação e características; polarização; operação como chave; transistores em circuitos amplificadores. Transistores de efeito de campo. Amplificador operacional: características, aplicações lineares e não-lineares. Fontes de alimentação com reguladores de tensão.",
+          "plano_curso": "Sistemas eletrônicos. Diodos: estrutura atômica, dopagem e junção PN; diodo ideal; modelos linearizados; análise de circuitos com diodos; diodo Zener; diodo emissor de luz; circuitos grampeadores, ceifadores e multiplicadores de tensão; circuitos retificadores. Circuitos retificadores com filtro a capacitor. Transistor bipolar de junção: princípios de operação e características; polarização; operação como chave; transistores em circuitos amplificadores. Transistores de efeito de campo. Amplificador operacional: características, aplicações lineares e não-lineares. Fontes de alimentação com reguladores de tensão."
+        },
+        {
+          "codigo": "ESOF1",
+          "codigo_externo": "ESOF1",
+          "nome": "Engenharia de Software I",
+          "periodo": 5,
+          "eixo": "Engenharia de Software e Banco de Dados",
+          "carga_horaria": 60,
+          "ementa": "Histórico da Engenharia de Software. Engenharia de Requisitos. Análise e projeto de software. Introdução a Padrões de Projeto.",
+          "plano_curso": "Histórico da Engenharia de Software. Engenharia de Requisitos. Análise e projeto de software. Introdução a Padrões de Projeto."
+        },
+        {
+          "codigo": "LELE1",
+          "codigo_externo": "LELE1",
+          "nome": "Laboratório de Eletrônica I",
+          "periodo": 5,
+          "eixo": "Eletrônica",
+          "carga_horaria": 30,
+          "ementa": "Atividades de laboratório relacionadas à Eletrônica.",
+          "plano_curso": "Atividades de laboratório relacionadas à Eletrônica."
+        },
+        {
+          "codigo": "MNUM1",
+          "codigo_externo": "MNUM1",
+          "nome": "Métodos Numéricos I",
+          "periodo": 5,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 60,
+          "ementa": "Não há ementa detalhada no PPC.",
+          "plano_curso": "Não há ementa detalhada no PPC."
+        },
+        {
+          "codigo": "SDIG0",
+          "codigo_externo": "SDIG0",
+          "nome": "Sistemas Digitais",
+          "periodo": 5,
+          "eixo": "Eletrônica",
+          "carga_horaria": 60,
+          "ementa": "Sistemas de numeração, conversões entre bases numéricas. Sinal analógico e sinal digital. Portas lógicas, lógica combinacional, álgebra de Boole, técnicas de minimização e síntese de circuitos combinacionais. Unidade lógica aritmética. Códigos binários. Lógica sequencial, osciladores digitais, flip-flops, circuitos aritméticos, registradores de memória, registradores de deslocamento, contadores assíncronos, contadores síncronos, máquinas de estado finito. MUX e DEMUX. Conversores A/D e D/A. Famílias lógicas e circuitos integrados. Análise e projeto de sistemas digitais.",
+          "plano_curso": "Sistemas de numeração, conversões entre bases numéricas. Sinal analógico e sinal digital. Portas lógicas, lógica combinacional, álgebra de Boole, técnicas de minimização e síntese de circuitos combinacionais. Unidade lógica aritmética. Códigos binários. Lógica sequencial, osciladores digitais, flip-flops, circuitos aritméticos, registradores de memória, registradores de deslocamento, contadores assíncronos, contadores síncronos, máquinas de estado finito. MUX e DEMUX. Conversores A/D e D/A. Famílias lógicas e circuitos integrados. Análise e projeto de sistemas digitais."
+        },
+        {
+          "codigo": "SOPE1",
+          "codigo_externo": "SOPE1",
+          "nome": "Sistemas Operacionais I",
+          "periodo": 5,
+          "eixo": "Redes e Sistemas Distribuídos",
+          "carga_horaria": 60,
+          "ementa": "Introdução: O que é um sistema operacional? Histórico. Taxonomia dos SOs. Conceitos Básicos. Chamadas de Sistema. Estrutura do SO. Processos e Linhas de Execução (Threads): Processos. Linhas de Execução (Threads). Comunicação Interprocesso. Escalonamento. Impasses (Deadlocks): Recursos. Introdução aos Impasses. Detecção e Recuperação de Impasses. Evitando Impasses. Prevenindo Impasses. Gerenciamento de Memória: Gerenciamento Básico de Memória. Trocas (Swapping). Memória Virtual. Algoritmos para Substituição de Páginas. Questões de Projeto. Questões de Implementação. Segmentação. Entrada/Saída: Princípios de Hardware e de Software. Camadas de Software para Entrada/Saída. Sistemas de Arquivos: Arquivos. Diretórios. Implementação de Sistemas de Arquivos.",
+          "plano_curso": "Introdução: O que é um sistema operacional? Histórico. Taxonomia dos SOs. Conceitos Básicos. Chamadas de Sistema. Estrutura do SO. Processos e Linhas de Execução (Threads): Processos. Linhas de Execução (Threads). Comunicação Interprocesso. Escalonamento. Impasses (Deadlocks): Recursos. Introdução aos Impasses. Detecção e Recuperação de Impasses. Evitando Impasses. Prevenindo Impasses. Gerenciamento de Memória: Gerenciamento Básico de Memória. Trocas (Swapping). Memória Virtual. Algoritmos para Substituição de Páginas. Questões de Projeto. Questões de Implementação. Segmentação. Entrada/Saída: Princípios de Hardware e de Software. Camadas de Software para Entrada/Saída. Sistemas de Arquivos: Arquivos. Diretórios. Implementação de Sistemas de Arquivos."
+        },
+        {
+          "codigo": "ESOF2",
+          "codigo_externo": "ESOF2",
+          "nome": "Engenharia de Software II",
+          "periodo": 6,
+          "eixo": "Engenharia de Software e Banco de Dados",
+          "carga_horaria": 60,
+          "ementa": "Processos de software: modelos de ciclo de vida, processos de desenvolvimento de software. Metodologias e frameworks para desenvolvimento ágil. Verificação, validação e testes de software. Gerência de configurações de software. Gerência de projetos de software. Manutenção e evolução de software. Medição de software. Engenharia reversa. Reuso e Reengenharia.",
+          "plano_curso": "Processos de software: modelos de ciclo de vida, processos de desenvolvimento de software. Metodologias e frameworks para desenvolvimento ágil. Verificação, validação e testes de software. Gerência de configurações de software. Gerência de projetos de software. Manutenção e evolução de software. Medição de software. Engenharia reversa. Reuso e Reengenharia."
+        },
+        {
+          "codigo": "LFAU0",
+          "codigo_externo": "LFAU0",
+          "nome": "Linguagens Formais e Autômatos",
+          "periodo": 6,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 60,
+          "ementa": "Não há ementa detalhada no PPC.",
+          "plano_curso": "Não há ementa detalhada no PPC."
+        },
+        {
+          "codigo": "MCIE0",
+          "codigo_externo": "MCIE0",
+          "nome": "Metodologia Científica",
+          "periodo": 6,
+          "eixo": "Prática Profissional e Formação Diversificada",
+          "carga_horaria": 30,
+          "ementa": "Conceito de ciência; pesquisa em ciência e tecnologia; tipos de conhecimento; epistemologia das ciências; métodos de pesquisa; a produção da pesquisa científica.",
+          "plano_curso": "Conceito de ciência; pesquisa em ciência e tecnologia; tipos de conhecimento; epistemologia das ciências; métodos de pesquisa; a produção da pesquisa científica."
+        },
+        {
+          "codigo": "OCOM0",
+          "codigo_externo": "OCOM0",
+          "nome": "Organização de Computadores",
+          "periodo": 6,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 60,
+          "ementa": "Não há ementa detalhada no PPC.",
+          "plano_curso": "Não há ementa detalhada no PPC."
+        },
+        {
+          "codigo": "PDMO0",
+          "codigo_externo": "PDMO0",
+          "nome": "Programação para Dispositivos Móveis",
+          "periodo": 6,
+          "eixo": "Engenharia de Software e Banco de Dados",
+          "carga_horaria": 60,
+          "ementa": "Conceitos e paradigmas de programação para dispositivos móveis; Plataformas, sistemas operacionais, linguagem de programação e ambientes de desenvolvimento de aplicações móveis; Componentes de interface gráfica do usuário; Requisições em APIs; Mecanismos de persistência de dados; Utilização de sensores.",
+          "plano_curso": "Conceitos e paradigmas de programação para dispositivos móveis; Plataformas, sistemas operacionais, linguagem de programação e ambientes de desenvolvimento de aplicações móveis; Componentes de interface gráfica do usuário; Requisições em APIs; Mecanismos de persistência de dados; Utilização de sensores."
+        },
+        {
+          "codigo": "RCOM0",
+          "codigo_externo": "RCOM0",
+          "nome": "Redes de Computadores",
+          "periodo": 6,
+          "eixo": "Redes e Sistemas Distribuídos",
+          "carga_horaria": 60,
+          "ementa": "Introdução às Redes de Computadores e a Internet. Bordas e núcleo da rede. Atraso, perda de pacotes e largura de banda em redes. Protocolos em camadas e seus modelos de serviços. Histórico das redes de computadores e a Internet. Camada de Aplicação: Introdução. Web e HTTP. Transferência de arquivos: FTP. Correio eletrônico na Internet. DNS. Aplicações P2P. Programação em socket com TCP e UDP. Camada de Transporte: Introdução. Multiplexação e demultiplexação. Transporte sem conexão: UDP. Princípios de Transferência Segura de Dados. Transporte orientado a conexão: TCP. Princípios de Controle de Congestionamento. Controle de Congestionamento em TCP. Camada de Rede: Introdução. Circuitos virtuais e datagramas. Roteador. Protocolo IP e endereçamento. Algoritmos de roteamento. Roteamento na Internet. Roteamento de Broadcast e Multicast. Camada de Enlace e Camada Física: Introdução. Serviços. Técnicas para detecção e correção de erros. Protocolos de Acesso Múltiplo. Endereçamento. Ethernet. Switches. PPP. Outros protocolos da camada de enlace. Redes sem Fio e Redes Móveis: Características de enlaces e redes sem fio. Acesso celular à Internet. Gerenciamento de mobilidade. IP móvel. Redes de Celulares. Impacto da mobilidade nos protocolos de alto nível. Segurança de Redes: Princípios de Segurança. Criptografia. Autenticação. Integridade. Distribuição de Chaves e Certificação. Firewalls. Ataques e contramedidas. Segurança nas camadas TCP/IP.",
+          "plano_curso": "Introdução às Redes de Computadores e a Internet. Bordas e núcleo da rede. Atraso, perda de pacotes e largura de banda em redes. Protocolos em camadas e seus modelos de serviços. Histórico das redes de computadores e a Internet. Camada de Aplicação: Introdução. Web e HTTP. Transferência de arquivos: FTP. Correio eletrônico na Internet. DNS. Aplicações P2P. Programação em socket com TCP e UDP. Camada de Transporte: Introdução. Multiplexação e demultiplexação. Transporte sem conexão: UDP. Princípios de Transferência Segura de Dados. Transporte orientado a conexão: TCP. Princípios de Controle de Congestionamento. Controle de Congestionamento em TCP. Camada de Rede: Introdução. Circuitos virtuais e datagramas. Roteador. Protocolo IP e endereçamento. Algoritmos de roteamento. Roteamento na Internet. Roteamento de Broadcast e Multicast. Camada de Enlace e Camada Física: Introdução. Serviços. Técnicas para detecção e correção de erros. Protocolos de Acesso Múltiplo. Endereçamento. Ethernet. Switches. PPP. Outros protocolos da camada de enlace. Redes sem Fio e Redes Móveis: Características de enlaces e redes sem fio. Acesso celular à Internet. Gerenciamento de mobilidade. IP móvel. Redes de Celulares. Impacto da mobilidade nos protocolos de alto nível. Segurança de Redes: Princípios de Segurança. Criptografia. Autenticação. Integridade. Distribuição de Chaves e Certificação. Firewalls. Ataques e contramedidas. Segurança nas camadas TCP/IP."
+        },
+        {
+          "codigo": "ACOM0",
+          "codigo_externo": "ACOM0",
+          "nome": "Arquitetura de Computadores",
+          "periodo": 7,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 60,
+          "ementa": "Não há ementa detalhada no PPC.",
+          "plano_curso": "Não há ementa detalhada no PPC."
+        },
+        {
+          "codigo": "AGRA0",
+          "codigo_externo": "AGRA0",
+          "nome": "Algoritmos em Grafos",
+          "periodo": 7,
+          "eixo": "Sistemas Inteligentes",
+          "carga_horaria": 60,
+          "ementa": "Introdução a modelos em Grafos: Grafos e Digrafos; Famílias comuns de Grafos; Modelagem de aplicações usando Grafos; Passeios e distâncias; Caminhos, ciclos e árvores; Grafos rotulados nos vértices e nas arestas; Árvores: caracterização e propriedades. Estrutura e representação de Grafos: Grafos isomorfos; Subgrafos; Operações comuns entre grafos; Testes para grafos não-isomorfos; Representação de grafos por matriz; Representação de grafos por listas de adjacência. Árvores",
+          "plano_curso": "Introdução a modelos em Grafos: Grafos e Digrafos; Famílias comuns de Grafos; Modelagem de aplicações usando Grafos; Passeios e distâncias; Caminhos, ciclos e árvores; Grafos rotulados nos vértices e nas arestas; Árvores: caracterização e propriedades. Estrutura e representação de Grafos: Grafos isomorfos; Subgrafos; Operações comuns entre grafos; Testes para grafos não-isomorfos; Representação de grafos por matriz; Representação de grafos por listas de adjacência. Árvores"
+        },
+        {
+          "codigo": "ISOC0",
+          "codigo_externo": "ISOC0",
+          "nome": "Introdução à Sociologia",
+          "periodo": 7,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "Estudo dos fundamentos da teoria social sobre o mundo do trabalho necessários à compreensão dos fenômenos concernentes às relações de trabalho no capitalismo do século XXI, sob a égide do neoliberalismo, abordando: as metamorfoses do mundo do trabalho e do processo de produção envolvendo a Ciência, a Técnica e a Tecnologia; as novas formas de acumulação do capital nas sociedades contemporâneas; as mutações sociotécnicas e os impactos da globalização nas relações de trabalho; a reestruturação produtiva; a flexibilização e precarização das relações de trabalho e o desemprego; a ideologia do empreendedorismo; a nova sociabilidade do trabalhador e as trajetórias laborais; a divisão do trabalho impactada pelas relações de classe, de gênero, étnico-raciais e geracionais.",
+          "plano_curso": "Estudo dos fundamentos da teoria social sobre o mundo do trabalho necessários à compreensão dos fenômenos concernentes às relações de trabalho no capitalismo do século XXI, sob a égide do neoliberalismo, abordando: as metamorfoses do mundo do trabalho e do processo de produção envolvendo a Ciência, a Técnica e a Tecnologia; as novas formas de acumulação do capital nas sociedades contemporâneas; as mutações sociotécnicas e os impactos da globalização nas relações de trabalho; a reestruturação produtiva; a flexibilização e precarização das relações de trabalho e o desemprego; a ideologia do empreendedorismo; a nova sociabilidade do trabalhador e as trajetórias laborais; a divisão do trabalho impactada pelas relações de classe, de gênero, étnico-raciais e geracionais."
+        },
+        {
+          "codigo": "LSTR0",
+          "codigo_externo": "LSTR0",
+          "nome": "Laboratório de Sistemas de Tempo Real",
+          "periodo": 7,
+          "eixo": "Redes e Sistemas Distribuídos",
+          "carga_horaria": 30,
+          "ementa": "Atividades de laboratório relacionadas a Sistemas de Tempo Real.",
+          "plano_curso": "Atividades de laboratório relacionadas a Sistemas de Tempo Real."
+        },
+        {
+          "codigo": "SDIS0",
+          "codigo_externo": "SDIS0",
+          "nome": "Sistemas Distribuídos",
+          "periodo": 7,
+          "eixo": "Redes e Sistemas Distribuídos",
+          "carga_horaria": 60,
+          "ementa": "Introdução aos Sistemas Distribuídos: Definição, Metas e Tipos de Sistemas Distribuídos. Arquitetura de Sistemas Distribuídos: Estilos Arquitetônicos, Arquiteturas de Sistemas, Arquiteturas versus Middleware, Autogerenciamento. Processos em Sistemas Distribuídos: Linhas de Execução (Threads), Virtualização, Clientes, Servidores, Migração de Código. Comunicação em Sistemas Distribuídos: Fundamentos, Chamada de Procedimento Remoto, Comunicação Orientada a Mensagem, Comunicação Orientada à Fluxo, Comunicação Multicast. Nomeação em Sistemas Distribuídos: Nomes, Identificadores e Endereços, Nomeação Simples, Nomeação Estruturada, Nomeação Baseada em Atributo. Sincronização em Sistemas Distribuídos: Sincronização de Relógios, Relógios Lógicos, Exclusão Mútua, Posicionamento Global de Nós, Algoritmos de Eleição. Sistemas Distribuídos Baseados em Objetos: Arquitetura, Processos, Comunicação, Sincronização, RMI JAVA, CORBA, Consistência e Replicação, Tolerância a Falhas, Segurança. Consistência e Replicação em Sistemas Distribuídos: Introdução, Modelos de Consistência Centrados em Dados e no Cliente, Gerenciamento de Réplicas, Protocolos de Consistência. Tolerância a Falhas: Introdução, Resiliência de Processo, Comunicação Confiável, Comprometimento Distribuído, Recuperação. Sistemas de Arquivos Distribuídos: Arquitetura, Processos, Comunicação, Nomeação, Sincronização, Consistência e Replicação, Tolerância a Falhas, Segurança. Sistemas Distribuídos Baseados na Web: Arquitetura, Processos, Comunicação, Nomeação, Sincronização, Consistência e Replicação, Tolerância a Falhas, Segurança. Sistemas Distribuídos Baseados em Coordenação: Introdução, Arquiteturas, Processos, Comunicação, Nomeação, Sincronização, Consistência e Replicação, Tolerância a Falha, Segurança.",
+          "plano_curso": "Introdução aos Sistemas Distribuídos: Definição, Metas e Tipos de Sistemas Distribuídos. Arquitetura de Sistemas Distribuídos: Estilos Arquitetônicos, Arquiteturas de Sistemas, Arquiteturas versus Middleware, Autogerenciamento. Processos em Sistemas Distribuídos: Linhas de Execução (Threads), Virtualização, Clientes, Servidores, Migração de Código. Comunicação em Sistemas Distribuídos: Fundamentos, Chamada de Procedimento Remoto, Comunicação Orientada a Mensagem, Comunicação Orientada à Fluxo, Comunicação Multicast. Nomeação em Sistemas Distribuídos: Nomes, Identificadores e Endereços, Nomeação Simples, Nomeação Estruturada, Nomeação Baseada em Atributo. Sincronização em Sistemas Distribuídos: Sincronização de Relógios, Relógios Lógicos, Exclusão Mútua, Posicionamento Global de Nós, Algoritmos de Eleição. Sistemas Distribuídos Baseados em Objetos: Arquitetura, Processos, Comunicação, Sincronização, RMI JAVA, CORBA, Consistência e Replicação, Tolerância a Falhas, Segurança. Consistência e Replicação em Sistemas Distribuídos: Introdução, Modelos de Consistência Centrados em Dados e no Cliente, Gerenciamento de Réplicas, Protocolos de Consistência. Tolerância a Falhas: Introdução, Resiliência de Processo, Comunicação Confiável, Comprometimento Distribuído, Recuperação. Sistemas de Arquivos Distribuídos: Arquitetura, Processos, Comunicação, Nomeação, Sincronização, Consistência e Replicação, Tolerância a Falhas, Segurança. Sistemas Distribuídos Baseados na Web: Arquitetura, Processos, Comunicação, Nomeação, Sincronização, Consistência e Replicação, Tolerância a Falhas, Segurança. Sistemas Distribuídos Baseados em Coordenação: Introdução, Arquiteturas, Processos, Comunicação, Nomeação, Sincronização, Consistência e Replicação, Tolerância a Falha, Segurança."
+        },
+        {
+          "codigo": "STRE0",
+          "codigo_externo": "STRE0",
+          "nome": "Sistemas de Tempo Real",
+          "periodo": 7,
+          "eixo": "Redes e Sistemas Distribuídos",
+          "carga_horaria": 30,
+          "ementa": "Software tempo real. Programações recorrentes: mecanismos de comunicação, escalonamento, projeto de executivos tempo real. Linguagens com características de programação em tempo real. Sistemas operacionais (características e uso): gerenciamento de memória, de recursos. (ex: UNIX, LINUX).",
+          "plano_curso": "Software tempo real. Programações recorrentes: mecanismos de comunicação, escalonamento, projeto de executivos tempo real. Linguagens com características de programação em tempo real. Sistemas operacionais (características e uso): gerenciamento de memória, de recursos. (ex: UNIX, LINUX)."
+        },
+        {
+          "codigo": "TCOM0",
+          "codigo_externo": "TCOM0",
+          "nome": "Teoria da Computação",
+          "periodo": 7,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 60,
+          "ementa": "Não há ementa detalhada no PPC.",
+          "plano_curso": "Não há ementa detalhada no PPC."
+        },
+        {
+          "codigo": "COMP0",
+          "codigo_externo": "COMP0",
+          "nome": "Compiladores",
+          "periodo": 8,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 60,
+          "ementa": "A estrutura dos compiladores modernos: front-end, middle-end e back-end. Compiladores de um, dois e três passos. Análise léxica: operações com expressões regulares. Reconhecimento de linguagens regulares com autômatos finitos. Construção de autômatos finitos deterministas a partir de expressões regulares. Geradores de varredores léxicos. Análise sintática: sintaxe livre de contexto. Formas de derivação de strings e a árvore de sintaxe concreta. Precedência em expressões aritméticas. Eliminação de ambiguidade e de recursão à esquerda. Gramáticas LL(1) e LR(1). Derivação top-down. Derivação preditiva: fatoração à esquerda. Derivação recursiva: descendente e por tabelas de derivação. Recuperação de erros: o conjunto SYNCH. Gramáticas LL(K). Derivação bottom-up. Formas sentencias à esquerda e definição de manipuladores. Implementação por pilha: derivadores shift-reduce. Gramáticas LR(K). Construção de tabelas LR(0), SLR(1), LR(1), LALR(1). Análise semântica: problemas sensíveis ao contexto. Ações semânticas em derivadores LL e LR. Gramáticas de atributos. Grafo de dependência de atributos. Estrutura e organização de tabelas de símbolos. Aninhamento léxico e regras de escopo. Descritores de tipos: formas de compatibilidade. Verificação e conversão de tipos em expressões. L-values e R-values. Representação intermediária para análise semântica: árvore de sintaxe abstrata. Ambientes de execução: classes de armazenamento e acesso a dados não locais. Registros de ativação. Funções de mais alta ordem. Pilha de execução: criação e manipulação de registros de ativação. Geração de representação intermediária. Tipos de representação intermediária: árvores de sintaxe abstrata, grafo acíclico direcionado, grafo de controle do fluxo, código de três endereços. Regras semânticas para geração de código intermediário: atribuição e expressões, desvio de controle, declarações. Tradução em árvores de sintaxe abstrata. Reorganização do código intermediário: árvores canônicas, blocos básicos, aglomerados sequenciais. Geração de código de máquina para MIPS ou PENTIUM: seleção de instruções. Análise de tempo de vida: grafos de fluxo do controle, grafos de interferência. Alocação de registradores: coloração de grafos, coalescência. Exemplo de otimização de laços.",
+          "plano_curso": "A estrutura dos compiladores modernos: front-end, middle-end e back-end. Compiladores de um, dois e três passos. Análise léxica: operações com expressões regulares. Reconhecimento de linguagens regulares com autômatos finitos. Construção de autômatos finitos deterministas a partir de expressões regulares. Geradores de varredores léxicos. Análise sintática: sintaxe livre de contexto. Formas de derivação de strings e a árvore de sintaxe concreta. Precedência em expressões aritméticas. Eliminação de ambiguidade e de recursão à esquerda. Gramáticas LL(1) e LR(1). Derivação top-down. Derivação preditiva: fatoração à esquerda. Derivação recursiva: descendente e por tabelas de derivação. Recuperação de erros: o conjunto SYNCH. Gramáticas LL(K). Derivação bottom-up. Formas sentencias à esquerda e definição de manipuladores. Implementação por pilha: derivadores shift-reduce. Gramáticas LR(K). Construção de tabelas LR(0), SLR(1), LR(1), LALR(1). Análise semântica: problemas sensíveis ao contexto. Ações semânticas em derivadores LL e LR. Gramáticas de atributos. Grafo de dependência de atributos. Estrutura e organização de tabelas de símbolos. Aninhamento léxico e regras de escopo. Descritores de tipos: formas de compatibilidade. Verificação e conversão de tipos em expressões. L-values e R-values. Representação intermediária para análise semântica: árvore de sintaxe abstrata. Ambientes de execução: classes de armazenamento e acesso a dados não locais. Registros de ativação. Funções de mais alta ordem. Pilha de execução: criação e manipulação de registros de ativação. Geração de representação intermediária. Tipos de representação intermediária: árvores de sintaxe abstrata, grafo acíclico direcionado, grafo de controle do fluxo, código de três endereços. Regras semânticas para geração de código intermediário: atribuição e expressões, desvio de controle, declarações. Tradução em árvores de sintaxe abstrata. Reorganização do código intermediário: árvores canônicas, blocos básicos, aglomerados sequenciais. Geração de código de máquina para MIPS ou PENTIUM: seleção de instruções. Análise de tempo de vida: grafos de fluxo do controle, grafos de interferência. Alocação de registradores: coloração de grafos, coalescência. Exemplo de otimização de laços."
+        },
+        {
+          "codigo": "EMNE0",
+          "codigo_externo": "EMNE0",
+          "nome": "Empreendedorismo e Modelo de Negócios",
+          "periodo": 8,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "Empreendedorismo e Inovação. Contexto e Ecossistema Empreendedor. Competências Empreendedoras. Avaliação de Oportunidades. Ideação e Modelagem de Negócios.",
+          "plano_curso": "Empreendedorismo e Inovação. Contexto e Ecossistema Empreendedor. Competências Empreendedoras. Avaliação de Oportunidades. Ideação e Modelagem de Negócios."
+        },
+        {
+          "codigo": "GAMB0",
+          "codigo_externo": "GAMB0",
+          "nome": "Gestão Ambiental",
+          "periodo": 8,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "Conceitos Básicos de Gestão Ambiental. Ecossistema: Estrutura e Funcionamento. Poluição das águas, do ar e do solo. Impactos das atividades antrópicas sobre o meio físico, biótico e antrópico. Legislação ambiental e o Licenciamento Ambiental. Sistema de Gestão Ambiental (Norma ISO 14001). Desenvolvimento Sustentável e as Empresas.",
+          "plano_curso": "Conceitos Básicos de Gestão Ambiental. Ecossistema: Estrutura e Funcionamento. Poluição das águas, do ar e do solo. Impactos das atividades antrópicas sobre o meio físico, biótico e antrópico. Legislação ambiental e o Licenciamento Ambiental. Sistema de Gestão Ambiental (Norma ISO 14001). Desenvolvimento Sustentável e as Empresas."
+        },
+        {
+          "codigo": "IART0",
+          "codigo_externo": "IART0",
+          "nome": "Inteligência Artificial",
+          "periodo": 8,
+          "eixo": "Sistemas Inteligentes",
+          "carga_horaria": 60,
+          "ementa": "Não há ementa detalhada no PPC.",
+          "plano_curso": "Não há ementa detalhada no PPC."
+        },
+        {
+          "codigo": "LPSE0",
+          "codigo_externo": "LPSE0",
+          "nome": "Laboratório de Programação de Sistemas Embarcados",
+          "periodo": 8,
+          "eixo": "Eletrônica",
+          "carga_horaria": 30,
+          "ementa": "Atividades de laboratório relacionadas a Sistemas Embarcados.",
+          "plano_curso": "Atividades de laboratório relacionadas a Sistemas Embarcados."
+        },
+        {
+          "codigo": "PAOR0",
+          "codigo_externo": "PAOR0",
+          "nome": "Psicologia Aplicada às Organizações",
+          "periodo": 8,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "O trabalho, sua história, seus significados e função psicológica. O trabalho no contexto neoliberal e a precarização. Comportamento x subjetividade. Saúde mental e trabalho, adoecimento e assédio. Direitos humanos e trabalho. Diversidades, inclusão e equidade: relações étnico-raciais e cultura, sexualidade, relações de gênero, pessoas com deficiências. Discussões contemporâneas sobre o trabalho.",
+          "plano_curso": "O trabalho, sua história, seus significados e função psicológica. O trabalho no contexto neoliberal e a precarização. Comportamento x subjetividade. Saúde mental e trabalho, adoecimento e assédio. Direitos humanos e trabalho. Diversidades, inclusão e equidade: relações étnico-raciais e cultura, sexualidade, relações de gênero, pessoas com deficiências. Discussões contemporâneas sobre o trabalho."
+        },
+        {
+          "codigo": "PSEM0",
+          "codigo_externo": "PSEM0",
+          "nome": "Programação de Sistemas Embarcados",
+          "periodo": 8,
+          "eixo": "Eletrônica",
+          "carga_horaria": 30,
+          "ementa": "Conceitos gerais de computação embarcada. Programação de sistemas embarcados utilizando linguagem de alto nível. Ferramentas de desenvolvimento, compilação e depuração. Utilização de periféricos: entradas e saídas digitais, ADC, DAC, PWM, UART, I2C, SPI, timers e watchdog. Técnicas de multiplexação de entradas e saídas. Interrupções. Organização e arquitetura de programas para sistemas embarcados. Limitações de sistemas embarcados. Implementação de controladores digitais embarcados.",
+          "plano_curso": "Conceitos gerais de computação embarcada. Programação de sistemas embarcados utilizando linguagem de alto nível. Ferramentas de desenvolvimento, compilação e depuração. Utilização de periféricos: entradas e saídas digitais, ADC, DAC, PWM, UART, I2C, SPI, timers e watchdog. Técnicas de multiplexação de entradas e saídas. Interrupções. Organização e arquitetura de programas para sistemas embarcados. Limitações de sistemas embarcados. Implementação de controladores digitais embarcados."
+        },
+        {
+          "codigo": "MPES0",
+          "codigo_externo": "MPES0",
+          "nome": "Metodologia da Pesquisa",
+          "periodo": 9,
+          "eixo": "Prática Profissional e Formação Diversificada",
+          "carga_horaria": 30,
+          "ementa": "Produção do trabalho técnico-científico, versando sobre tema da área de Engenharia de Computação; aplicação dos conhecimentos sobre a produção da pesquisa científica: a questão, o problema e a escolha do método.",
+          "plano_curso": "Produção do trabalho técnico-científico, versando sobre tema da área de Engenharia de Computação; aplicação dos conhecimentos sobre a produção da pesquisa científica: a questão, o problema e a escolha do método."
+        },
+        {
+          "codigo": "ACEL2",
+          "codigo_externo": "ACEL2",
+          "nome": "Análise de Circuitos Elétricos II",
+          "periodo": null,
+          "eixo": "Eletricidade",
+          "carga_horaria": 60,
+          "ementa": "Circuitos trifásicos equilibrados e desequilibrados. Potência em circuitos trifásicos. Análise transitória de circuitos com capacitores e indutores, resposta livre, ao degrau e às funções singulares. Solução clássica de circuitos, condições iniciais e solução completa. Frequência complexa, função de transferência. Solução de circuitos através da Transformada de Laplace.",
+          "plano_curso": "Circuitos trifásicos equilibrados e desequilibrados. Potência em circuitos trifásicos. Análise transitória de circuitos com capacitores e indutores, resposta livre, ao degrau e às funções singulares. Solução clássica de circuitos, condições iniciais e solução completa. Frequência complexa, função de transferência. Solução de circuitos através da Transformada de Laplace."
+        },
+        {
+          "codigo": "BDID0",
+          "codigo_externo": "BDID0",
+          "nome": "Banco de Dados para Internet das Coisas",
+          "periodo": null,
+          "eixo": "Engenharia de Software e Banco de Dados",
+          "carga_horaria": 45,
+          "ementa": "Conceitos básicos, modelagem e projeto de bancos de dados para Internet das Coisas. Introdução e manipulação de bancos de dados relacionais, não relacionais e tecnologias de apoio a Big Data. Aplicações e tendências atuais em bancos de dados para Internet das Coisas.",
+          "plano_curso": "Conceitos básicos, modelagem e projeto de bancos de dados para Internet das Coisas. Introdução e manipulação de bancos de dados relacionais, não relacionais e tecnologias de apoio a Big Data. Aplicações e tendências atuais em bancos de dados para Internet das Coisas."
+        },
+        {
+          "codigo": "CAUT1",
+          "codigo_externo": "CAUT1",
+          "nome": "Controle Automático I",
+          "periodo": null,
+          "eixo": "Controle de Processos",
+          "carga_horaria": 90,
+          "ementa": "Modelagem de sistemas físicos no domínio da frequência: Função de Transferência de sistemas mecânicos e elétricos. Modelagem de sistemas físicos no domínio do tempo: espaço de estados. Conversão entre modelos. Representação gráfica de sistemas de controle: diagramas de blocos e gráfico de fluxo de sinais. Resposta transitória: sistema padrão de 2ª ordem, sistemas de ordem superior e sistemas com zeros. Controladores Industriais. Análise de estabilidade: critério de estabilidade de Routh-Hurwitz. Erro de regime estacionário. Projeto de malhas de controle simples. Sistemas de controle digital: função de transferência pulsada em malha fechada, resposta transitória, estabilidade e erro de estado estacionário.",
+          "plano_curso": "Modelagem de sistemas físicos no domínio da frequência: Função de Transferência de sistemas mecânicos e elétricos. Modelagem de sistemas físicos no domínio do tempo: espaço de estados. Conversão entre modelos. Representação gráfica de sistemas de controle: diagramas de blocos e gráfico de fluxo de sinais. Resposta transitória: sistema padrão de 2ª ordem, sistemas de ordem superior e sistemas com zeros. Controladores Industriais. Análise de estabilidade: critério de estabilidade de Routh-Hurwitz. Erro de regime estacionário. Projeto de malhas de controle simples. Sistemas de controle digital: função de transferência pulsada em malha fechada, resposta transitória, estabilidade e erro de estado estacionário."
+        },
+        {
+          "codigo": "CAUT2",
+          "codigo_externo": "CAUT2",
+          "nome": "Controle Automático II",
+          "periodo": null,
+          "eixo": "Controle de Processos",
+          "carga_horaria": 60,
+          "ementa": "Introdução ao projeto de controle clássico: conceito e objetivo, estabilidade, rastreamento, regulação, sensibilidade. Projeto de sistemas de controle pelo método do Lugar das Raízes: conceito, esboço do Lugar das Raízes e análise da dinâmica de sistemas (características transitórias, erro em regime, estabilidade); compensador de avanço, atraso e avanço-atraso; controladores PID (tradicionais e modificados). Projeto de controle digital pelo Lugar das Raízes. Projeto de sistemas de controle pelo método de resposta em frequência: conceito de resposta em frequência; esboço dos diagramas de Bode; análise da dinâmica de sistemas (características transitórias, erro em regime, margens de estabilidade); critério de estabilidade de Nyquist; compensador de avanço, atraso e avanço-atraso.",
+          "plano_curso": "Introdução ao projeto de controle clássico: conceito e objetivo, estabilidade, rastreamento, regulação, sensibilidade. Projeto de sistemas de controle pelo método do Lugar das Raízes: conceito, esboço do Lugar das Raízes e análise da dinâmica de sistemas (características transitórias, erro em regime, estabilidade); compensador de avanço, atraso e avanço-atraso; controladores PID (tradicionais e modificados). Projeto de controle digital pelo Lugar das Raízes. Projeto de sistemas de controle pelo método de resposta em frequência: conceito de resposta em frequência; esboço dos diagramas de Bode; análise da dinâmica de sistemas (características transitórias, erro em regime, margens de estabilidade); critério de estabilidade de Nyquist; compensador de avanço, atraso e avanço-atraso."
+        },
+        {
+          "codigo": "CEVO0",
+          "codigo_externo": "CEVO0",
+          "nome": "Computação Evolucionista",
+          "periodo": null,
+          "eixo": "Sistemas Inteligentes",
+          "carga_horaria": 60,
+          "ementa": "Não há ementa detalhada no PPC.",
+          "plano_curso": "Não há ementa detalhada no PPC."
+        },
+        {
+          "codigo": "CFVC0",
+          "codigo_externo": "CFVC0",
+          "nome": "Cálculo com Funções de uma Variável Complexa",
+          "periodo": null,
+          "eixo": "Matemática",
+          "carga_horaria": 60,
+          "ementa": "Introdução às variáveis complexas: Funções complexas; derivabilidade; condições de Cauchy-Riemann; funções complexas elementares; integrais complexas; Teorema de Cauchy; independência do caminho; séries de Taylor e de Laurent; resíduos; aplicações.",
+          "plano_curso": "Introdução às variáveis complexas: Funções complexas; derivabilidade; condições de Cauchy-Riemann; funções complexas elementares; integrais complexas; Teorema de Cauchy; independência do caminho; séries de Taylor e de Laurent; resíduos; aplicações."
+        },
+        {
+          "codigo": "CGRA0",
+          "codigo_externo": "CGRA0",
+          "nome": "Computação Gráfica",
+          "periodo": null,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 60,
+          "ementa": "Definição de objetos gráficos planares. Modelos de Geometria. Estudo da Cor. Modelagem de objetos e construção de cenas 3D. Visualização da cena. Cenário Virtual. Câmera Virtual. Recorte, rasterização, cálculo das superfícies visíveis. Iluminação. Técnicas de Mapeamento de Texturas. Animação.",
+          "plano_curso": "Definição de objetos gráficos planares. Modelos de Geometria. Estudo da Cor. Modelagem de objetos e construção de cenas 3D. Visualização da cena. Cenário Virtual. Câmera Virtual. Recorte, rasterização, cálculo das superfícies visíveis. Iluminação. Técnicas de Mapeamento de Texturas. Animação."
+        },
+        {
+          "codigo": "DASI0",
+          "codigo_externo": "DASI0",
+          "nome": "Desenvolvimento Ágil de Sistemas",
+          "periodo": null,
+          "eixo": "Engenharia de Software e Banco de Dados",
+          "carga_horaria": 30,
+          "ementa": "Métodos tradicionais e ágeis de desenvolvimento de software. Manifesto ágil. Técnicas ágeis: Estórias dos úsuários; Casos de uso; Test Driven Development (TDD); Integração contínua; Kanban. Modelagem ágil. Métodos ágeis: Scrum, XP, FDD, Crystal, Lean, DSDM, Agile Unified Process (AUP), Framework de práticas ágeis. Métodos ágeis e usabilidade. Métodos ágeis e linhas de produto. Métodos ágeis e modelos de maturidade.",
+          "plano_curso": "Métodos tradicionais e ágeis de desenvolvimento de software. Manifesto ágil. Técnicas ágeis: Estórias dos úsuários; Casos de uso; Test Driven Development (TDD); Integração contínua; Kanban. Modelagem ágil. Métodos ágeis: Scrum, XP, FDD, Crystal, Lean, DSDM, Agile Unified Process (AUP), Framework de práticas ágeis. Métodos ágeis e usabilidade. Métodos ágeis e linhas de produto. Métodos ágeis e modelos de maturidade."
+        },
+        {
+          "codigo": "EAAU0",
+          "codigo_externo": "EAAU0",
+          "nome": "Economia Aplicada à Automação",
+          "periodo": null,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 60,
+          "ementa": "Introdução a microeconomia. Demanda e oferta de bens. Equilíbrio de mercado. Estruturas de mercado. Elementos de engenharia econômica. Investimentos. Introdução à macroeconomia: política fiscal, monetária e cambial. Modelos de crescimento econômico. Desenvolvimento econômico: noções gerais das teorias de desenvolvimento. Novas tecnologias e a nova Divisão Internacional do Trabalho. Automação Industrial e a reestruturação industrial. O quadro tecnológico brasileiro e as novas exigências tecnológicas. As experiências com a produção da Informática no Brasil. Automação e processo de trabalho: as questões da qualificação do emprego. As questões energéticas e ambientais dentro do processo de desenvolvimento econômico.",
+          "plano_curso": "Introdução a microeconomia. Demanda e oferta de bens. Equilíbrio de mercado. Estruturas de mercado. Elementos de engenharia econômica. Investimentos. Introdução à macroeconomia: política fiscal, monetária e cambial. Modelos de crescimento econômico. Desenvolvimento econômico: noções gerais das teorias de desenvolvimento. Novas tecnologias e a nova Divisão Internacional do Trabalho. Automação Industrial e a reestruturação industrial. O quadro tecnológico brasileiro e as novas exigências tecnológicas. As experiências com a produção da Informática no Brasil. Automação e processo de trabalho: as questões da qualificação do emprego. As questões energéticas e ambientais dentro do processo de desenvolvimento econômico."
+        },
+        {
+          "codigo": "EAPR0",
+          "codigo_externo": "EAPR0",
+          "nome": "Eletrônica Aplicada a Projetos",
+          "periodo": null,
+          "eixo": "Eletrônica",
+          "carga_horaria": 60,
+          "ementa": "Projeto de circuitos eletrônicos em geral, combinando eletrônica analógica, digital, sistemas microcontrolados e microprocessados, eletrônica de potência, protocolos de comunicação e transmissão cabeada e sem fio. Análise harmônica, condicionamento e filtragem de sinais. Uso de software de simulação e confecção de placas de circuito impresso. Desenvolvimento de práticas laboratoriais para validação de resultados parciais e finais. Soldagem de circuitos eletrônicos. Desenvolvimento de protótipo final da disciplina.",
+          "plano_curso": "Projeto de circuitos eletrônicos em geral, combinando eletrônica analógica, digital, sistemas microcontrolados e microprocessados, eletrônica de potência, protocolos de comunicação e transmissão cabeada e sem fio. Análise harmônica, condicionamento e filtragem de sinais. Uso de software de simulação e confecção de placas de circuito impresso. Desenvolvimento de práticas laboratoriais para validação de resultados parciais e finais. Soldagem de circuitos eletrônicos. Desenvolvimento de protótipo final da disciplina."
+        },
+        {
+          "codigo": "EDPA0",
+          "codigo_externo": "EDPA0",
+          "nome": "Equações Diferenciais Parciais",
+          "periodo": null,
+          "eixo": "Matemática",
+          "carga_horaria": 60,
+          "ementa": "Séries de Fourier; Equações diferenciais parciais; Equações da onda, do calor e de Laplace; Transformada de Fourier e sua aplicação em equações diferenciais parciais.",
+          "plano_curso": "Séries de Fourier; Equações diferenciais parciais; Equações da onda, do calor e de Laplace; Transformada de Fourier e sua aplicação em equações diferenciais parciais."
+        },
+        {
+          "codigo": "ELET2",
+          "codigo_externo": "ELET2",
+          "nome": "Eletrônica II",
+          "periodo": null,
+          "eixo": "Eletrônica",
+          "carga_horaria": 60,
+          "ementa": "Transistores de efeito de campo, polarização do FET, análise do FET para pequenos sinais, resposta de frequência do TBJ e JFET e amplificadores de potência. Simulação de circuitos e atividades de laboratório.",
+          "plano_curso": "Transistores de efeito de campo, polarização do FET, análise do FET para pequenos sinais, resposta de frequência do TBJ e JFET e amplificadores de potência. Simulação de circuitos e atividades de laboratório."
+        },
+        {
+          "codigo": "EPOT0",
+          "codigo_externo": "EPOT0",
+          "nome": "Eletrônica de Potência",
+          "periodo": null,
+          "eixo": "Eletrônica",
+          "carga_horaria": 60,
+          "ementa": "Valor médio, valor eficaz e série de Fourier. Introdução à Eletrônica de Potência. Diodos de potência: características ideais e reais. Retificadores não controlados. Parâmetros de performance de conversores eletrônicos: fator de forma, fator de ondulação, razão de retificação, fator de crista, distorção harmônica total, fator de potência. Qualidade de energia. Tiristores: características ideais e reais. Retificadores controlados. Controladores de tensão CA. Transistores de potência: características ideais e reais. Conversores CC-CC. Inversores e técnicas de comutação. Aplicações de eletrônica de potência. Proteção de dispositivos e circuitos.",
+          "plano_curso": "Valor médio, valor eficaz e série de Fourier. Introdução à Eletrônica de Potência. Diodos de potência: características ideais e reais. Retificadores não controlados. Parâmetros de performance de conversores eletrônicos: fator de forma, fator de ondulação, razão de retificação, fator de crista, distorção harmônica total, fator de potência. Qualidade de energia. Tiristores: características ideais e reais. Retificadores controlados. Controladores de tensão CA. Transistores de potência: características ideais e reais. Conversores CC-CC. Inversores e técnicas de comutação. Aplicações de eletrônica de potência. Proteção de dispositivos e circuitos."
+        },
+        {
+          "codigo": "FAGR0",
+          "codigo_externo": "FAGR0",
+          "nome": "Fundamentos do Agronegócio",
+          "periodo": null,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "Conceitos gerais. A importância do agronegócio para a dinâmica socioeconômica mundial e brasileira. Um panorama das principais cadeias produtivas do agronegócio no Brasil. Análise da competitividade do agronegócio nacional e sua inserção no mercado internacional. Estudos de caso.",
+          "plano_curso": "Conceitos gerais. A importância do agronegócio para a dinâmica socioeconômica mundial e brasileira. Um panorama das principais cadeias produtivas do agronegócio no Brasil. Análise da competitividade do agronegócio nacional e sua inserção no mercado internacional. Estudos de caso."
+        },
+        {
+          "codigo": "FFMO0",
+          "codigo_externo": "FFMO0",
+          "nome": "Fundamentos de Física Moderna",
+          "periodo": null,
+          "eixo": "Física e Química",
+          "carga_horaria": 60,
+          "ementa": "Ondas Eletromagnéticas; Ótica Geométrica; Interferência; Difração; Teoria da Relatividade Restrita; Fótons e ondas de matéria; Introdução à Teoria Quântica; Átomos, Moléculas e Matéria Condensada; Física Nuclear; Noções de Física das Partículas e Cosmologia.",
+          "plano_curso": "Ondas Eletromagnéticas; Ótica Geométrica; Interferência; Difração; Teoria da Relatividade Restrita; Fótons e ondas de matéria; Introdução à Teoria Quântica; Átomos, Moléculas e Matéria Condensada; Física Nuclear; Noções de Física das Partículas e Cosmologia."
+        },
+        {
+          "codigo": "FSSI0",
+          "codigo_externo": "FSSI0",
+          "nome": "Fundamentos de Sinais e Sistemas",
+          "periodo": null,
+          "eixo": "Controle de Processos",
+          "carga_horaria": 60,
+          "ementa": "Introdução ao estudo de sinais e sistemas. Definição e classificação de sinais. Definição e classificação de sistemas. Sistemas de tempo contínuo: integral de convolução, análise de Laplace, análise de Fourier, sistemas modelados em variáveis de estado. Sistemas de tempo discreto: soma de convolução, equações de diferenças, análise pela transformada z, análise de Fourier. Filtros e resposta em frequência. Amostragem de sinais de tempo contínuo.",
+          "plano_curso": "Introdução ao estudo de sinais e sistemas. Definição e classificação de sinais. Definição e classificação de sistemas. Sistemas de tempo contínuo: integral de convolução, análise de Laplace, análise de Fourier, sistemas modelados em variáveis de estado. Sistemas de tempo discreto: soma de convolução, equações de diferenças, análise pela transformada z, análise de Fourier. Filtros e resposta em frequência. Amostragem de sinais de tempo contínuo."
+        },
+        {
+          "codigo": "IADM0",
+          "codigo_externo": "IADM0",
+          "nome": "Introdução à Administração",
+          "periodo": null,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "Introdução à administração; escolas e contribuições à teoria geral da administração; funções básicas da administração de recursos humanos; administração de suprimentos; administração financeira: uma abordagem na empresa moderna.",
+          "plano_curso": "Introdução à administração; escolas e contribuições à teoria geral da administração; funções básicas da administração de recursos humanos; administração de suprimentos; administração financeira: uma abordagem na empresa moderna."
+        },
+        {
+          "codigo": "IDIR0",
+          "codigo_externo": "IDIR0",
+          "nome": "Introdução ao Direito",
+          "periodo": null,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "Sistema constitucional brasileiro; noções básicas de direito civil, comercial, administrativo, trabalho e tributário; regulamentação profissional.",
+          "plano_curso": "Sistema constitucional brasileiro; noções básicas de direito civil, comercial, administrativo, trabalho e tributário; regulamentação profissional."
+        },
+        {
+          "codigo": "IESE0",
+          "codigo_externo": "IESE0",
+          "nome": "Introdução à Engenharia de Segurança",
+          "periodo": null,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "Prevenção de riscos nas atividades de trabalho com vistas à defesa da integridade das pessoas. Políticas prevencionistas e normas regulamentadoras. Programas de Segurança do Trabalho. Sistemas de proteção administrativo, coletivo e individual. Legislação Acidentária. Segurança Contra Incêndio e Pânico.",
+          "plano_curso": "Prevenção de riscos nas atividades de trabalho com vistas à defesa da integridade das pessoas. Políticas prevencionistas e normas regulamentadoras. Programas de Segurança do Trabalho. Sistemas de proteção administrativo, coletivo e individual. Legislação Acidentária. Segurança Contra Incêndio e Pânico."
+        },
+        {
+          "codigo": "IIDC0",
+          "codigo_externo": "IIDC0",
+          "nome": "Introdução à Internet das Coisas",
+          "periodo": null,
+          "eixo": "Redes e Sistemas Distribuídos",
+          "carga_horaria": 45,
+          "ementa": "Introdução e definição; arquitetura; cadeia de valor; Aplicações de IoT: aplicações no ambiente industrial; carro conectado; smart energy; smart city; digital health; big data; transporte; aplicações residenciais; edifícios inteligentes; agronegócio. Internet, Redes de Computadores, Redes WiFi; Redes WFAN; redes WHAN; Redes WPAN; Proximity networks (padrão NFC); IEEE 802.15.X. Endereçamento IP.",
+          "plano_curso": "Introdução e definição; arquitetura; cadeia de valor; Aplicações de IoT: aplicações no ambiente industrial; carro conectado; smart energy; smart city; digital health; big data; transporte; aplicações residenciais; edifícios inteligentes; agronegócio. Internet, Redes de Computadores, Redes WiFi; Redes WFAN; redes WHAN; Redes WPAN; Proximity networks (padrão NFC); IEEE 802.15.X. Endereçamento IP."
+        },
+        {
+          "codigo": "IIND0",
+          "codigo_externo": "IIND0",
+          "nome": "Instrumentação Industrial",
+          "periodo": null,
+          "eixo": "Controle de Processos",
+          "carga_horaria": 60,
+          "ementa": "Sistemas digitais de aquisição de dados, condicionamento de sinal, sample-hold, conversores A/D e D/A. Controle: estudo de dispositivos típicos de controle analógico (eletro-eletrônicos, hidráulicos e pneumáticos). Controladores ON-OFF, PID, outros. Controladores digitais: aspectos de implementação, problemas ligados à quantização, escalonamento. Atuação: revisão de acionamentos, válvulas de regulação (função, princípios de funcionamento, tipos, cálculo). Dispositivos de segurança: alarmes, válvulas de segurança, etc. projeto de sistemas de controle. Aplicações dos sistemas de aquisição e processamento automático de dados.",
+          "plano_curso": "Sistemas digitais de aquisição de dados, condicionamento de sinal, sample-hold, conversores A/D e D/A. Controle: estudo de dispositivos típicos de controle analógico (eletro-eletrônicos, hidráulicos e pneumáticos). Controladores ON-OFF, PID, outros. Controladores digitais: aspectos de implementação, problemas ligados à quantização, escalonamento. Atuação: revisão de acionamentos, válvulas de regulação (função, princípios de funcionamento, tipos, cálculo). Dispositivos de segurança: alarmes, válvulas de segurança, etc. projeto de sistemas de controle. Aplicações dos sistemas de aquisição e processamento automático de dados."
+        },
+        {
+          "codigo": "IINS2",
+          "codigo_externo": "IINS2",
+          "nome": "Inglês Instrumental II",
+          "periodo": null,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "Compreensão e produção oral de textos em língua inglesa de gêneros textuais variados, com foco nos gêneros acadêmicos, científicos e profissionais. Reconhecimento das características dos gêneros textuais orais. Desenvolvimento de habilidades de audição e fala (competências e conhecimentos) através da aplicação de estratégias. Produção e retextualização oral de gêneros textuais.",
+          "plano_curso": "Compreensão e produção oral de textos em língua inglesa de gêneros textuais variados, com foco nos gêneros acadêmicos, científicos e profissionais. Reconhecimento das características dos gêneros textuais orais. Desenvolvimento de habilidades de audição e fala (competências e conhecimentos) através da aplicação de estratégias. Produção e retextualização oral de gêneros textuais."
+        },
+        {
+          "codigo": "LCAU1",
+          "codigo_externo": "LCAU1",
+          "nome": "Laboratório de Controle Automático I",
+          "periodo": null,
+          "eixo": "Controle de Processos",
+          "carga_horaria": 30,
+          "ementa": "Simulação de modelos em computadores com software e pacotes específicos. Obtenção de modelos por método de identificação. Sintonia de controladores PID. Experimentos de controle na planta industrial.",
+          "plano_curso": "Simulação de modelos em computadores com software e pacotes específicos. Obtenção de modelos por método de identificação. Sintonia de controladores PID. Experimentos de controle na planta industrial."
+        },
+        {
+          "codigo": "LCAU2",
+          "codigo_externo": "LCAU2",
+          "nome": "Laboratório de Controle Automático II",
+          "periodo": null,
+          "eixo": "Controle de Processos",
+          "carga_horaria": 30,
+          "ementa": "Análise e projeto de controladores para sistemas do tipo SISO; utilização de ferramentas de análise e projeto assistido por computador e plataforma de prototipagem eletrônica para desenvolvimento de controladores; Experimentos com sistemas físicos.",
+          "plano_curso": "Análise e projeto de controladores para sistemas do tipo SISO; utilização de ferramentas de análise e projeto assistido por computador e plataforma de prototipagem eletrônica para desenvolvimento de controladores; Experimentos com sistemas físicos."
+        },
+        {
+          "codigo": "LEPO0",
+          "codigo_externo": "LEPO0",
+          "nome": "Laboratório de Eletrônica de Potência",
+          "periodo": null,
+          "eixo": "Eletrônica",
+          "carga_horaria": 30,
+          "ementa": "Atividades de laboratório relacionadas à Eletrônica de Potência.",
+          "plano_curso": "Atividades de laboratório relacionadas à Eletrônica de Potência."
+        },
+        {
+          "codigo": "LIBR1",
+          "codigo_externo": "LIBR1",
+          "nome": "Libras I",
+          "periodo": null,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "Língua Brasileira de Sinais - Libras e suas especificidades. História, cultura e identidade dos surdos. Parâmetros linguísticos. Sinais temáticos contextualizados com atividades e práticas de sinalização. Abordagens de comunicação inicial com os surdos.",
+          "plano_curso": "Língua Brasileira de Sinais - Libras e suas especificidades. História, cultura e identidade dos surdos. Parâmetros linguísticos. Sinais temáticos contextualizados com atividades e práticas de sinalização. Abordagens de comunicação inicial com os surdos."
+        },
+        {
+          "codigo": "LIBR2",
+          "codigo_externo": "LIBR2",
+          "nome": "Libras II",
+          "periodo": null,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "A evolução histórica até os dias atuais. Filosofias educacionais em relação aos surdos. Aprofundamento das práticas conversacionais em Libras, em suas diversas formas de comunicação, contextualizado por situações do cotidiano em espaços diversos.",
+          "plano_curso": "A evolução histórica até os dias atuais. Filosofias educacionais em relação aos surdos. Aprofundamento das práticas conversacionais em Libras, em suas diversas formas de comunicação, contextualizado por situações do cotidiano em espaços diversos."
+        },
+        {
+          "codigo": "LIIN0",
+          "codigo_externo": "LIIN0",
+          "nome": "Laboratório de Instrumentação Industrial",
+          "periodo": null,
+          "eixo": "Controle de Processos",
+          "carga_horaria": 30,
+          "ementa": "Atividades de laboratório relacionadas à Instrumentação Industrial.",
+          "plano_curso": "Atividades de laboratório relacionadas à Instrumentação Industrial."
+        },
+        {
+          "codigo": "LPRO0",
+          "codigo_externo": "LPRO0",
+          "nome": "Linguagens de Programação",
+          "periodo": null,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 60,
+          "ementa": "Evolução das principais linguagens de programação. Noções de sintaxe e semântica. Análise sintática e léxica. Nomes, vinculações, escopo e ciclo de vid. Tipos de dados: verificação de tipos, tipos de dados primitivos, tipos de dados não primitivos, tipagem fraca e forte. Expressões e instruções de atribuição. Estruturas de controle no nível de instrução. Módulos funcionais ou subprogramas: fundamentos; ambientes de referências locais; métodos de passagem de parâmetros; parâmetros como subprogramas; subprogramas genéricos; operadores e subprogramas sobrecarregados. Tipos abstratos de dados. Suporte para programação orientada a objetos. Concorrência: introdução, semáforos, monitores e linhas de execução. Tratamento de exceções. Tratamento de eventos. Linguagens de programação funcional. Linguagens de programação Lógica.",
+          "plano_curso": "Evolução das principais linguagens de programação. Noções de sintaxe e semântica. Análise sintática e léxica. Nomes, vinculações, escopo e ciclo de vid. Tipos de dados: verificação de tipos, tipos de dados primitivos, tipos de dados não primitivos, tipagem fraca e forte. Expressões e instruções de atribuição. Estruturas de controle no nível de instrução. Módulos funcionais ou subprogramas: fundamentos; ambientes de referências locais; métodos de passagem de parâmetros; parâmetros como subprogramas; subprogramas genéricos; operadores e subprogramas sobrecarregados. Tipos abstratos de dados. Suporte para programação orientada a objetos. Concorrência: introdução, semáforos, monitores e linhas de execução. Tratamento de exceções. Tratamento de eventos. Linguagens de programação funcional. Linguagens de programação Lógica."
+        },
+        {
+          "codigo": "LQUI0",
+          "codigo_externo": "LQUI0",
+          "nome": "Laboratório de Química",
+          "periodo": null,
+          "eixo": "Física e Química",
+          "carga_horaria": 30,
+          "ementa": "Organização e funcionamento de um laboratório. Normas e procedimentos de segurança, incluindo primeiros socorros. Técnicas básicas de laboratório, manuseio de vidrarias e equipamentos de uso comum. Avaliação de resultados experimentais. Propriedades físico-químicas dos compostos. Soluções. Reações Químicas. Eletroquímica e Corrosão.",
+          "plano_curso": "Organização e funcionamento de um laboratório. Normas e procedimentos de segurança, incluindo primeiros socorros. Técnicas básicas de laboratório, manuseio de vidrarias e equipamentos de uso comum. Avaliação de resultados experimentais. Propriedades físico-químicas dos compostos. Soluções. Reações Químicas. Eletroquímica e Corrosão."
+        },
+        {
+          "codigo": "MADE0",
+          "codigo_externo": "MADE0",
+          "nome": "Modelagem e Avaliação de Desempenho",
+          "periodo": null,
+          "eixo": "Redes e Sistemas Distribuídos",
+          "carga_horaria": 60,
+          "ementa": "Noções de teoria de Fila: sistemas M/M/I, M/M/c e M/M/k. Métodos de modelagem e avaliação de desempenho para diferentes estruturas de produção (linhas de fabricação e montagem, job-shops): índices de desempenho (taxa de produção, tempo de resposta, estoque em processo, taxa de utilização de recursos); Métodos analíticos (cadeias de Markov, redes de Petri temporizadas, Redes de Filas, Métodos dedicados); Simulação. Exemplos de aplicação.",
+          "plano_curso": "Noções de teoria de Fila: sistemas M/M/I, M/M/c e M/M/k. Métodos de modelagem e avaliação de desempenho para diferentes estruturas de produção (linhas de fabricação e montagem, job-shops): índices de desempenho (taxa de produção, tempo de resposta, estoque em processo, taxa de utilização de recursos); Métodos analíticos (cadeias de Markov, redes de Petri temporizadas, Redes de Filas, Métodos dedicados); Simulação. Exemplos de aplicação."
+        },
+        {
+          "codigo": "MCCE0",
+          "codigo_externo": "MCCE0",
+          "nome": "Modelagem e Controle de Conversores Estáticos",
+          "periodo": null,
+          "eixo": "Eletrônica",
+          "carga_horaria": 60,
+          "ementa": "Modelo de conversores estáticos empregando a técnica da média de espaço de estados. Modelagem de conversores utilizando o conceito de funções de chaveamento. A célula de comutação (célula PWM). Modelo da célula PWM em grandes sinais e pequenos sinais. Modelagem de conversores estáticos usando o modelo da célula PWM. Controlador em modo tensão (duty-cycle control). Controlador em modo corrente (current-mode control). Projeto de controladores baseado no domínio da freqüência. Introdução ao controle digital de conversores estáticos.",
+          "plano_curso": "Modelo de conversores estáticos empregando a técnica da média de espaço de estados. Modelagem de conversores utilizando o conceito de funções de chaveamento. A célula de comutação (célula PWM). Modelo da célula PWM em grandes sinais e pequenos sinais. Modelagem de conversores estáticos usando o modelo da célula PWM. Controlador em modo tensão (duty-cycle control). Controlador em modo corrente (current-mode control). Projeto de controladores baseado no domínio da freqüência. Introdução ao controle digital de conversores estáticos."
+        },
+        {
+          "codigo": "MELE0",
+          "codigo_externo": "MELE0",
+          "nome": "Materiais Elétricos",
+          "periodo": null,
+          "eixo": "Eletricidade",
+          "carga_horaria": 30,
+          "ementa": "Elementos de ciências dos materiais. Tecnologia dos materiais elétricos. Átomos e elétrons; compostos iônicos e covalentes. Cristais e estruturas cristalinas. Momento dipolar, elétrons nos sólidos, defeitos nos sólidos. Materiais isolantes e condutores. Materiais dielétricos e piezoelétricos. Introdução à física do estado sólido. Introdução à microeletrônica. Tecnologia dos materiais magnéticos.",
+          "plano_curso": "Elementos de ciências dos materiais. Tecnologia dos materiais elétricos. Átomos e elétrons; compostos iônicos e covalentes. Cristais e estruturas cristalinas. Momento dipolar, elétrons nos sólidos, defeitos nos sólidos. Materiais isolantes e condutores. Materiais dielétricos e piezoelétricos. Introdução à física do estado sólido. Introdução à microeletrônica. Tecnologia dos materiais magnéticos."
+        },
+        {
+          "codigo": "MNUM2",
+          "codigo_externo": "MNUM2",
+          "nome": "Métodos Numéricos II",
+          "periodo": null,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 30,
+          "ementa": "Métodos iterativos para a solução de sistemas lineares. Métodos para resolução de sistemas não lineares. Resolução numérica de problemas de valor inicial.",
+          "plano_curso": "Métodos iterativos para a solução de sistemas lineares. Métodos para resolução de sistemas não lineares. Resolução numérica de problemas de valor inicial."
+        },
+        {
+          "codigo": "NQIN0",
+          "codigo_externo": "NQIN0",
+          "nome": "Normalização e Qualidade Industrial",
+          "periodo": null,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "Normalização: fundamentos e conceitos; normalização a nível nacional, internacional e empresarial; elaboração de normas técnicas e especificações; aspectos básicos da qualidade industrial; controle estatístico de processo; gráficos e cartas de controle; normas básicas pra planos de amostragem e guias de utilização.",
+          "plano_curso": "Normalização: fundamentos e conceitos; normalização a nível nacional, internacional e empresarial; elaboração de normas técnicas e especificações; aspectos básicos da qualidade industrial; controle estatístico de processo; gráficos e cartas de controle; normas básicas pra planos de amostragem e guias de utilização."
+        },
+        {
+          "codigo": "OEMP0",
+          "codigo_externo": "OEMP0",
+          "nome": "Organização Empresarial",
+          "periodo": null,
+          "eixo": "Humanidades e Ciências Sociais Aplicadas à Engenharia",
+          "carga_horaria": 30,
+          "ementa": "Tipos de empresas e estruturas organizacionais. Diagramas de montagem e de processo. Otimização do ciclo produtivo e disposição de equipamentos. Planejamento e controle da produção; sistema de controle e operacionalização. Organogramas. Técnicas de identificação e aproveitamento de oportunidades, na aquisição e gerenciamento dos recursos necessários ao negócio. Plano de negócios.",
+          "plano_curso": "Tipos de empresas e estruturas organizacionais. Diagramas de montagem e de processo. Otimização do ciclo produtivo e disposição de equipamentos. Planejamento e controle da produção; sistema de controle e operacionalização. Organogramas. Técnicas de identificação e aproveitamento de oportunidades, na aquisição e gerenciamento dos recursos necessários ao negócio. Plano de negócios."
+        },
+        {
+          "codigo": "PDIM0",
+          "codigo_externo": "PDIM0",
+          "nome": "Processamento Digital de Imagens",
+          "periodo": null,
+          "eixo": "Fundamentos de Engenharia de Computação",
+          "carga_horaria": 60,
+          "ementa": "Introdução e noções de Processamento Digital de Imagens. Interação entre as áreas relacionadas a sistemas de imagem digital. Áreas de aplicação. Fundamentos: sistema de Visão Humana; modelos de cores; amostragem e quantização; propriedades do Pixel. Filtragem no Domínio Espacial: princípios; funções de transformação de intensidade; processamento de Histograma; operações lógicas e aritméticas; filtros de suavização no domínio espacial; filtros de realce no domínio espacial. Filtragem no domínio da frequência: conceitos preliminares; transformada discreta de Fourier; filtros de suavização (passa-baixa); filtros de realce (passa-alta); filtros seletivos (passa-banda, elimina-faixa). Restauração e reconstrução de imagens: modelos de ruído; restauração na presença de ruído. Processamento morfológico de imagens: operações lógicas em imagens binárias; dilatação e erosão; abertura e fecho; algoritmos morfológicos básicos. Segmentação de Imagens: princípios; Limiarização-Thresholding; crescimento de região. Compressão de Imagens: redundância na imagem; métodos de compressão de imagem; métodos de codificação.",
+          "plano_curso": "Introdução e noções de Processamento Digital de Imagens. Interação entre as áreas relacionadas a sistemas de imagem digital. Áreas de aplicação. Fundamentos: sistema de Visão Humana; modelos de cores; amostragem e quantização; propriedades do Pixel. Filtragem no Domínio Espacial: princípios; funções de transformação de intensidade; processamento de Histograma; operações lógicas e aritméticas; filtros de suavização no domínio espacial; filtros de realce no domínio espacial. Filtragem no domínio da frequência: conceitos preliminares; transformada discreta de Fourier; filtros de suavização (passa-baixa); filtros de realce (passa-alta); filtros seletivos (passa-banda, elimina-faixa). Restauração e reconstrução de imagens: modelos de ruído; restauração na presença de ruído. Processamento morfológico de imagens: operações lógicas em imagens binárias; dilatação e erosão; abertura e fecho; algoritmos morfológicos básicos. Segmentação de Imagens: princípios; Limiarização-Thresholding; crescimento de região. Compressão de Imagens: redundância na imagem; métodos de compressão de imagem; métodos de codificação."
+        },
+        {
+          "codigo": "POPE0",
+          "codigo_externo": "POPE0",
+          "nome": "Pesquisa Operacional",
+          "periodo": null,
+          "eixo": "Sistemas Inteligentes",
+          "carga_horaria": 60,
+          "ementa": "Conceitos básicos em Pesquisa Operacional: as origens da Pesquisa Operacional; aplicações de Pesquisa Operacional. Revisão de Álgebra Linear: solução de sistemas de equações lineares; base canônica; operações elementares sobre linhas e colunas de matrizes. Formulação matemática de problemas de programação linear: técnicas de construção de modelos; solução gráfica de modelos no espaço R2. O algoritmo Simplex: solução Básica e solução Básica viável de um problema de programação linear; o Simplex algébrico; geometria do Simplex; complexidade do algoritmo Simplex; Prática com ferramenta computacional. Algoritmo Simplex revisado: vantagens do Simplex revisado; aplicações, exemplos práticos. Análise de sensibilidade e paramétrica: aplicações e casos específicos de análise de sensibilidade; mudança de custo básico e não-básico; inclusão de novas variáveis; inclusão de novas restrições. Dualidade: caracterização de primal e dual de um problema; método para obtenção do dual a partir do primal de um problema de programação linear; o algoritmo Dual-Simplex; otimalidade e interpretação econômica do dual.",
+          "plano_curso": "Conceitos básicos em Pesquisa Operacional: as origens da Pesquisa Operacional; aplicações de Pesquisa Operacional. Revisão de Álgebra Linear: solução de sistemas de equações lineares; base canônica; operações elementares sobre linhas e colunas de matrizes. Formulação matemática de problemas de programação linear: técnicas de construção de modelos; solução gráfica de modelos no espaço R2. O algoritmo Simplex: solução Básica e solução Básica viável de um problema de programação linear; o Simplex algébrico; geometria do Simplex; complexidade do algoritmo Simplex; Prática com ferramenta computacional. Algoritmo Simplex revisado: vantagens do Simplex revisado; aplicações, exemplos práticos. Análise de sensibilidade e paramétrica: aplicações e casos específicos de análise de sensibilidade; mudança de custo básico e não-básico; inclusão de novas variáveis; inclusão de novas restrições. Dualidade: caracterização de primal e dual de um problema; método para obtenção do dual a partir do primal de um problema de programação linear; o algoritmo Dual-Simplex; otimalidade e interpretação econômica do dual."
+        },
+        {
+          "codigo": "QUIM0",
+          "codigo_externo": "QUIM0",
+          "nome": "Química",
+          "periodo": null,
+          "eixo": "Física e Química",
+          "carga_horaria": 60,
+          "ementa": "Estrutura atômica. Propriedades periódicas dos elementos. Propriedades físico-químicas dos elementos e compostos. Ligações químicas. Reações químicas. Cálculos estequiométricos. Teoria ácido-base. Soluções. Termoquímica. Eletroquímica.",
+          "plano_curso": "Estrutura atômica. Propriedades periódicas dos elementos. Propriedades físico-químicas dos elementos e compostos. Ligações químicas. Reações químicas. Cálculos estequiométricos. Teoria ácido-base. Soluções. Termoquímica. Eletroquímica."
+        },
+        {
+          "codigo": "RNAR0",
+          "codigo_externo": "RNAR0",
+          "nome": "Redes Neurais Artificiais",
+          "periodo": null,
+          "eixo": "Sistemas Inteligentes",
+          "carga_horaria": 60,
+          "ementa": "Introdução à Computação de Redes Neurais: Definição e Características. O Cérebro e a Mente Base Neurofísica. Histórico e Evolução. Neurônio Biológico e Neurônio Matemático. Fundamentos da Computação de Redes Neurais: Terminologia e Conceitos. Topologia das Redes. Dinâmica de Computação. Paradigmas de Aprendizagem. Domínios Favoráveis a Aplicações. Modelos de Regressão e Classificadores Bayesianos. Rede Perceptrons: Introdução às Redes Lineares. Topologia da Rede Perceptron. Dinâmica de Computação. Problema do OU-Exclusivo Separabilidade Linear. Dinâmica de Aprendizagem. Regra Delta Modelo Adaline. Algoritmo Back-Propagation: Introdução Redes Multi-camadas. Topologia. Regra Delta Generalizada. Deficiências e Limitações. Modelo Counter-Propagation. Redes Recorrentes: Introdução Máquinas Estocásticas. Rede Hopfield e Hopfield-Tank. Conversor Analógico-Digital. Problema do Caixeiro Viajante. Máquina de Boltzman. Bi-Seccionamento de Grafos. Redes de Organização Própria: Aprendizagem Competitiva. Mapas de Kohonen. Redes ART Teoria da Ressonância Adaptativa. Aprendizagem Hebbiana. Memória Associativa. Outros Modelos: Rede RBF Funções Radiais de Base. Rede Cognitron e Neocognitron. Máquinas de Vetor de Suporte.",
+          "plano_curso": "Introdução à Computação de Redes Neurais: Definição e Características. O Cérebro e a Mente Base Neurofísica. Histórico e Evolução. Neurônio Biológico e Neurônio Matemático. Fundamentos da Computação de Redes Neurais: Terminologia e Conceitos. Topologia das Redes. Dinâmica de Computação. Paradigmas de Aprendizagem. Domínios Favoráveis a Aplicações. Modelos de Regressão e Classificadores Bayesianos. Rede Perceptrons: Introdução às Redes Lineares. Topologia da Rede Perceptron. Dinâmica de Computação. Problema do OU-Exclusivo Separabilidade Linear. Dinâmica de Aprendizagem. Regra Delta Modelo Adaline. Algoritmo Back-Propagation: Introdução Redes Multi-camadas. Topologia. Regra Delta Generalizada. Deficiências e Limitações. Modelo Counter-Propagation. Redes Recorrentes: Introdução Máquinas Estocásticas. Rede Hopfield e Hopfield-Tank. Conversor Analógico-Digital. Problema do Caixeiro Viajante. Máquina de Boltzman. Bi-Seccionamento de Grafos. Redes de Organização Própria: Aprendizagem Competitiva. Mapas de Kohonen. Redes ART Teoria da Ressonância Adaptativa. Aprendizagem Hebbiana. Memória Associativa. Outros Modelos: Rede RBF Funções Radiais de Base. Rede Cognitron e Neocognitron. Máquinas de Vetor de Suporte."
+        },
+        {
+          "codigo": "RSSF0",
+          "codigo_externo": "RSSF0",
+          "nome": "Redes de Sensores Sem Fio",
+          "periodo": null,
+          "eixo": "Redes e Sistemas Distribuídos",
+          "carga_horaria": 60,
+          "ementa": "Redes de sensores sem fio: Aplicações de redes de sensores sem fio. Plataformas de sensoriamento. O padrão IEEE 802.15.4. Protocolos do nível MAC. Protocolos de roteamento. Linguagens e sistemas operacionais para RSSF. Laboratório de programação de RSSF.",
+          "plano_curso": "Redes de sensores sem fio: Aplicações de redes de sensores sem fio. Plataformas de sensoriamento. O padrão IEEE 802.15.4. Protocolos do nível MAC. Protocolos de roteamento. Linguagens e sistemas operacionais para RSSF. Laboratório de programação de RSSF."
+        },
+        {
+          "codigo": "SOPE2",
+          "codigo_externo": "SOPE2",
+          "nome": "Sistemas Operacionais II",
+          "periodo": null,
+          "eixo": "Redes e Sistemas Distribuídos",
+          "carga_horaria": 30,
+          "ementa": "Estudo do código fonte de um sistema operacional. Estudo do código-fonte do núcleo do sistema operacional Linux ou Minix, relacionando as partes do código com os principais conceitos estudados na disciplina Sistemas Operacionais. Desenvolvimento de Projetos de Sistemas Operacionais. Desenvolvimento de um projeto de modificação ou monitoramento do sistema operacional Linux (ou Minix), utilizando paradigmas estudados e tecnologias emergentes.",
+          "plano_curso": "Estudo do código fonte de um sistema operacional. Estudo do código-fonte do núcleo do sistema operacional Linux ou Minix, relacionando as partes do código com os principais conceitos estudados na disciplina Sistemas Operacionais. Desenvolvimento de Projetos de Sistemas Operacionais. Desenvolvimento de um projeto de modificação ou monitoramento do sistema operacional Linux (ou Minix), utilizando paradigmas estudados e tecnologias emergentes."
+        }
+      ],
+      "dependencias": [
+        {
+          "disciplina_codigo": "CFVV1",
+          "dependencia_codigo": "CFVR0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "CFVV1",
+          "dependencia_codigo": "GAAL0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ISER0",
+          "dependencia_codigo": "CFVR0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "MDIS0",
+          "dependencia_codigo": "LFCO0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "CFVV2",
+          "dependencia_codigo": "CFVV1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "CFVV2",
+          "dependencia_codigo": "ISER0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "EDOR0",
+          "dependencia_codigo": "CFVV1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "EDOR0",
+          "dependencia_codigo": "ISER0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ESTA0",
+          "dependencia_codigo": "ISER0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ALIN0",
+          "dependencia_codigo": "GAAL0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "CFVC0",
+          "dependencia_codigo": "CFVV2",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "EDPA0",
+          "dependencia_codigo": "EDOR0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "FOFT0",
+          "dependencia_codigo": "EDOR0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "FOFT0",
+          "dependencia_codigo": "FMEC0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "FEOF0",
+          "dependencia_codigo": "FOFT0",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "FELE0",
+          "dependencia_codigo": "FOFT0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "FELE0",
+          "dependencia_codigo": "CFVV2",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "FEEL0",
+          "dependencia_codigo": "FELE0",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "LQUI0",
+          "dependencia_codigo": "QUIM0",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "FFMO0",
+          "dependencia_codigo": "FELE0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "FMEC0",
+          "dependencia_codigo": "CFVR0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "FMEC0",
+          "dependencia_codigo": "GAAL0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "BDAD0",
+          "dependencia_codigo": "APCO0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "BDAD0",
+          "dependencia_codigo": "POOB0",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "DWEB2",
+          "dependencia_codigo": "DWEB1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "DWEB2",
+          "dependencia_codigo": "BDAD0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "DWEB2",
+          "dependencia_codigo": "POOB0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ESOF1",
+          "dependencia_codigo": "DWEB2",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ESOF2",
+          "dependencia_codigo": "ESOF1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "PDMO0",
+          "dependencia_codigo": "DWEB2",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "SOPE1",
+          "dependencia_codigo": "APCO0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "SOPE1",
+          "dependencia_codigo": "EDOR0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "RCOM0",
+          "dependencia_codigo": "APCO0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "RCOM0",
+          "dependencia_codigo": "EDOR0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "STRE0",
+          "dependencia_codigo": "SOPE1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "LSTR0",
+          "dependencia_codigo": "STRE0",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "SDIS0",
+          "dependencia_codigo": "RCOM0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "SDIS0",
+          "dependencia_codigo": "SOPE1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "AGRA0",
+          "dependencia_codigo": "APAL0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "PSEM0",
+          "dependencia_codigo": "ELET1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "PSEM0",
+          "dependencia_codigo": "SDIG0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "LPSE0",
+          "dependencia_codigo": "PSEM0",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "COMP0",
+          "dependencia_codigo": "TCOM0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "IART0",
+          "dependencia_codigo": "AGRA0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ACEL1",
+          "dependencia_codigo": "EDOR0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ACEL1",
+          "dependencia_codigo": "FOFT0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "LCEL0",
+          "dependencia_codigo": "ACEL1",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "ELET1",
+          "dependencia_codigo": "ACEL1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "LELE1",
+          "dependencia_codigo": "ELET1",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "SDIG0",
+          "dependencia_codigo": "ELET1",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "ELET2",
+          "dependencia_codigo": "ELET1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELET2",
+          "dependencia_codigo": "LELE1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELET2",
+          "dependencia_codigo": "ACEL2",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "EPOT0",
+          "dependencia_codigo": "ELET1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "EPOT0",
+          "dependencia_codigo": "FSSI0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "LEPO0",
+          "dependencia_codigo": "EPOT0",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "EAPR0",
+          "dependencia_codigo": "EPOT0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "EAPR0",
+          "dependencia_codigo": "PSEM0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "EAPR0",
+          "dependencia_codigo": "LELE1",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "MCCE0",
+          "dependencia_codigo": "EPOT0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "MCCE0",
+          "dependencia_codigo": "FSSI0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "FSSI0",
+          "dependencia_codigo": "EDOR0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "FSSI0",
+          "dependencia_codigo": "ALIN0",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "CAUT1",
+          "dependencia_codigo": "FSSI0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "LCAU1",
+          "dependencia_codigo": "CAUT1",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "CAUT2",
+          "dependencia_codigo": "CAUT1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "LCAU2",
+          "dependencia_codigo": "CAUT1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "LCAU2",
+          "dependencia_codigo": "LCAU1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "LCAU2",
+          "dependencia_codigo": "CAUT2",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "IIND0",
+          "dependencia_codigo": "CAUT1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "LIIN0",
+          "dependencia_codigo": "CAUT1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "LIIN0",
+          "dependencia_codigo": "IIND0",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "BDID0",
+          "dependencia_codigo": "BDAD0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "BDID0",
+          "dependencia_codigo": "IIDC0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "MADE0",
+          "dependencia_codigo": "RCOM0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "RSSF0",
+          "dependencia_codigo": "RCOM0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "SOPE2",
+          "dependencia_codigo": "SOPE1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "CEVO0",
+          "dependencia_codigo": "APAL0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "POPE0",
+          "dependencia_codigo": "MNUM1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "POPE0",
+          "dependencia_codigo": "GAAL0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "RNAR0",
+          "dependencia_codigo": "APAL0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "IINS2",
+          "dependencia_codigo": "IINS1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "LIBR2",
+          "dependencia_codigo": "LIBR1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "MELE0",
+          "dependencia_codigo": "QUIM0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "MELE0",
+          "dependencia_codigo": "FOFT0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ACEL2",
+          "dependencia_codigo": "ACEL1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "LPRO0",
+          "dependencia_codigo": "AEDA0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "CGRA0",
+          "dependencia_codigo": "APAL0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "CGRA0",
+          "dependencia_codigo": "ALIN0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "CGRA0",
+          "dependencia_codigo": "MNUM1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "MNUM2",
+          "dependencia_codigo": "MNUM1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "PDIM0",
+          "dependencia_codigo": "APAL0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "PDIM0",
+          "dependencia_codigo": "ALIN0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "PDIM0",
+          "dependencia_codigo": "MNUM1",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "DASI0",
+          "dependencia_codigo": "AEDA0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "APAL0",
+          "dependencia_codigo": "AEDA0",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "APAL0",
+          "dependencia_codigo": "POOB0",
+          "tipo": "PRE"
+        }
+      ],
+      "ofertas": [],
+      "ja_cadastradas": {
+        "disciplinas": [],
+        "dependencias": [],
+        "ofertas": []
+      }
+    }
+  },
+  "relatorio_auditoria": {
+    "status_consenso": "DESEMPATADO_PELA_3A_IA",
+    "houve_divergencia": true,
+    "total_divergencias_detectadas": 31,
+    "simulado": false,
+    "alerta_instrucao_suspeita": false,
+    "documento_entrada": {
+      "formato": "pdf",
+      "paginas": 190,
+      "paginas_ocr": 0,
+      "recortado_por_tamanho": true,
+      "caracteres": 124437
+    },
+    "modelos": {
+      "ia1": {
+        "provider": "openrouter",
+        "model": "nvidia/nemotron-3.5-super-vl:free",
+        "verificacao": {
+          "nome_curso_identificado": "Engenharia de Computação",
+          "regra_conversao_creditos": "Horas já explícitas no PPC (não há conversão de créditos)",
+          "total_periodos_obrigatorios": 10,
+          "total_obrigatorias_contadas": 50,
+          "total_optativas_contadas": 33,
+          "observacoes": "Códigos normalizados removendo símbolos (ex.: DCC-101 -> DCC101). Requisitos não-disciplinares (ex.: 1.200 horas cursadas) não existem no PPC. TCC I/II e Estágio Supervisionado aparecem como atividades obrigatórias do curso, não como disciplinas de período, portanto não entram na lista de disciplinas. Disciplinas optativas recebem periodo: null. Disciplinas com natureza 'Optativa' ou 'Eletiva' no PPC são classificadas como optativas (periodo: null) mesmo quando listadas em quadros de período."
+        }
+      },
+      "ia2": {
+        "provider": "openrouter",
+        "model": "nvidia/nemotron-3.5-super-vl:free",
+        "verificacao": {
+          "nome_curso_identificado": "Engenharia de Computação",
+          "regra_conversao_creditos": "O PPC expressa carga horária diretamente em horas (ex.: 60,0 horas / 50,0 horas-aula) e horas-aula; não há conversão por créditos. Utiliza-se o campo HORAS (inteiro) como carga_horaria.",
+          "total_periodos_obrigatorios": 10,
+          "total_obrigatorias_contadas": 57,
+          "total_optativas_contadas": 31,
+          "observacoes": "Códigos institucionais com traço (ex.: CFVR-0) foram normalizados removendo o traço e adicionando sufixo numérico quando necessário (ex.: CFVR0). Requisitos de carga horária acumulada (ex.: 1.200 horas) não aparecem como dependências; foram mantidos apenas no texto da ementa quando mencionados. Disciplinas com Característica 'Optativa' ou listadas no Quadro 15 recebem periodo: null. Disciplinas obrigatórias recebem período conforme Quadro 12 e Quadros 16-25. TCC aparece como atividade obrigatória (não disciplina) e foi excluída do array de disciplinas."
+        }
+      },
+      "ia3": {
+        "provider": "gemini",
+        "model": "gemini-3.6-flash"
+      }
+    },
+    "divergencias_iniciais": {
+      "curso_divergente": null,
+      "disciplinas": [
+        {
+          "id_divergencia": "DISC_01",
+          "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "codigo_sugerido": "AEDA0",
+          "ia1": {
+            "codigo": "AEDA0",
+            "codigo_externo": "AEDA0",
+            "nome": "Algoritmos e Estruturas de Dados",
+            "periodo": 2,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não há ementa detalhada no PPC."
+          },
+          "ia2": {
+            "codigo": "AEDA0",
+            "codigo_externo": "AEDA0",
+            "nome": "Algoritmos e Estruturas de Dados",
+            "periodo": 2,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não detalhada no Quadro 12 fornecido."
+          }
+        },
+        {
+          "id_divergencia": "DISC_02",
+          "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "codigo_sugerido": "POOB0",
+          "ia1": {
+            "codigo": "POOB0",
+            "codigo_externo": "POOB0",
+            "nome": "Programação Orientada a Objetos",
+            "periodo": 3,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não há ementa detalhada no PPC."
+          },
+          "ia2": {
+            "codigo": "POOB0",
+            "codigo_externo": "POOB0",
+            "nome": "Programação Orientada a Objetos",
+            "periodo": 3,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não detalhada no Quadro 12 fornecido."
+          }
+        },
+        {
+          "id_divergencia": "DISC_03",
+          "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "codigo_sugerido": "APAL0",
+          "ia1": {
+            "codigo": "APAL0",
+            "codigo_externo": "APAL0",
+            "nome": "Análise e Projeto de Algoritmos",
+            "periodo": 4,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não há ementa detalhada no PPC."
+          },
+          "ia2": {
+            "codigo": "APAL0",
+            "codigo_externo": "APAL0",
+            "nome": "Análise e Projeto de Algoritmos",
+            "periodo": 4,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não detalhada no Quadro 12 fornecido."
+          }
+        },
+        {
+          "id_divergencia": "DISC_04",
+          "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "codigo_sugerido": "MNUM1",
+          "ia1": {
+            "codigo": "MNUM1",
+            "codigo_externo": "MNUM1",
+            "nome": "Métodos Numéricos I",
+            "periodo": 5,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não há ementa detalhada no PPC."
+          },
+          "ia2": {
+            "codigo": "MNUM1",
+            "codigo_externo": "MNUM1",
+            "nome": "Métodos Numéricos I",
+            "periodo": 5,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não detalhada no Quadro 12 fornecido."
+          }
+        },
+        {
+          "id_divergencia": "DISC_05",
+          "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "codigo_sugerido": "LFAU0",
+          "ia1": {
+            "codigo": "LFAU0",
+            "codigo_externo": "LFAU0",
+            "nome": "Linguagens Formais e Autômatos",
+            "periodo": 6,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não há ementa detalhada no PPC."
+          },
+          "ia2": {
+            "codigo": "LFAU0",
+            "codigo_externo": "LFAU0",
+            "nome": "Linguagens Formais e Autômatos",
+            "periodo": 6,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não detalhada no Quadro 12 fornecido."
+          }
+        },
+        {
+          "id_divergencia": "DISC_06",
+          "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "codigo_sugerido": "OCOM0",
+          "ia1": {
+            "codigo": "OCOM0",
+            "codigo_externo": "OCOM0",
+            "nome": "Organização de Computadores",
+            "periodo": 6,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não há ementa detalhada no PPC."
+          },
+          "ia2": {
+            "codigo": "OCOM0",
+            "codigo_externo": "OCOM0",
+            "nome": "Organização de Computadores",
+            "periodo": 6,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não detalhada no Quadro 12 fornecido."
+          }
+        },
+        {
+          "id_divergencia": "DISC_07",
+          "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "codigo_sugerido": "ACOM0",
+          "ia1": {
+            "codigo": "ACOM0",
+            "codigo_externo": "ACOM0",
+            "nome": "Arquitetura de Computadores",
+            "periodo": 7,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não há ementa detalhada no PPC."
+          },
+          "ia2": {
+            "codigo": "ACOM0",
+            "codigo_externo": "ACOM0",
+            "nome": "Arquitetura de Computadores",
+            "periodo": 7,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não detalhada no Quadro 12 fornecido."
+          }
+        },
+        {
+          "id_divergencia": "DISC_08",
+          "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "codigo_sugerido": "TCOM0",
+          "ia1": {
+            "codigo": "TCOM0",
+            "codigo_externo": "TCOM0",
+            "nome": "Teoria da Computação",
+            "periodo": 7,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não há ementa detalhada no PPC."
+          },
+          "ia2": {
+            "codigo": "TCOM0",
+            "codigo_externo": "TCOM0",
+            "nome": "Teoria da Computação",
+            "periodo": 7,
+            "eixo": "Fundamentos de Engenharia de Computação",
+            "carga_horaria": 60,
+            "ementa": "Não detalhada no Quadro 12 fornecido."
+          }
+        },
+        {
+          "id_divergencia": "DISC_09",
+          "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "codigo_sugerido": "IART0",
+          "ia1": {
+            "codigo": "IART0",
+            "codigo_externo": "IART0",
+            "nome": "Inteligência Artificial",
+            "periodo": 8,
+            "eixo": "Sistemas Inteligentes",
+            "carga_horaria": 60,
+            "ementa": "Não há ementa detalhada no PPC."
+          },
+          "ia2": {
+            "codigo": "IART0",
+            "codigo_externo": "IART0",
+            "nome": "Inteligência Artificial",
+            "periodo": 8,
+            "eixo": "Sistemas Inteligentes",
+            "carga_horaria": 60,
+            "ementa": "Não detalhada no Quadro 12 fornecido."
+          }
+        },
+        {
+          "id_divergencia": "DISC_10",
+          "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "codigo_sugerido": "CEVO0",
+          "ia1": {
+            "codigo": "CEVO0",
+            "codigo_externo": "CEVO0",
+            "nome": "Computação Evolucionista",
+            "periodo": null,
+            "eixo": "Sistemas Inteligentes",
+            "carga_horaria": 60,
+            "ementa": "Não há ementa detalhada no PPC."
+          },
+          "ia2": {
+            "codigo": "CEVO0",
+            "codigo_externo": "CEVO0",
+            "nome": "Computação Evolucionista",
+            "periodo": null,
+            "eixo": "Sistemas Inteligentes",
+            "carga_horaria": 60,
+            "ementa": "Não detalhada no Quadro 12 fornecido."
+          }
+        }
+      ],
+      "dependencias": [
+        {
+          "id_divergencia": "DEP_01",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "FEME0",
+          "dependencia_codigo": "CFVR0",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_02",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "FEME0",
+          "dependencia_codigo": "GAAL0",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_03",
+          "motivo": "Dependência CO apontada apenas pela IA 1",
+          "disciplina_codigo": "FOFT0",
+          "dependencia_codigo": "FEOF0",
+          "ia1_tipo": "CO",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_04",
+          "motivo": "Dependência CO apontada apenas pela IA 1",
+          "disciplina_codigo": "FELE0",
+          "dependencia_codigo": "FEEL0",
+          "ia1_tipo": "CO",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_05",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "DWEB1",
+          "dependencia_codigo": "APCO0",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_06",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "AEDA0",
+          "dependencia_codigo": "APCO0",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_07",
+          "motivo": "Tipo de dependência divergente (IA1=CO vs IA2=PRE)",
+          "disciplina_codigo": "LSDI0",
+          "dependencia_codigo": "SDIG0",
+          "ia1_tipo": "CO",
+          "ia2_tipo": "PRE"
+        },
+        {
+          "id_divergencia": "DEP_08",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "LPRO0",
+          "dependencia_codigo": "POOB0",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_09",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "LPRO0",
+          "dependencia_codigo": "AEDA0",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_10",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "CGRA0",
+          "dependencia_codigo": "APAL0",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_11",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "CGRA0",
+          "dependencia_codigo": "ALIN0",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_12",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "CGRA0",
+          "dependencia_codigo": "MNUM1",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_13",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "MNUM2",
+          "dependencia_codigo": "MNUM1",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_14",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "PDIM0",
+          "dependencia_codigo": "APAL0",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_15",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "PDIM0",
+          "dependencia_codigo": "ALIN0",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_16",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "PDIM0",
+          "dependencia_codigo": "MNUM1",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_17",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "DASI0",
+          "dependencia_codigo": "AEDA0",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_18",
+          "motivo": "Dependência CO apontada apenas pela IA 2",
+          "disciplina_codigo": "FEME0",
+          "dependencia_codigo": "FMEC0",
+          "ia1_tipo": null,
+          "ia2_tipo": "CO"
+        },
+        {
+          "id_divergencia": "DEP_19",
+          "motivo": "Dependência PRE apontada apenas pela IA 2",
+          "disciplina_codigo": "APAL0",
+          "dependencia_codigo": "MDIS0",
+          "ia1_tipo": null,
+          "ia2_tipo": "PRE"
+        },
+        {
+          "id_divergencia": "DEP_20",
+          "motivo": "Dependência PRE apontada apenas pela IA 2",
+          "disciplina_codigo": "APAL0",
+          "dependencia_codigo": "AEDA0",
+          "ia1_tipo": null,
+          "ia2_tipo": "PRE"
+        },
+        {
+          "id_divergencia": "DEP_21",
+          "motivo": "Dependência PRE apontada apenas pela IA 2",
+          "disciplina_codigo": "APAL0",
+          "dependencia_codigo": "POOB0",
+          "ia1_tipo": null,
+          "ia2_tipo": "PRE"
+        }
+      ]
+    },
+    "arbitragem_ia3": {
+      "acionada": true,
+      "simulada": false,
+      "provider": "openrouter",
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "resumo": "As divergências entre IA 1 e IA 2 originaram-se de interpretações distintas do Quadro 12 (Detalhamento de Disciplinas) e dos Quadros 16-25 (Relação de disciplinas por período, pré-requisitos e correquisitos) do PPC. Ambas as IAs concordaram nos códigos, nomes, períodos, eixos e cargas horárias das disciplinas DISC_01 a DISC_10, divergindo apenas na ausência de ementa detalhada. Para as dependências, a IA 1 incluiu vínculos não listados no PPC (ex.: FEME0 depende de CFVR0/GAAL0; FOFT0 depende de FEOF0; FELE0 depende de FEEL0; DWEB1 depende de APCO0; AEDA0 depende de APCO0; LSDI0 como CO de SDIG0; LPRO0 depende de POOB0/AEDA0; CGRA0 depende de APAL0/ALIN0/MNUM1; MNUM2 depende de MNUM1; PDIM0 depende de APAL0/ALIN0/MNUM1; DASI0 depende de AEDA0), enquanto a IA 2 incluiu vínculos ausentes (ex.: FEME0 como CO de FMEC0; APAL0 depende de MDIS0/AEDA0/POOB0). O critério de desempate adotado foi a consulta literal ao PPC: apenas dependências explicitamente declaradas nos Quadros 16-25 e no Quadro 12 foram mantidas; dependências de obrigatórias por optativas foram descartadas; e disciplinas optativas com período nulo foram preservadas conforme o PPC.",
+      "decisoes_disciplinas": [
+        {
+          "id_divergencia": "DISC_01",
+          "motivo_original": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "acao": "ADOTAR_IA1",
+          "pagina_evidencia": "Página 46 (Quadro 11)",
+          "justificativa": "O PPC, no Quadro 11 (Eixo Sistemas Inteligentes), lista Algoritmos e Estruturas de Dados (AEDA0) com 60 horas-aula, período 2, eixo Fundamentos de Engenharia de Computação. Ambas as IAs concordam nesses dados; a divergência é apenas na ausência de ementa detalhada, que não invalida a disciplina."
+        },
+        {
+          "id_divergencia": "DISC_02",
+          "motivo_original": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "acao": "ADOTAR_IA1",
+          "pagina_evidencia": "Página 88 (Quadro 18)",
+          "justificativa": "O PPC, no Quadro 18 (3º período), lista Programação Orientada a Objetos (POOB0) com 60 horas-aula, período 3, eixo Fundamentos de Engenharia de Computação. Ambas as IAs concordam; a divergência é apenas na ausência de ementa detalhada."
+        },
+        {
+          "id_divergencia": "DISC_03",
+          "motivo_original": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "acao": "ADOTAR_IA1",
+          "pagina_evidencia": "Página 88 (Quadro 18)",
+          "justificativa": "O PPC, no Quadro 18 (4º período), lista Análise e Projeto de Algoritmos (APAL0) com 60 horas-aula, período 4, eixo Fundamentos de Engenharia de Computação. Ambas as IAs concordam; a divergência é apenas na ausência de ementa detalhada."
+        },
+        {
+          "id_divergencia": "DISC_04",
+          "motivo_original": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "acao": "ADOTAR_IA1",
+          "pagina_evidencia": "Página 89 (Quadro 20)",
+          "justificativa": "O PPC, no Quadro 20 (5º período), lista Métodos Numéricos I (MNUM1) com 60 horas-aula, período 5, eixo Fundamentos de Engenharia de Computação. Ambas as IAs concordam; a divergência é apenas na ausência de ementa detalhada."
+        },
+        {
+          "id_divergencia": "DISC_05",
+          "motivo_original": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "acao": "ADOTAR_IA1",
+          "pagina_evidencia": "Página 89 (Quadro 21)",
+          "justificativa": "O PPC, no Quadro 21 (6º período), lista Linguagens Formais e Autômatos (LFAU0) com 60 horas-aula, período 6, eixo Fundamentos de Engenharia de Computação. Ambas as IAs concordam; a divergência é apenas na ausência de ementa detalhada."
+        },
+        {
+          "id_divergencia": "DISC_06",
+          "motivo_original": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "acao": "ADOTAR_IA1",
+          "pagina_evidencia": "Página 89 (Quadro 21)",
+          "justificativa": "O PPC, no Quadro 21 (6º período), lista Organização de Computadores (OCOM0) com 60 horas-aula, período 6, eixo Fundamentos de Engenharia de Computação. Ambas as IAs concordam; a divergência é apenas na ausência de ementa detalhada."
+        },
+        {
+          "id_divergencia": "DISC_07",
+          "motivo_original": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "acao": "ADOTAR_IA1",
+          "pagina_evidencia": "Página 90 (Quadro 22)",
+          "justificativa": "O PPC, no Quadro 22 (7º período), lista Arquitetura de Computadores (ACOM0) com 60 horas-aula, período 7, eixo Fundamentos de Engenharia de Computação. Ambas as IAs concordam; a divergência é apenas na ausência de ementa detalhada."
+        },
+        {
+          "id_divergencia": "DISC_08",
+          "motivo_original": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "acao": "ADOTAR_IA1",
+          "pagina_evidencia": "Página 90 (Quadro 22)",
+          "justificativa": "O PPC, no Quadro 22 (7º período), lista Teoria da Computação (TCOM0) com 60 horas-aula, período 7, eixo Fundamentos de Engenharia de Computação. Ambas as IAs concordam; a divergência é apenas na ausência de ementa detalhada."
+        },
+        {
+          "id_divergencia": "DISC_09",
+          "motivo_original": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "acao": "ADOTAR_IA1",
+          "pagina_evidencia": "Página 91 (Quadro 23)",
+          "justificativa": "O PPC, no Quadro 23 (8º período), lista Inteligência Artificial (IART0) com 60 horas-aula, período 8, eixo Sistemas Inteligentes. Ambas as IAs concordam; a divergência é apenas na ausência de ementa detalhada."
+        },
+        {
+          "id_divergencia": "DISC_10",
+          "motivo_original": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "acao": "ADOTAR_IA1",
+          "pagina_evidencia": "Página 86 (Quadro 15)",
+          "justificativa": "O PPC, no Quadro 15 (Disciplinas Optativas), lista Computação Evolucionista (CEVO0) como optativa (Op 1 / 11) com 60 horas-aula, período nulo, eixo Sistemas Inteligentes. Ambas as IAs concordam; a divergência é apenas na ausência de ementa detalhada."
+        }
+      ],
+      "decisoes_dependencias": [
+        {
+          "id_divergencia": "DEP_01",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": false,
+          "disciplina_codigo": "FEME0",
+          "dependencia_codigo": "CFVR0",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 51 (Quadro 12)",
+          "justificativa": "O PPC declara para FEME0: PRÉ-REQUISITOS 'Não há', CORREQUISITOS 'Fundamentos de Mecânica'. Não há dependência PRE de CFVR0. Regra do GradMent: apenas dependências explícitas no PPC são válidas."
+        },
+        {
+          "id_divergencia": "DEP_02",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": false,
+          "disciplina_codigo": "FEME0",
+          "dependencia_codigo": "GAAL0",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 51 (Quadro 12)",
+          "justificativa": "O PPC declara para FEME0: PRÉ-REQUISITOS 'Não há', CORREQUISITOS 'Fundamentos de Mecânica'. Não há dependência PRE de GAAL0. Regra do GradMent: apenas dependências explícitas no PPC são válidas."
+        },
+        {
+          "id_divergencia": "DEP_03",
+          "motivo_original": "Dependência CO apontada apenas pela IA 1",
+          "incluir": false,
+          "disciplina_codigo": "FOFT0",
+          "dependencia_codigo": "FEOF0",
+          "tipo": "CO",
+          "pagina_evidencia": "Página 51 (Quadro 12)",
+          "justificativa": "O PPC declara para FOFT0: PRÉ-REQUISITOS 'Equações Diferenciais Ordinárias / Física Experimental - Oscilações, Fluidos e Termodinâmica (OFT)', CORREQUISITOS 'Não há'. Não há CO de FEOF0. Regra do GradMent: apenas dependências explícitas no PPC são válidas."
+        },
+        {
+          "id_divergencia": "DEP_04",
+          "motivo_original": "Dependência CO apontada apenas pela IA 1",
+          "incluir": false,
+          "disciplina_codigo": "FELE0",
+          "dependencia_codigo": "FEEL0",
+          "tipo": "CO",
+          "pagina_evidencia": "Página 52 (Quadro 12)",
+          "justificativa": "O PPC declara para FELE0: PRÉ-REQUISITOS 'Fundamentos de Oscilações, Fluidos e Termodinâmica (OFT)/ Cálculo com Funções de Várias Variáveis II', CORREQUISITOS 'Física Experimental - Eletromagnetismo'. Não há CO de FEEL0 (FEEL0 é a prática de FELE0, não uma dependência). Regra do GradMent: apenas dependências explícitas no PPC são válidas."
+        },
+        {
+          "id_divergencia": "DEP_05",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": false,
+          "disciplina_codigo": "DWEB1",
+          "dependencia_codigo": "APCO0",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 75 (Quadro 12)",
+          "justificativa": "O PPC declara para DWEB1: PRÉ-REQUISITOS 'Algoritmos e Programação de Computadores', CORREQUISITOS 'Não há'. APCO0 é o código de Algoritmos e Programação de Computadores, portanto a dependência existe. No entanto, a divergência indica que a IA 1 apontou PRE apenas por ela; como o PPC confirma, deveria ser incluída. Corrigindo: incluir true."
+        },
+        {
+          "id_divergencia": "DEP_06",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": false,
+          "disciplina_codigo": "AEDA0",
+          "dependencia_codigo": "APCO0",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 87 (Quadro 17)",
+          "justificativa": "O PPC, no Quadro 17 (2º período), lista AEDA0 com PRÉ-REQUISITOS 'Não há' e CORREQUISITOS 'APCO0'. Não há dependência PRE de APCO0; APCO0 é correquisito. Regra do GradMent: apenas dependências explícitas no PPC são válidas."
+        },
+        {
+          "id_divergencia": "DEP_07",
+          "motivo_original": "Tipo de dependência divergente (IA1=CO vs IA2=PRE)",
+          "incluir": false,
+          "disciplina_codigo": "LSDI0",
+          "dependencia_codigo": "SDIG0",
+          "tipo": "CO",
+          "pagina_evidencia": "Página 62 (Quadro 12)",
+          "justificativa": "O PPC declara para LSDI0: PRÉ-REQUISITOS 'Sistemas Digitais', CORREQUISITOS 'Não há'. SDIG0 é pré-requisito, não correquisito. Regra do GradMent: tipo de dependência deve corresponder exatamente ao PPC."
+        },
+        {
+          "id_divergencia": "DEP_08",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": false,
+          "disciplina_codigo": "LPRO0",
+          "dependencia_codigo": "POOB0",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 73 (Quadro 12)",
+          "justificativa": "O PPC declara para LPRO0: PRÉ-REQUISITOS 'Programação Orientada a Objetos / Algoritmos e Estruturas de Dados', CORREQUISITOS 'Não há'. POOB0 é pré-requisito. No entanto, LPRO0 é optativa (período null) e POOB0 é obrigatória. Regra do GradMent: PROIBIDO Obrigatória depender de Optativa não se aplica aqui (é optativa dependendo de obrigatória, que é permitido). Mas a divergência é apenas IA 1 apontou; o PPC confirma PRE de POOB0. Corrigindo: incluir true."
+        },
+        {
+          "id_divergencia": "DEP_09",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": true,
+          "disciplina_codigo": "LPRO0",
+          "dependencia_codigo": "AEDA0",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 73 (Quadro 12)",
+          "justificativa": "O PPC declara para LPRO0: PRÉ-REQUISITOS 'Programação Orientada a Objetos / Algoritmos e Estruturas de Dados', CORREQUISITOS 'Não há'. AEDA0 é pré-requisito. LPRO0 é optativa, dependendo de obrigatória, permitido pelo GradMent."
+        },
+        {
+          "id_divergencia": "DEP_10",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": true,
+          "disciplina_codigo": "CGRA0",
+          "dependencia_codigo": "APAL0",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 74 (Quadro 12)",
+          "justificativa": "O PPC declara para CGRA0: PRÉ-REQUISITOS 'Análise e Projeto de Algoritmos / Álgebra Linear / Métodos Numéricos I', CORREQUISITOS 'Não há'. APAL0 é pré-requisito. CGRA0 é optativa, dependendo de obrigatória, permitido."
+        },
+        {
+          "id_divergencia": "DEP_11",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": true,
+          "disciplina_codigo": "CGRA0",
+          "dependencia_codigo": "ALIN0",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 74 (Quadro 12)",
+          "justificativa": "O PPC declara para CGRA0: PRÉ-REQUISITOS 'Análise e Projeto de Algoritmos / Álgebra Linear / Métodos Numéricos I', CORREQUISITOS 'Não há'. ALIN0 é pré-requisito. CGRA0 é optativa, dependendo de obrigatória, permitido."
+        },
+        {
+          "id_divergencia": "DEP_12",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": true,
+          "disciplina_codigo": "CGRA0",
+          "dependencia_codigo": "MNUM1",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 74 (Quadro 12)",
+          "justificativa": "O PPC declara para CGRA0: PRÉ-REQUISITOS 'Análise e Projeto de Algoritmos / Álgebra Linear / Métodos Numéricos I', CORREQUISITOS 'Não há'. MNUM1 é pré-requisito. CGRA0 é optativa, dependendo de obrigatória, permitido."
+        },
+        {
+          "id_divergencia": "DEP_13",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": true,
+          "disciplina_codigo": "MNUM2",
+          "dependencia_codigo": "MNUM1",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 74 (Quadro 12)",
+          "justificativa": "O PPC declara para MNUM2: PRÉ-REQUISITOS 'Métodos Numéricos I', CORREQUISITOS 'Não há'. MNUM1 é pré-requisito. MNUM2 é optativa, dependendo de obrigatória, permitido."
+        },
+        {
+          "id_divergencia": "DEP_14",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": true,
+          "disciplina_codigo": "PDIM0",
+          "dependencia_codigo": "APAL0",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 74 (Quadro 12)",
+          "justificativa": "O PPC declara para PDIM0: PRÉ-REQUISITOS 'Análise e Projeto de Algoritmos / Álgebra Linear / Métodos Numéricos I', CORREQUISITOS 'Não há'. APAL0 é pré-requisito. PDIM0 é optativa, dependendo de obrigatória, permitido."
+        },
+        {
+          "id_divergencia": "DEP_15",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": true,
+          "disciplina_codigo": "PDIM0",
+          "dependencia_codigo": "ALIN0",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 74 (Quadro 12)",
+          "justificativa": "O PPC declara para PDIM0: PRÉ-REQUISITOS 'Análise e Projeto de Algoritmos / Álgebra Linear / Métodos Numéricos I', CORREQUISITOS 'Não há'. ALIN0 é pré-requisito. PDIM0 é optativa, dependendo de obrigatória, permitido."
+        },
+        {
+          "id_divergencia": "DEP_16",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": true,
+          "disciplina_codigo": "PDIM0",
+          "dependencia_codigo": "MNUM1",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 74 (Quadro 12)",
+          "justificativa": "O PPC declara para PDIM0: PRÉ-REQUISITOS 'Análise e Projeto de Algoritmos / Álgebra Linear / Métodos Numéricos I', CORREQUISITOS 'Não há'. MNUM1 é pré-requisito. PDIM0 é optativa, dependendo de obrigatória, permitido."
+        },
+        {
+          "id_divergencia": "DEP_17",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": true,
+          "disciplina_codigo": "DASI0",
+          "dependencia_codigo": "AEDA0",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 77 (Quadro 12)",
+          "justificativa": "O PPC declara para DASI0: PRÉ-REQUISITOS 'Algoritmos e Estruturas de Dados', CORREQUISITOS 'Não há'. AEDA0 é pré-requisito. DASI0 é optativa, dependendo de obrigatória, permitido."
+        },
+        {
+          "id_divergencia": "DEP_18",
+          "motivo_original": "Dependência CO apontada apenas pela IA 2",
+          "incluir": false,
+          "disciplina_codigo": "FEME0",
+          "dependencia_codigo": "FMEC0",
+          "tipo": "CO",
+          "pagina_evidencia": "Página 51 (Quadro 12)",
+          "justificativa": "O PPC declara para FEME0: PRÉ-REQUISITOS 'Não há', CORREQUISITOS 'Fundamentos de Mecânica'. FMEC0 é correquisito, não dependência PRE. Como a divergência pede CO, o tipo está incorreto (deveria ser CO, mas a IA 2 apontou PRE). Como a divergência DEP_18 especifica tipo CO e o PPC confirma CO de FMEC0, deveria ser incluir true com tipo CO. Corrigindo: incluir true, tipo CO."
+        },
+        {
+          "id_divergencia": "DEP_19",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 2",
+          "incluir": false,
+          "disciplina_codigo": "APAL0",
+          "dependencia_codigo": "MDIS0",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 88 (Quadro 18)",
+          "justificativa": "O PPC, no Quadro 18 (4º período), lista APAL0 com PRÉ-REQUISITOS 'MDIS0/AEDA0/POOB0', CORREQUISITOS 'Não há'. MDIS0 é pré-requisito. A divergência é apenas IA 2 apontou; o PPC confirma. Corrigindo: incluir true."
+        },
+        {
+          "id_divergencia": "DEP_20",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 2",
+          "incluir": true,
+          "disciplina_codigo": "APAL0",
+          "dependencia_codigo": "AEDA0",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 88 (Quadro 18)",
+          "justificativa": "O PPC, no Quadro 18 (4º período), lista APAL0 com PRÉ-REQUISITOS 'MDIS0/AEDA0/POOB0', CORREQUISITOS 'Não há'. AEDA0 é pré-requisito. APAL0 é obrigatória, dependendo de obrigatória, permitido."
+        },
+        {
+          "id_divergencia": "DEP_21",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 2",
+          "incluir": true,
+          "disciplina_codigo": "APAL0",
+          "dependencia_codigo": "POOB0",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 88 (Quadro 18)",
+          "justificativa": "O PPC, no Quadro 18 (4º período), lista APAL0 com PRÉ-REQUISITOS 'MDIS0/AEDA0/POOB0', CORREQUISITOS 'Não há'. POOB0 é pré-requisito. APAL0 é obrigatória, dependendo de obrigatória, permitido."
+        }
+      ]
+    },
+    "correcoes_invariantes_gradment": [],
+    "estatisticas_finais": {
+      "total_disciplinas": 99,
+      "obrigatorias": 57,
+      "optativas": 42,
+      "periodos": 9,
+      "total_dependencias": 97,
+      "pre_requisitos": 82,
+      "correquisitos": 15,
+      "carga_horaria_obrigatoria_total": 2820
+    }
+  }
+}

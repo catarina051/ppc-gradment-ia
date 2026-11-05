@@ -1,0 +1,266 @@
+{
+  "sucesso": true,
+  "payload_gradment": {
+    "curso_id": 1,
+    "preview": {
+      "curso": {
+        "nome_curso": "Ciência da Computação",
+        "ano_periodo": "2026.1"
+      },
+      "disciplinas": [
+        {
+          "codigo": "DCC101",
+          "codigo_externo": "DCC-101",
+          "nome": "Algoritmos e Programação de Computadores",
+          "periodo": 1,
+          "eixo": "Núcleo 2",
+          "carga_horaria": 60,
+          "ementa": "Conceito de algoritmo, variáveis, tipos primitivos, estruturas condicionais, laços de repetição, vetores, matrizes, registros e modularização com funções.",
+          "plano_curso": "Conceito de algoritmo, variáveis, tipos primitivos, estruturas condicionais, laços de repetição, vetores, matrizes, registros e modularização com funções."
+        },
+        {
+          "codigo": "DCC102",
+          "codigo_externo": "DCC-102",
+          "nome": "Laboratório de Programação",
+          "periodo": 1,
+          "eixo": "Núcleo 2",
+          "carga_horaria": 30,
+          "ementa": "Prática intensiva de implementação, depuração e testes de programas estruturados em linguagem de programação imperativa.",
+          "plano_curso": "Prática intensiva de implementação, depuração e testes de programas estruturados em linguagem de programação imperativa."
+        },
+        {
+          "codigo": "MAT101",
+          "codigo_externo": "MAT-101",
+          "nome": "Cálculo I",
+          "periodo": 1,
+          "eixo": "Núcleo 1",
+          "carga_horaria": 60,
+          "ementa": "Números reais, funções de uma variável real, limites, continuidade, derivadas e aplicações, integral definida e Teorema Fundamental do Cálculo.",
+          "plano_curso": "Números reais, funções de uma variável real, limites, continuidade, derivadas e aplicações, integral definida e Teorema Fundamental do Cálculo."
+        },
+        {
+          "codigo": "DCC201",
+          "codigo_externo": "DCC-201",
+          "nome": "Algoritmos e Estruturas de Dados",
+          "periodo": 2,
+          "eixo": "Núcleo 2",
+          "carga_horaria": 60,
+          "ementa": "Análise assintótica de complexidade, listas lineares, pilhas, filas, árvores binárias de busca, árvores balanceadas, tabelas hash e ordenação.",
+          "plano_curso": "Análise assintótica de complexidade, listas lineares, pilhas, filas, árvores binárias de busca, árvores balanceadas, tabelas hash e ordenação."
+        },
+        {
+          "codigo": "DCC202",
+          "codigo_externo": "DCC-202",
+          "nome": "Banco de Dados I",
+          "periodo": 2,
+          "eixo": "Núcleo 3",
+          "carga_horaria": 60,
+          "ementa": "Arquitetura de SGBDs, modelagem conceitual entidade-relacionamento, modelo relacional, álgebra relacional, linguagem SQL e normalização.",
+          "plano_curso": "Arquitetura de SGBDs, modelagem conceitual entidade-relacionamento, modelo relacional, álgebra relacional, linguagem SQL e normalização."
+        },
+        {
+          "codigo": "MAT102",
+          "codigo_externo": "MAT-102",
+          "nome": "Cálculo II",
+          "periodo": 2,
+          "eixo": "Núcleo 1",
+          "carga_horaria": 60,
+          "ementa": "Técnicas de integração, integrais impróprias, sequências e séries numéricas, funções reais de várias variáveis e derivadas parciais.",
+          "plano_curso": "Técnicas de integração, integrais impróprias, sequências e séries numéricas, funções reais de várias variáveis e derivadas parciais."
+        },
+        {
+          "codigo": "DCC301",
+          "codigo_externo": "DCC-301",
+          "nome": "Engenharia de Software I",
+          "periodo": 3,
+          "eixo": "Núcleo 3",
+          "carga_horaria": 60,
+          "ementa": "Processos de desenvolvimento de software, engenharia de requisitos, modelagem UML, arquitetura de software, verificação, validação e testes automatizados.",
+          "plano_curso": "Processos de desenvolvimento de software, engenharia de requisitos, modelagem UML, arquitetura de software, verificação, validação e testes automatizados."
+        },
+        {
+          "codigo": "TCC01",
+          "codigo_externo": "TCC",
+          "nome": "Trabalho de Conclusão de Curso I",
+          "periodo": 3,
+          "eixo": "Núcleo 3",
+          "carga_horaria": 60,
+          "ementa": "Elaboração e defesa de proposta de projeto de pesquisa ou desenvolvimento tecnológico em Ciência da Computação sob orientação docente. Exige integralização prévia mínima de 1.200 horas obrigatórias.",
+          "plano_curso": "Elaboração e defesa de proposta de projeto de pesquisa ou desenvolvimento tecnológico em Ciência da Computação sob orientação docente. Exige integralização prévia mínima de 1.200 horas obrigatórias."
+        },
+        {
+          "codigo": "DCC810",
+          "codigo_externo": "DCC-810",
+          "nome": "Tópicos Especiais em Inteligência Artificial",
+          "periodo": null,
+          "eixo": "Núcleo 4",
+          "carga_horaria": 60,
+          "ementa": "Fundamentos de agentes inteligentes, busca heurística, aprendizado de máquina supervisionado e não supervisionado e introdução a redes neurais profundas.",
+          "plano_curso": "Fundamentos de agentes inteligentes, busca heurística, aprendizado de máquina supervisionado e não supervisionado e introdução a redes neurais profundas."
+        },
+        {
+          "codigo": "DCC820",
+          "codigo_externo": "DCC-820",
+          "nome": "Computação em Nuvem e Sistemas Distribuídos",
+          "periodo": null,
+          "eixo": "Núcleo 4",
+          "carga_horaria": 60,
+          "ementa": "Modelos de serviço em nuvem, virtualização, contêineres, orquestração, sistemas distribuídos tolerantes a falhas e escalabilidade horizontal.",
+          "plano_curso": "Modelos de serviço em nuvem, virtualização, contêineres, orquestração, sistemas distribuídos tolerantes a falhas e escalabilidade horizontal."
+        }
+      ],
+      "dependencias": [
+        {
+          "disciplina_codigo": "DCC102",
+          "dependencia_codigo": "DCC101",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "MAT102",
+          "dependencia_codigo": "MAT101",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "DCC201",
+          "dependencia_codigo": "DCC101",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "DCC201",
+          "dependencia_codigo": "DCC102",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "DCC202",
+          "dependencia_codigo": "DCC101",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "DCC202",
+          "dependencia_codigo": "DCC201",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "DCC301",
+          "dependencia_codigo": "DCC201",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "DCC301",
+          "dependencia_codigo": "DCC202",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "DCC810",
+          "dependencia_codigo": "DCC201",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "DCC820",
+          "dependencia_codigo": "DCC202",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "TCC01",
+          "dependencia_codigo": "DCC301",
+          "tipo": "PRE"
+        }
+      ],
+      "ofertas": [],
+      "ja_cadastradas": {
+        "disciplinas": [],
+        "dependencias": [],
+        "ofertas": []
+      }
+    }
+  },
+  "relatorio_auditoria": {
+    "status_consenso": "DESEMPATADO_PELA_3A_IA",
+    "houve_divergencia": true,
+    "total_divergencias_detectadas": 1,
+    "simulado": false,
+    "alerta_instrucao_suspeita": false,
+    "documento_entrada": {
+      "formato": "pdf",
+      "paginas": 2,
+      "paginas_ocr": 0,
+      "recortado_por_tamanho": false,
+      "caracteres": 4078
+    },
+    "modelos": {
+      "ia1": {
+        "provider": "gemini",
+        "model": "gemini-3.6-flash",
+        "verificacao": {
+          "nome_curso_identificado": "Ciência da Computação",
+          "regra_conversao_creditos": "1 crédito = 15h (carga horária já explícita em horas)",
+          "total_periodos_obrigatorios": 3,
+          "total_obrigatorias_contadas": 7,
+          "total_optativas_contadas": 2,
+          "observacoes": "Códigos normalizados sem hífens. Requisito não-disciplinar de 1.200h para TCC mantido exclusivamente na ementa e removido da lista de dependências. Código fictício TCC01 gerado para o TCC I para atender ao padrão do sistema."
+        }
+      },
+      "ia2": {
+        "provider": "openrouter",
+        "model": "nvidia/nemotron-3.5-super-vl:free",
+        "verificacao": {
+          "nome_curso_identificado": "Ciência da Computação",
+          "regra_conversao_creditos": "1 crédito equivale a 15 horas-aula semestrais",
+          "total_periodos_obrigatorios": 3,
+          "total_obrigatorias_contadas": 7,
+          "total_optativas_contadas": 2,
+          "observacoes": "Requisito de 1.200 horas obrigatórias do TCC mantido apenas na ementa; código TCC normalizado para TCC01; optativas com periodo null."
+        }
+      },
+      "ia3": {
+        "provider": "groq",
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    "divergencias_iniciais": {
+      "curso_divergente": null,
+      "disciplinas": [],
+      "dependencias": [
+        {
+          "id_divergencia": "DEP_01",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "TCC01",
+          "dependencia_codigo": "DCC301",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        }
+      ]
+    },
+    "arbitragem_ia3": {
+      "acionada": true,
+      "simulada": false,
+      "provider": "groq",
+      "model": "openai/gpt-oss-120b",
+      "resumo": "A divergência DEP_01 refere-se à existência de pré-requisito entre TCC01 e DCC301. O PPC (Página 1) indica explicitamente que o Trabalho de Conclusão de Curso I tem como pré-requisito DCC-301, confirmando a informação da IA 1 e inexistindo registro na IA 2. Assim, adotamos a decisão da IA 1.",
+      "decisoes_disciplinas": [],
+      "decisoes_dependencias": [
+        {
+          "id_divergencia": "DEP_01",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": true,
+          "disciplina_codigo": "TCC01",
+          "dependencia_codigo": "DCC301",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 1",
+          "justificativa": "Conforme a matriz curricular (Página 1), o TCC tem pré-requisito DCC-301, atendendo às regras de ouro (obrigatória depende de obrigatória) e ao padrão de código."
+        }
+      ]
+    },
+    "correcoes_invariantes_gradment": [],
+    "estatisticas_finais": {
+      "total_disciplinas": 10,
+      "obrigatorias": 8,
+      "optativas": 2,
+      "periodos": 3,
+      "total_dependencias": 11,
+      "pre_requisitos": 9,
+      "correquisitos": 2,
+      "carga_horaria_obrigatoria_total": 450
+    }
+  }
+}

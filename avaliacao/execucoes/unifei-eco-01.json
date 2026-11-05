@@ -1,0 +1,2056 @@
+{
+  "sucesso": true,
+  "payload_gradment": {
+    "curso_id": 1,
+    "preview": {
+      "curso": {
+        "nome_curso": "Engenharia de Computação",
+        "ano_periodo": "2026.1"
+      },
+      "disciplinas": [
+        {
+          "codigo": "ECOI2201",
+          "codigo_externo": "ECOI2201",
+          "nome": "Introdução à Engenharia da Computação",
+          "periodo": 1,
+          "eixo": "Básico",
+          "carga_horaria": 32,
+          "ementa": "Origem e desenvolvimento da computação e da engenharia de computação. O perfil do egresso e a profissão do engenheiro da computação. Competências e habilidades do engenheiro de computação. Características pessoais desejáveis para o engenheiro de computação. Áreas de atuação e perspectivas do mercado de trabalho para o engenheiro de computação. Tecnologia da Informação. Representação e processamento da informação. Sistemas de numeração. Aritmética binária. Arquitetura básica de um computador. Unidade Central de Processamento. Memórias. Sistemas de entrada e saída. Softwares Básicos, Softwares Utilitários e Softwares Aplicativos. Noções básicas de redes de computadores. Ética em computação.",
+          "plano_curso": "Origem e desenvolvimento da computação e da engenharia de computação. O perfil do egresso e a profissão do engenheiro da computação. Competências e habilidades do engenheiro de computação. Características pessoais desejáveis para o engenheiro de computação. Áreas de atuação e perspectivas do mercado de trabalho para o engenheiro de computação. Tecnologia da Informação. Representação e processamento da informação. Sistemas de numeração. Aritmética binária. Arquitetura básica de um computador. Unidade Central de Processamento. Memórias. Sistemas de entrada e saída. Softwares Básicos, Softwares Utilitários e Softwares Aplicativos. Noções básicas de redes de computadores. Ética em computação."
+        },
+        {
+          "codigo": "ECOI2202",
+          "codigo_externo": "ECOI2202",
+          "nome": "Lógica de Programação",
+          "periodo": 1,
+          "eixo": "Básico",
+          "carga_horaria": 64,
+          "ementa": "Introdução a Computação; Conceito de algoritmo; Introdução à linguagem C/C++; Estruturas condicionais; Estruturas de repetição; Funções; Arranjos unidimensionais e multidimensionais; Alocação dinâmica de Arranjos unidimensionais e multidimensionais. Variáveis compostas homogêneas; Strings; Variáveis compostas heterogêneas; Arquivos.",
+          "plano_curso": "Introdução a Computação; Conceito de algoritmo; Introdução à linguagem C/C++; Estruturas condicionais; Estruturas de repetição; Funções; Arranjos unidimensionais e multidimensionais; Alocação dinâmica de Arranjos unidimensionais e multidimensionais. Variáveis compostas homogêneas; Strings; Variáveis compostas heterogêneas; Arquivos."
+        },
+        {
+          "codigo": "ECOI2203",
+          "codigo_externo": "ECOI2203",
+          "nome": "Matemática Discreta",
+          "periodo": 1,
+          "eixo": "Básico",
+          "carga_horaria": 32,
+          "ementa": "Introdução à lógica. Introdução à lógica proposicional. Sentenças e conectivos lógicos. Tabelas-verdade; Fórmulas bem formadas. Tautologia e contradição. Técnicas de demonstração de teoremas. Raciocínio indutivo e dedutivo. Demonstração direta, contraposição, exaustão, contradição, indução. Introdução à álgebra Booleana. Introdução aos Circuitos Lógicos. Relação entre expressões Booleanas e circuitos lógicos.",
+          "plano_curso": "Introdução à lógica. Introdução à lógica proposicional. Sentenças e conectivos lógicos. Tabelas-verdade; Fórmulas bem formadas. Tautologia e contradição. Técnicas de demonstração de teoremas. Raciocínio indutivo e dedutivo. Demonstração direta, contraposição, exaustão, contradição, indução. Introdução à álgebra Booleana. Introdução aos Circuitos Lógicos. Relação entre expressões Booleanas e circuitos lógicos."
+        },
+        {
+          "codigo": "EMEI02",
+          "codigo_externo": "EMEI02",
+          "nome": "Desenho Aplicado",
+          "periodo": 1,
+          "eixo": "Básico",
+          "carga_horaria": 32,
+          "ementa": "Normas gerais do desenho técnico. Desenho Geométrico. Normas para projeções ortogonais no primeiro e terceiro diedro. Normas para cotagem. Supressão de Vistas. Vistas Auxiliares. Representação de cortes, seções, omissão de corte e encurtamento de peças. Desenho em perspectiva.",
+          "plano_curso": "Normas gerais do desenho técnico. Desenho Geométrico. Normas para projeções ortogonais no primeiro e terceiro diedro. Normas para cotagem. Supressão de Vistas. Vistas Auxiliares. Representação de cortes, seções, omissão de corte e encurtamento de peças. Desenho em perspectiva."
+        },
+        {
+          "codigo": "HUMI01",
+          "codigo_externo": "HUMI01",
+          "nome": "Ciência, Tecnologia e Sociedade",
+          "periodo": 1,
+          "eixo": "Complementar",
+          "carga_horaria": 16,
+          "ementa": "Construção do conhecimento científico. Ciência e tecnologia. Ferramentas e processos. História da tecnologia. Tecnologia e sociedade: questões ecológicas, filosóficas e sociológicas. Criatividade e inovação tecnológica. Tecnologia e empreendedorismo.",
+          "plano_curso": "Construção do conhecimento científico. Ciência e tecnologia. Ferramentas e processos. História da tecnologia. Tecnologia e sociedade: questões ecológicas, filosóficas e sociológicas. Criatividade e inovação tecnológica. Tecnologia e empreendedorismo."
+        },
+        {
+          "codigo": "MAT2101",
+          "codigo_externo": "MAT2101",
+          "nome": "Cálculo I",
+          "periodo": 1,
+          "eixo": "Básico",
+          "carga_horaria": 64,
+          "ementa": "Funções, limites, derivadas, regras de derivação, aplicações da derivada. Integração de funções. Aplicações de integrais.",
+          "plano_curso": "Funções, limites, derivadas, regras de derivação, aplicações da derivada. Integração de funções. Aplicações de integrais."
+        },
+        {
+          "codigo": "MAT2102",
+          "codigo_externo": "MAT2102",
+          "nome": "Geometria Analítica com Álgebra Linear",
+          "periodo": 1,
+          "eixo": "Básico",
+          "carga_horaria": 64,
+          "ementa": "Matrizes e sistemas lineares, aplicações. Vetores no plano e no espaço, produto escalar, produto vetorial, retas e planos. Espaço R^n e subespaço. Autovalores e autovetores.",
+          "plano_curso": "Matrizes e sistemas lineares, aplicações. Vetores no plano e no espaço, produto escalar, produto vetorial, retas e planos. Espaço R^n e subespaço. Autovalores e autovetores."
+        },
+        {
+          "codigo": "ECOI2204",
+          "codigo_externo": "ECOI2204",
+          "nome": "Algoritmos e Estruturas de Dados I",
+          "periodo": 2,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 64,
+          "ementa": "Introdução à complexidade de algoritmos notação O. Tipos abstratos de dados. Introdução à Programação Orientada a Objetos: classe, objeto, encapsulamento, template, sobrecarga de métodos. Ponteiro em C/C++. Recursão. Listas lineares estáticas e dinâmicas. Fila e Pilha. Heaps. Algoritmos de ordenação. Pesquisa em memória primária: pesquisa sequencial, pesquisa binária, hash, Árvore Binária sem balanceamento.",
+          "plano_curso": "Introdução à complexidade de algoritmos notação O. Tipos abstratos de dados. Introdução à Programação Orientada a Objetos: classe, objeto, encapsulamento, template, sobrecarga de métodos. Ponteiro em C/C++. Recursão. Listas lineares estáticas e dinâmicas. Fila e Pilha. Heaps. Algoritmos de ordenação. Pesquisa em memória primária: pesquisa sequencial, pesquisa binária, hash, Árvore Binária sem balanceamento."
+        },
+        {
+          "codigo": "EELI2204",
+          "codigo_externo": "EELI2204",
+          "nome": "Circuitos Elétricos I",
+          "periodo": 2,
+          "eixo": "Específico",
+          "carga_horaria": 64,
+          "ementa": "Natureza da Eletricidade. Grandezas Elétricas Fundamentais. Lei de Ohm. Circuitos em série, paralelo e mistos. Análise de circuitos em corrente contínua. Leis de Kirchhoff. Teoremas de Thévenin e Norton. Eletricidade Aplicada nas Engenharias.",
+          "plano_curso": "Natureza da Eletricidade. Grandezas Elétricas Fundamentais. Lei de Ohm. Circuitos em série, paralelo e mistos. Análise de circuitos em corrente contínua. Leis de Kirchhoff. Teoremas de Thévenin e Norton. Eletricidade Aplicada nas Engenharias."
+        },
+        {
+          "codigo": "FISI2301",
+          "codigo_externo": "FISI2301",
+          "nome": "Fundamentos de Mecânica",
+          "periodo": 2,
+          "eixo": "Básico",
+          "carga_horaria": 64,
+          "ementa": "Cinemática e dinâmica da partícula; sistemas de partículas; cinemática e dinâmica de rotação; leis de conservação; equilíbrio de corpos rígidos; elasticidade.",
+          "plano_curso": "Cinemática e dinâmica da partícula; sistemas de partículas; cinemática e dinâmica de rotação; leis de conservação; equilíbrio de corpos rígidos; elasticidade."
+        },
+        {
+          "codigo": "HUMI02",
+          "codigo_externo": "HUMI02",
+          "nome": "Língua Portuguesa I",
+          "periodo": 2,
+          "eixo": "Complementar",
+          "carga_horaria": 32,
+          "ementa": "Estratégias de leitura na universidade. Análise de gêneros acadêmicos orais e escritos. Estrutura, organização, planejamento e produção de gêneros acadêmicos com base em parâmetros da linguagem acadêmico-científica. Tópicos gramaticais.",
+          "plano_curso": "Estratégias de leitura na universidade. Análise de gêneros acadêmicos orais e escritos. Estrutura, organização, planejamento e produção de gêneros acadêmicos com base em parâmetros da linguagem acadêmico-científica. Tópicos gramaticais."
+        },
+        {
+          "codigo": "MAT2103",
+          "codigo_externo": "MAT2103",
+          "nome": "Cálculo II",
+          "periodo": 2,
+          "eixo": "Básico",
+          "carga_horaria": 64,
+          "ementa": "Funções de várias variáveis: derivadas e Integrais.",
+          "plano_curso": "Funções de várias variáveis: derivadas e Integrais."
+        },
+        {
+          "codigo": "MAT2104",
+          "codigo_externo": "MAT2104",
+          "nome": "Probabilidade e Estatística",
+          "periodo": 2,
+          "eixo": "Básico",
+          "carga_horaria": 64,
+          "ementa": "Noções básicas de probabilidade. Variáveis aleatórias. Distribuições de probabilidade. Introdução à estatística. Descrição, exploração e comparação de dados. Estimativas e tamanhos de amostras. Teste de hipóteses.",
+          "plano_curso": "Noções básicas de probabilidade. Variáveis aleatórias. Distribuições de probabilidade. Introdução à estatística. Descrição, exploração e comparação de dados. Estimativas e tamanhos de amostras. Teste de hipóteses."
+        },
+        {
+          "codigo": "ECOI2205",
+          "codigo_externo": "ECOI2205",
+          "nome": "Programação Orientada a Objetos",
+          "periodo": 3,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 32,
+          "ementa": "Classes, objetos e métodos. Encapsulamento e ocultação de informação. Métodos construtores e destrutores. Sobreposição de Métodos. Herança, polimorfismo, hierarquia de classes. Tratamento de exceções. Classes de coleções e métodos de iteração. Padrões de projetos Abstract Factory, Builder, Factory, Adapter, Facade, Observer e Strategy.",
+          "plano_curso": "Classes, objetos e métodos. Encapsulamento e ocultação de informação. Métodos construtores e destrutores. Sobreposição de Métodos. Herança, polimorfismo, hierarquia de classes. Tratamento de exceções. Classes de coleções e métodos de iteração. Padrões de projetos Abstract Factory, Builder, Factory, Adapter, Facade, Observer e Strategy."
+        },
+        {
+          "codigo": "ECOI2206",
+          "codigo_externo": "ECOI2206",
+          "nome": "Algoritmos e Estruturas de Dados II",
+          "periodo": 3,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 64,
+          "ementa": "Algoritmos e estruturas de pesquisa em memória primária: árvores AVL, árvores Preto-e-Vermelho; Árvores Digitais: Trie e Patricia. Conjuntos; Mapas. Algoritmos e estruturas de pesquisa em memória secundária: árvores B, B*, B+; Arquivo Invertido. Manipulação de Arquivos de acesso aleatório. Processamento de cadeias de caracteres. Compressão de texto.",
+          "plano_curso": "Algoritmos e estruturas de pesquisa em memória primária: árvores AVL, árvores Preto-e-Vermelho; Árvores Digitais: Trie e Patricia. Conjuntos; Mapas. Algoritmos e estruturas de pesquisa em memória secundária: árvores B, B*, B+; Arquivo Invertido. Manipulação de Arquivos de acesso aleatório. Processamento de cadeias de caracteres. Compressão de texto."
+        },
+        {
+          "codigo": "ELLI2241",
+          "codigo_externo": "ELLI2241",
+          "nome": "Laboratório de Circuitos Elétricos I",
+          "periodo": 3,
+          "eixo": "Específico",
+          "carga_horaria": 16,
+          "ementa": "Experiências práticas de circuitos elétricos I.",
+          "plano_curso": "Experiências práticas de circuitos elétricos I."
+        },
+        {
+          "codigo": "ELTI2202",
+          "codigo_externo": "ELTI2202",
+          "nome": "Eletrônica Digital I",
+          "periodo": 3,
+          "eixo": "Específico",
+          "carga_horaria": 64,
+          "ementa": "Sistema de numeração. Bases numéricas. Aritmética binária. Portas lógicas. Álgebra booleana. Síntese de circuitos digitais por mapas de Karnaugh. Projetos de circuitos combinacionais. Dispositivos com memória (Latches e Flip-Flops). Projeto de circuitos sequenciais. Projeto de registradores (registradores de deslocamentos e outros). Projeto de contadores (Síncronos e Assíncronos). Projeto de máquinas de estados finitos de tipo Mealy e Moore.",
+          "plano_curso": "Sistema de numeração. Bases numéricas. Aritmética binária. Portas lógicas. Álgebra booleana. Síntese de circuitos digitais por mapas de Karnaugh. Projetos de circuitos combinacionais. Dispositivos com memória (Latches e Flip-Flops). Projeto de circuitos sequenciais. Projeto de registradores (registradores de deslocamentos e outros). Projeto de contadores (Síncronos e Assíncronos). Projeto de máquinas de estados finitos de tipo Mealy e Moore."
+        },
+        {
+          "codigo": "ELTI2203",
+          "codigo_externo": "ELTI2203",
+          "nome": "Laboratório de Eletrônica Digital I",
+          "periodo": 3,
+          "eixo": "Específico",
+          "carga_horaria": 16,
+          "ementa": "Experiências, simulações e demonstrações em laboratório de eletrônica digital compreendendo os tópicos abordados na disciplina Eletrônica Digital I.",
+          "plano_curso": "Experiências, simulações e demonstrações em laboratório de eletrônica digital compreendendo os tópicos abordados na disciplina Eletrônica Digital I."
+        },
+        {
+          "codigo": "EMEI06",
+          "codigo_externo": "EMEI06",
+          "nome": "Mecânica Estática",
+          "periodo": 3,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Sistemas de Forças e Estática de Corpos Rígidos (CR), Equilíbrio de CR, centroide e Momento Estático de Área (1ª Ordem), Momento de Inércia (2ª Ordem), Reações de Apoio e Esforços em Vigas e Diagramas de Esforços Solicitantes (DEC e DMF).",
+          "plano_curso": "Sistemas de Forças e Estática de Corpos Rígidos (CR), Equilíbrio de CR, centroide e Momento Estático de Área (1ª Ordem), Momento de Inércia (2ª Ordem), Reações de Apoio e Esforços em Vigas e Diagramas de Esforços Solicitantes (DEC e DMF)."
+        },
+        {
+          "codigo": "FISI2302",
+          "codigo_externo": "FISI2302",
+          "nome": "Fundamentos de Mecânica Ondulatória e Termodinâmica",
+          "periodo": 3,
+          "eixo": "Básico",
+          "carga_horaria": 32,
+          "ementa": "Oscilações; ondas mecânicas; temperatura; leis da termodinâmica; teoria cinética dos gases; transporte térmico.",
+          "plano_curso": "Oscilações; ondas mecânicas; temperatura; leis da termodinâmica; teoria cinética dos gases; transporte térmico."
+        },
+        {
+          "codigo": "FISI2303",
+          "codigo_externo": "FISI2303",
+          "nome": "Laboratório de Física A (Mecânica, Ondas e Termodinâmica)",
+          "periodo": 3,
+          "eixo": "Básico",
+          "carga_horaria": 32,
+          "ementa": "Obtenção, tratamento e análise de dados obtidos em experimentos de Física; utilização de instrumentos de medida; experimentos de mecânica, ondas e termodinâmica.",
+          "plano_curso": "Obtenção, tratamento e análise de dados obtidos em experimentos de Física; utilização de instrumentos de medida; experimentos de mecânica, ondas e termodinâmica."
+        },
+        {
+          "codigo": "MAT2106",
+          "codigo_externo": "MAT2106",
+          "nome": "Cálculo III",
+          "periodo": 3,
+          "eixo": "Básico",
+          "carga_horaria": 32,
+          "ementa": "Equações Paramétricas e Coordenadas Polares, Funções de várias variáveis, limites, derivadas parciais e valores de máximo e de mínimo. Integrais duplas e triplas.",
+          "plano_curso": "Equações Paramétricas e Coordenadas Polares, Funções de várias variáveis, limites, derivadas parciais e valores de máximo e de mínimo. Integrais duplas e triplas."
+        },
+        {
+          "codigo": "MAT2107",
+          "codigo_externo": "MAT2107",
+          "nome": "Equações Diferenciais Ordinárias",
+          "periodo": 3,
+          "eixo": "Básico",
+          "carga_horaria": 64,
+          "ementa": "Equações de primeira e segunda ordem e ordem mais alta. Soluções em série. Transformada de Laplace. Sistemas de Equações Diferenciais Lineares com coeficientes constantes.",
+          "plano_curso": "Equações de primeira e segunda ordem e ordem mais alta. Soluções em série. Transformada de Laplace. Sistemas de Equações Diferenciais Lineares com coeficientes constantes."
+        },
+        {
+          "codigo": "ECOI2207",
+          "codigo_externo": "ECOI2207",
+          "nome": "Projeto e Análise de Algoritmos",
+          "periodo": 4,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 64,
+          "ementa": "Conceitos Básicos. Técnicas de Projeto: Divisão-e-Conquista, Guloso, Recursão, Backtracking, Programação Dinâmica. Notação e Análise Assintótica de pior e melhor caso. Análise de Complexidade de Problemas: Classes de problemas; Problemas NP-Completos. Grafos: Definições e conceitos básicos, Representação de grafos, Conexidade: grafos conexos e cortes. Algoritmos de busca em grafo: busca em largura, busca em profundidade e ordenação topológica. Árvores geradoras e seus algoritmos. Algoritmos para caminhos mínimos: Dijkstra, Bellman-Ford, Floyd-Warshall. Componentes fortemente conexas. Caminhos e Ciclos Hamiltoniano e Euleriano. Outras aplicações: Cliques, Coloração, Planaridade, isomorfismo.",
+          "plano_curso": "Conceitos Básicos. Técnicas de Projeto: Divisão-e-Conquista, Guloso, Recursão, Backtracking, Programação Dinâmica. Notação e Análise Assintótica de pior e melhor caso. Análise de Complexidade de Problemas: Classes de problemas; Problemas NP-Completos. Grafos: Definições e conceitos básicos, Representação de grafos, Conexidade: grafos conexos e cortes. Algoritmos de busca em grafo: busca em largura, busca em profundidade e ordenação topológica. Árvores geradoras e seus algoritmos. Algoritmos para caminhos mínimos: Dijkstra, Bellman-Ford, Floyd-Warshall. Componentes fortemente conexas. Caminhos e Ciclos Hamiltoniano e Euleriano. Outras aplicações: Cliques, Coloração, Planaridade, isomorfismo."
+        },
+        {
+          "codigo": "ECOI2208",
+          "codigo_externo": "ECOI2208",
+          "nome": "Arquitetura de Computadores",
+          "periodo": 4,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 64,
+          "ementa": "Organização de Computadores. Conceitos e tecnologia. Análise de desempenho. Instruções: linguagem de máquina. Aritmética para computadores. O processador. Pipelining. Mecanismos de Interrupção e de Exceção. Barramento, Comunicações; Interfaces e Periféricos, Organização de memória. Organização de sistemas de E/S.",
+          "plano_curso": "Organização de Computadores. Conceitos e tecnologia. Análise de desempenho. Instruções: linguagem de máquina. Aritmética para computadores. O processador. Pipelining. Mecanismos de Interrupção e de Exceção. Barramento, Comunicações; Interfaces e Periféricos, Organização de memória. Organização de sistemas de E/S."
+        },
+        {
+          "codigo": "EELI26",
+          "codigo_externo": "EELI26",
+          "nome": "Materiais Elétricos",
+          "periodo": 4,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Propriedades gerais dos materiais (elétricas, mecânicas, térmicas, químicas). Materiais magnéticos (imãs permanentes, curvas de magnetização e histerese). Materiais condutores (condutividade, resistividade, variação com a temperatura). Materiais isolantes (dielétricos). Materiais semicondutores (intrínseco, extrínseco, tipo p, tipo n). Tecnologia de fabricação, elaboração, determinação de características através de ensaios. Noções de supercondutores.",
+          "plano_curso": "Propriedades gerais dos materiais (elétricas, mecânicas, térmicas, químicas). Materiais magnéticos (imãs permanentes, curvas de magnetização e histerese). Materiais condutores (condutividade, resistividade, variação com a temperatura). Materiais isolantes (dielétricos). Materiais semicondutores (intrínseco, extrínseco, tipo p, tipo n). Tecnologia de fabricação, elaboração, determinação de características através de ensaios. Noções de supercondutores."
+        },
+        {
+          "codigo": "EMTI2203",
+          "codigo_externo": "EMTI2203",
+          "nome": "Química Geral",
+          "periodo": 4,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Estrutura atômica; Interações interatômica e intermoleculares; Cálculos estequiométricos; Eletroquímica.",
+          "plano_curso": "Estrutura atômica; Interações interatômica e intermoleculares; Cálculos estequiométricos; Eletroquímica."
+        },
+        {
+          "codigo": "EMTI2204",
+          "codigo_externo": "EMTI2204",
+          "nome": "Laboratório Química Geral",
+          "periodo": 4,
+          "eixo": "Específico",
+          "carga_horaria": 16,
+          "ementa": "Introdução ao laboratório e normas de segurança; Materiais de uso comum em laboratórios e realização de medidas; Identificação de elemento químico por teste de chamas; Preparo de soluções; Tipos de reações em meio aquoso; Eletroquímica.",
+          "plano_curso": "Introdução ao laboratório e normas de segurança; Materiais de uso comum em laboratórios e realização de medidas; Identificação de elemento químico por teste de chamas; Preparo de soluções; Tipos de reações em meio aquoso; Eletroquímica."
+        },
+        {
+          "codigo": "FISI2304",
+          "codigo_externo": "FISI2304",
+          "nome": "Fundamentos de Eletromagnetismo",
+          "periodo": 4,
+          "eixo": "Básico",
+          "carga_horaria": 64,
+          "ementa": "Eletrostática; lei de Gauss; magnetoestática; lei de Faraday; lei de Ampère; ondas eletromagnéticas; introdução às equações de Maxwell.",
+          "plano_curso": "Eletrostática; lei de Gauss; magnetoestática; lei de Faraday; lei de Ampère; ondas eletromagnéticas; introdução às equações de Maxwell."
+        },
+        {
+          "codigo": "MAT2105",
+          "codigo_externo": "MAT2105",
+          "nome": "Álgebra Linear em Nível Intermediário",
+          "periodo": 4,
+          "eixo": "Básico",
+          "carga_horaria": 64,
+          "ementa": "Transformações Lineares. Espaços Vetoriais. Autovalores e Diagonalização. Produto Interno. Operadores auto-adjuntos e ortogonais. Formas lineares, bilineares e quadráticas.",
+          "plano_curso": "Transformações Lineares. Espaços Vetoriais. Autovalores e Diagonalização. Produto Interno. Operadores auto-adjuntos e ortogonais. Formas lineares, bilineares e quadráticas."
+        },
+        {
+          "codigo": "MAT2108",
+          "codigo_externo": "MAT2108",
+          "nome": "Cálculo Numérico",
+          "periodo": 4,
+          "eixo": "Básico",
+          "carga_horaria": 64,
+          "ementa": "Interpolação. Solução de Equações Algébricas e Transcendentes. Integração Numérica. Sistemas Lineares. Soluções numéricas para equações diferenciais.",
+          "plano_curso": "Interpolação. Solução de Equações Algébricas e Transcendentes. Integração Numérica. Sistemas Lineares. Soluções numéricas para equações diferenciais."
+        },
+        {
+          "codigo": "ECAI2202",
+          "codigo_externo": "ECAI2202",
+          "nome": "Sinais e Sistemas",
+          "periodo": 5,
+          "eixo": "Específico",
+          "carga_horaria": 64,
+          "ementa": "Revisão de conceitos básicos envolvendo números complexos. Representação de sinais no domínio contínuo e discreto. Análise de sinais periódicos utilizando a Série de Fourier. Análise de sinais aperiódicos utilizando a Transformada de Fourier. Análise de Sistemas Lineares e Invariantes no tempo utilizando a Transformada de Laplace. Representação de sistemas nos domínios contínuo e discreto. Análise de sistemas. Amostragem de sinais. Análise de sistemas discretos utilizando a Transformada Z.",
+          "plano_curso": "Revisão de conceitos básicos envolvendo números complexos. Representação de sinais no domínio contínuo e discreto. Análise de sinais periódicos utilizando a Série de Fourier. Análise de sinais aperiódicos utilizando a Transformada de Fourier. Análise de Sistemas Lineares e Invariantes no tempo utilizando a Transformada de Laplace. Representação de sistemas nos domínios contínuo e discreto. Análise de sistemas. Amostragem de sinais. Análise de sistemas discretos utilizando a Transformada Z."
+        },
+        {
+          "codigo": "ECAI2231",
+          "codigo_externo": "ECAI2231",
+          "nome": "Instrumentação Básica",
+          "periodo": 5,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Introdução à Instrumentação. Introdução aos Sinais na Instrumentação. Especificações técnicas de sensores. Sensores discretos: chaves, sensores de presença, de temperatura, de pressão e de nível e circuitos básicos. Sensores contínuos: medidas elétricas e sensores de temperatura, pressão e deslocamento.",
+          "plano_curso": "Introdução à Instrumentação. Introdução aos Sinais na Instrumentação. Especificações técnicas de sensores. Sensores discretos: chaves, sensores de presença, de temperatura, de pressão e de nível e circuitos básicos. Sensores contínuos: medidas elétricas e sensores de temperatura, pressão e deslocamento."
+        },
+        {
+          "codigo": "ECOI2209",
+          "codigo_externo": "ECOI2209",
+          "nome": "Linguagens de Programação",
+          "periodo": 5,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 64,
+          "ementa": "Aspectos básicos de descrição de linguagens de programação em relação a compilação e usos em vários paradigmas. Características de implementação de linguagens, suporte a orientação a objetos, concorrência, multithreading, tratamento de eventos, programação funcional e multiparadigma. Uso de linguagens de programação para desenvolvimento de soluções computacionais para desktop e Internet.",
+          "plano_curso": "Aspectos básicos de descrição de linguagens de programação em relação a compilação e usos em vários paradigmas. Características de implementação de linguagens, suporte a orientação a objetos, concorrência, multithreading, tratamento de eventos, programação funcional e multiparadigma. Uso de linguagens de programação para desenvolvimento de soluções computacionais para desktop e Internet."
+        },
+        {
+          "codigo": "ECOI2210",
+          "codigo_externo": "ECOI2210",
+          "nome": "Análise e Desenvolvimento de Software I",
+          "periodo": 5,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 64,
+          "ementa": "Levantamento de Requisitos e de Negócios: Documento de Requisitos; Diagrama de Processos de Negócio. Diagrama de Casos de Uso: Descrição dos Casos de Uso. Modelagem do Banco de Dados: Modelo Entidade Relacionamento (MER) e Diagrama Entidade Relacionamento (DER). Protótipo de Telas – wireframe",
+          "plano_curso": "Levantamento de Requisitos e de Negócios: Documento de Requisitos; Diagrama de Processos de Negócio. Diagrama de Casos de Uso: Descrição dos Casos de Uso. Modelagem do Banco de Dados: Modelo Entidade Relacionamento (MER) e Diagrama Entidade Relacionamento (DER). Protótipo de Telas – wireframe"
+        },
+        {
+          "codigo": "EELI2240",
+          "codigo_externo": "EELI2240",
+          "nome": "Materiais Elétricos",
+          "periodo": 5,
+          "eixo": "Eletrônica/Eletricidade",
+          "carga_horaria": 32,
+          "ementa": "Propriedades gerais dos materiais (elétricas, mecânicas, térmicas, químicas). Materiais magnéticos (imãs permanentes, curvas de magnetização e histerese). Materiais condutores (condutividade, resistividade, variação com a temperatura). Materiais isolantes (dielétricos). Materiais semicondutores (intrínseco, extrínseco, tipo p, tipo n). Tecnologia de fabricação, elaboração, determinação de características através de ensaios. Noções de supercondutores.",
+          "plano_curso": "Propriedades gerais dos materiais (elétricas, mecânicas, térmicas, químicas). Materiais magnéticos (imãs permanentes, curvas de magnetização e histerese). Materiais condutores (condutividade, resistividade, variação com a temperatura). Materiais isolantes (dielétricos). Materiais semicondutores (intrínseco, extrínseco, tipo p, tipo n). Tecnologia de fabricação, elaboração, determinação de características através de ensaios. Noções de supercondutores."
+        },
+        {
+          "codigo": "ELTI2204",
+          "codigo_externo": "ELTI2204",
+          "nome": "Eletrônica Analógica I",
+          "periodo": 5,
+          "eixo": "Específico",
+          "carga_horaria": 64,
+          "ementa": "Introdução à eletrônica. Amplificadores operacionais. Teoria dos semicondutores. Diodos, circuitos com diodos e diodos de propósito especial. Transistor Bipolar de Junção (TBJ). Polarização de TBJs e amplificadores de pequeno sinal com BJTs. Transistor de Efeito de Campo Metal-Óxido-Semicondutor (MOSFET). Polarização de MOSFETs e amplificadores de pequeno sinal com MOSFETs. Simulações computacionais para caracterização de dispositivos eletrônicos.",
+          "plano_curso": "Introdução à eletrônica. Amplificadores operacionais. Teoria dos semicondutores. Diodos, circuitos com diodos e diodos de propósito especial. Transistor Bipolar de Junção (TBJ). Polarização de TBJs e amplificadores de pequeno sinal com BJTs. Transistor de Efeito de Campo Metal-Óxido-Semicondutor (MOSFET). Polarização de MOSFETs e amplificadores de pequeno sinal com MOSFETs. Simulações computacionais para caracterização de dispositivos eletrônicos."
+        },
+        {
+          "codigo": "ELTI2205",
+          "codigo_externo": "ELTI2205",
+          "nome": "Laboratório de Eletrônica Analógica I",
+          "periodo": 5,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Experiências e demonstrações em laboratório de eletrônica, referentes ao conteúdo da disciplina Eletrônica I e análise por meio de simulações em computador.",
+          "plano_curso": "Experiências e demonstrações em laboratório de eletrônica, referentes ao conteúdo da disciplina Eletrônica I e análise por meio de simulações em computador."
+        },
+        {
+          "codigo": "FISI2305",
+          "codigo_externo": "FISI2305",
+          "nome": "Fundamentos de Óptica e Física Moderna",
+          "periodo": 5,
+          "eixo": "Básico",
+          "carga_horaria": 32,
+          "ementa": "Óptica geométrica; óptica física, introdução a física quântica e à relatividade restrita; natureza ondulatória da matéria.",
+          "plano_curso": "Óptica geométrica; óptica física, introdução a física quântica e à relatividade restrita; natureza ondulatória da matéria."
+        },
+        {
+          "codigo": "ECAI2203",
+          "codigo_externo": "ECAI2203",
+          "nome": "Sistemas de Controle I",
+          "periodo": 6,
+          "eixo": "Específico",
+          "carga_horaria": 64,
+          "ementa": "Modelagem Matemática de Sistemas Dinâmicos Contínuos. Resposta Transitória e de Regime Estacionário. Sistemas de Malha Fechada. Análise de estabilidade. Sintonia de Controladores PID. Projeto de Controladores pelo Método do Lugar das Raízes. Projeto de Controladores pela Resposta em Frequência.",
+          "plano_curso": "Modelagem Matemática de Sistemas Dinâmicos Contínuos. Resposta Transitória e de Regime Estacionário. Sistemas de Malha Fechada. Análise de estabilidade. Sintonia de Controladores PID. Projeto de Controladores pelo Método do Lugar das Raízes. Projeto de Controladores pela Resposta em Frequência."
+        },
+        {
+          "codigo": "ECAI2204",
+          "codigo_externo": "ECAI2204",
+          "nome": "Laboratório de Sistemas de Controle I",
+          "periodo": 6,
+          "eixo": "Específico",
+          "carga_horaria": 16,
+          "ementa": "Modelagem Matemática de Sistemas Dinâmicos Contínuos. Resposta Transitória e de Regime Estacionário. Sistemas de Malha Fechada. Análise de estabilidade. Sintonia de Controladores PID. Projeto de Controladores pelo Método do Lugar das Raízes. Projeto de Controladores pela Resposta em Frequência.",
+          "plano_curso": "Modelagem Matemática de Sistemas Dinâmicos Contínuos. Resposta Transitória e de Regime Estacionário. Sistemas de Malha Fechada. Análise de estabilidade. Sintonia de Controladores PID. Projeto de Controladores pelo Método do Lugar das Raízes. Projeto de Controladores pela Resposta em Frequência."
+        },
+        {
+          "codigo": "ECOI2211",
+          "codigo_externo": "ECOI2211",
+          "nome": "Sistemas Operacionais",
+          "periodo": 6,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 32,
+          "ementa": "Conceitos básicos. Projeto e construção de sistemas operacionais. Processos e threads. Escalonamento de CPU. Comunicação e sincronismo. Problemas clássicos de programação concorrente. Alocação de recursos e deadlocks. Gerência de memória principal. Memória virtual. Sistemas de arquivos. Sistemas de Entrada/Saída.",
+          "plano_curso": "Conceitos básicos. Projeto e construção de sistemas operacionais. Processos e threads. Escalonamento de CPU. Comunicação e sincronismo. Problemas clássicos de programação concorrente. Alocação de recursos e deadlocks. Gerência de memória principal. Memória virtual. Sistemas de arquivos. Sistemas de Entrada/Saída."
+        },
+        {
+          "codigo": "ECOI2212",
+          "codigo_externo": "ECOI2212",
+          "nome": "Laboratório de Sistemas Operacionais",
+          "periodo": 6,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 32,
+          "ementa": "Conceitos básicos. Projeto e construção de sistemas operacionais. Processos e threads. Escalonamento de CPU. Comunicação e sincronismo. Problemas clássicos de programação concorrente. Alocação de recursos e deadlocks. Gerência de memória principal. Memória virtual. Sistemas de arquivos. Sistemas de Entrada/Saída.",
+          "plano_curso": "Conceitos básicos. Projeto e construção de sistemas operacionais. Processos e threads. Escalonamento de CPU. Comunicação e sincronismo. Problemas clássicos de programação concorrente. Alocação de recursos e deadlocks. Gerência de memória principal. Memória virtual. Sistemas de arquivos. Sistemas de Entrada/Saída."
+        },
+        {
+          "codigo": "ECOI2213",
+          "codigo_externo": "ECOI2213",
+          "nome": "Análise e Desenvolvimento de Software II",
+          "periodo": 6,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 64,
+          "ementa": "Gestão de Projetos: Cronograma - Tempo; Custos de Projetos – Pontos de Função; Riscos e Negociação; Comunicação em Projetos; Scrum – Gestão ágil de Projetos; Certificações. Projeto de Banco de dados: Modelo Lógico. Diagramas UML: Classes; Atividades; Sequência.",
+          "plano_curso": "Gestão de Projetos: Cronograma - Tempo; Custos de Projetos – Pontos de Função; Riscos e Negociação; Comunicação em Projetos; Scrum – Gestão ágil de Projetos; Certificações. Projeto de Banco de dados: Modelo Lógico. Diagramas UML: Classes; Atividades; Sequência."
+        },
+        {
+          "codigo": "ELTI2206",
+          "codigo_externo": "ELTI2206",
+          "nome": "Eletrônica Digital II",
+          "periodo": 6,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Memórias semicondutoras: Introdução, Tipos e evolução, Características, Estrutura interna e operação, Arranjos lógicos e Projetos para decodificação de endereçamento. Dispositivos Lógicos Programáveis: Introdução, Tipos, Evolução, Famílias. Estrutura básica de um FPGA (CLB/LE, Roteamento – Switch Matrix, I/O Blocks – Pinagem, Proteção, outros). Linguagem de descrição de hardware (HDL): Introdução, Histórico, Tipos, Evolução, Estrutura básica da linguagem, síntese Lógica, Teste, Validação e Simulação.",
+          "plano_curso": "Memórias semicondutoras: Introdução, Tipos e evolução, Características, Estrutura interna e operação, Arranjos lógicos e Projetos para decodificação de endereçamento. Dispositivos Lógicos Programáveis: Introdução, Tipos, Evolução, Famílias. Estrutura básica de um FPGA (CLB/LE, Roteamento – Switch Matrix, I/O Blocks – Pinagem, Proteção, outros). Linguagem de descrição de hardware (HDL): Introdução, Histórico, Tipos, Evolução, Estrutura básica da linguagem, síntese Lógica, Teste, Validação e Simulação."
+        },
+        {
+          "codigo": "ELTI2207",
+          "codigo_externo": "ELTI2207",
+          "nome": "Laboratório de Eletrônica Digital II",
+          "periodo": 6,
+          "eixo": "Específico",
+          "carga_horaria": 16,
+          "ementa": "Experiências em laboratório envolvendo tópicos abordados na disciplina Eletrônica Digital.",
+          "plano_curso": "Experiências em laboratório envolvendo tópicos abordados na disciplina Eletrônica Digital."
+        },
+        {
+          "codigo": "ELTI2216",
+          "codigo_externo": "ELTI2216",
+          "nome": "Projeto Aplicado de Eletrônica",
+          "periodo": 6,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Conceitos gerais de PCI. Captura de Esquema elétrico e diretrizes deste documento. Empacotamento do esquema elétrico. Conceitos gerais sobre processos de solda, e dos materiais laminados. Regras de layout relacionadas a trilhas, espaçamentos e furos. Regras de posicionamento e restrições. Tecnologias em PCI: Silver through hole, jumper cross over e pci flexíveis. Placas multicamadas: tecnologia, limites de fabricação, HDI (projetos de alta densidade). Dimensionamento de trilhas. Stackup e conceitos de fabricação da pci. Geração de arquivos de fabricação, montagem e testes. Tipos de dissipadores; Teoria da transferência de calor; Dimensionamento de dissipadores para transferência de calor sem e com convecção forçada. Condutividade térmica dos materiais;",
+          "plano_curso": "Conceitos gerais de PCI. Captura de Esquema elétrico e diretrizes deste documento. Empacotamento do esquema elétrico. Conceitos gerais sobre processos de solda, e dos materiais laminados. Regras de layout relacionadas a trilhas, espaçamentos e furos. Regras de posicionamento e restrições. Tecnologias em PCI: Silver through hole, jumper cross over e pci flexíveis. Placas multicamadas: tecnologia, limites de fabricação, HDI (projetos de alta densidade). Dimensionamento de trilhas. Stackup e conceitos de fabricação da pci. Geração de arquivos de fabricação, montagem e testes. Tipos de dissipadores; Teoria da transferência de calor; Dimensionamento de dissipadores para transferência de calor sem e com convecção forçada. Condutividade térmica dos materiais;"
+        },
+        {
+          "codigo": "ELTI2232",
+          "codigo_externo": "ELTI2232",
+          "nome": "Circuitos Integrados Analógicos",
+          "periodo": 6,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Introdução e história dos semicondutores. Revisão de transistores MOS. Espelhos e guias de corrente MOS. Projeto e caracterização de amplificadores fonte comum, porta comum, cascode, seguidor de fonte e emissor. Projeto e caracterização de amplificadores diferenciais MOS. Projeto e caracterização de amplificadores MOS de múltiplos estágios. Resposta em frequência, CMRR e PSRR de amplificadores MOS. Realimentação negativa e compensação em frequência.",
+          "plano_curso": "Introdução e história dos semicondutores. Revisão de transistores MOS. Espelhos e guias de corrente MOS. Projeto e caracterização de amplificadores fonte comum, porta comum, cascode, seguidor de fonte e emissor. Projeto e caracterização de amplificadores diferenciais MOS. Projeto e caracterização de amplificadores MOS de múltiplos estágios. Resposta em frequência, CMRR e PSRR de amplificadores MOS. Realimentação negativa e compensação em frequência."
+        },
+        {
+          "codigo": "ELTI2233",
+          "codigo_externo": "ELTI2233",
+          "nome": "Laboratório de Circuitos Integrados Analógicos",
+          "periodo": 6,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Ferramentas CAD para projeto de circuitos analógicos utilizando transistores MOS. Tecnologias de fabricação e layout de circuitos analógicos. Metodologia e fluxo de projeto de circuitos integrados analógicos. Inglês instrumental para circuitos integrados.",
+          "plano_curso": "Ferramentas CAD para projeto de circuitos analógicos utilizando transistores MOS. Tecnologias de fabricação e layout de circuitos analógicos. Metodologia e fluxo de projeto de circuitos integrados analógicos. Inglês instrumental para circuitos integrados."
+        },
+        {
+          "codigo": "FISI2306",
+          "codigo_externo": "FISI2306",
+          "nome": "Laboratório de Física B (Eletromagnetismo, Óptica e Física Moderna)",
+          "periodo": 6,
+          "eixo": "Básico",
+          "carga_horaria": 32,
+          "ementa": "Experimentos de eletromagnetismo, óptica e física moderna.",
+          "plano_curso": "Experimentos de eletromagnetismo, óptica e física moderna."
+        },
+        {
+          "codigo": "ECOI2214",
+          "codigo_externo": "ECOI2214",
+          "nome": "Teoria da Computação",
+          "periodo": 7,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 32,
+          "ementa": "Linguagens Formais. Hierarquia de Chomsky. Linguagens e Gramáticas Regulares, Autômatos de Estados Finito, Expressões Regulares. Linguagens e Gramáticas Livres de Contexto, Autômatos de Pilha, Forma Normal de Chomsky. Linguagens e Gramáticas Sensíveis ao Contexto. Linguagem Recursivamente enumerável, Gramática Irrestrita, Máquinas de Turing. Decidibilidade, Computabilidade, redutibilidade e Tese de Church-Turing.",
+          "plano_curso": "Linguagens Formais. Hierarquia de Chomsky. Linguagens e Gramáticas Regulares, Autômatos de Estados Finito, Expressões Regulares. Linguagens e Gramáticas Livres de Contexto, Autômatos de Pilha, Forma Normal de Chomsky. Linguagens e Gramáticas Sensíveis ao Contexto. Linguagem Recursivamente enumerável, Gramática Irrestrita, Máquinas de Turing. Decidibilidade, Computabilidade, redutibilidade e Tese de Church-Turing."
+        },
+        {
+          "codigo": "ECOI2215",
+          "codigo_externo": "ECOI2215",
+          "nome": "Análise e Desenvolvimento de Software III",
+          "periodo": 7,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 64,
+          "ementa": "Desenvolvimento de sistemas: Versionamento e documentação de código; Desenvolvimento Web; Desenvolvimento Mobile; SQL. Interface Homem Computador – Front End: Psicologia; Usabilidade; Cores; Estilos de Interação; Acessibilidade; Avaliação de Interface. Back End: Linguagem de comunicação com servidor e banco de dados.",
+          "plano_curso": "Desenvolvimento de sistemas: Versionamento e documentação de código; Desenvolvimento Web; Desenvolvimento Mobile; SQL. Interface Homem Computador – Front End: Psicologia; Usabilidade; Cores; Estilos de Interação; Acessibilidade; Avaliação de Interface. Back End: Linguagem de comunicação com servidor e banco de dados."
+        },
+        {
+          "codigo": "ELTI2210",
+          "codigo_externo": "ELTI2210",
+          "nome": "Microcontroladores",
+          "periodo": 7,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Arquiteturas típicas de microprocessadores e microcontroladores (Harvard, Von Neumann). Estruturas de barramentos e memórias. Registros de funções especiais. Tipos de instruções. Linguagem e técnicas de programação Assembly. Pilha. Linguagem C. Periféricos e interfaces: I/O, Seriais, Timers/Counters, Conversores A/D, PWM, etc. Interrupções. Projeto e desenvolvimento de sistemas microcontrolados.",
+          "plano_curso": "Arquiteturas típicas de microprocessadores e microcontroladores (Harvard, Von Neumann). Estruturas de barramentos e memórias. Registros de funções especiais. Tipos de instruções. Linguagem e técnicas de programação Assembly. Pilha. Linguagem C. Periféricos e interfaces: I/O, Seriais, Timers/Counters, Conversores A/D, PWM, etc. Interrupções. Projeto e desenvolvimento de sistemas microcontrolados."
+        },
+        {
+          "codigo": "ELTI2211",
+          "codigo_externo": "ELTI2211",
+          "nome": "Laboratório de Microcontroladores",
+          "periodo": 7,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Arquiteturas típicas de microprocessadores e microcontroladores (Harvard, Von Neumann). Estruturas de barramentos e memórias. Registros de funções especiais. Tipos de instruções. Linguagem e técnicas de programação Assembly. Pilha. Linguagem C. Periféricos e interfaces: I/O, Seriais, Timers/Counters, Conversores A/D, PWM, etc. Interrupções. Projeto e desenvolvimento de sistemas microcontrolados.",
+          "plano_curso": "Arquiteturas típicas de microprocessadores e microcontroladores (Harvard, Von Neumann). Estruturas de barramentos e memórias. Registros de funções especiais. Tipos de instruções. Linguagem e técnicas de programação Assembly. Pilha. Linguagem C. Periféricos e interfaces: I/O, Seriais, Timers/Counters, Conversores A/D, PWM, etc. Interrupções. Projeto e desenvolvimento de sistemas microcontrolados."
+        },
+        {
+          "codigo": "ELTI2212",
+          "codigo_externo": "ELTI2212",
+          "nome": "Sistemas de Comunicação",
+          "periodo": 7,
+          "eixo": "Específico",
+          "carga_horaria": 64,
+          "ementa": "Características dos sistemas de comunicação. Análise e Transmissão de Sinais. Modulação de onda contínua em amplitude. Modulação de onda contínua em ângulo. Amostragem e Conversão Analógico-Digital. Modulação de pulso em amplitude. Modulação de pulso em código. Modulação digital de portadora. Transmissão digital em banda base. Transmissão digital em banda passante. Códigos de controle de erro. Modulação por espalhamento espectral. Tópicos, tendências e aplicações atuais de sistemas de comunicação.",
+          "plano_curso": "Características dos sistemas de comunicação. Análise e Transmissão de Sinais. Modulação de onda contínua em amplitude. Modulação de onda contínua em ângulo. Amostragem e Conversão Analógico-Digital. Modulação de pulso em amplitude. Modulação de pulso em código. Modulação digital de portadora. Transmissão digital em banda base. Transmissão digital em banda passante. Códigos de controle de erro. Modulação por espalhamento espectral. Tópicos, tendências e aplicações atuais de sistemas de comunicação."
+        },
+        {
+          "codigo": "ELTI2213",
+          "codigo_externo": "ELTI2213",
+          "nome": "Laboratório de Sistemas de Comunicação",
+          "periodo": 7,
+          "eixo": "Específico",
+          "carga_horaria": 16,
+          "ementa": "Experiências em laboratório envolvendo tópicos abordados na disciplina Sistemas de Comunicação.",
+          "plano_curso": "Experiências em laboratório envolvendo tópicos abordados na disciplina Sistemas de Comunicação."
+        },
+        {
+          "codigo": "ELTI2217",
+          "codigo_externo": "ELTI2217",
+          "nome": "Laboratório de Processamento Digital de Sinais",
+          "periodo": 7,
+          "eixo": "Específico",
+          "carga_horaria": 16,
+          "ementa": "Experimentos sobre tópicos da ementa da disciplina Processamento Digital de Sinais",
+          "plano_curso": "Experimentos sobre tópicos da ementa da disciplina Processamento Digital de Sinais"
+        },
+        {
+          "codigo": "HUMI2206",
+          "codigo_externo": "HUMI2206",
+          "nome": "Metodologia Científica",
+          "periodo": 7,
+          "eixo": "Complementar",
+          "carga_horaria": 32,
+          "ementa": "Introdução à Epistemologia. Gêneros textuais para divulgação da pesquisa. Possibilidades metodológicas para o planejamento e desenvolvimento da pesquisa científica. Apresentações oral e escrita dos gêneros acadêmico-científicos. Apresentação das normas da Associação Brasileira de Normas Técnicas referentes aos gêneros acadêmico-científicos.",
+          "plano_curso": "Introdução à Epistemologia. Gêneros textuais para divulgação da pesquisa. Possibilidades metodológicas para o planejamento e desenvolvimento da pesquisa científica. Apresentações oral e escrita dos gêneros acadêmico-científicos. Apresentação das normas da Associação Brasileira de Normas Técnicas referentes aos gêneros acadêmico-científicos."
+        },
+        {
+          "codigo": "PDS01",
+          "codigo_externo": "ELTI2216",
+          "nome": "Processamento Digital de Sinais",
+          "periodo": 7,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Transformada Discreta de Fourier - DFT: Definição, propriedades e aplicações. Transformada Rápida de Fourier - FFT. Introdução aos filtros digitais. Classificação de filtros digitais em relação ao método de implementação e à finalidade e utilização. Projeto de filtros recursivos (IIR) baseados em modelos de filtros analógicos Butterworth, Bessel e Chebyshev. Filtros convolutivos (FIR) de média móvel. Projeto de filtros convolutivos (FIR) windowed-sinc. Introdução ao processamento digital de imagens. Tópicos, aplicações e tendências atuais em processamento digital de sinais. Considerações sobre processadores DSP comerciais",
+          "plano_curso": "Transformada Discreta de Fourier - DFT: Definição, propriedades e aplicações. Transformada Rápida de Fourier - FFT. Introdução aos filtros digitais. Classificação de filtros digitais em relação ao método de implementação e à finalidade e utilização. Projeto de filtros recursivos (IIR) baseados em modelos de filtros analógicos Butterworth, Bessel e Chebyshev. Filtros convolutivos (FIR) de média móvel. Projeto de filtros convolutivos (FIR) windowed-sinc. Introdução ao processamento digital de imagens. Tópicos, aplicações e tendências atuais em processamento digital de sinais. Considerações sobre processadores DSP comerciais"
+        },
+        {
+          "codigo": "ECOI2216",
+          "codigo_externo": "ECOI2216",
+          "nome": "Redes de Computadores",
+          "periodo": 8,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 64,
+          "ementa": "Introdução às redes de computadores. Classificação das redes. Topologias. Protocolos e serviços de comunicação. Arquitetura em camadas. Modelo ISO/OSI. Pilha TCP-IP. Planejamento e projeto de redes. Introdução à segurança em redes.",
+          "plano_curso": "Introdução às redes de computadores. Classificação das redes. Topologias. Protocolos e serviços de comunicação. Arquitetura em camadas. Modelo ISO/OSI. Pilha TCP-IP. Planejamento e projeto de redes. Introdução à segurança em redes."
+        },
+        {
+          "codigo": "ECOI2217",
+          "codigo_externo": "ECOI2217",
+          "nome": "Inteligência Artificial",
+          "periodo": 8,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 64,
+          "ementa": "Esquemas para representação do conhecimento. Formalismos para a representação de conhecimento incerto. Resolução de problemas por meio de Busca. Algoritmos Heurísticos. Computação Evolutiva. Algoritmos Genéticos. Inteligência de Enxames. Redes Neurais Artificiais. Lógica Difusa (Fuzzy). Aprendizado de Máquina.",
+          "plano_curso": "Esquemas para representação do conhecimento. Formalismos para a representação de conhecimento incerto. Resolução de problemas por meio de Busca. Algoritmos Heurísticos. Computação Evolutiva. Algoritmos Genéticos. Inteligência de Enxames. Redes Neurais Artificiais. Lógica Difusa (Fuzzy). Aprendizado de Máquina."
+        },
+        {
+          "codigo": "ECOI2218",
+          "codigo_externo": "ECOI2218",
+          "nome": "Análise e Desenvolvimento de Software IV",
+          "periodo": 8,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 64,
+          "ementa": "Teste de Software: Casos de Teste; Automatização de Testes – TDD. Implantação de Sistemas: Configuração de servidores; Treinamento de usuários; Manutenção de Sistemas.",
+          "plano_curso": "Teste de Software: Casos de Teste; Automatização de Testes – TDD. Implantação de Sistemas: Configuração de servidores; Treinamento de usuários; Manutenção de Sistemas."
+        },
+        {
+          "codigo": "ECOI2219",
+          "codigo_externo": "ECOI2219",
+          "nome": "Compiladores",
+          "periodo": 8,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 64,
+          "ementa": "Análises léxica, sintática e semântica. Geração de código intermediário. Otimização de código. Geração de código objeto.",
+          "plano_curso": "Análises léxica, sintática e semântica. Geração de código intermediário. Otimização de código. Geração de código objeto."
+        },
+        {
+          "codigo": "ELTI2218",
+          "codigo_externo": "ELTI2218",
+          "nome": "Sistemas Embarcados de Tempo Real",
+          "periodo": 8,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Conceitos gerais de computação embarcada. Projeto e implementação de sistemas embarcados. Máquinas de estados e UML para sistemas embarcados. Conceitos básicos sobre sistemas de tempo real. Escalonamento de tarefas periódicas e aperiódicas. Comunicação e sincronismo de tarefas. Sistemas operacionais embarcados e de tempo real. Software embarcado para dispositivos móveis. Limitações de sistemas embarcados. Sistemas conectados e internet das coisas. Qualidade, confiabilidade e segurança de sistemas embarcados.",
+          "plano_curso": "Conceitos gerais de computação embarcada. Projeto e implementação de sistemas embarcados. Máquinas de estados e UML para sistemas embarcados. Conceitos básicos sobre sistemas de tempo real. Escalonamento de tarefas periódicas e aperiódicas. Comunicação e sincronismo de tarefas. Sistemas operacionais embarcados e de tempo real. Software embarcado para dispositivos móveis. Limitações de sistemas embarcados. Sistemas conectados e internet das coisas. Qualidade, confiabilidade e segurança de sistemas embarcados."
+        },
+        {
+          "codigo": "ELTI2219",
+          "codigo_externo": "ELTI2219",
+          "nome": "Laboratório de Sistemas Embarcados de Tempo Real",
+          "periodo": 8,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Conceitos gerais de computação embarcada. Projeto e implementação de sistemas embarcados. Máquinas de estados e UML para sistemas embarcados. Conceitos básicos sobre sistemas de tempo real. Escalonamento de tarefas periódicas e aperiódicas. Comunicação e sincronismo de tarefas. Sistemas operacionais embarcados e de tempo real. Software embarcado para dispositivos móveis. Limitações de sistemas embarcados. Sistemas conectados e internet das coisas. Qualidade, confiabilidade e segurança de sistemas embarcados",
+          "plano_curso": "Conceitos gerais de computação embarcada. Projeto e implementação de sistemas embarcados. Máquinas de estados e UML para sistemas embarcados. Conceitos básicos sobre sistemas de tempo real. Escalonamento de tarefas periódicas e aperiódicas. Comunicação e sincronismo de tarefas. Sistemas operacionais embarcados e de tempo real. Software embarcado para dispositivos móveis. Limitações de sistemas embarcados. Sistemas conectados e internet das coisas. Qualidade, confiabilidade e segurança de sistemas embarcados"
+        },
+        {
+          "codigo": "TCCI01",
+          "codigo_externo": "TCC I",
+          "nome": "Trabalho de Conclusão de Curso I",
+          "periodo": 8,
+          "eixo": "TCC",
+          "carga_horaria": 51,
+          "ementa": "Desenvolvimento de trabalho de conclusão de curso I: objetivos, revisão bibliográfica e/ou fundamentação teórica, descrição da metodologia de pesquisa e cronograma para o TCC2. Apresentação à banca examinadora. Requisito não-disciplinar: matrícula a partir do 8º período e, no mínimo, 70% da carga horária total do curso integralizada.",
+          "plano_curso": "Desenvolvimento de trabalho de conclusão de curso I: objetivos, revisão bibliográfica e/ou fundamentação teórica, descrição da metodologia de pesquisa e cronograma para o TCC2. Apresentação à banca examinadora. Requisito não-disciplinar: matrícula a partir do 8º período e, no mínimo, 70% da carga horária total do curso integralizada."
+        },
+        {
+          "codigo": "EAMI30",
+          "codigo_externo": "EAMI30",
+          "nome": "Ciências do Ambiente",
+          "periodo": 9,
+          "eixo": "Complementar",
+          "carga_horaria": 32,
+          "ementa": "Fundamentos de ecologia. Poluição ambiental: água, ar, solo. Tecnologias de controle de poluição. Gestão ambiental. Legislação ambiental. Avaliação de impactos ambientais.",
+          "plano_curso": "Fundamentos de ecologia. Poluição ambiental: água, ar, solo. Tecnologias de controle de poluição. Gestão ambiental. Legislação ambiental. Avaliação de impactos ambientais."
+        },
+        {
+          "codigo": "ECAI2233",
+          "codigo_externo": "ECAI2233",
+          "nome": "Introdução à Automação Industrial",
+          "periodo": 9,
+          "eixo": "Específico",
+          "carga_horaria": 32,
+          "ementa": "Revisão de Comandos Elétricos. Introdução à Automação: definições, história e arquitetura. Controladores lógicos programáveis e sua arquitetura. Programação CLP com Linguagem Ladder. CNC e Robótica.",
+          "plano_curso": "Revisão de Comandos Elétricos. Introdução à Automação: definições, história e arquitetura. Controladores lógicos programáveis e sua arquitetura. Programação CLP com Linguagem Ladder. CNC e Robótica."
+        },
+        {
+          "codigo": "ECAI2234",
+          "codigo_externo": "ECAI2234",
+          "nome": "Laboratório de Automação Industrial",
+          "periodo": 9,
+          "eixo": "Específico",
+          "carga_horaria": 16,
+          "ementa": "Revisão de Comandos Elétricos. Controladores lógicos programáveis e sua arquitetura. Programação CLP com Linguagem Ladder.",
+          "plano_curso": "Revisão de Comandos Elétricos. Controladores lógicos programáveis e sua arquitetura. Programação CLP com Linguagem Ladder."
+        },
+        {
+          "codigo": "ECOI2220",
+          "codigo_externo": "ECOI2220",
+          "nome": "Sistemas Paralelos e Distribuídos",
+          "periodo": 9,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 32,
+          "ementa": "Conceitos básicos; Arquiteturas paralelas; Caracterização das arquiteturas paralelas e níveis de paralelismo; Análise de desempenho de algoritmos paralelos; Modelos de programação paralela de memória compartilhada e distribuída; Modelos de sistemas distribuídos; Coordenação e sincronização em sistemas distribuídos.",
+          "plano_curso": "Conceitos básicos; Arquiteturas paralelas; Caracterização das arquiteturas paralelas e níveis de paralelismo; Análise de desempenho de algoritmos paralelos; Modelos de programação paralela de memória compartilhada e distribuída; Modelos de sistemas distribuídos; Coordenação e sincronização em sistemas distribuídos."
+        },
+        {
+          "codigo": "ECOI2221",
+          "codigo_externo": "ECOI2221",
+          "nome": "Infraestrutura de Sistemas de Computação e Segurança",
+          "periodo": 9,
+          "eixo": "Profissionalizante",
+          "carga_horaria": 32,
+          "ementa": "Conceitos de ataques e ameaças aos sistemas computacionais. Introdução a políticas de segurança e técnicas de mitigação de ameaças. Authentication, Authorization and Accounting (AAA). Introdução às tecnologias de Firewalls. Introdução a sistemas de IPS e IDS. Introdução a criptografia, conceitos de VPNs e testes de segurança. Infraestrutura e modelos de serviços de redes. Introdução à computação em nuvem, virtualização e contêineres. Infraestrutura como Código.",
+          "plano_curso": "Conceitos de ataques e ameaças aos sistemas computacionais. Introdução a políticas de segurança e técnicas de mitigação de ameaças. Authentication, Authorization and Accounting (AAA). Introdução às tecnologias de Firewalls. Introdução a sistemas de IPS e IDS. Introdução a criptografia, conceitos de VPNs e testes de segurança. Infraestrutura e modelos de serviços de redes. Introdução à computação em nuvem, virtualização e contêineres. Infraestrutura como Código."
+        },
+        {
+          "codigo": "EPRIB001",
+          "codigo_externo": "EPRIB001",
+          "nome": "Administração",
+          "periodo": 9,
+          "eixo": "Complementar",
+          "carga_horaria": 32,
+          "ementa": "Introdução a Administração. Administração contemporânea. Abordagem clássica da administração. Abordagens ao longo da história (humanística, neoclássica, estruturalista, comportamental, sistêmica, contingencial) e novas abordagens. As funções do administrador e o processo administrativo (organização, planejamento, direção e controle).",
+          "plano_curso": "Introdução a Administração. Administração contemporânea. Abordagem clássica da administração. Abordagens ao longo da história (humanística, neoclássica, estruturalista, comportamental, sistêmica, contingencial) e novas abordagens. As funções do administrador e o processo administrativo (organização, planejamento, direção e controle)."
+        },
+        {
+          "codigo": "EPRIB002",
+          "codigo_externo": "EPRIB002",
+          "nome": "Introdução à Economia",
+          "periodo": 9,
+          "eixo": "Complementar",
+          "carga_horaria": 48,
+          "ementa": "Natureza e método de economia. História do pensamento econômico. Microeconomia. Macroeconomia.",
+          "plano_curso": "Natureza e método de economia. História do pensamento econômico. Microeconomia. Macroeconomia."
+        },
+        {
+          "codigo": "HUMI2204",
+          "codigo_externo": "HUMI2204",
+          "nome": "Cidadania e Responsabilidade Social",
+          "periodo": 9,
+          "eixo": "Complementar",
+          "carga_horaria": 32,
+          "ementa": "A dimensão humana e a construção do indivíduo. Etnocentrismo, alteridade e relativismo cultural. Diferentes culturas brasileiras: Cultura e afrodescendência no Brasil; Histórias das Culturas Indígenas. Subjetividade e coletividade. Ética. Política, instituições e organizações. Constituição de 1988: princípios fundamentais, direitos e deveres individuais e coletivos. A sociedade contemporânea. Globalização e sustentabilidade. Responsabilidade social. Empreendedorismo social.",
+          "plano_curso": "A dimensão humana e a construção do indivíduo. Etnocentrismo, alteridade e relativismo cultural. Diferentes culturas brasileiras: Cultura e afrodescendência no Brasil; Histórias das Culturas Indígenas. Subjetividade e coletividade. Ética. Política, instituições e organizações. Constituição de 1988: princípios fundamentais, direitos e deveres individuais e coletivos. A sociedade contemporânea. Globalização e sustentabilidade. Responsabilidade social. Empreendedorismo social."
+        },
+        {
+          "codigo": "TCCII01",
+          "codigo_externo": "TCC II",
+          "nome": "Trabalho de Conclusão de Curso II",
+          "periodo": 9,
+          "eixo": "TCC",
+          "carga_horaria": 77,
+          "ementa": "Desenvolvimento e conclusão do trabalho de conclusão de curso II. Defesa final perante banca examinadora. Requisito não-disciplinar: matrícula a partir do 8º período e, no mínimo, 70% da carga horária total do curso integralizada.",
+          "plano_curso": "Desenvolvimento e conclusão do trabalho de conclusão de curso II. Defesa final perante banca examinadora. Requisito não-disciplinar: matrícula a partir do 8º período e, no mínimo, 70% da carga horária total do curso integralizada."
+        },
+        {
+          "codigo": "EST01",
+          "codigo_externo": "EST",
+          "nome": "Estágio Supervisionado",
+          "periodo": 10,
+          "eixo": "Complementar",
+          "carga_horaria": 175,
+          "ementa": "Estágio supervisionado obrigatório a partir do 8º período, com carga horária de 160 horas-aula. Requer integralização mínima de 60% da carga horária total do curso.",
+          "plano_curso": "Estágio supervisionado obrigatório a partir do 8º período, com carga horária de 160 horas-aula. Requer integralização mínima de 60% da carga horária total do curso."
+        },
+        {
+          "codigo": "ECO044",
+          "codigo_externo": "ECO044",
+          "nome": "Programação de Dispositivos Móveis",
+          "periodo": null,
+          "eixo": "Optativo",
+          "carga_horaria": 64,
+          "ementa": "Padrões de projetos para dispositivos móveis. Usabilidade móvel. Ambiente de programação de dispositivos móveis. Frameworks de desenvolvimento. Banco de dados. Publicação em loja de aplicativos.",
+          "plano_curso": "Padrões de projetos para dispositivos móveis. Usabilidade móvel. Ambiente de programação de dispositivos móveis. Frameworks de desenvolvimento. Banco de dados. Publicação em loja de aplicativos."
+        },
+        {
+          "codigo": "ECOI24",
+          "codigo_externo": "ECOI24",
+          "nome": "Computação Gráfica e Processamento Digital de Imagens",
+          "periodo": null,
+          "eixo": "Optativo",
+          "carga_horaria": 64,
+          "ementa": "Transformações geométricas em duas e três dimensões; Recorte e Visibilidade; Transformações Projetivas; Definição de Objetos e Cenas Tridimensionais; Modelos de Iluminação e Tonalização (shading); Texturas e Mapeamentos; Rasterização e Técnicas de anti-serrilhado (antialiasing); Percepção Visual Humana; Amostragem, realce, filtragem e restauração de imagens; Segmentação de imagens; Compressão e comunicação de imagens; Noções de visão computacional e reconhecimento de padrões.",
+          "plano_curso": "Transformações geométricas em duas e três dimensões; Recorte e Visibilidade; Transformações Projetivas; Definição de Objetos e Cenas Tridimensionais; Modelos de Iluminação e Tonalização (shading); Texturas e Mapeamentos; Rasterização e Técnicas de anti-serrilhado (antialiasing); Percepção Visual Humana; Amostragem, realce, filtragem e restauração de imagens; Segmentação de imagens; Compressão e comunicação de imagens; Noções de visão computacional e reconhecimento de padrões."
+        },
+        {
+          "codigo": "ECOI34",
+          "codigo_externo": "ECOI34",
+          "nome": "Circuito CMOS em Inversão Fraca",
+          "periodo": null,
+          "eixo": "Optativo",
+          "carga_horaria": 32,
+          "ementa": "Modelagem do transistor MOS operando em inversão fraca. Transistor MOS composto. Amplificadores operacionais de transcondutância. Efeitos de canal curto e de nanoescala na operação em inversão fraca. Simulações computacionais.",
+          "plano_curso": "Modelagem do transistor MOS operando em inversão fraca. Transistor MOS composto. Amplificadores operacionais de transcondutância. Efeitos de canal curto e de nanoescala na operação em inversão fraca. Simulações computacionais."
+        },
+        {
+          "codigo": "ECOI35",
+          "codigo_externo": "ECOI35",
+          "nome": "Desenvolvimento de Sistemas WEB",
+          "periodo": null,
+          "eixo": "Optativo",
+          "carga_horaria": 64,
+          "ementa": "Tecnologias para desenvolvimento de sistemas e aplicativos em ambiente Web/multi-plataforma. Geração de conteúdo estático e dinâmico na Web. Programação client-side (front-end) e server-side (back-end). Segurança no ambiente Web. Escalabilidade e uso massivo de aplicações. Tecnologias emergentes.",
+          "plano_curso": "Tecnologias para desenvolvimento de sistemas e aplicativos em ambiente Web/multi-plataforma. Geração de conteúdo estático e dinâmico na Web. Programação client-side (front-end) e server-side (back-end). Segurança no ambiente Web. Escalabilidade e uso massivo de aplicações. Tecnologias emergentes."
+        },
+        {
+          "codigo": "ECOI36",
+          "codigo_externo": "ECOI36",
+          "nome": "Fluxo de Projeto de Circuitos Integrados",
+          "periodo": null,
+          "eixo": "Optativo",
+          "carga_horaria": 32,
+          "ementa": "Fluxo de projeto de circuitos integrados e organização da indústria. Ferramentas de projeto de circuitos integrados. Tecnologias de fabricação de circuitos integrados e suas particularidades. Etapas da fabricação dos fluxos de circuitos integrados digitais e analógicos.",
+          "plano_curso": "Fluxo de projeto de circuitos integrados e organização da indústria. Ferramentas de projeto de circuitos integrados. Tecnologias de fabricação de circuitos integrados e suas particularidades. Etapas da fabricação dos fluxos de circuitos integrados digitais e analógicos."
+        },
+        {
+          "codigo": "ECOI37",
+          "codigo_externo": "ECOI37",
+          "nome": "Mineração de Dados",
+          "periodo": null,
+          "eixo": "Optativo",
+          "carga_horaria": 64,
+          "ementa": "Classificação: algoritmos probabilísticos, baseados em heurísticas, baseados em funções, tabelas de decisão, árvore de decisão e morfológicos. Clusterização: definições de algoritmos de clusterização, algoritmos baseados em heurísticas, algoritmos baseados em distância, algoritmos baseados em probabilidade. Regras de Associação. Algoritmo Apriori. Aplicações práticas das técnicas aprendidas em problemas científicos.",
+          "plano_curso": "Classificação: algoritmos probabilísticos, baseados em heurísticas, baseados em funções, tabelas de decisão, árvore de decisão e morfológicos. Clusterização: definições de algoritmos de clusterização, algoritmos baseados em heurísticas, algoritmos baseados em distância, algoritmos baseados em probabilidade. Regras de Associação. Algoritmo Apriori. Aplicações práticas das técnicas aprendidas em problemas científicos."
+        },
+        {
+          "codigo": "EELI04",
+          "codigo_externo": "EELi04",
+          "nome": "Eletricidade Aplicada I",
+          "periodo": null,
+          "eixo": "Optativo",
+          "carga_horaria": 32,
+          "ementa": "Natureza da Eletricidade. Grandezas Elétricas Fundamentais. Lei de Ohm. Circuitos em série, paralelo e mistos. Análise de circuitos em corrente contínua. Leis de Kirchhoff. Teoremas de Thévenin e Norton. Eletricidade Aplicada nas Engenharias.",
+          "plano_curso": "Natureza da Eletricidade. Grandezas Elétricas Fundamentais. Lei de Ohm. Circuitos em série, paralelo e mistos. Análise de circuitos em corrente contínua. Leis de Kirchhoff. Teoremas de Thévenin e Norton. Eletricidade Aplicada nas Engenharias."
+        },
+        {
+          "codigo": "EELI05",
+          "codigo_externo": "EELi05",
+          "nome": "Laboratório Eletricidade Aplicada I",
+          "periodo": null,
+          "eixo": "Optativo",
+          "carga_horaria": 16,
+          "ementa": "1ª Lei de Ohm e associações de resistores. Leis de Kirchhoff. Teorema de Thèvenin e da superposição de efeitos. Máxima transferência de potência. Características de indutores e capacitores em regime permanente. Circuitos RL e RC em regime transitório.",
+          "plano_curso": "1ª Lei de Ohm e associações de resistores. Leis de Kirchhoff. Teorema de Thèvenin e da superposição de efeitos. Máxima transferência de potência. Características de indutores e capacitores em regime permanente. Circuitos RL e RC em regime transitório."
+        },
+        {
+          "codigo": "ELTI2234",
+          "codigo_externo": "ELTi2234",
+          "nome": "Circuitos Integrados Digitais",
+          "periodo": null,
+          "eixo": "Optativo",
+          "carga_horaria": 32,
+          "ementa": "Introdução e história dos semicondutores. Revisão de transistores MOS. Projeto e caracterização do inversor lógico CMOS. Projeto portas lógicas CMOS. Circuitos utilizando lógica pseudo-NMOS e lógica de transistores de passagem. Projeto de lachtes e fli-flops utilizando transistores MOS. Projeto de celulas de memória de acesso aleatório com transistores MOS. Circuitos sensores de nível lógico. Arquiteturas de memórias e circuitos decodificadores de endereço utilizandos transistores MOS. Projeto de osciladores em transistores MOS.",
+          "plano_curso": "Introdução e história dos semicondutores. Revisão de transistores MOS. Projeto e caracterização do inversor lógico CMOS. Projeto portas lógicas CMOS. Circuitos utilizando lógica pseudo-NMOS e lógica de transistores de passagem. Projeto de lachtes e fli-flops utilizando transistores MOS. Projeto de celulas de memória de acesso aleatório com transistores MOS. Circuitos sensores de nível lógico. Arquiteturas de memórias e circuitos decodificadores de endereço utilizandos transistores MOS. Projeto de osciladores em transistores MOS."
+        },
+        {
+          "codigo": "ELTI2235",
+          "codigo_externo": "ELTi2235",
+          "nome": "Laboratório de Circuitos Integrados Digitais",
+          "periodo": null,
+          "eixo": "Optativo",
+          "carga_horaria": 32,
+          "ementa": "Ferramentas CAD para projeto de circuitos lógicos utilizando transistores MOS. Tecnologias de fabricação e layout de circuitos lógicos. Metodologia e fluxo de projeto de circuitos integrados digitais. Inglês instrumental para circuitos integrados.",
+          "plano_curso": "Ferramentas CAD para projeto de circuitos lógicos utilizando transistores MOS. Tecnologias de fabricação e layout de circuitos lógicos. Metodologia e fluxo de projeto de circuitos integrados digitais. Inglês instrumental para circuitos integrados."
+        },
+        {
+          "codigo": "EPRI30",
+          "codigo_externo": "EPRi30",
+          "nome": "Pesquisa Operacional",
+          "periodo": null,
+          "eixo": "Optativo",
+          "carga_horaria": 64,
+          "ementa": "Introdução à Pesquisa Operacional. Modelagem. Programação Linear: formulação e método gráfico. Programação Linear: Método Simplex. Casos particulares no Simplex. Análise econômica. Dualidade e sua interpretação econômica. Análise de sensibilidade. Ferramentas computacionais de otimização. Programação Linear Inteira. Problema de Transporte. Outros problemas de rede.",
+          "plano_curso": "Introdução à Pesquisa Operacional. Modelagem. Programação Linear: formulação e método gráfico. Programação Linear: Método Simplex. Casos particulares no Simplex. Análise econômica. Dualidade e sua interpretação econômica. Análise de sensibilidade. Ferramentas computacionais de otimização. Programação Linear Inteira. Problema de Transporte. Outros problemas de rede."
+        }
+      ],
+      "dependencias": [
+        {
+          "disciplina_codigo": "ECOI2204",
+          "dependencia_codigo": "ECOI2202",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "FISI2301",
+          "dependencia_codigo": "MAT2101",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2205",
+          "dependencia_codigo": "ECOI2202",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2206",
+          "dependencia_codigo": "ECOI2204",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELTI2203",
+          "dependencia_codigo": "ELTI2202",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "EMEI06",
+          "dependencia_codigo": "MAT2101",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "EMEI06",
+          "dependencia_codigo": "FISI2301",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "FISI2302",
+          "dependencia_codigo": "FISI2301",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "FISI2303",
+          "dependencia_codigo": "FISI2301",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2207",
+          "dependencia_codigo": "ECOI2204",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2208",
+          "dependencia_codigo": "ELTI2202",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "EMTI2203",
+          "dependencia_codigo": "EMTI2204",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "FISI2304",
+          "dependencia_codigo": "FISI2301",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECAI2202",
+          "dependencia_codigo": "MAT2107",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2210",
+          "dependencia_codigo": "ECOI2204",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2210",
+          "dependencia_codigo": "ECOI2205",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELTI2204",
+          "dependencia_codigo": "EELI2204",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELTI2204",
+          "dependencia_codigo": "ELTI2205",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "ELTI2205",
+          "dependencia_codigo": "EELI2204",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "FISI2305",
+          "dependencia_codigo": "FISI2304",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECAI2203",
+          "dependencia_codigo": "ECAI2202",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECAI2203",
+          "dependencia_codigo": "ECAI2204",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "ECAI2204",
+          "dependencia_codigo": "ECAI2202",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2211",
+          "dependencia_codigo": "ECOI2208",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2211",
+          "dependencia_codigo": "ECOI2206",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2211",
+          "dependencia_codigo": "ECOI2212",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "ECOI2212",
+          "dependencia_codigo": "ECOI2206",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2212",
+          "dependencia_codigo": "ECOI2208",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELTI2206",
+          "dependencia_codigo": "ELTI2202",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELTI2206",
+          "dependencia_codigo": "ELTI2207",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "ELTI2207",
+          "dependencia_codigo": "ELTI2202",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELTI2232",
+          "dependencia_codigo": "ELTI2204",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELTI2232",
+          "dependencia_codigo": "ELTI2233",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "ELTI2233",
+          "dependencia_codigo": "ELTI2204",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "FISI2306",
+          "dependencia_codigo": "FISI2305",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2214",
+          "dependencia_codigo": "ECOI2203",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2215",
+          "dependencia_codigo": "ECOI2213",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELTI2210",
+          "dependencia_codigo": "ELTI2206",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELTI2211",
+          "dependencia_codigo": "ELTI2206",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELTI2212",
+          "dependencia_codigo": "ECAI2202",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELTI2212",
+          "dependencia_codigo": "ELTI2213",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "ELTI2213",
+          "dependencia_codigo": "ECAI2202",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "PDS01",
+          "dependencia_codigo": "ECAI2202",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "PDS01",
+          "dependencia_codigo": "ELTI2217",
+          "tipo": "CO"
+        },
+        {
+          "disciplina_codigo": "ELTI2217",
+          "dependencia_codigo": "ECAI2202",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "HUMI2206",
+          "dependencia_codigo": "HUMI02",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2216",
+          "dependencia_codigo": "ECOI2204",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2217",
+          "dependencia_codigo": "ECOI2204",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2218",
+          "dependencia_codigo": "ECOI2215",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2219",
+          "dependencia_codigo": "ECOI2203",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2219",
+          "dependencia_codigo": "ECOI2214",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELTI2218",
+          "dependencia_codigo": "ELTI2210",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ELTI2219",
+          "dependencia_codigo": "ELTI2210",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2220",
+          "dependencia_codigo": "ECOI2205",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2220",
+          "dependencia_codigo": "ECOI2216",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2220",
+          "dependencia_codigo": "ECOI2211",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2220",
+          "dependencia_codigo": "ECOI2212",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2221",
+          "dependencia_codigo": "ECOI2216",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2209",
+          "dependencia_codigo": "ECOI2204",
+          "tipo": "PRE"
+        },
+        {
+          "disciplina_codigo": "ECOI2209",
+          "dependencia_codigo": "ECOI2205",
+          "tipo": "PRE"
+        }
+      ],
+      "ofertas": [],
+      "ja_cadastradas": {
+        "disciplinas": [],
+        "dependencias": [],
+        "ofertas": []
+      }
+    }
+  },
+  "relatorio_auditoria": {
+    "status_consenso": "DESEMPATADO_PELA_3A_IA",
+    "houve_divergencia": true,
+    "total_divergencias_detectadas": 35,
+    "simulado": false,
+    "alerta_instrucao_suspeita": false,
+    "documento_entrada": {
+      "formato": "pdf",
+      "paginas": 136,
+      "paginas_ocr": 0,
+      "recortado_por_tamanho": true,
+      "caracteres": 122493
+    },
+    "modelos": {
+      "ia1": {
+        "provider": "openrouter",
+        "model": "nvidia/nemotron-3.5-super-vl:free",
+        "verificacao": {
+          "nome_curso_identificado": "Engenharia de Computação",
+          "regra_conversao_creditos": "Horas já explícitas em hora-aula (h/a) na matriz; 1 h/a = 55 minutos",
+          "total_periodos_obrigatorios": 10,
+          "total_obrigatorias_contadas": 62,
+          "total_optativas_contadas": 20,
+          "observacoes": "Estágio Supervisionado (10º período, 175h) e TCC I/II (8º/9º períodos) incluídos como obrigatórias. Optativas listadas com período null. Requisitos não-disciplinares (ex.: 60% CH para estágio, 70% CH para TCC1) registrados textualmente nas ementas correspondentes. Códigos normalizados removendo hífens, pontos e espaços; siglas sem dígito receberam sufixo 01."
+        }
+      },
+      "ia2": {
+        "provider": "openrouter",
+        "model": "nvidia/nemotron-3.5-super-vl:free",
+        "verificacao": {
+          "nome_curso_identificado": "Engenharia de Computação",
+          "regra_conversao_creditos": "Carga horária expressa diretamente em horas-aula (h/a), 1 h/a = 55 minutos; não há conversão de créditos",
+          "total_periodos_obrigatorios": 10,
+          "total_obrigatorias_contadas": 62,
+          "total_optativas_contadas": 20,
+          "observacoes": "Requisitos de carga horária acumulada (estágio: 60% da CH total; TCC1: 70% da CH total) foram mantidos apenas no texto da ementa e não convertidos em dependências disciplinares. Códigos institucionais com hífens/pontos foram normalizados para o padrão GradMent (apenas letras e dígitos). Optativas listadas com período OPT recebem periodo: null. TCC I e TCC II são obrigatórias nos períodos 8 e 9. Estágio Supervisionado é obrigatório no período 10."
+        }
+      },
+      "ia3": {
+        "provider": "gemini",
+        "model": "gemini-3.6-flash"
+      }
+    },
+    "divergencias_iniciais": {
+      "curso_divergente": null,
+      "disciplinas": [
+        {
+          "id_divergencia": "DISC_01",
+          "motivo": "período divergente (IA1=5 vs IA2=4)",
+          "codigo_sugerido": "ECOI2209",
+          "ia1": {
+            "codigo": "ECOI2209",
+            "codigo_externo": "ECOI2209",
+            "nome": "Linguagens de Programação",
+            "periodo": 5,
+            "eixo": "Profissionalizante",
+            "carga_horaria": 64,
+            "ementa": "Aspectos básicos de descrição de linguagens de programação em relação a compilação e usos em vários paradigmas. Características de implementação de linguagens, suporte a orientação a objetos, concorrência, multithreading, tratamento de eventos, programação funcional e multiparadigma. Uso de linguagens de programação para desenvolvimento de soluções computacionais para desktop e Internet."
+          },
+          "ia2": {
+            "codigo": "ECOI2209",
+            "codigo_externo": "ECOI2209",
+            "nome": "Linguagens de Programação",
+            "periodo": 4,
+            "eixo": "Básico",
+            "carga_horaria": 64,
+            "ementa": "Aspectos básicos de descrição de linguagens de programação em relação a compilação e usos em vários paradigmas. Características de implementação de linguagens, suporte a orientação a objetos, concorrência, multithreading, tratamento de eventos, programação funcional e multiparadigma. Uso de linguagens de programação para desenvolvimento de soluções computacionais para desktop e Internet."
+          }
+        },
+        {
+          "id_divergencia": "DISC_02",
+          "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "codigo_sugerido": "TCCI01",
+          "ia1": {
+            "codigo": "TCCI01",
+            "codigo_externo": "TCC I",
+            "nome": "Trabalho de Conclusão de Curso I",
+            "periodo": 8,
+            "eixo": "Complementar",
+            "carga_horaria": 51,
+            "ementa": "Trabalho de Conclusão de Curso I. Requisito não-disciplinar: matrícula a partir do 8º período e, no mínimo, 70% da carga horária total do curso integralizada."
+          },
+          "ia2": {
+            "codigo": "TCCI01",
+            "codigo_externo": "TCC I",
+            "nome": "Trabalho de Conclusão de Curso I",
+            "periodo": 8,
+            "eixo": "TCC",
+            "carga_horaria": 51,
+            "ementa": "Desenvolvimento de trabalho de conclusão de curso I: objetivos, revisão bibliográfica e/ou fundamentação teórica, descrição da metodologia de pesquisa e cronograma para o TCC2. Apresentação à banca examinadora."
+          }
+        },
+        {
+          "id_divergencia": "DISC_03",
+          "motivo": "carga_horaria divergente/inválida (IA1=32h vs IA2=48h)",
+          "codigo_sugerido": "EPRIB002",
+          "ia1": {
+            "codigo": "EPRIB002",
+            "codigo_externo": "EPRIB002",
+            "nome": "Introdução à Economia",
+            "periodo": 9,
+            "eixo": "Complementar",
+            "carga_horaria": 32,
+            "ementa": "Natureza e método de economia. História do pensamento econômico. Microeconomia. Macroeconomia."
+          },
+          "ia2": {
+            "codigo": "EPRIB002",
+            "codigo_externo": "EPRIB002",
+            "nome": "Introdução à Economia",
+            "periodo": 9,
+            "eixo": "Complementar",
+            "carga_horaria": 48,
+            "ementa": "Natureza e método de economia. História do pensamento econômico. Microeconomia. Macroeconomia."
+          }
+        },
+        {
+          "id_divergencia": "DISC_04",
+          "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "codigo_sugerido": "TCCII01",
+          "ia1": {
+            "codigo": "TCCII01",
+            "codigo_externo": "TCC II",
+            "nome": "Trabalho de Conclusão de Curso II",
+            "periodo": 9,
+            "eixo": "Complementar",
+            "carga_horaria": 77,
+            "ementa": "Trabalho de Conclusão de Curso II."
+          },
+          "ia2": {
+            "codigo": "TCCII01",
+            "codigo_externo": "TCC II",
+            "nome": "Trabalho de Conclusão de Curso II",
+            "periodo": 9,
+            "eixo": "TCC",
+            "carga_horaria": 77,
+            "ementa": "Desenvolvimento e conclusão do trabalho de conclusão de curso II. Defesa final perante banca examinadora."
+          }
+        },
+        {
+          "id_divergencia": "DISC_05",
+          "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "codigo_sugerido": "EST01",
+          "ia1": {
+            "codigo": "EST01",
+            "codigo_externo": "EST",
+            "nome": "Estágio Supervisionado",
+            "periodo": 10,
+            "eixo": "Complementar",
+            "carga_horaria": 175,
+            "ementa": "Estágio Supervisionado. Requisito não-disciplinar: matrícula a partir do 8º período e, no mínimo, 60% da carga horária total do curso integralizada."
+          },
+          "ia2": {
+            "codigo": "EST01",
+            "codigo_externo": "EST",
+            "nome": "Estágio Supervisionado",
+            "periodo": 10,
+            "eixo": "Complementar",
+            "carga_horaria": 175,
+            "ementa": "Estágio supervisionado obrigatório a partir do 8º período, com carga horária de 160 horas-aula. Requer integralização mínima de 60% da carga horária total do curso."
+          }
+        },
+        {
+          "id_divergencia": "DISC_06",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "EELI04",
+          "ia1": {
+            "codigo": "EELI04",
+            "codigo_externo": "EELi04",
+            "nome": "Eletricidade Aplicada I",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 32,
+            "ementa": "Natureza da Eletricidade. Grandezas Elétricas Fundamentais. Lei de Ohm. Circuitos em série, paralelo e mistos. Análise de circuitos em corrente contínua. Leis de Kirchhoff. Teoremas de Thévenin e Norton. Eletricidade Aplicada nas Engenharias."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_07",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "EELI05",
+          "ia1": {
+            "codigo": "EELI05",
+            "codigo_externo": "EELi05",
+            "nome": "Laboratório Eletricidade Aplicada I",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 16,
+            "ementa": "1ª Lei de Ohm e associações de resistores. Leis de Kirchhoff. Teorema de Thèvenin e da superposição de efeitos. Máxima transferência de potência. Características de indutores e capacitores em regime permanente. Circuitos RL e RC em regime transitório."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_08",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "NATCOMP01",
+          "ia1": {
+            "codigo": "NATCOMP01",
+            "codigo_externo": null,
+            "nome": "Natural Computing",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_09",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "MARAT1",
+          "ia1": {
+            "codigo": "MARAT1",
+            "codigo_externo": null,
+            "nome": "Maratona de Programação I",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_10",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "MARAT2",
+          "ia1": {
+            "codigo": "MARAT2",
+            "codigo_externo": null,
+            "nome": "Maratona de Programação II",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_11",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "TOPBD1",
+          "ia1": {
+            "codigo": "TOPBD1",
+            "codigo_externo": null,
+            "nome": "Tópicos em Banco de Dados",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_12",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "TOPDES1",
+          "ia1": {
+            "codigo": "TOPDES1",
+            "codigo_externo": null,
+            "nome": "Tópicos em Desenvolvimento de Software I",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_13",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "TOPDES2",
+          "ia1": {
+            "codigo": "TOPDES2",
+            "codigo_externo": null,
+            "nome": "Tópicos em Desenvolvimento de Software II",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_14",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "AGRUESP01",
+          "ia1": {
+            "codigo": "AGRUESP01",
+            "codigo_externo": null,
+            "nome": "Introdução ao Algoritmo de Agrupamento Espectral",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_15",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "EMPRE01",
+          "ia1": {
+            "codigo": "EMPRE01",
+            "codigo_externo": null,
+            "nome": "Empreendedorismo",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_16",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "BIGDATAR01",
+          "ia1": {
+            "codigo": "BIGDATAR01",
+            "codigo_externo": null,
+            "nome": "Introdução ao Big Data em R",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_17",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "GESTONG01",
+          "ia1": {
+            "codigo": "GESTONG01",
+            "codigo_externo": null,
+            "nome": "Gestão de ONG’s",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_18",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "LIBRAS01",
+          "ia1": {
+            "codigo": "LIBRAS01",
+            "codigo_externo": null,
+            "nome": "Libras - Língua brasileira de sinais",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_19",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "MAQELECI1",
+          "ia1": {
+            "codigo": "MAQELECI1",
+            "codigo_externo": null,
+            "nome": "Máquinas elétricas I",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_20",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "ROBOTICA01",
+          "ia1": {
+            "codigo": "ROBOTICA01",
+            "codigo_externo": null,
+            "nome": "Robótica",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_21",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "SEMINFRA01",
+          "ia1": {
+            "codigo": "SEMINFRA01",
+            "codigo_externo": null,
+            "nome": "Seminários de internacionalização - França",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_22",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "SEMINANG01",
+          "ia1": {
+            "codigo": "SEMINANG01",
+            "codigo_externo": null,
+            "nome": "Seminários de internacionalização - países anglofônicos",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_23",
+          "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "codigo_sugerido": "VISCOMP01",
+          "ia1": {
+            "codigo": "VISCOMP01",
+            "codigo_externo": null,
+            "nome": "Visão computacional",
+            "periodo": null,
+            "eixo": "Optativo",
+            "carga_horaria": 30,
+            "ementa": "Disciplina optativa listada no ementário do curso."
+          },
+          "ia2": null
+        },
+        {
+          "id_divergencia": "DISC_24",
+          "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+          "codigo_sugerido": "LING01",
+          "ia1": null,
+          "ia2": {
+            "codigo": "LING01",
+            "codigo_externo": "ECOI2209",
+            "nome": "Linguagens de Programação",
+            "periodo": 5,
+            "eixo": "Básico",
+            "carga_horaria": 64,
+            "ementa": "Aspectos básicos de descrição de linguagens de programação em relação a compilação e usos em vários paradigmas. Características de implementação de linguagens, suporte a orientação a objetos, concorrência, multithreading, tratamento de eventos, programação funcional e multiparadigma. Uso de linguagens de programação para desenvolvimento de soluções computacionais para desktop e Internet."
+          }
+        },
+        {
+          "id_divergencia": "DISC_25",
+          "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+          "codigo_sugerido": "EELI2240",
+          "ia1": null,
+          "ia2": {
+            "codigo": "EELI2240",
+            "codigo_externo": "EELI2240",
+            "nome": "Materiais Elétricos",
+            "periodo": 5,
+            "eixo": "Eletrônica/Eletricidade",
+            "carga_horaria": 32,
+            "ementa": "Propriedades gerais dos materiais (elétricas, mecânicas, térmicas, químicas). Materiais magnéticos (imãs permanentes, curvas de magnetização e histerese). Materiais condutores (condutividade, resistividade, variação com a temperatura). Materiais isolantes (dielétricos). Materiais semicondutores (intrínseco, extrínseco, tipo p, tipo n). Tecnologia de fabricação, elaboração, determinação de características através de ensaios. Noções de supercondutores."
+          }
+        },
+        {
+          "id_divergencia": "DISC_26",
+          "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+          "codigo_sugerido": "OPT01",
+          "ia1": null,
+          "ia2": {
+            "codigo": "OPT01",
+            "codigo_externo": "OPT",
+            "nome": "Optativa I",
+            "periodo": null,
+            "eixo": "Optativa",
+            "carga_horaria": 64,
+            "ementa": "Disciplina optativa de livre escolha dentre a relação apresentada na estrutura curricular do curso."
+          }
+        },
+        {
+          "id_divergencia": "DISC_27",
+          "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+          "codigo_sugerido": "OPT02",
+          "ia1": null,
+          "ia2": {
+            "codigo": "OPT02",
+            "codigo_externo": "OPT",
+            "nome": "Optativa II",
+            "periodo": null,
+            "eixo": "Optativa",
+            "carga_horaria": 64,
+            "ementa": "Disciplina optativa de livre escolha dentre a relação apresentada na estrutura curricular do curso."
+          }
+        },
+        {
+          "id_divergencia": "DISC_28",
+          "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+          "codigo_sugerido": "OPT03",
+          "ia1": null,
+          "ia2": {
+            "codigo": "OPT03",
+            "codigo_externo": "OPT",
+            "nome": "Optativa III",
+            "periodo": null,
+            "eixo": "Optativa",
+            "carga_horaria": 64,
+            "ementa": "Disciplina optativa de livre escolha dentre a relação apresentada na estrutura curricular do curso."
+          }
+        }
+      ],
+      "dependencias": [
+        {
+          "id_divergencia": "DEP_01",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "ECOI2209",
+          "dependencia_codigo": "ECOI2204",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_02",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "ECOI2209",
+          "dependencia_codigo": "ECOI2205",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_03",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "ELTI2234",
+          "dependencia_codigo": "ELTI2204",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_04",
+          "motivo": "Dependência PRE apontada apenas pela IA 1",
+          "disciplina_codigo": "ELTI2235",
+          "dependencia_codigo": "ELTI2204",
+          "ia1_tipo": "PRE",
+          "ia2_tipo": null
+        },
+        {
+          "id_divergencia": "DEP_05",
+          "motivo": "Dependência PRE apontada apenas pela IA 2",
+          "disciplina_codigo": "LING01",
+          "dependencia_codigo": "ECOI2204",
+          "ia1_tipo": null,
+          "ia2_tipo": "PRE"
+        },
+        {
+          "id_divergencia": "DEP_06",
+          "motivo": "Dependência PRE apontada apenas pela IA 2",
+          "disciplina_codigo": "LING01",
+          "dependencia_codigo": "ECOI2205",
+          "ia1_tipo": null,
+          "ia2_tipo": "PRE"
+        },
+        {
+          "id_divergencia": "DEP_07",
+          "motivo": "Dependência PRE apontada apenas pela IA 2",
+          "disciplina_codigo": "ECOI2213",
+          "dependencia_codigo": "ECOI2210",
+          "ia1_tipo": null,
+          "ia2_tipo": "PRE"
+        }
+      ]
+    },
+    "arbitragem_ia3": {
+      "acionada": true,
+      "simulada": false,
+      "provider": "openrouter",
+      "model": "nvidia/nemotron-3.5-super-vl:free",
+      "resumo": "As divergências entre IA 1 e IA 2 originaram-se de extrações inconsistentes do PPC: (i) período e eixo divergentes para ECOI2209 (IA1=5/Profissionalizante vs IA2=4/Básico); (ii) ementas de TCC I, TCC II e Estágio Supervisionado com requisitos não-disciplinares misturados ou ausentes; (iii) carga horária divergente para Introdução à Economia (32h vs 48h); (iv) disciplinas optativas extraídas apenas por uma IA, algumas inexistentes no PPC (Natural Computing, Maratona I/II, Tópicos BD, Tópicos Dev SW I/II, Agrupamento Espectral, Empreendedorismo, Big Data em R, Gestão de ONG's, Libras, Máquinas Elétricas I, Robótica, Seminários Internacionalização, Visão Computacional) e outras presentes (Eletricidade Aplicada I, Lab Eletricidade Aplicada I, Materiais Elétricos); (v) dependências PRE apontadas apenas por uma IA. O desempate foi feito exclusivamente com base no texto literal do PPC (Quadro da Matriz Curricular nas páginas 46-50 e Ementário nas páginas 55-135), aplicando as 7 Regras de Ouro do GradMent: requisitos não-disciplinares foram movidos para a ementa com incluir=false; disciplinas inexistentes no PPC foram descartadas; dependências foram validadas contra os códigos da base de consenso e o texto do PPC; o código ECOI2209 foi mantido pois consta na matriz curricular do PPC (página 50).",
+      "decisoes_disciplinas": [
+        {
+          "id_divergencia": "DISC_01",
+          "motivo_original": "período divergente (IA1=5 vs IA2=4)",
+          "acao": "ADOTAR_IA1",
+          "pagina_evidencia": "Página 50 (Matriz Curricular) e Página 80 (Ementário)",
+          "justificativa": "O PPC lista ECOI2209 Linguagens de Programação no 5º Período com CH 64 (página 50) e o ementário confirma pré-requisitos ECOI2204 e ECOI2205 (página 80), compatível com período 5. IA 2 errou ao indicar período 4 e eixo Básico."
+        },
+        {
+          "id_divergencia": "DISC_02",
+          "motivo_original": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "acao": "CORRIGIR_PELO_PPC",
+          "pagina_evidencia": "Página 50 (Matriz Curricular) e Páginas 46-47 (TCC)",
+          "justificativa": "O PPC (página 47) estabelece para TCC1: matrícula a partir do 8º período e mínimo 70% da carga horária total integralizada. A ementa da IA 2 descreve conteúdo acadêmico mas omite o requisito não-disciplinar. A ementa da IA 1 inclui o requisito mas está incompleta. Adota-se ementa corrigida unindo conteúdo acadêmico + requisito não-disciplinar literal do PPC. Código TCCI01 não segue o padrão da base de consenso (ex.: ECOI2216), mas é mantido conforme extração das IAs."
+        },
+        {
+          "id_divergencia": "DISC_03",
+          "motivo_original": "carga_horaria divergente/inválida (IA1=32h vs IA2=48h)",
+          "acao": "ADOTAR_IA2",
+          "pagina_evidencia": "Página 125 (Ementário - Introdução à Economia)",
+          "justificativa": "O ementário do PPC (página 125) lista EPRi04 Introdução à Economia com carga horária total 48 (48 teórica, 0 prática). IA 1 errou ao indicar 32h. O código da base de consenso é EPRIB002; o PPC usa EPRi04, mas mantemos o código sugerido pelas IAs para rastreabilidade da divergência."
+        },
+        {
+          "id_divergencia": "DISC_04",
+          "motivo_original": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "acao": "CORRIGIR_PELO_PPC",
+          "pagina_evidencia": "Página 50 (Matriz Curricular) e Páginas 46-47 (TCC)",
+          "justificativa": "O PPC (página 47) estabelece para TCC2: defesa final perante banca examinadora. A ementa da IA 1 está resumida demais; a da IA 2 inclui o conteúdo acadêmico. Adota-se ementa corrigida unindo desenvolvimento/conclusão + defesa final + requisito não-disciplinar (8º período e 70% integralizada, conforme regras do TCC no PPC)."
+        },
+        {
+          "id_divergencia": "DISC_05",
+          "motivo_original": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+          "acao": "CORRIGIR_PELO_PPC",
+          "pagina_evidencia": "Página 44 (Estágio Supervisionado)",
+          "justificativa": "O PPC (página 44) estabelece para Estágio Supervisionado: matrícula a partir do 8º período, mínimo 60% da carga horária total integralizada, carga horária de 160 horas-aula. A ementa da IA 1 omite as 160h; a da IA 2 inclui 160h e o requisito de 60%. Adota-se ementa corrigida com carga horária 175h (conforme matriz, página 50) e requisitos não-disciplinares do PPC."
+        },
+        {
+          "id_divergencia": "DISC_06",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "ADOTAR_IA1",
+          "pagina_evidencia": "Página 63 (Ementário - EELi04)",
+          "justificativa": "O ementário do PPC (página 63) confirma a existência de EELi04 Eletricidade Aplicada I, 2º período, CH 32, com a ementa exata da IA 1. É disciplina real matriculável no PPC."
+        },
+        {
+          "id_divergencia": "DISC_07",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "ADOTAR_IA1",
+          "pagina_evidencia": "Página 64 (Ementário - EELi05)",
+          "justificativa": "O ementário do PPC (página 64) confirma a existência de EELi05 Laboratório Eletricidade Aplicada I, CH 16, com a ementa exata da IA 1. É disciplina real matriculável no PPC."
+        },
+        {
+          "id_divergencia": "DISC_08",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Natural Computing NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_09",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Maratona de Programação I NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_10",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Maratona de Programação II NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_11",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Tópicos em Banco de Dados NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_12",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Tópicos em Desenvolvimento de Software I NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_13",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Tópicos em Desenvolvimento de Software II NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_14",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Introdução ao Algoritmo de Agrupamento Espectral NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_15",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Empreendedorismo NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_16",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Introdução ao Big Data em R NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_17",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Gestão de ONG's NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_18",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Libras - Língua brasileira de sinais NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_19",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Máquinas elétricas I NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_20",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Robótica NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_21",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Seminários de internacionalização - França NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_22",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Seminários de internacionalização - países anglofônicos NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_23",
+          "motivo_original": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Visão computacional NÃO consta na lista de disciplinas optativas do PPC (páginas 29-30) nem no ementário. É disciplina falsa/inexistente no curso."
+        },
+        {
+          "id_divergencia": "DISC_24",
+          "motivo_original": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Página 50 (Matriz Curricular) e Página 80 (Ementário)",
+          "justificativa": "LING01 é duplicata de ECOI2209 (Linguagens de Programação), já arbitrada em DISC_01. O PPC não lista disciplina com código LING01. Deve ser descartada para evitar duplicidade."
+        },
+        {
+          "id_divergencia": "DISC_25",
+          "motivo_original": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+          "acao": "ADOTAR_IA2",
+          "pagina_evidencia": "Página 50 (Matriz Curricular) e Página 81 (Ementário - EELi26)",
+          "justificativa": "O ementário do PPC (página 81) confirma EELi26 Matérias Elétricos (Materiais Elétricos), 4º período, CH 32, com a ementa exata da IA 2. É disciplina real matriculável no PPC. O código da base de consenso é EELI26; mantemos EELI2240 conforme extração da IA 2 para rastreabilidade."
+        },
+        {
+          "id_divergencia": "DISC_26",
+          "motivo_original": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Optativa I é uma entrada genérica de placeholder, não uma disciplina real matriculável com ementa própria no PPC. Não consta como disciplina individual no ementário."
+        },
+        {
+          "id_divergencia": "DISC_27",
+          "motivo_original": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Optativa II é uma entrada genérica de placeholder, não uma disciplina real matriculável com ementa própria no PPC. Não consta como disciplina individual no ementário."
+        },
+        {
+          "id_divergencia": "DISC_28",
+          "motivo_original": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+          "acao": "DESCARTAR_DISCIPLINA",
+          "pagina_evidencia": "Páginas 29-30 (Lista de Optativas do PPC)",
+          "justificativa": "Optativa III é uma entrada genérica de placeholder, não uma disciplina real matriculável com ementa própria no PPC. Não consta como disciplina individual no ementário."
+        }
+      ],
+      "decisoes_dependencias": [
+        {
+          "id_divergencia": "DEP_01",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": true,
+          "disciplina_codigo": "ECOI2209",
+          "dependencia_codigo": "ECOI2204",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 80 (Ementário - ECOI2209)",
+          "justificativa": "O ementário do PPC (página 80) confirma que ECOI2209 Linguagens de Programação tem pré-requisitos ECOI2204 e ECOI2205. Ambas são disciplinas obrigatórias válidas na base de consenso. Dependência respeita as regras do GradMent."
+        },
+        {
+          "id_divergencia": "DEP_02",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": true,
+          "disciplina_codigo": "ECOI2209",
+          "dependencia_codigo": "ECOI2205",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 80 (Ementário - ECOI2209)",
+          "justificativa": "O ementário do PPC (página 80) confirma que ECOI2209 Linguagens de Programação tem pré-requisitos ECOI2204 e ECOI2205. Ambas são disciplinas obrigatórias válidas na base de consenso. Dependência respeita as regras do GradMent."
+        },
+        {
+          "id_divergencia": "DEP_03",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": false,
+          "disciplina_codigo": "ELTI2234",
+          "dependencia_codigo": "ELTI2204",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 134 (Ementário - ELTi2234)",
+          "justificativa": "A disciplina ELTI2234 Circuitos Integrados Digitais é optativa (periodo=null) e não consta na matriz curricular obrigatória. Além disso, a dependência aponta para uma optativa, o que é proibido pela Regra 3 do GradMent (obrigatória não pode depender de optativa). Como a disciplina é optativa, a dependência é descartada."
+        },
+        {
+          "id_divergencia": "DEP_04",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 1",
+          "incluir": false,
+          "disciplina_codigo": "ELTI2235",
+          "dependencia_codigo": "ELTI2204",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 135 (Ementário - ELTi2235)",
+          "justificativa": "A disciplina ELTI2235 Laboratório de Circuitos Integrados Digitais é optativa (periodo=null) e não consta na matriz curricular obrigatória. Além disso, a dependência aponta para uma optativa, o que é proibido pela Regra 3 do GradMent. Como a disciplina é optativa, a dependência é descartada."
+        },
+        {
+          "id_divergencia": "DEP_05",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 2",
+          "incluir": false,
+          "disciplina_codigo": "LING01",
+          "dependencia_codigo": "ECOI2204",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 50 (Matriz Curricular)",
+          "justificativa": "LING01 não é uma disciplina real do PPC (é duplicata de ECOI2209, já descartada em DISC_24). Não existe no PPC, portanto a dependência é descartada."
+        },
+        {
+          "id_divergencia": "DEP_06",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 2",
+          "incluir": false,
+          "disciplina_codigo": "LING01",
+          "dependencia_codigo": "ECOI2205",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 50 (Matriz Curricular)",
+          "justificativa": "LING01 não é uma disciplina real do PPC (é duplicata de ECOI2209, já descartada em DISC_24). Não existe no PPC, portanto a dependência é descartada."
+        },
+        {
+          "id_divergencia": "DEP_07",
+          "motivo_original": "Dependência PRE apontada apenas pela IA 2",
+          "incluir": false,
+          "disciplina_codigo": "ECOI2213",
+          "dependencia_codigo": "ECOI2210",
+          "tipo": "PRE",
+          "pagina_evidencia": "Página 97 (Ementário - ECOI2213)",
+          "justificativa": "O ementário do PPC (página 97) lista para ECOI2213 Análise e Desenvolvimento de Software II apenas pré-requisito ECOI2210 (sem co-requisito). A base de consenso já registra ECOI2213 dependendo de ECOI2210. A dependência adicional de ECOI2210 apontada pela IA 2 é redundante com o consenso existente e não consta como nova dependência distinta no PPC. Não é incluída como nova decisão."
+        }
+      ]
+    },
+    "correcoes_invariantes_gradment": [
+      "Regra 5 aplicada (DFS anti-ciclo): aresta EMTI2204 -> EMTI2203 (CO) removida para impedir ciclo no grafo curricular.",
+      "Regra 5 aplicada (DFS anti-ciclo): aresta ELTI2205 -> ELTI2204 (CO) removida para impedir ciclo no grafo curricular.",
+      "Regra 5 aplicada (DFS anti-ciclo): aresta ECAI2204 -> ECAI2203 (CO) removida para impedir ciclo no grafo curricular.",
+      "Regra 5 aplicada (DFS anti-ciclo): aresta ECOI2212 -> ECOI2211 (CO) removida para impedir ciclo no grafo curricular.",
+      "Regra 5 aplicada (DFS anti-ciclo): aresta ELTI2207 -> ELTI2206 (CO) removida para impedir ciclo no grafo curricular.",
+      "Regra 5 aplicada (DFS anti-ciclo): aresta ELTI2233 -> ELTI2232 (CO) removida para impedir ciclo no grafo curricular.",
+      "Regra 5 aplicada (DFS anti-ciclo): aresta ELTI2213 -> ELTI2212 (CO) removida para impedir ciclo no grafo curricular.",
+      "Regra 5 aplicada (DFS anti-ciclo): aresta ELTI2217 -> PDS01 (CO) removida para impedir ciclo no grafo curricular."
+    ],
+    "estatisticas_finais": {
+      "total_disciplinas": 87,
+      "obrigatorias": 76,
+      "optativas": 11,
+      "periodos": 10,
+      "total_dependencias": 60,
+      "pre_requisitos": 51,
+      "correquisitos": 9,
+      "carga_horaria_obrigatoria_total": 3407
+    }
+  }
+}
