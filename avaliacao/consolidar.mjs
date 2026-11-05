@@ -1,7 +1,7 @@
 // Pontua todas as execuções de avaliacao/execucoes/ contra o gabarito correspondente, avalia cada
 // decisão da 3ª IA (Juíza) e grava avaliacao/resultados.json (fonte de dados do dashboard).
 // Uso: node avaliacao/consolidar.mjs
-import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { acharNoGabarito, pct, pontuar } from './pontuar.mjs';
@@ -13,9 +13,12 @@ const GABARITOS = {
   'cefet-engcomp': JSON.parse(readFileSync(join(AQUI, 'gabaritos', 'cefet-engcomp.json'), 'utf8')),
   'unifei-eco': JSON.parse(readFileSync(join(AQUI, 'gabaritos', 'unifei-eco.json'), 'utf8')),
 };
+// Processo anterior (um modelo só, PPC inteiro, sem dupla/juíza/validador) usa o mesmo gabarito do CEFET
+GABARITOS['baseline-cefet-engcomp'] = GABARITOS['cefet-engcomp'];
 const DESCRICAO = {
   sintetico: 'PPC sintético (10 disciplinas, 3 períodos)',
   'cefet-engcomp': 'PPC real: Eng. de Computação CEFET-MG Leopoldina (190 páginas, 99 disciplinas)',
+  'baseline-cefet-engcomp': 'Processo anterior: UM modelo recebe o PPC inteiro + especificação, sem dupla, juíza ou validador',
   'unifei-eco': 'PPC real de outro layout: Eng. de Computação UNIFEI Itabira (136 páginas; gabarito parcial: 74 obrigatórias)',
 };
 
@@ -274,6 +277,29 @@ const dashboard = {
       acerto_pct: pct(soma((a) => a.itens.filter((i) => i.final_certo).length), n),
     };
   }),
+  // Processo anterior: mandar o PPC para um LLM no chat. Qualidade medida com um modelo só (baseline) e
+  // custo medido com o contador oficial de tokens do Claude (avaliacao/custo_claude).
+  processo_anterior: (() => {
+    const base = execucoes.find((e) => e.caso === 'baseline-cefet-engcomp' && e.sucesso);
+    const arqCusto = join(AQUI, 'custo_claude', 'custo-processo-anterior.json');
+    const custo = existsSync(arqCusto) ? JSON.parse(readFileSync(arqCusto, 'utf8')) : null;
+    return {
+      descricao: 'Um modelo recebe o PPC inteiro + a especificação do GradMent, sem dupla, juíza ou validador',
+      qualidade: base ? {
+        execucao: base.execucao,
+        modelo: base.modelos.ia1,
+        segundos: r1(base.segundos),
+        obrig_vs_optativa_pct: base.disciplinas.classificacao_obrig_opt_pct,
+        carga_horaria_pct: base.disciplinas.carga_horaria_horas_aula_pct,
+        disciplinas_inexistentes: base.disciplinas.extras.length,
+        requisitos_precisao_pct: base.requisitos.precisao_pct,
+        requisitos_revocacao_pct: base.requisitos.revocacao_pct,
+        aceito_pelo_gradment: Object.values(base.invariantes_gradment).every(Boolean),
+      } : null,
+      custo_claude_por_ppc: custo ? custo.modelos : null,
+      custo_pipeline_usd: 0,
+    };
+  })(),
   cobertura_texto_ppc_real: COBERTURA_CEFET,
   tempo_manual: {
     minutos: null,

@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-05T17:51:16.196Z",
+  "gerado_em": "2026-11-05T18:05:00.458Z",
   "fonte": "Execuções reais do pipeline n8n pontuadas contra gabarito determinístico (avaliacao/resultados.json)",
   "resumo_por_caso": [
     {
@@ -79,9 +79,74 @@
       "juiza_acionada": 1,
       "juiza_corrigiu": 2,
       "juiza_piorou": 1
+    },
+    {
+      "caso": "baseline-cefet-engcomp",
+      "descricao": "Processo anterior: UM modelo recebe o PPC inteiro + especificação, sem dupla, juíza ou validador",
+      "gabarito": {
+        "disciplinas": 99,
+        "requisitos": 109,
+        "parcial": false
+      },
+      "execucoes": 3,
+      "sucesso": 1,
+      "tempo_medio_s": 328.5,
+      "tempo_min_s": 328.505763,
+      "tempo_max_s": 328.505763,
+      "disciplinas_revocacao_media_pct": 99,
+      "disciplinas_precisao_media_pct": 94.2,
+      "classificacao_obrig_opt_media_pct": 57.1,
+      "periodo_exato_medio_pct": 57.1,
+      "carga_horaria_media_pct": 43.9,
+      "requisitos_precisao_media_pct": 81.9,
+      "requisitos_revocacao_media_pct": 87.2,
+      "invariantes_gradment_ok": "0/1",
+      "execucoes_com_ia1_e_ia2_no_mesmo_modelo": 0,
+      "juiza_acionada": 0,
+      "juiza_corrigiu": 0,
+      "juiza_piorou": 0
     }
   ],
   "execucoes": [
+    {
+      "id": "baseline-cefet-engcomp-01",
+      "caso": "baseline-cefet-engcomp",
+      "falhou": true,
+      "segundos": 20.9,
+      "erro": "{\"sucesso\":false,\"erro\":\"HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\"}"
+    },
+    {
+      "id": "baseline-cefet-engcomp-02",
+      "caso": "baseline-cefet-engcomp",
+      "falhou": true,
+      "segundos": 57.9,
+      "erro": "{\"sucesso\":false,\"erro\":\"HTTP 200: Provider returned an empty response\"}"
+    },
+    {
+      "id": "baseline-cefet-engcomp-03",
+      "caso": "baseline-cefet-engcomp",
+      "segundos": 328.5,
+      "modelo_ia1": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+      "modelo_ia2": null,
+      "modelo_ia3": null,
+      "ia1_e_ia2_mesmo_modelo": false,
+      "divergencias": 0,
+      "juiza_acionada": false,
+      "disciplinas_encontradas_pct": 99,
+      "obrig_vs_optativa_pct": 57.1,
+      "periodo_pct": 57.1,
+      "carga_horaria_pct": 43.9,
+      "requisitos_precisao_pct": 81.9,
+      "requisitos_revocacao_pct": 87.2,
+      "regras_gradment_ok": false,
+      "juiza_corrigiu": null,
+      "juiza_piorou": null,
+      "juiza_manteve_certo": null,
+      "juiza_manteve_errado": null,
+      "acerto_nas_divergencias_juiza_pct": null,
+      "acerto_nas_divergencias_sempre_ia1_pct": null,
+      "acerto_nas_divergencias_sempre_ia2_pct": null
+    },
     {
       "id": "cefet-engcomp-01",
       "caso": "cefet-engcomp",
@@ -1600,6 +1665,50 @@
       "acerto_pct": 66.2
     }
   ],
+  "processo_anterior": {
+    "descricao": "Um modelo recebe o PPC inteiro + a especificação do GradMent, sem dupla, juíza ou validador",
+    "qualidade": {
+      "execucao": "baseline-cefet-engcomp-03",
+      "modelo": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+      "segundos": 328.5,
+      "obrig_vs_optativa_pct": 57.1,
+      "carga_horaria_pct": 43.9,
+      "disciplinas_inexistentes": 6,
+      "requisitos_precisao_pct": 81.9,
+      "requisitos_revocacao_pct": 87.2,
+      "aceito_pelo_gradment": false
+    },
+    "custo_claude_por_ppc": [
+      {
+        "modelo": "claude-opus-5-5",
+        "tokens_entrada_pdf_anexado": 520738,
+        "tokens_entrada_texto_extraido": 156450,
+        "tokens_saida_json_gradment": 49905,
+        "custo_usd_pdf_anexado": 3.0811,
+        "custo_usd_texto_extraido": 1.6239,
+        "observacao": "Piso de UMA tentativa: não inclui tokens de raciocínio (thinking), cobrados como saída, nem rodadas de correção."
+      },
+      {
+        "modelo": "claude-sonnet-5-5",
+        "tokens_entrada_pdf_anexado": 520738,
+        "tokens_entrada_texto_extraido": 156450,
+        "tokens_saida_json_gradment": 49905,
+        "custo_usd_pdf_anexado": 1.5405,
+        "custo_usd_texto_extraido": 0.8119,
+        "observacao": "Piso de UMA tentativa: não inclui tokens de raciocínio (thinking), cobrados como saída, nem rodadas de correção."
+      },
+      {
+        "modelo": "claude-haiku-5-5",
+        "tokens_entrada_pdf_anexado": 520738,
+        "tokens_entrada_texto_extraido": 156450,
+        "tokens_saida_json_gradment": 49905,
+        "custo_usd_pdf_anexado": 0.3851,
+        "custo_usd_texto_extraido": 0.203,
+        "observacao": "Piso de UMA tentativa: não inclui tokens de raciocínio (thinking), cobrados como saída, nem rodadas de correção."
+      }
+    ],
+    "custo_pipeline_usd": 0
+  },
   "cobertura_texto_ppc_real": {
     "paginas_total": 190,
     "paginas_enviadas_as_ias": 53,

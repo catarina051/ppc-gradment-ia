@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-05T17:51:16.196Z",
+  "gerado_em": "2026-11-05T18:05:00.458Z",
   "observacao": "Gerado por avaliacao/consolidar.mjs a partir das respostas reais da API. Nenhum número é estimado.",
   "resumo": {
     "sintetico": {
@@ -76,9 +76,409 @@
       "juiza_acionada": 1,
       "juiza_corrigiu": 2,
       "juiza_piorou": 1
+    },
+    "baseline-cefet-engcomp": {
+      "descricao": "Processo anterior: UM modelo recebe o PPC inteiro + especificação, sem dupla, juíza ou validador",
+      "gabarito": {
+        "disciplinas": 99,
+        "requisitos": 109,
+        "parcial": false
+      },
+      "execucoes": 3,
+      "sucesso": 1,
+      "tempo_medio_s": 328.5,
+      "tempo_min_s": 328.505763,
+      "tempo_max_s": 328.505763,
+      "disciplinas_revocacao_media_pct": 99,
+      "disciplinas_precisao_media_pct": 94.2,
+      "classificacao_obrig_opt_media_pct": 57.1,
+      "periodo_exato_medio_pct": 57.1,
+      "carga_horaria_media_pct": 43.9,
+      "requisitos_precisao_media_pct": 81.9,
+      "requisitos_revocacao_media_pct": 87.2,
+      "invariantes_gradment_ok": "0/1",
+      "execucoes_com_ia1_e_ia2_no_mesmo_modelo": 0,
+      "juiza_acionada": 0,
+      "juiza_corrigiu": 0,
+      "juiza_piorou": 0
     }
   },
   "execucoes": [
+    {
+      "execucao": "baseline-cefet-engcomp-01",
+      "caso": "baseline-cefet-engcomp",
+      "sucesso": false,
+      "http": 503,
+      "segundos": 20.89552,
+      "erro": "{\"sucesso\":false,\"erro\":\"HTTP 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\"}"
+    },
+    {
+      "execucao": "baseline-cefet-engcomp-02",
+      "caso": "baseline-cefet-engcomp",
+      "sucesso": false,
+      "http": 200,
+      "segundos": 57.916127,
+      "erro": "{\"sucesso\":false,\"erro\":\"HTTP 200: Provider returned an empty response\"}"
+    },
+    {
+      "caso": "baseline-cefet-engcomp",
+      "sucesso": true,
+      "inicio": "2026-11-05T18:02:35.874Z",
+      "segundos": 328.505763,
+      "extracao": {
+        "caracteres": 310608,
+        "recortado_por_tamanho": false
+      },
+      "execucao": "baseline-cefet-engcomp-03",
+      "status_consenso": "MODELO_UNICO_SEM_VALIDADOR",
+      "divergencias_detectadas": 0,
+      "modelos": {
+        "ia1": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia2": null,
+        "ia3": null
+      },
+      "juiza": null,
+      "correcoes_validador": 0,
+      "disciplinas": {
+        "gabarito": 99,
+        "extraidas": 104,
+        "casadas": 98,
+        "precisao_pct": 94.2,
+        "revocacao_pct": 99,
+        "classificacao_obrig_opt_pct": 57.1,
+        "periodo_exato_pct": 57.1,
+        "carga_horaria_horas_aula_pct": 43.9,
+        "carga_horaria_em_horas_relogio": 54,
+        "faltando": [
+          "FMEC0 Fundamentos de Mecânica"
+        ],
+        "extras": [
+          "ATCC1 Atividade de Trabalho de Conclusão de Curso 1",
+          "ATCC2 Atividade de Trabalho de Conclusão de Curso 2",
+          "AEST0 Atividade de Estágio Supervisionado",
+          "ESTG0 Estágio Curricular Obrigatório",
+          "ACOM0 Atividades Complementares",
+          "AEXT0 Ações de Extensão"
+        ]
+      },
+      "requisitos": {
+        "gabarito": 109,
+        "gabarito_obrig_para_optativa_excluidas": 0,
+        "extraidos": 116,
+        "precisao_pct": 81.9,
+        "revocacao_pct": 87.2,
+        "precisao_sem_tipo_pct": 83.6,
+        "revocacao_sem_tipo_pct": 89,
+        "faltando": [
+          "FMEC0|CFVR0|PRE",
+          "FMEC0|GAAL0|PRE",
+          "FEME0|FMEC0|CO",
+          "FOFT0|FMEC0|PRE",
+          "FOFT0|EDOR0|CO",
+          "ACEL1|EDOR0|PRE",
+          "ACEL1|FOFT0|PRE",
+          "LSDI0|SDIG0|CO",
+          "AEDA0|APCO0|PRE",
+          "POOB0|APCO0|PRE",
+          "DWEB1|APCO0|PRE",
+          "BDAD0|APCO0|PRE",
+          "BDAD0|POOB0|CO",
+          "RSSF0|RCOM0|PRE"
+        ],
+        "a_mais": [
+          "?FMEC0|CFVR0|PRE",
+          "?FMEC0|GAAL0|PRE",
+          "FEME0|?FMEC0|CO",
+          "FOFT0|EDOR0|PRE",
+          "FOFT0|FEME0|CO",
+          "QUIM0|?null|PRE",
+          "LQUI0|?null|PRE",
+          "LCEL0|?null|PRE",
+          "LELE1|?null|PRE",
+          "SDIG0|?null|PRE",
+          "LSDI0|SDIG0|PRE",
+          "LSDI0|?null|CO",
+          "LPSE0|?null|PRE",
+          "LEPO0|?null|PRE",
+          "LCAU1|?null|PRE",
+          "ACOM0|OCOM0|PRE",
+          "LSTR0|?null|PRE",
+          "?ATCC1|?null|PRE",
+          "?ATCC2|?null|PRE",
+          "?AEST0|?null|PRE",
+          "?ESTG0|?null|PRE"
+        ]
+      },
+      "erros_de_campo": [
+        {
+          "sigla": "FEME0",
+          "campo": "carga_horaria",
+          "esperado": 30,
+          "obtido": 50
+        },
+        {
+          "sigla": "DASI0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 5
+        },
+        {
+          "sigla": "ACEL2",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 5
+        },
+        {
+          "sigla": "FSSI0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 4
+        },
+        {
+          "sigla": "CAUT1",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 5
+        },
+        {
+          "sigla": "LCAU1",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 5
+        },
+        {
+          "sigla": "CAUT2",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 6
+        },
+        {
+          "sigla": "LCAU2",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 6
+        },
+        {
+          "sigla": "IIND0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 6
+        },
+        {
+          "sigla": "LIIN0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 6
+        },
+        {
+          "sigla": "CFVC0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 4
+        },
+        {
+          "sigla": "EDPA0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 4
+        },
+        {
+          "sigla": "QUIM0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 2
+        },
+        {
+          "sigla": "LQUI0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 2
+        },
+        {
+          "sigla": "FFMO0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 5
+        },
+        {
+          "sigla": "IINS2",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "IADM0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "IESE0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "IDIR0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "LIBR1",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "NQIN0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "OEMP0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "LIBR2",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 9
+        },
+        {
+          "sigla": "MELE0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 4
+        },
+        {
+          "sigla": "ELET2",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 7
+        },
+        {
+          "sigla": "EPOT0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "LEPO0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "EAPR0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 9
+        },
+        {
+          "sigla": "MCCE0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 9
+        },
+        {
+          "sigla": "LPRO0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 6
+        },
+        {
+          "sigla": "CGRA0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "MNUM2",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "PDIM0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "BDID0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 10
+        },
+        {
+          "sigla": "SOPE2",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "IIDC0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 9
+        },
+        {
+          "sigla": "CEVO0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "POPE0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "RNAR0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "EAAU0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "FAGR0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "MADE0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        },
+        {
+          "sigla": "RSSF0",
+          "campo": "periodo",
+          "esperado": null,
+          "obtido": 8
+        }
+      ],
+      "invariantes_gradment": {
+        "codigos_validos": true,
+        "codigos_unicos": false,
+        "obrigatorias_com_ch": true,
+        "sem_obrigatoria_para_optativa": true,
+        "grafo_aciclico": false
+      },
+      "mesmo_modelo_ia1_ia2": false,
+      "avaliacao_juiza": null
+    },
     {
       "caso": "cefet-engcomp",
       "sucesso": true,
