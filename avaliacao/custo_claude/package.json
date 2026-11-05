@@ -1,0 +1,12 @@
+{
+  "name": "custo-claude-processo-anterior",
+  "private": true,
+  "type": "module",
+  "description": "Conta (sem custo) os tokens que o processo anterior gastaria no Claude: PPC + especificação -> JSON do GradMent.",
+  "scripts": {
+    "contar": "node contar_tokens.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "medido_em": "2026-11-05T18:03:48.222Z",
+  "metodo": "messages.countTokens (gratuito)",
+  "modelos": [
+    {
+      "modelo": "claude-opus-5-5",
+      "tokens_entrada_pdf_anexado": 520738,
+      "tokens_entrada_texto_extraido": 156450,
+      "tokens_saida_json_gradment": 49905,
+      "custo_usd_pdf_anexado": 3.0811,
+      "custo_usd_texto_extraido": 1.6239,
+      "observacao": "Piso de UMA tentativa: não inclui tokens de raciocínio (thinking), cobrados como saída, nem rodadas de correção."
+    },
+    {
+      "modelo": "claude-sonnet-5-5",
+      "tokens_entrada_pdf_anexado": 520738,
+      "tokens_entrada_texto_extraido": 156450,
+      "tokens_saida_json_gradment": 49905,
+      "custo_usd_pdf_anexado": 1.5405,
+      "custo_usd_texto_extraido": 0.8119,
+      "observacao": "Piso de UMA tentativa: não inclui tokens de raciocínio (thinking), cobrados como saída, nem rodadas de correção."
+    },
+    {
+      "modelo": "claude-haiku-5-5",
+      "tokens_entrada_pdf_anexado": 520738,
+      "tokens_entrada_texto_extraido": 156450,
+      "tokens_saida_json_gradment": 49905,
+      "custo_usd_pdf_anexado": 0.3851,
+      "custo_usd_texto_extraido": 0.203,
+      "observacao": "Piso de UMA tentativa: não inclui tokens de raciocínio (thinking), cobrados como saída, nem rodadas de correção."
+    }
+  ]
+}
