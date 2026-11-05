@@ -1,0 +1,66 @@
+UNIVERSIDADE FEDERAL EXEMPLO — INSTITUTO DE CIÊNCIAS EXATAS
+PROJETO PEDAGÓGICO DO CURSO DE BACHARELADO EM CIÊNCIA DA COMPUTAÇÃO
+Campus Universitário Central — Matriz Curricular Vigente: 2026.1
+
+1. ORGANIZAÇÃO CURRICULAR E REGIME DE CRÉDITOS
+O curso de Ciência da Computação organiza-se em regime semestral.
+Regra de conversão institucional: 1 (um) crédito equivale a 15 (quinze) horas-aula semestrais.
+
+Núcleos / Eixos de Formação Curricular:
+- Núcleo 1: Matemática e Ciências Básicas
+- Núcleo 2: Fundamentos de Computação e Algoritmos
+- Núcleo 3: Engenharia de Software e Dados
+- Núcleo 4: Formação Complementar e Optativa
+
+2. MATRIZ CURRICULAR — DISCIPLINAS OBRIGATÓRIAS
+
+1º Período:
+- MAT-101 | Cálculo I | Núcleo 1 | 4 créditos (60h) | Pré-requisitos: Nenhum | Correquisitos: Nenhum
+- DCC-101 | Algoritmos e Programação de Computadores | Núcleo 2 | 4 créditos (60h) | Pré-requisitos: Nenhum | Correquisitos: Nenhum
+- DCC-102 | Laboratório de Programação | Núcleo 2 | 2 créditos (30h) | Pré-requisitos: Nenhum | Correquisitos: DCC-101
+
+2º Período:
+- MAT-102 | Cálculo II | Núcleo 1 | 4 créditos (60h) | Pré-requisitos: MAT-101 | Correquisitos: Nenhum
+- DCC-201 | Algoritmos e Estruturas de Dados | Núcleo 2 | 4 créditos (60h) | Pré-requisitos: DCC-101, DCC-102 | Correquisitos: Nenhum
+- DCC-202 | Banco de Dados I | Núcleo 3 | 4 créditos (60h) | Pré-requisitos: DCC-101 | Correquisitos: DCC-201
+
+3º Período:
+- DCC-301 | Engenharia de Software I | Núcleo 3 | 4 créditos (60h) | Pré-requisitos: DCC-201, DCC-202 | Correquisitos: Nenhum
+- TCC | Trabalho de Conclusão de Curso I | Núcleo 3 | 4 créditos (60h) | Pré-requisitos: DCC-301 e ter integralizado no mínimo 1.200 horas obrigatórias | Correquisitos: Nenhum
+
+3. RELAÇÃO DE DISCIPLINAS OPTATIVAS (ELETIVAS)
+- DCC-810 | Tópicos Especiais em Inteligência Artificial | Núcleo 4 | 4 créditos (60h) | Pré-requisitos: DCC-201 | Correquisitos: Nenhum
+- DCC-820 | Computação em Nuvem e Sistemas Distribuídos | Núcleo 4 | 4 créditos (60h) | Pré-requisitos: DCC-202 | Correquisitos: Nenhum
+
+4. EMENTÁRIO DAS DISCIPLINAS
+
+[MAT-101] Cálculo I
+Ementa: Números reais, funções de uma variável real, limites, continuidade, derivadas e aplicações, integral definida e Teorema Fundamental do Cálculo.
+
+[DCC-101] Algoritmos e Programação de Computadores
+Ementa: Conceito de algoritmo, variáveis, tipos primitivos, estruturas condicionais, laços de repetição, vetores, matrizes, registros e modularização com funções.
+
+[DCC-102] Laboratório de Programação
+Ementa: Prática intensiva de implementação, depuração e testes de programas estruturados em linguagem de programação imperativa.
+
+[MAT-102] Cálculo II
+Ementa: Técnicas de integração, integrais impróprias, sequências e séries numéricas, funções reais de várias variáveis e derivadas parciais.
+
+[DCC-201] Algoritmos e Estruturas de Dados
+Ementa: Análise assintótica de complexidade, listas lineares, pilhas, filas, árvores binárias de busca, árvores balanceadas, tabelas hash e ordenação.
+
+[DCC-202] Banco de Dados I
+Ementa: Arquitetura de SGBDs, modelagem conceitual entidade-relacionamento, modelo relacional, álgebra relacional, linguagem SQL e normalização.
+
+[DCC-301] Engenharia de Software I
+Ementa: Processos de desenvolvimento de software, engenharia de requisitos, modelagem UML, arquitetura de software, verificação, validação e testes automatizados.
+
+[TCC] Trabalho de Conclusão de Curso I
+Ementa: Elaboração e defesa de proposta de projeto de pesquisa ou desenvolvimento tecnológico em Ciência da Computação sob orientação docente. Exige integralização prévia mínima de 1.200 horas obrigatórias.
+
+[DCC-810] Tópicos Especiais em Inteligência Artificial (Optativa)
+Ementa: Fundamentos de agentes inteligentes, busca heurística, aprendizado de máquina supervisionado e não supervisionado e introdução a redes neurais profundas.
+
+[DCC-820] Computação em Nuvem e Sistemas Distribuídos (Optativa)
+Ementa: Modelos de serviço em nuvem, virtualização, contêineres, orquestração, sistemas distribuídos tolerantes a falhas e escalabilidade horizontal.
+
