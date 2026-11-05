@@ -115,7 +115,10 @@ Isso mostra que **o pipeline funciona em um layout para o qual o GradMent não t
 ### Quanto tempo economiza?
 - **Tempo da máquina (medido):** cerca de 44 s para o PPC sintético e **6 a 8 min para um PPC real de 136 a 190 páginas**, de ponta a ponta (extração, duas IAs, juíza e validação).
 - **Volume produzido por PPC real:** cerca de 100 disciplinas × 6 campos e mais de 100 requisitos, ou seja, **cerca de 700 dados** que hoje são digitados à mão.
-- **Tempo manual: `[A MEDIR]`.** Protocolo: cronometrar a digitação manual de **1 período** do PPC real (disciplinas, CH, período, pré e correquisitos) e extrapolar para os 10 períodos mais as optativas. Depois, cronometrar à parte a **revisão humana** da saída do pipeline. Economia = manual − (máquina + revisão).
+- **Tempo manual humano: `[A MEDIR]`.** Fiz uma tentativa real ([manual/TEMPO-MANUAL.md](manual/TEMPO-MANUAL.md)): transcrevi à mão o 2º período do PPC real, com 100% de acerto (7/7 disciplinas e 9/9 requisitos), mas precisei de **8 consultas ao PDF**, porque a tabela do período é ambígua e cada ficha precisa ser aberta. O meu tempo não vale como tempo humano. O que dá para afirmar:
+  - **Volume medido do PPC inteiro:** ≈ 6.670 caracteres de campos estruturados e ≈ 46.100 de ementas, espalhados em 99 fichas e 11 tabelas.
+  - **Piso calculado só de digitação** (premissa: 200 caracteres por minuto): **≥ 33 min** colando as ementas e **≥ 4 h 24 min** digitando-as, sem contar busca, leitura e conferência.
+  - Contra **7 min 11 s** de máquina, a automação já sai na frente mesmo nesse piso. O tamanho real do ganho depende de uma pessoa cronometrar 1 período e do tempo de revisão da saída.
 - Esse número não foi estimado. A revisão ainda é necessária (revocação de requisitos de 82%), e o ganho real depende do tempo dela.
 
 ### Isso realmente ajuda o GradMent?

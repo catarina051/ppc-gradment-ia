@@ -59,6 +59,8 @@ flowchart LR
 
 ## Resultados (medidos)
 
+![Dashboard de resultados: indicadores do PPC real e acerto por campo](docs/img/dashboard-topo.png)
+
 9 execuções reais em 05/11/2026 (3 PPCs), pontuadas contra um gabarito gerado **sem LLM** a partir do próprio PPC. Detalhes, metodologia e cada decisão da juíza: [avaliacao/RESULTADOS.md](avaliacao/RESULTADOS.md).
 
 | | PPC real CEFET-MG (190 p., 3 execuções) | PPC real UNIFEI (outro layout, 1 execução) | PPC sintético (5 execuções) |
@@ -69,7 +71,7 @@ flowchart LR
 | Período correto | 97,6% | 98,6% | 100% |
 | Pré/correquisitos: precisão / revocação | **96,1% / 82,0%** | sem gabarito | 100% / 98,2% |
 | Saída válida nas 7 regras do GradMent | 3/3 | 1/1 | 5/5 |
-| Tempo manual equivalente | `[A MEDIR]` | `[A MEDIR]` | n/a |
+| Tempo manual equivalente | `[A MEDIR]`, mas **≥ 33 min só de digitação** ([cálculo](avaliacao/manual/TEMPO-MANUAL.md)) | `[A MEDIR]` | n/a |
 
 **A juíza valeu a pena?** Depende de ela ser um modelo diferente das outras duas IAs:
 
@@ -77,6 +79,8 @@ flowchart LR
 | --- | ---: | ---: | ---: |
 | Em modelo **diferente** (GPT-OSS / Gemini) | 31 | **1** | **92,5%** |
 | No **mesmo** modelo (fallback por cota) | 26 | 22 | 66,2% |
+
+![A juíza acerta 92,5% em modelo diferente e 66,2% no mesmo modelo](docs/img/dashboard-juiza.png)
 
 **O que a medição me ensinou:**
 1. **Duas IAs concordando não quer dizer que estão certas.** Quando a cota do Gemini caiu, o fallback colocou as duas IAs no mesmo modelo, elas erraram igual e o erro passou direto.
