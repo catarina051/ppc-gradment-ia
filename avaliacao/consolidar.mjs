@@ -278,6 +278,12 @@ const dashboard = {
   tempo_manual: {
     minutos: null,
     status: 'A MEDIR',
+    // Tentativa documentada em avaliacao/manual/TEMPO-MANUAL.md: volume medido + piso só de digitação (200 car./min)
+    piso_digitacao_min_sem_ementas: 33,
+    piso_digitacao_min_com_ementas: 264,
+    volume_caracteres_campos: 6670,
+    volume_caracteres_ementas: 46097,
+    consultas_ao_pdf_por_periodo: 8,
     protocolo: 'Cronometrar a digitação manual de 1 período do PPC real (disciplinas, CH, período, pré/correquisitos) e extrapolar pelos 10 períodos + optativas; medir à parte o tempo de revisão humana da saída do pipeline.',
   },
   volume_por_ppc_real: { disciplinas: 99, campos_por_disciplina: 6, requisitos: 109 },

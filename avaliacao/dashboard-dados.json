@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-05T17:37:22.467Z",
+  "gerado_em": "2026-11-05T17:51:16.196Z",
   "fonte": "Execuções reais do pipeline n8n pontuadas contra gabarito determinístico (avaliacao/resultados.json)",
   "resumo_por_caso": [
     {
@@ -1623,6 +1623,11 @@
   "tempo_manual": {
     "minutos": null,
     "status": "A MEDIR",
+    "piso_digitacao_min_sem_ementas": 33,
+    "piso_digitacao_min_com_ementas": 264,
+    "volume_caracteres_campos": 6670,
+    "volume_caracteres_ementas": 46097,
+    "consultas_ao_pdf_por_periodo": 8,
     "protocolo": "Cronometrar a digitação manual de 1 período do PPC real (disciplinas, CH, período, pré/correquisitos) e extrapolar pelos 10 períodos + optativas; medir à parte o tempo de revisão humana da saída do pipeline."
   },
   "volume_por_ppc_real": {
