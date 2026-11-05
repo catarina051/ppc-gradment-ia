@@ -1,0 +1,80 @@
+{
+  "fonte": "PPCEngComp-v20240719.pdf, Quadro 17 (2º período) + Detalhamento de Disciplinas (Quadro 12)",
+  "metodo": "transcrição manual, sem pipeline e sem gabarito",
+  "disciplinas": [
+    {
+      "codigo": "DWEB1",
+      "codigo_externo": "DWEB1",
+      "nome": "Desenvolvimento Web I",
+      "periodo": 2,
+      "eixo": "Engenharia de Software e Banco de Dados",
+      "carga_horaria": 30,
+      "ementa": "Conceitos fundamentais do desenvolvimento web: internet, browsers, protocolo de endereçamento e protocolo de transporte. Arquitetura de software para Web. Usabilidade em projetos web. Linguagem de Marcação de Hipertexto (HTML): histórico, sintaxe da linguagem, principais tags. Folha de Estilo em Cascatas (CSS): histórico, sintaxe, principais recursos e características. JavaScript: características da linguagem, sintaxe, tipos de dados, variáveis, expressões, comandos, funções, arrays, estruturas de controle de fluxo."
+    },
+    {
+      "codigo": "FEME0",
+      "codigo_externo": "FEME0",
+      "nome": "Física Experimental - Mecânica",
+      "periodo": 2,
+      "eixo": "Física e Química",
+      "carga_horaria": 30,
+      "ementa": "Práticas em laboratório de temas e tópicos abordados nas disciplinas básicas de Física, mais especificamente, experimentos na área de Mecânica."
+    },
+    {
+      "codigo": "FMEC0",
+      "codigo_externo": "FMEC0",
+      "nome": "Fundamentos de Mecânica",
+      "periodo": 2,
+      "eixo": "Física e Química",
+      "carga_horaria": 60,
+      "ementa": "Cinemática em uma dimensão e no espaço; princípios da dinâmica; aplicações das leis de Newton; trabalho e energia mecânica; conservação da energia; momento linear e conservação do momento linear; momento angular e conservação do momento angular; dinâmica dos corpos rígidos. Equilíbrio e Elasticidade."
+    },
+    {
+      "codigo": "AEDA0",
+      "codigo_externo": "AEDA0",
+      "nome": "Algoritmos e Estruturas de Dados",
+      "periodo": 2,
+      "eixo": "Fundamentos de Engenharia de Computação",
+      "carga_horaria": 60,
+      "ementa": "Tipos abstratos de dados (TAD). Tipos Abstratos de Dados versus Estruturas de Dados. Alocação de memória estática e dinâmica. Introdução a algoritmos de busca. Recursividade e algoritmos recursivos. Introdução a algoritmos de ordenação. Listas Lineares com representação sequencial (contígua) e encadeada. Listas ordenadas. Listas duplamente encadeadas. Listas circulares. Listas com descritor. Pilhas e Filas. Árvores com representação sequencial e encadeada. Árvores Binárias. Caminhamentos em largura e em profundidade."
+    },
+    {
+      "codigo": "CFVV1",
+      "codigo_externo": "CFVV1",
+      "nome": "Cálculo com Funções de Várias Variáveis I",
+      "periodo": 2,
+      "eixo": "Matemática",
+      "carga_horaria": 60,
+      "ementa": "Coordenadas polares. Superfícies quádricas. Funções reais de várias variáveis: limites, continuidade, gráficos, curvas e superfícies de níveis. Derivadas parciais: conceito, cálculo e aplicações. Introdução aos Números Complexos e Fórmula de Euler."
+    },
+    {
+      "codigo": "ISER0",
+      "codigo_externo": "ISER0",
+      "nome": "Integração e Séries",
+      "periodo": 2,
+      "eixo": "Matemática",
+      "carga_horaria": 60,
+      "ementa": "Integrais definidas: conceito, Teorema Fundamental do Cálculo e aplicações. Integrais indefinidas: conceito e métodos de integração. Integrais impróprias. Sequências e séries numéricas. Séries de potências, séries de Taylor e aplicações."
+    },
+    {
+      "codigo": "MDIS0",
+      "codigo_externo": "MDIS0",
+      "nome": "Matemática Discreta",
+      "periodo": 2,
+      "eixo": "Matemática",
+      "carga_horaria": 60,
+      "ementa": "Métodos de demonstração: diretas, por contraposição, redução ao absurdo, por casos. Indução e Recursão: Sequências e Somatórios. Definições Recursivas, indução matemática, indução completa e boa ordenação. Conjuntos: definições, tipos de conjuntos, operações e propriedades. Introdução a Grafos: grafos orientados e não orientados, representação, árvores, caminhos, ciclos e conectividade. Relações: relações e suas propriedades, relações de equivalência, relações de ordem, funções. Contagem: princípio fundamental da contagem, arranjos e permutações, combinações e princípio da casa dos pombos."
+    }
+  ],
+  "dependencias": [
+    { "disciplina_codigo": "DWEB1", "dependencia_codigo": "APCO0", "tipo": "PRE" },
+    { "disciplina_codigo": "FEME0", "dependencia_codigo": "FMEC0", "tipo": "CO" },
+    { "disciplina_codigo": "FMEC0", "dependencia_codigo": "CFVR0", "tipo": "PRE" },
+    { "disciplina_codigo": "FMEC0", "dependencia_codigo": "GAAL0", "tipo": "PRE" },
+    { "disciplina_codigo": "AEDA0", "dependencia_codigo": "APCO0", "tipo": "PRE" },
+    { "disciplina_codigo": "CFVV1", "dependencia_codigo": "CFVR0", "tipo": "PRE" },
+    { "disciplina_codigo": "CFVV1", "dependencia_codigo": "GAAL0", "tipo": "PRE" },
+    { "disciplina_codigo": "ISER0", "dependencia_codigo": "CFVR0", "tipo": "PRE" },
+    { "disciplina_codigo": "MDIS0", "dependencia_codigo": "LFCO0", "tipo": "PRE" }
+  ]
+}
