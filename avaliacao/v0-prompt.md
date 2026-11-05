@@ -1,8 +1,10 @@
-# Prompt para o v0: dashboard de resultados do PPC → GradMent
+# Prompts usados no v0: dashboard de resultados do PPC → GradMent
 
-Publicado em: https://gradment.vercel.app (o app busca `dashboard-dados.json` direto do GitHub).
+Publicado em **https://gradment.vercel.app**. O app busca [`dashboard-dados.json`](dashboard-dados.json) direto deste repositório (fetch num Server Component). Para atualizar o dashboard, basta rodar `node avaliacao/consolidar.mjs` e fazer push.
 
-Como usar: abra [v0.dev](https://v0.dev), cole o **Prompt 1** e, logo abaixo dele, o conteúdo inteiro de [`dashboard-dados.json`](dashboard-dados.json). Depois de ver a primeira versão, use os prompts de ajuste um de cada vez.
+**Por que buscar pela URL em vez de colar os dados no prompt:** o JSON tem cerca de 60 KB, por causa das 126 decisões da juíza. Colado no prompt, ele fica grande demais e congela os números dentro do código gerado. Buscando pela URL, o prompt leva só uma amostra do formato, e o dashboard acompanha o repositório.
+
+Abaixo estão os dois prompts enviados, na ordem. A amostra do formato que acompanhou o Prompt 1 foi omitida: eram 3 execuções e 2 decisões tiradas do próprio JSON.
 
 ---
 
@@ -17,8 +19,11 @@ matriz curricular (disciplinas, períodos, carga horária, pré-requisitos) para
 de grade. Duas IAs extraem de forma independente, um código compara e uma 3ª IA (juíza) arbitra só as
 divergências. Medi cada execução contra um gabarito sem LLM.
 
-Coloque os dados abaixo em `lib/dados.ts` (export const dados = <JSON>) e NÃO invente nenhum número.
-Onde um valor for null, mostre "A MEDIR" com um badge cinza.
+Os dados REAIS ficam em https://raw.githubusercontent.com/catarina051/ppc-gradment-ia/main/avaliacao/dashboard-dados.json .
+Busque com fetch num Server Component (next: { revalidate: 3600 }), tipe com TypeScript a partir da amostra
+abaixo e NÃO invente nenhum número nem use dados de exemplo no lugar dos reais.
+"A MEDIR" (badge cinza) só para tempo_manual. Nos requisitos do caso unifei-eco, null significa "sem gabarito"
+(badge cinza com esse texto). Em métricas da juíza, null significa "juíza não acionada".
 
 Seções, nesta ordem:
 1. Cabeçalho com 4 cards de KPI para o caso "cefet-engcomp" (PPC real de 190 páginas):
@@ -29,7 +34,7 @@ Seções, nesta ordem:
    Mostre também uma linha menor com os mesmos números do caso "sintetico".
 2. "Acerto por campo": gráfico de barras agrupadas por execução (eixo X = id da execução), barras para
    obrig_vs_optativa_pct, periodo_pct, carga_horaria_pct, requisitos_precisao_pct e requisitos_revocacao_pct.
-   Filtro por caso (sintetico / cefet-engcomp).
+   Filtro por caso (sintetico / cefet-engcomp / unifei-eco).
 3. "A juíza ajudou?": barras empilhadas horizontais por execução com juiza_corrigiu (verde),
    juiza_manteve_certo (cinza), juiza_manteve_errado (âmbar) e juiza_piorou (vermelho). Ao lado, um
    gráfico de barras comparando, por execução, acerto_nas_divergencias_juiza_pct,
@@ -44,21 +49,32 @@ Seções, nesta ordem:
 7. Rodapé: "Fonte: execuções reais pontuadas contra gabarito determinístico. Tempo manual ainda não medido."
 
 Visual: limpo, fundo claro, uma cor de destaque (roxo #6D28D9), números grandes nos KPIs, responsivo.
+
+AMOSTRA DO FORMATO (truncada: o arquivo real tem 9 execuções, 3 casos e 126 decisões):
+{ ...amostra do dashboard-dados.json... }
 ```
 
-## Prompts de ajuste (um por vez)
+## Prompt 2: destaque da conclusão central
+
+Este prompt foi enviado depois de adicionar o campo `juiza_por_diversidade` ao JSON.
 
 ```
-Na seção 3, adicione um texto de destaque acima do gráfico explicando em 2 frases: no PPC sintético, com
-modelos diferentes, a juíza corrigiu o único erro em todas as execuções; no PPC real, quando as 3 IAs caíram
-no mesmo modelo por falha de cota, a juíza piorou mais itens do que corrigiu. Use os números de `dados`.
+Ajuste a seção 3 "A juíza ajudou?". O JSON agora tem um campo novo, `juiza_por_diversidade` (array com
+2 grupos: grupo, execucoes, divergencias_avaliadas, corrigiu, piorou, manteve_certo, manteve_errado,
+acerto_pct). Use os números do JSON, sem escrever valores fixos no código.
+
+1. No topo da seção, coloque 2 cards lado a lado, um por grupo: número grande com acerto_pct; embaixo,
+   "corrigiu X · piorou Y" (piorou em vermelho) e "N divergências avaliadas"; e chips com os ids das
+   execuções. O card "modelo diferente" tem borda roxa; o card "mesmo modelo", borda vermelha clara.
+2. Acima dos cards, uma frase de destaque gerada a partir dos dados: "A juíza acerta {acerto diferente}%
+   quando roda num modelo diferente das IAs 1 e 2, e {acerto mesmo}% quando cai no mesmo modelo por falha
+   de cota." Use formatação pt-BR (vírgula decimal).
+3. Mantenha os dois gráficos existentes da seção logo abaixo dos cards.
+4. Tipe o campo novo em TypeScript. Se ele não existir no JSON (cache antigo), esconda os cards sem quebrar
+   a página.
+5. Reduza o cache do fetch para revalidate: 300.
 ```
 
-```
-Adicione um toggle "Explicar como uma PM" no topo que, ligado, mostra embaixo de cada seção uma frase
-em linguagem simples dizendo o que aquele gráfico significa para o produto GradMent.
-```
+## Conferência
 
-```
-Garanta que o dashboard fica legível em 375px de largura: KPIs em 2 colunas, gráficos com rolagem horizontal.
-```
+Depois de cada versão, os números exibidos foram comparados com o `dashboard-dados.json`. Essa conferência encontrou um erro na **avaliação**, não no dashboard: com gabarito parcial (UNIFEI), disciplinas fora do gabarito estavam sendo julgadas. O erro foi corrigido em `consolidar.mjs`, e o dashboard se atualizou sozinho pela URL.
