@@ -1,0 +1,159 @@
+{
+  "type": "object",
+  "properties": {
+    "resumo_auditoria": {
+      "type": "string",
+      "description": "Síntese objetiva explicando a origem das divergências entre IA 1 e IA 2 e o critério de desempate adotado com base no PPC"
+    },
+    "curso_final": {
+      "type": "object",
+      "properties": {
+        "nome_curso": {
+          "type": "string"
+        },
+        "ano_periodo": {
+          "type": "string"
+        }
+      },
+      "required": ["nome_curso", "ano_periodo"],
+      "propertyOrdering": ["nome_curso", "ano_periodo"]
+    },
+    "decisoes_disciplinas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id_divergencia": {
+            "type": "string",
+            "description": "Identificador exato da divergência recebida (ex.: DISC_01)"
+          },
+          "acao": {
+            "type": "string",
+            "enum": [
+              "ADOTAR_IA1",
+              "ADOTAR_IA2",
+              "CORRIGIR_PELO_PPC",
+              "DESCARTAR_DISCIPLINA"
+            ]
+          },
+          "pagina_evidencia": {
+            "type": "string",
+            "description": "Página ou seção do PPC onde a evidência foi confirmada (ex.: Página 2)"
+          },
+          "justificativa": {
+            "type": "string",
+            "description": "Explicação concisa baseada literalmente no texto do PPC e nas Regras de Ouro do GradMent"
+          },
+          "disciplina": {
+            "type": "object",
+            "nullable": true,
+            "properties": {
+              "codigo": { "type": "string" },
+              "codigo_externo": { "type": "string", "nullable": true },
+              "nome": { "type": "string" },
+              "periodo": { "type": "integer", "nullable": true },
+              "eixo": { "type": "string", "nullable": true },
+              "carga_horaria": { "type": "integer" },
+              "ementa": { "type": "string", "nullable": true }
+            },
+            "required": [
+              "codigo",
+              "codigo_externo",
+              "nome",
+              "periodo",
+              "eixo",
+              "carga_horaria",
+              "ementa"
+            ],
+            "propertyOrdering": [
+              "codigo",
+              "codigo_externo",
+              "nome",
+              "periodo",
+              "eixo",
+              "carga_horaria",
+              "ementa"
+            ]
+          }
+        },
+        "required": [
+          "id_divergencia",
+          "acao",
+          "pagina_evidencia",
+          "justificativa",
+          "disciplina"
+        ],
+        "propertyOrdering": [
+          "id_divergencia",
+          "acao",
+          "pagina_evidencia",
+          "justificativa",
+          "disciplina"
+        ]
+      }
+    },
+    "decisoes_dependencias": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id_divergencia": {
+            "type": "string",
+            "description": "Identificador exato da divergência de dependência (ex.: DEP_01)"
+          },
+          "incluir": {
+            "type": "boolean",
+            "description": "true se a dependência existe no PPC e respeita as invariantes do GradMent; false para descartá-la"
+          },
+          "disciplina_codigo": {
+            "type": "string"
+          },
+          "dependencia_codigo": {
+            "type": "string"
+          },
+          "tipo": {
+            "type": "string",
+            "enum": ["PRE", "CO"]
+          },
+          "pagina_evidencia": {
+            "type": "string"
+          },
+          "justificativa": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id_divergencia",
+          "incluir",
+          "disciplina_codigo",
+          "dependencia_codigo",
+          "tipo",
+          "pagina_evidencia",
+          "justificativa"
+        ],
+        "propertyOrdering": [
+          "id_divergencia",
+          "incluir",
+          "disciplina_codigo",
+          "dependencia_codigo",
+          "tipo",
+          "pagina_evidencia",
+          "justificativa"
+        ]
+      }
+    }
+  },
+  "required": [
+    "resumo_auditoria",
+    "curso_final",
+    "decisoes_disciplinas",
+    "decisoes_dependencias"
+  ],
+  "propertyOrdering": [
+    "resumo_auditoria",
+    "curso_final",
+    "decisoes_disciplinas",
+    "decisoes_dependencias"
+  ]
+}
+
