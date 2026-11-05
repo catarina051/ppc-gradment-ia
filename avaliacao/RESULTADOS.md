@@ -1,6 +1,6 @@
 # Resultados medidos
 
-> Todos os números vêm de **9 execuções reais** do pipeline (n8n + APIs gratuitas), feitas em 05/11/2026 e pontuadas contra um **gabarito gerado sem LLM**. Nada aqui é estimativa, exceto o que está marcado como `[A MEDIR]`.
+> Todos os números vêm de **9 execuções reais** do pipeline, mais 3 tentativas do processo anterior (um modelo só) e uma contagem oficial de tokens do Claude, (n8n + APIs gratuitas), feitas em 05/11/2026 e pontuadas contra um **gabarito gerado sem LLM**. Nada aqui é estimativa, exceto o que está marcado como `[A MEDIR]`.
 >
 > Para reproduzir: `sh avaliacao/rodar.sh <rótulo> <ppc> <n>` e depois `node avaliacao/consolidar.mjs`. Dados completos em [resultados.json](resultados.json); dados do dashboard em [dashboard-dados.json](dashboard-dados.json).
 
@@ -103,7 +103,38 @@ Isso mostra que **o pipeline funciona em um layout para o qual o GradMent não t
 
 ---
 
-## 4. Respostas diretas
+## 4. Comparação com o processo anterior: mandar o PPC para um LLM no chat
+
+Antes do pipeline, o processo **não era digitar à mão**: era mandar o PDF do PPC para um LLM (como o Claude) e pedir a saída no formato do GradMent. Medi esse processo de duas formas:
+
+**Qualidade, com um modelo só.** [baseline_modelo_unico.mjs](baseline_modelo_unico.mjs) manda o PPC **inteiro** (310 mil caracteres, sem corte) e a [especificação do GradMent](../docs/especificacao-gradment.md) para **um** modelo, sem segunda IA, sem juíza e sem validador, e pontua a resposta contra o mesmo gabarito. Foram 3 tentativas: Gemini com 503, Nemotron com resposta vazia e Nemotron completo, que é a pontuada abaixo.
+
+| PPC real CEFET-MG | Um modelo só (processo anterior) | Pipeline (média de 3) |
+| --- | ---: | ---: |
+| Disciplinas encontradas | 99% (98/99) e **6 que não existem** | **100% (99/99), nenhuma a mais** |
+| Obrigatória × optativa correta | **57,1%**: as 42 optativas viraram obrigatórias pelo "período sugerido" | **98,0%** |
+| Carga horária correta | **43,9%**: 54 disciplinas em horas-relógio | **100%** |
+| Requisitos: precisão / revocação | 81,9% / **87,2%** | **96,1%** / 82,0% |
+| Aceito pelo GradMent | **Não**: código duplicado (ACOM0) e 2 ciclos de requisitos | **Sim** (3/3) |
+| Tempo | 5 min 29 s | 7 min 11 s |
+
+- As "disciplinas" a mais são atividades que não se matriculam: atividades de TCC, estágio, atividades complementares e extensão.
+- O modelo único encontrou **mais** requisitos porque leu o PPC sem corte. Isso confirma que o corte de texto é o principal ponto a melhorar no pipeline.
+
+**Custo em tokens, com o Claude.** [custo_claude/contar_tokens.mjs](custo_claude/contar_tokens.mjs) mede, com o contador oficial da API (gratuito), os tokens do Claude para a mesma tarefa: a especificação mais o PPC na entrada e o JSON final do GradMent na saída. Os preços são os oficiais por milhão de tokens. Dados completos em [custo_claude/custo-processo-anterior.json](custo_claude/custo-processo-anterior.json).
+
+| Por PPC convertido | PDF anexado (como no chat) | Só o texto extraído |
+| --- | ---: | ---: |
+| Tokens de entrada | **520.738** | 156.450 |
+| Tokens de saída (JSON do GradMent) | **49.905** | 49.905 |
+| Claude Opus 5.5 (US$ 4 / US$ 20) | **US$ 3,08** | US$ 1,62 |
+| Claude Sonnet 5.5 (US$ 2 / US$ 10) | US$ 1,54 | US$ 0,81 |
+| Claude Haiku 5.5 (US$ 0,50 / US$ 2,50 acima de 100 mil tokens) | US$ 0,39 | US$ 0,20 |
+| **Pipeline (Gemini, OpenRouter e Groq gratuitos)** | **US$ 0** | **US$ 0** |
+
+O custo do Claude é um **piso de uma única tentativa**: não inclui tokens de raciocínio (cobrados como saída) nem as rodadas de correção que a saída do modelo único exigiria (duplicata, ciclos, optativas e CH).
+
+## 5. Respostas diretas
 
 ### Os dados extraídos estão certos?
 **Quase, mas ainda não o bastante para importar sem revisão.**
@@ -112,14 +143,12 @@ Isso mostra que **o pipeline funciona em um layout para o qual o GradMent não t
 - **O ponto fraco são os requisitos:** a precisão é alta (96,1%), mas a revocação é de 82%. Em média, cerca de 1 em cada 5 pré ou correquisitos do PPC fica de fora. No GradMent, isso significa recomendar uma disciplina antes da hora.
 - A saída **sempre** respeitou as 7 regras do GradMent (9/9), então nunca quebra a importação.
 
-### Quanto tempo economiza?
-- **Tempo da máquina (medido):** cerca de 44 s para o PPC sintético e **6 a 8 min para um PPC real de 136 a 190 páginas**, de ponta a ponta (extração, duas IAs, juíza e validação).
-- **Volume produzido por PPC real:** cerca de 100 disciplinas × 6 campos e mais de 100 requisitos, ou seja, **cerca de 700 dados** que hoje são digitados à mão.
-- **Tempo manual humano: `[A MEDIR]`.** Fiz uma tentativa real ([manual/TEMPO-MANUAL.md](manual/TEMPO-MANUAL.md)): transcrevi à mão o 2º período do PPC real, com 100% de acerto (7/7 disciplinas e 9/9 requisitos), mas precisei de **8 consultas ao PDF**, porque a tabela do período é ambígua e cada ficha precisa ser aberta. O meu tempo não vale como tempo humano. O que dá para afirmar:
-  - **Volume medido do PPC inteiro:** ≈ 6.670 caracteres de campos estruturados e ≈ 46.100 de ementas, espalhados em 99 fichas e 11 tabelas.
-  - **Piso calculado só de digitação** (premissa: 200 caracteres por minuto): **≥ 33 min** colando as ementas e **≥ 4 h 24 min** digitando-as, sem contar busca, leitura e conferência.
-  - Contra **7 min 11 s** de máquina, a automação já sai na frente mesmo nesse piso. O tamanho real do ganho depende de uma pessoa cronometrar 1 período e do tempo de revisão da saída.
-- Esse número não foi estimado. A revisão ainda é necessária (revocação de requisitos de 82%), e o ganho real depende do tempo dela.
+### Quanto tempo e dinheiro economiza?
+O processo a comparar é **pedir a um LLM no chat**, não digitar à mão (seção 4).
+- **Dinheiro (medido):** cada PPC convertido pelo Claude custa no mínimo **US$ 3,08 com o Opus 5.5 e o PDF anexado** (520.738 tokens de entrada e 49.905 de saída). O pipeline usa só cotas gratuitas: **US$ 0**.
+- **Retrabalho evitado:** a saída do modelo único **não importa no GradMent** (código duplicado e ciclos) e erra a natureza de 42 optativas e a CH de 54 disciplinas. Cada um desses erros vira uma rodada de correção no chat ou uma conferência manual. O pipeline já entrega o JSON validado nas 7 regras.
+- **Tempo de máquina:** praticamente igual (5 min 29 s contra 7 min 11 s). O ganho não está no relógio da máquina, e sim em **não precisar corrigir a saída**. O tempo dessa correção no processo anterior ainda é `[A MEDIR]`.
+- Também registrei uma tentativa de transcrição manual ([manual/TEMPO-MANUAL.md](manual/TEMPO-MANUAL.md)). Ela mostra o volume de trabalho (cerca de 6.700 caracteres de campos e 46 mil de ementas), mas digitar à mão não era o processo real.
 
 ### Isso realmente ajuda o GradMent?
 **Sim, como rascunho revisável. Ainda não como importação automática.**
@@ -136,7 +165,7 @@ Isso mostra que **o pipeline funciona em um layout para o qual o GradMent não t
 
 ---
 
-## 5. Correções recomendadas, em ordem de impacto
+## 6. Correções recomendadas, em ordem de impacto
 
 1. **Garantir diversidade de modelo**, principalmente na juíza: o fallback não pode colocar a juíza no mesmo modelo das IAs 1 e 2. Se não houver alternativa, o relatório deve marcar `diversidade: false` e pedir revisão.
 2. **Travar os campos de consenso:** se IA 1 e IA 2 concordam no período e na CH, a juíza não pode alterá-los. Isso teria evitado as 6 obrigatórias que viraram optativas.

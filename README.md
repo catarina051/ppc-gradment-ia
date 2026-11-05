@@ -71,7 +71,17 @@ flowchart LR
 | Período correto | 97,6% | 98,6% | 100% |
 | Pré/correquisitos: precisão / revocação | **96,1% / 82,0%** | sem gabarito | 100% / 98,2% |
 | Saída válida nas 7 regras do GradMent | 3/3 | 1/1 | 5/5 |
-| Tempo manual equivalente | `[A MEDIR]`, mas **≥ 33 min só de digitação** ([cálculo](avaliacao/manual/TEMPO-MANUAL.md)) | `[A MEDIR]` | n/a |
+
+**Contra o processo anterior** (mandar o PPC para um LLM no chat), no mesmo PPC real e com o mesmo gabarito:
+
+| | Um modelo só, PPC inteiro, sem validação | Este pipeline |
+| --- | ---: | ---: |
+| Obrigatória × optativa correta | 57,1% (as 42 optativas viraram obrigatórias) | **98,0%** |
+| Carga horária correta | 43,9% (54 disciplinas em horas-relógio) | **100%** |
+| Disciplinas que não existem | 6 | **0** |
+| Pré/correquisitos: precisão / revocação | 81,9% / **87,2%** | **96,1%** / 82,0% |
+| Aceito pelo GradMent | **não** (código duplicado e ciclos) | **sim** |
+| Custo por PPC no Claude Opus 5.5 (PDF anexado; tokens contados pela API) | **US$ 3,08** (520.738 tokens de entrada + 49.905 de saída) | **US$ 0** (cotas gratuitas) |
 
 **A juíza valeu a pena?** Depende de ela ser um modelo diferente das outras duas IAs:
 
@@ -86,7 +96,8 @@ flowchart LR
 1. **Duas IAs concordando não quer dizer que estão certas.** Quando a cota do Gemini caiu, o fallback colocou as duas IAs no mesmo modelo, elas erraram igual e o erro passou direto.
 2. **A juíza é boa quando tem diversidade e evidência.** Em modelo diferente, ela corrigiu 31 itens e piorou 1. No mesmo modelo e sem as páginas certas, chegou a piorar mais do que corrigir.
 3. **O corte de contexto foi a causa raiz dos piores erros.** As 10 disciplinas cujas páginas foram cortadas do texto são exatamente as que viraram problema.
-4. **O próprio PPC tem inconsistências** (período diferente entre matriz e ficha, código repetido). Um gabarito honesto precisa registrar essas inconsistências em vez de culpar a IA.
+4. **O ganho não está no relógio, e sim no retrabalho e no custo.** Um modelo só leva um tempo parecido (5,5 min contra 7,2 min), mas entrega uma saída que o GradMent rejeita e custa US$ 3,08 por PPC no Claude Opus. O pipeline entrega o JSON validado, de graça.
+5. **O próprio PPC tem inconsistências** (período diferente entre matriz e ficha, código repetido). Um gabarito honesto precisa registrar essas inconsistências em vez de culpar a IA.
 
 ## Demo
 
@@ -101,7 +112,7 @@ flowchart LR
 3. Não mandar à juíza divergências apenas de texto de ementa.
 4. Cortar o PPC em bloco contíguo, sem escolher páginas soltas.
 5. Na dúvida, incluir o requisito e sinalizar (a juíza acerta só 42% das exclusões).
-6. Cronometrar o tempo manual e o de revisão para fechar a conta de horas economizadas (hoje `[A MEDIR]`).
+6. Cronometrar o tempo de correção da saída no processo anterior e o tempo de revisão da saída do pipeline (hoje `[A MEDIR]`).
 
 ---
 

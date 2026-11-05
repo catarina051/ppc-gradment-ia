@@ -1,5 +1,7 @@
 # Tentativa de medir o tempo manual
 
+> **Atualização:** digitar à mão **não era o processo real** antes do pipeline. O processo era mandar o PPC para um LLM no chat. A comparação certa, com qualidade e custo em tokens do Claude, está em [RESULTADOS.md, seção 4](../RESULTADOS.md#4-comparação-com-o-processo-anterior-mandar-o-ppc-para-um-llm-no-chat). Este arquivo fica como registro do volume de trabalho de um PPC.
+
 > **Resumo honesto:** o tempo manual *humano* continua `[A MEDIR]`. Esta pasta registra uma tentativa real de fazer a importação "à mão" e o que ela permite afirmar com segurança: **o volume de trabalho (medido)** e **um piso de tempo só de digitação (calculado, com premissa explícita)**.
 
 ## O que foi feito
