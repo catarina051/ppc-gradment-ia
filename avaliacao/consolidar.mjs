@@ -257,6 +257,23 @@ const dashboard = {
     esperado: typeof i.esperado === 'object' ? `período ${i.esperado.periodo ?? 'optativa'}, ${i.esperado.carga_horaria}h` : i.esperado,
     efeito: i.efeito_juiza,
   }))),
+  // Conclusão central: a juíza só ajuda quando roda num modelo diferente das IAs 1 e 2
+  juiza_por_diversidade: ['diferente', 'mesmo'].map((grupo) => {
+    const ex = execucoes.filter((e) => e.avaliacao_juiza && ((e.avaliacao_juiza.modelo_juiza === e.modelos.ia1
+      && e.avaliacao_juiza.modelo_juiza === e.modelos.ia2) ? 'mesmo' : 'diferente') === grupo);
+    const soma = (f) => ex.reduce((acc, e) => acc + f(e.avaliacao_juiza), 0);
+    const n = soma((a) => a.itens.length);
+    return {
+      grupo: grupo === 'diferente' ? 'Juíza em modelo diferente das IAs 1 e 2' : 'Juíza no mesmo modelo das IAs 1 e 2',
+      execucoes: ex.map((e) => e.execucao),
+      divergencias_avaliadas: n,
+      corrigiu: soma((a) => a.efeito.corrigiu),
+      piorou: soma((a) => a.efeito.piorou),
+      manteve_certo: soma((a) => a.efeito.manteve_certo),
+      manteve_errado: soma((a) => a.efeito.manteve_errado),
+      acerto_pct: pct(soma((a) => a.itens.filter((i) => i.final_certo).length), n),
+    };
+  }),
   cobertura_texto_ppc_real: COBERTURA_CEFET,
   tempo_manual: {
     minutos: null,

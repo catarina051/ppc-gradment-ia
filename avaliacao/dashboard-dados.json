@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-05T17:36:27.097Z",
+  "gerado_em": "2026-11-05T17:37:22.467Z",
   "fonte": "Execuções reais do pipeline n8n pontuadas contra gabarito determinístico (avaliacao/resultados.json)",
   "resumo_por_caso": [
     {
@@ -1566,6 +1566,38 @@
       "pagina_citada": "Página 50 (Matriz Curricular) e Página 81 (Ementário - EELi26)",
       "esperado": "período 5, 32h",
       "efeito": "PIOROU"
+    }
+  ],
+  "juiza_por_diversidade": [
+    {
+      "grupo": "Juíza em modelo diferente das IAs 1 e 2",
+      "execucoes": [
+        "cefet-engcomp-03",
+        "sintetico-02",
+        "sintetico-03",
+        "sintetico-04",
+        "sintetico-05"
+      ],
+      "divergencias_avaliadas": 40,
+      "corrigiu": 31,
+      "piorou": 1,
+      "manteve_certo": 6,
+      "manteve_errado": 2,
+      "acerto_pct": 92.5
+    },
+    {
+      "grupo": "Juíza no mesmo modelo das IAs 1 e 2",
+      "execucoes": [
+        "cefet-engcomp-01",
+        "cefet-engcomp-02",
+        "unifei-eco-01"
+      ],
+      "divergencias_avaliadas": 65,
+      "corrigiu": 26,
+      "piorou": 22,
+      "manteve_certo": 17,
+      "manteve_errado": 0,
+      "acerto_pct": 66.2
     }
   ],
   "cobertura_texto_ppc_real": {
