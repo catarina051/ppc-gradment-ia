@@ -1,0 +1,753 @@
+{
+  "fonte": "unifei.pdf",
+  "metodo": "parser deterministico das tabelas 'Xo Período' (sem LLM); gabarito PARCIAL",
+  "parcial": true,
+  "sem_gabarito_requisitos": true,
+  "total_disciplinas": 74,
+  "obrigatorias": 74,
+  "optativas": null,
+  "total_dependencias": null,
+  "disciplinas": [
+    {
+      "sigla": "MATI2301",
+      "nome": "Cálculo I",
+      "eixo": null,
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "MATI2302",
+      "nome": "Geometria Analítica e Álgebra Linear",
+      "eixo": null,
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "EMEI2202",
+      "nome": "Desenho Aplicado",
+      "eixo": null,
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "HUMI01",
+      "nome": "Ciência, Tecnologia e Sociedade",
+      "eixo": null,
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 16,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2201",
+      "nome": "Introdução à Engenharia da Computação",
+      "eixo": null,
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2203",
+      "nome": "Matemática Discreta",
+      "eixo": null,
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2202",
+      "nome": "Lógica de Programação",
+      "eixo": null,
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "MATI2303",
+      "nome": "Cálculo II",
+      "eixo": null,
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "MATI2304",
+      "nome": "Probabilidade e Estatística",
+      "eixo": null,
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "FISI2301",
+      "nome": "Fundamentos de Mecânica",
+      "eixo": null,
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "HUMI02",
+      "nome": "Língua Portuguesa I",
+      "eixo": null,
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2204",
+      "nome": "Algoritmos e Estrutura de Dados I",
+      "eixo": null,
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "EELI2204",
+      "nome": "Circuitos Elétricos I",
+      "eixo": null,
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "MATI2306",
+      "nome": "Cálculo III",
+      "eixo": null,
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "MATI2307",
+      "nome": "Equações Diferenciais Ordinárias",
+      "eixo": null,
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "FISI2302",
+      "nome": "Fundamentos de Mecânica Ondulatória e Termodinâmica",
+      "eixo": null,
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "FISI2303",
+      "nome": "Laboratório de Física A (Mecânica, Ondas e Termodinâmica)",
+      "eixo": null,
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "EMEI06",
+      "nome": "Mecânica Estática",
+      "eixo": null,
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2205",
+      "nome": "Programação Orientada a Objetos",
+      "eixo": null,
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2206",
+      "nome": "Algoritmos e Estruturas de Dados II",
+      "eixo": null,
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2202",
+      "nome": "Eletrônica Digital I",
+      "eixo": null,
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2203",
+      "nome": "Laboratório de Eletrônica Digital I",
+      "eixo": null,
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 16,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELLI2241",
+      "nome": "Laboratório de Circuitos Elétricos I",
+      "eixo": null,
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 16,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "MAT2305",
+      "nome": "Álgebra Linear em Nível Intermediário",
+      "eixo": null,
+      "periodo_sugerido": 4,
+      "optativa": false,
+      "periodo": 4,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "MAT2308",
+      "nome": "Cálculo Numérico",
+      "eixo": null,
+      "periodo_sugerido": 4,
+      "optativa": false,
+      "periodo": 4,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "EMTI2203",
+      "nome": "Química Geral",
+      "eixo": null,
+      "periodo_sugerido": 4,
+      "optativa": false,
+      "periodo": 4,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "EMTI2204",
+      "nome": "Laboratório Química Geral",
+      "eixo": null,
+      "periodo_sugerido": 4,
+      "optativa": false,
+      "periodo": 4,
+      "carga_horaria_horas_aula": 16,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2207",
+      "nome": "Projeto e Análise de Algoritmos",
+      "eixo": null,
+      "periodo_sugerido": 4,
+      "optativa": false,
+      "periodo": 4,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2208",
+      "nome": "Arquitetura de Computadores",
+      "eixo": null,
+      "periodo_sugerido": 4,
+      "optativa": false,
+      "periodo": 4,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "FISI2305",
+      "nome": "Fundamentos de Óptica e Física Moderna",
+      "eixo": null,
+      "periodo_sugerido": 5,
+      "optativa": false,
+      "periodo": 5,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2209",
+      "nome": "Linguagens de Programação",
+      "eixo": null,
+      "periodo_sugerido": 5,
+      "optativa": false,
+      "periodo": 5,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2210",
+      "nome": "Análise e Desenvolvimento de Software I",
+      "eixo": null,
+      "periodo_sugerido": 5,
+      "optativa": false,
+      "periodo": 5,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2204",
+      "nome": "Eletrônica Analógica I",
+      "eixo": null,
+      "periodo_sugerido": 5,
+      "optativa": false,
+      "periodo": 5,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2205",
+      "nome": "Laboratório de Eletrônica Analógica I",
+      "eixo": null,
+      "periodo_sugerido": 5,
+      "optativa": false,
+      "periodo": 5,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "EELI2240",
+      "nome": "Materiais Elétricos",
+      "eixo": null,
+      "periodo_sugerido": 5,
+      "optativa": false,
+      "periodo": 5,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECAI2231",
+      "nome": "Instrumentação Básica",
+      "eixo": null,
+      "periodo_sugerido": 5,
+      "optativa": false,
+      "periodo": 5,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECAI2202",
+      "nome": "Sinais e Sistemas",
+      "eixo": null,
+      "periodo_sugerido": 5,
+      "optativa": false,
+      "periodo": 5,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "FISI2306",
+      "nome": "Laboratório de Física B (Eletromagnetismo, Óptica e Física Moderna)",
+      "eixo": null,
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2211",
+      "nome": "Sistemas Operacionais",
+      "eixo": null,
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2212",
+      "nome": "Laboratório de Sistemas Operacionais",
+      "eixo": null,
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2213",
+      "nome": "Análise e Desenvolvimento de Software II",
+      "eixo": null,
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2232",
+      "nome": "Circuitos Integrados Analógicos",
+      "eixo": null,
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2233",
+      "nome": "Laboratório de Circuitos Integrados Analógicos",
+      "eixo": null,
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2206",
+      "nome": "Eletrônica Digital II",
+      "eixo": null,
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2207",
+      "nome": "Laboratório de Eletrônica Digital II",
+      "eixo": null,
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 16,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2220",
+      "nome": "Projeto Aplicado de Eletrônica",
+      "eixo": null,
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECAI2203",
+      "nome": "Sistemas de Controle I",
+      "eixo": null,
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECAI2204",
+      "nome": "Laboratório de Sistemas de Controle I",
+      "eixo": null,
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 16,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "HUMI2206",
+      "nome": "Metodologia Científica",
+      "eixo": null,
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2214",
+      "nome": "Teoria da Computação",
+      "eixo": null,
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2215",
+      "nome": "Análise e Desenvolvimento de Software III",
+      "eixo": null,
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2212",
+      "nome": "Sistemas de Comunicação",
+      "eixo": null,
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2213",
+      "nome": "Laboratório de Sistemas de Comunicação",
+      "eixo": null,
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 16,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2210",
+      "nome": "Microcontroladores",
+      "eixo": null,
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2211",
+      "nome": "Laboratório de Microcontroladores",
+      "eixo": null,
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2216",
+      "nome": "Processamento Digital de Sinais",
+      "eixo": null,
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2217",
+      "nome": "Laboratório de Processamento Digital de Sinais",
+      "eixo": null,
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 16,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2216",
+      "nome": "Redes de Computadores",
+      "eixo": null,
+      "periodo_sugerido": 8,
+      "optativa": false,
+      "periodo": 8,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2217",
+      "nome": "Inteligência Artificial",
+      "eixo": null,
+      "periodo_sugerido": 8,
+      "optativa": false,
+      "periodo": 8,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2218",
+      "nome": "Análise e Desenvolvimento de Software IV",
+      "eixo": null,
+      "periodo_sugerido": 8,
+      "optativa": false,
+      "periodo": 8,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2219",
+      "nome": "Compiladores",
+      "eixo": null,
+      "periodo_sugerido": 8,
+      "optativa": false,
+      "periodo": 8,
+      "carga_horaria_horas_aula": 64,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2218",
+      "nome": "Sistemas Embarcados de Tempo Real",
+      "eixo": null,
+      "periodo_sugerido": 8,
+      "optativa": false,
+      "periodo": 8,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ELTI2219",
+      "nome": "Laboratório de Sistemas Embarcados de Tempo Real",
+      "eixo": null,
+      "periodo_sugerido": 8,
+      "optativa": false,
+      "periodo": 8,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "TCCI",
+      "nome": "Trabalho de Conclusão de Curso I",
+      "eixo": null,
+      "periodo_sugerido": 8,
+      "optativa": false,
+      "periodo": 8,
+      "carga_horaria_horas_aula": 51,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "EPRIB002",
+      "nome": "Introdução à Economia",
+      "eixo": null,
+      "periodo_sugerido": 9,
+      "optativa": false,
+      "periodo": 9,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "HUMI2204",
+      "nome": "Cidadania e Responsabilidade Social",
+      "eixo": null,
+      "periodo_sugerido": 9,
+      "optativa": false,
+      "periodo": 9,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "EPRIB001",
+      "nome": "Administração",
+      "eixo": null,
+      "periodo_sugerido": 9,
+      "optativa": false,
+      "periodo": 9,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "EAMI30",
+      "nome": "Ciências do Ambiente",
+      "eixo": null,
+      "periodo_sugerido": 9,
+      "optativa": false,
+      "periodo": 9,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2220",
+      "nome": "Sistemas Paralelos e Distribuídos",
+      "eixo": null,
+      "periodo_sugerido": 9,
+      "optativa": false,
+      "periodo": 9,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECOI2221",
+      "nome": "Infraestrutura de Sistemas de Computação e Segurança",
+      "eixo": null,
+      "periodo_sugerido": 9,
+      "optativa": false,
+      "periodo": 9,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECAI2233",
+      "nome": "Introdução à Automação Industrial",
+      "eixo": null,
+      "periodo_sugerido": 9,
+      "optativa": false,
+      "periodo": 9,
+      "carga_horaria_horas_aula": 32,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "ECAI2234",
+      "nome": "Laboratório de Automação Industrial",
+      "eixo": null,
+      "periodo_sugerido": 9,
+      "optativa": false,
+      "periodo": 9,
+      "carga_horaria_horas_aula": 16,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "TCCII",
+      "nome": "Trabalho de Conclusão de Curso II",
+      "eixo": null,
+      "periodo_sugerido": 9,
+      "optativa": false,
+      "periodo": 9,
+      "carga_horaria_horas_aula": 77,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "EST",
+      "nome": "Estágio Supervisionado",
+      "eixo": null,
+      "periodo_sugerido": 10,
+      "optativa": false,
+      "periodo": 10,
+      "carga_horaria_horas_aula": 175,
+      "carga_horaria_horas_relogio": null
+    }
+  ],
+  "dependencias": []
+}

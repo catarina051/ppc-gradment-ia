@@ -142,7 +142,8 @@ const resultado = {
     gabarito: ouro.length,
     extraidas: saida.length,
     casadas: tp,
-    precisao_pct: pct(tp, saida.length),
+    // gabarito parcial (só obrigatórias) não permite medir precisão: o que sobra pode ser optativa legítima
+    precisao_pct: gab.parcial ? null : pct(tp, saida.length),
     revocacao_pct: pct(tp, ouro.length),
     classificacao_obrig_opt_pct: pct(classeOk, tp),
     periodo_exato_pct: pct(periodoOk, tp),
@@ -151,7 +152,7 @@ const resultado = {
     faltando: faltando.map((o) => `${o.sigla} ${o.nome}`),
     extras: semPar.map((s) => `${s.codigo} ${s.nome}`),
   },
-  requisitos: {
+  requisitos: gab.sem_gabarito_requisitos ? { sem_gabarito: true, extraidos: arestasSaida.size } : {
     gabarito: arestasOuro.size,
     gabarito_obrig_para_optativa_excluidas: proibidasRegra3,
     extraidos: arestasSaida.size,

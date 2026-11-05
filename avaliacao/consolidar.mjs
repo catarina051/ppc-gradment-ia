@@ -11,10 +11,12 @@ const DIR = join(AQUI, 'execucoes');
 const GABARITOS = {
   sintetico: JSON.parse(readFileSync(join(AQUI, 'gabaritos', 'sintetico.json'), 'utf8')),
   'cefet-engcomp': JSON.parse(readFileSync(join(AQUI, 'gabaritos', 'cefet-engcomp.json'), 'utf8')),
+  'unifei-eco': JSON.parse(readFileSync(join(AQUI, 'gabaritos', 'unifei-eco.json'), 'utf8')),
 };
 const DESCRICAO = {
   sintetico: 'PPC sintético (10 disciplinas, 3 períodos)',
   'cefet-engcomp': 'PPC real: Eng. de Computação CEFET-MG Leopoldina (190 páginas, 99 disciplinas)',
+  'unifei-eco': 'PPC real de outro layout: Eng. de Computação UNIFEI Itabira (136 páginas; gabarito parcial: 74 obrigatórias)',
 };
 
 const tempos = new Map(
@@ -155,7 +157,7 @@ for (const arq of readdirSync(DIR).filter((f) => f.endsWith('.json')).sort()) {
   });
 }
 
-const media = (xs) => (xs.length ? Math.round((xs.reduce((a, b) => a + b, 0) / xs.length) * 10) / 10 : null);
+const media = (xs0) => { const xs = xs0.filter((x) => x != null); return xs.length ? Math.round((xs.reduce((a, b) => a + b, 0) / xs.length) * 10) / 10 : null; };
 const resumo = {};
 for (const caso of Object.keys(GABARITOS)) {
   const ex = execucoes.filter((e) => e.caso === caso);
@@ -164,7 +166,7 @@ for (const caso of Object.keys(GABARITOS)) {
   const comJuiza = ok.filter((e) => e.avaliacao_juiza);
   resumo[caso] = {
     descricao: DESCRICAO[caso],
-    gabarito: { disciplinas: GABARITOS[caso].total_disciplinas, requisitos: GABARITOS[caso].total_dependencias },
+    gabarito: { disciplinas: GABARITOS[caso].total_disciplinas, requisitos: GABARITOS[caso].total_dependencias, parcial: Boolean(GABARITOS[caso].parcial) },
     execucoes: ex.length,
     sucesso: ok.length,
     tempo_medio_s: media(ok.map((e) => e.segundos)),
