@@ -9,7 +9,7 @@
 | | PPC sintético | PPC real CEFET-MG | PPC real UNIFEI (outro layout) |
 | --- | ---: | ---: | ---: |
 | Execuções | 5 | 3 | 1 |
-| Tempo médio por PPC | **43,8 s** | **7 min 11 s** (431,5 s) | **6 min 21 s** (381,0 s) |
+| Tempo médio por PPC | **43,8 s** | **7 min 12 s** (431,5 s) | **6 min 21 s** (381,0 s) |
 | Disciplinas encontradas | 100% | **100%** (99/99) | **98,6%** (73/74 obrigatórias) |
 | Obrigatória × optativa correta | 100% | 98,0% | 100% |
 | Período correto | 100% | 97,6% | 98,6% |
@@ -116,7 +116,7 @@ Antes do pipeline, o processo **não era digitar à mão**: era mandar o PDF do 
 | Carga horária correta | **43,9%**: 54 disciplinas em horas-relógio | **100%** |
 | Requisitos: precisão / revocação | 81,9% / **87,2%** | **96,1%** / 82,0% |
 | Aceito pelo GradMent | **Não**: código duplicado (ACOM0) e 2 ciclos de requisitos | **Sim** (3/3) |
-| Tempo | 5 min 29 s | 7 min 11 s |
+| Tempo | 5 min 29 s | 7 min 12 s |
 
 - As "disciplinas" a mais são atividades que não se matriculam: atividades de TCC, estágio, atividades complementares e extensão.
 - O modelo único encontrou **mais** requisitos porque leu o PPC sem corte. Isso confirma que o corte de texto é o principal ponto a melhorar no pipeline.
@@ -147,7 +147,7 @@ O custo do Claude é um **piso de uma única tentativa**: não inclui tokens de 
 O processo a comparar é **pedir a um LLM no chat**, não digitar à mão (seção 4).
 - **Dinheiro (medido):** cada PPC convertido pelo Claude custa no mínimo **US$ 3,08 com o Opus 5.5 e o PDF anexado** (520.738 tokens de entrada e 49.905 de saída). O pipeline usa só cotas gratuitas: **US$ 0**.
 - **Retrabalho evitado:** a saída do modelo único **não importa no GradMent** (código duplicado e ciclos) e erra a natureza de 42 optativas e a CH de 54 disciplinas. Cada um desses erros vira uma rodada de correção no chat ou uma conferência manual. O pipeline já entrega o JSON validado nas 7 regras.
-- **Tempo de máquina:** praticamente igual (5 min 29 s contra 7 min 11 s). O ganho não está no relógio da máquina, e sim em **não precisar corrigir a saída**. O tempo dessa correção no processo anterior ainda é `[A MEDIR]`.
+- **Tempo de máquina:** praticamente igual (5 min 29 s contra 7 min 12 s). O ganho não está no relógio da máquina, e sim em **não precisar corrigir a saída**. O tempo dessa correção no processo anterior ainda é `[A MEDIR]`.
 - Também registrei uma tentativa de transcrição manual ([manual/TEMPO-MANUAL.md](manual/TEMPO-MANUAL.md)). Ela mostra o volume de trabalho (cerca de 6.700 caracteres de campos e 46 mil de ementas), mas digitar à mão não era o processo real.
 
 ### Isso realmente ajuda o GradMent?

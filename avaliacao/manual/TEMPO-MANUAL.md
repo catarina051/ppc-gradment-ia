@@ -36,7 +36,7 @@ Transcrevi à mão o **2º período** do PPC real de Eng. de Computação do CEF
 | Digitar só os campos estruturados (ementas coladas com Ctrl+C/Ctrl+V) | **≥ 33 min** | ≥ 22 min |
 | Digitar também as ementas | **≥ 4 h 24 min** | ≥ 2 h 56 min |
 
-**Comparação com a máquina (medida):** o pipeline levou **6 min 43 s a 7 min 36 s** por PPC real (média de 7 min 11 s), sem contar a revisão humana.
+**Comparação com a máquina (medida):** o pipeline levou **6 min 43 s a 7 min 36 s** por PPC real (média de 7 min 12 s), sem contar a revisão humana.
 
 ## O que ainda falta para fechar a conta
 

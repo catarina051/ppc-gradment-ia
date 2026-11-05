@@ -65,7 +65,7 @@ flowchart LR
 
 | | PPC real CEFET-MG (190 p., 3 execuções) | PPC real UNIFEI (outro layout, 1 execução) | PPC sintético (5 execuções) |
 | --- | ---: | ---: | ---: |
-| Tempo da máquina por PPC | **7 min 11 s** | **6 min 21 s** | 44 s |
+| Tempo da máquina por PPC | **7 min 12 s** | **6 min 21 s** | 44 s |
 | Disciplinas encontradas | **100%** (99/99) | **98,6%** (73/74) | 100% |
 | Carga horária correta | **100%** | 100% | 100% |
 | Período correto | 97,6% | 98,6% | 100% |
