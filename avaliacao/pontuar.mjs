@@ -63,7 +63,8 @@ const errosCampo = [];
 for (const { s, o } of pares) {
   const sOpt = s.periodo === null;
   if (sOpt === o.optativa) classeOk++;
-  if ((s.periodo ?? null) === (o.periodo ?? null)) periodoOk++;
+  const periodosAceitos = o.periodos_aceitos || [o.periodo ?? null];
+  if (periodosAceitos.includes(s.periodo ?? null)) periodoOk++;
   else errosCampo.push({ sigla: o.sigla, campo: 'periodo', esperado: o.periodo, obtido: s.periodo });
   if (s.carga_horaria === o.carga_horaria_horas_aula) chOk++;
   else if (s.carga_horaria === o.carga_horaria_horas_relogio) chOkRelogio++;

@@ -27,6 +27,15 @@ import unicodedata
 
 import pymupdf
 
+# Inconsistências encontradas DENTRO do próprio PPC, conferidas manualmente no PDF. Nesses casos as duas
+# leituras são aceitas como corretas (a IA não deve ser penalizada por seguir uma das duas fontes do documento).
+INCONSISTENCIAS_DO_PPC = {
+    "SDIG0": {
+        "periodos_aceitos": [6, 5],
+        "nota": "Detalhamento de Disciplinas diz 6º período; o quadro da matriz (5º período, item 3/5) lista no 5º.",
+    },
+}
+
 RODAPE_RE = re.compile(
     r"(Projeto Pedag[óo]gico do Curso de|Centro Federal de Educa|Rua Jos[ée] Peres|^\s*\d{1,3}\s*$)",
     re.IGNORECASE,
@@ -159,6 +168,10 @@ def main(caminho_pdf: str, caminho_saida: str) -> None:
                     if req != d["sigla"]:
                             dependencias.append({"disciplina": d["sigla"], "requisito": req, "tipo": tipo})
 
+    for d in disciplinas:
+        if d["sigla"] in INCONSISTENCIAS_DO_PPC:
+            d.update(INCONSISTENCIAS_DO_PPC[d["sigla"]])
+
     gabarito = {
         "fonte": caminho_pdf.split("/")[-1],
         "metodo": "parser deterministico dos blocos 'Detalhamento de Disciplinas' (sem LLM)",
@@ -167,6 +180,8 @@ def main(caminho_pdf: str, caminho_saida: str) -> None:
         "optativas": sum(1 for d in disciplinas if d["optativa"]),
         "total_dependencias": len(dependencias),
         "requisitos_nao_resolvidos": nao_resolvidos,
+        "validacao_cruzada": "56 de 57 obrigatórias conferem com os quadros 'Relação de disciplinas do Nº período'; a exceção está em inconsistencias_do_ppc.",
+        "inconsistencias_do_ppc": INCONSISTENCIAS_DO_PPC,
         "disciplinas": disciplinas,
         "dependencias": dependencias,
     }

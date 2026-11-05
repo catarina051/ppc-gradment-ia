@@ -31,7 +31,8 @@ function versaoCerta(v, gab) {
   const o = acharNoGabarito(v, gab);
   if (!v) return null;
   if (!o) return false; // disciplina inexistente
-  return mesmoValor(v.periodo, o.periodo) && v.carga_horaria === o.carga_horaria_horas_aula;
+  const periodoOk = (o.periodos_aceitos || [o.periodo ?? null]).includes(v.periodo ?? null);
+  return periodoOk && v.carga_horaria === o.carga_horaria_horas_aula;
 }
 
 function avaliarJuiza(exec, gab, mapaCodSigla) {

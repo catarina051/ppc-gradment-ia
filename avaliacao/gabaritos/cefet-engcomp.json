@@ -8,6 +8,16 @@
   "requisitos_nao_resolvidos": [
     "Atividade de TCCI"
   ],
+  "validacao_cruzada": "56 de 57 obrigatórias conferem com os quadros 'Relação de disciplinas do Nº período'; a exceção está em inconsistencias_do_ppc.",
+  "inconsistencias_do_ppc": {
+    "SDIG0": {
+      "periodos_aceitos": [
+        6,
+        5
+      ],
+      "nota": "Detalhamento de Disciplinas diz 6º período; o quadro da matriz (5º período, item 3/5) lista no 5º."
+    }
+  },
   "disciplinas": [
     {
       "sigla": "CFVR0",
@@ -579,7 +589,12 @@
       "pre_nomes": [],
       "co_nomes": [
         "Eletrônica I"
-      ]
+      ],
+      "periodos_aceitos": [
+        6,
+        5
+      ],
+      "nota": "Detalhamento de Disciplinas diz 6º período; o quadro da matriz (5º período, item 3/5) lista no 5º."
     },
     {
       "sigla": "LSDI0",
