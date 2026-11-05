@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-11-05T17:23:53.331Z",
+  "gerado_em": "2026-11-05T17:36:27.097Z",
   "fonte": "Execuções reais do pipeline n8n pontuadas contra gabarito determinístico (avaliacao/resultados.json)",
   "resumo_por_caso": [
     {
@@ -77,8 +77,8 @@
       "invariantes_gradment_ok": "1/1",
       "execucoes_com_ia1_e_ia2_no_mesmo_modelo": 1,
       "juiza_acionada": 1,
-      "juiza_corrigiu": 21,
-      "juiza_piorou": 3
+      "juiza_corrigiu": 2,
+      "juiza_piorou": 1
     }
   ],
   "execucoes": [
@@ -297,12 +297,12 @@
       "periodo_pct": 98.6,
       "carga_horaria_pct": 100,
       "regras_gradment_ok": true,
-      "juiza_corrigiu": 21,
-      "juiza_piorou": 3,
+      "juiza_corrigiu": 2,
+      "juiza_piorou": 1,
       "juiza_manteve_certo": 4,
       "juiza_manteve_errado": 0,
-      "acerto_nas_divergencias_juiza_pct": 89.3,
-      "acerto_nas_divergencias_sempre_ia1_pct": 28.6,
+      "acerto_nas_divergencias_juiza_pct": 85.7,
+      "acerto_nas_divergencias_sempre_ia1_pct": 71.4,
       "acerto_nas_divergencias_sempre_ia2_pct": 85.7
     }
   ],
@@ -1545,222 +1545,6 @@
     },
     {
       "execucao": "unifei-eco-01",
-      "id": "DISC_06",
-      "tipo": "disciplina",
-      "item": "EELI04 Eletricidade Aplicada I",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "ADOTAR_IA1",
-      "pagina_citada": "Página 63 (Ementário - EELi04)",
-      "esperado": "não existe no PPC",
-      "efeito": "PIOROU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_07",
-      "tipo": "disciplina",
-      "item": "EELI05 Laboratório Eletricidade Aplicada I",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "ADOTAR_IA1",
-      "pagina_citada": "Página 64 (Ementário - EELi05)",
-      "esperado": "não existe no PPC",
-      "efeito": "PIOROU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_08",
-      "tipo": "disciplina",
-      "item": "NATCOMP01 Natural Computing",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_09",
-      "tipo": "disciplina",
-      "item": "MARAT1 Maratona de Programação I",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_10",
-      "tipo": "disciplina",
-      "item": "MARAT2 Maratona de Programação II",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_11",
-      "tipo": "disciplina",
-      "item": "TOPBD1 Tópicos em Banco de Dados",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_12",
-      "tipo": "disciplina",
-      "item": "TOPDES1 Tópicos em Desenvolvimento de Software I",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_13",
-      "tipo": "disciplina",
-      "item": "TOPDES2 Tópicos em Desenvolvimento de Software II",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_14",
-      "tipo": "disciplina",
-      "item": "AGRUESP01 Introdução ao Algoritmo de Agrupamento Espectral",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_15",
-      "tipo": "disciplina",
-      "item": "EMPRE01 Empreendedorismo",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_16",
-      "tipo": "disciplina",
-      "item": "BIGDATAR01 Introdução ao Big Data em R",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_17",
-      "tipo": "disciplina",
-      "item": "GESTONG01 Gestão de ONG’s",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_18",
-      "tipo": "disciplina",
-      "item": "LIBRAS01 Libras - Língua brasileira de sinais",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_19",
-      "tipo": "disciplina",
-      "item": "MAQELECI1 Máquinas elétricas I",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_20",
-      "tipo": "disciplina",
-      "item": "ROBOTICA01 Robótica",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_21",
-      "tipo": "disciplina",
-      "item": "SEMINFRA01 Seminários de internacionalização - França",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_22",
-      "tipo": "disciplina",
-      "item": "SEMINANG01 Seminários de internacionalização - países anglofônicos",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_23",
-      "tipo": "disciplina",
-      "item": "VISCOMP01 Visão computacional",
-      "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
       "id": "DISC_24",
       "tipo": "disciplina",
       "item": "ECOI2209 Linguagens de Programação",
@@ -1782,42 +1566,6 @@
       "pagina_citada": "Página 50 (Matriz Curricular) e Página 81 (Ementário - EELi26)",
       "esperado": "período 5, 32h",
       "efeito": "PIOROU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_26",
-      "tipo": "disciplina",
-      "item": "OPT01 Optativa I",
-      "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_27",
-      "tipo": "disciplina",
-      "item": "OPT02 Optativa II",
-      "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
-    },
-    {
-      "execucao": "unifei-eco-01",
-      "id": "DISC_28",
-      "tipo": "disciplina",
-      "item": "OPT03 Optativa III",
-      "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
-      "so_ementa_divergia": false,
-      "acao_juiza": "DESCARTAR_DISCIPLINA",
-      "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
-      "esperado": "não existe no PPC",
-      "efeito": "CORRIGIU"
     }
   ],
   "cobertura_texto_ppc_real": {

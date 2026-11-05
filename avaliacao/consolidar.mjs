@@ -46,6 +46,9 @@ function avaliarJuiza(exec, gab, mapaCodSigla) {
     const dec = decisoesDisc.get(div.id_divergencia);
     const ref = div.ia1 || div.ia2;
     const ouro = acharNoGabarito(ref, gab);
+    // Gabarito parcial (só obrigatórias): uma disciplina fora dele pode ser optativa legítima,
+    // então a decisão da juíza sobre ela não é avaliável.
+    if (gab.parcial && !ouro) continue;
     // Procura a versão final pela disciplina real (não pelo código): se a juíza descartou uma duplicata
     // (ex.: ORGA01 = OCOM0 com outro código), a disciplina continua presente e o descarte está certo.
     const final = (ouro && finais.find((d) => acharNoGabarito(d, gab)?.sigla === ouro.sigla))
