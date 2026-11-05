@@ -1,0 +1,3646 @@
+{
+  "gerado_em": "2026-11-05T17:23:53.331Z",
+  "observacao": "Gerado por avaliacao/consolidar.mjs a partir das respostas reais da API. Nenhum número é estimado.",
+  "resumo": {
+    "sintetico": {
+      "descricao": "PPC sintético (10 disciplinas, 3 períodos)",
+      "gabarito": {
+        "disciplinas": 10,
+        "requisitos": 11,
+        "parcial": false
+      },
+      "execucoes": 5,
+      "sucesso": 5,
+      "tempo_medio_s": 43.8,
+      "tempo_min_s": 28.164414,
+      "tempo_max_s": 60.08337,
+      "disciplinas_revocacao_media_pct": 100,
+      "disciplinas_precisao_media_pct": 100,
+      "classificacao_obrig_opt_media_pct": 100,
+      "periodo_exato_medio_pct": 100,
+      "carga_horaria_media_pct": 100,
+      "requisitos_precisao_media_pct": 100,
+      "requisitos_revocacao_media_pct": 98.2,
+      "invariantes_gradment_ok": "5/5",
+      "execucoes_com_ia1_e_ia2_no_mesmo_modelo": 1,
+      "juiza_acionada": 4,
+      "juiza_corrigiu": 4,
+      "juiza_piorou": 0
+    },
+    "cefet-engcomp": {
+      "descricao": "PPC real: Eng. de Computação CEFET-MG Leopoldina (190 páginas, 99 disciplinas)",
+      "gabarito": {
+        "disciplinas": 99,
+        "requisitos": 109,
+        "parcial": false
+      },
+      "execucoes": 3,
+      "sucesso": 3,
+      "tempo_medio_s": 431.5,
+      "tempo_min_s": 403.486393,
+      "tempo_max_s": 456.431126,
+      "disciplinas_revocacao_media_pct": 100,
+      "disciplinas_precisao_media_pct": 100,
+      "classificacao_obrig_opt_media_pct": 98,
+      "periodo_exato_medio_pct": 97.6,
+      "carga_horaria_media_pct": 100,
+      "requisitos_precisao_media_pct": 96.1,
+      "requisitos_revocacao_media_pct": 82,
+      "invariantes_gradment_ok": "3/3",
+      "execucoes_com_ia1_e_ia2_no_mesmo_modelo": 3,
+      "juiza_acionada": 3,
+      "juiza_corrigiu": 51,
+      "juiza_piorou": 22
+    },
+    "unifei-eco": {
+      "descricao": "PPC real de outro layout: Eng. de Computação UNIFEI Itabira (136 páginas; gabarito parcial: 74 obrigatórias)",
+      "gabarito": {
+        "disciplinas": 74,
+        "requisitos": null,
+        "parcial": true
+      },
+      "execucoes": 1,
+      "sucesso": 1,
+      "tempo_medio_s": 381,
+      "tempo_min_s": 381.046472,
+      "tempo_max_s": 381.046472,
+      "disciplinas_revocacao_media_pct": 98.6,
+      "disciplinas_precisao_media_pct": null,
+      "classificacao_obrig_opt_media_pct": 100,
+      "periodo_exato_medio_pct": 98.6,
+      "carga_horaria_media_pct": 100,
+      "requisitos_precisao_media_pct": null,
+      "requisitos_revocacao_media_pct": null,
+      "invariantes_gradment_ok": "1/1",
+      "execucoes_com_ia1_e_ia2_no_mesmo_modelo": 1,
+      "juiza_acionada": 1,
+      "juiza_corrigiu": 21,
+      "juiza_piorou": 3
+    }
+  },
+  "execucoes": [
+    {
+      "caso": "cefet-engcomp",
+      "sucesso": true,
+      "inicio": "",
+      "segundos": 403.486393,
+      "extracao": {
+        "formato": "pdf",
+        "paginas": 190,
+        "paginas_ocr": 0,
+        "recortado_por_tamanho": true,
+        "caracteres": 124437
+      },
+      "execucao": "cefet-engcomp-01",
+      "status_consenso": "DESEMPATADO_PELA_3A_IA",
+      "divergencias_detectadas": 27,
+      "modelos": {
+        "ia1": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia2": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia3": "gemini/gemini-3.6-flash"
+      },
+      "juiza": {
+        "provider": "openrouter",
+        "model": "nvidia/nemotron-3.5-super-vl:free",
+        "decisoes_disciplinas": 14,
+        "decisoes_dependencias": 13
+      },
+      "correcoes_validador": 3,
+      "disciplinas": {
+        "gabarito": 99,
+        "extraidas": 99,
+        "casadas": 99,
+        "precisao_pct": 100,
+        "revocacao_pct": 100,
+        "classificacao_obrig_opt_pct": 93.9,
+        "periodo_exato_pct": 93.9,
+        "carga_horaria_horas_aula_pct": 100,
+        "carga_horaria_em_horas_relogio": 0,
+        "faltando": [],
+        "extras": []
+      },
+      "requisitos": {
+        "gabarito": 109,
+        "gabarito_obrig_para_optativa_excluidas": 0,
+        "extraidos": 88,
+        "precisao_pct": 95.5,
+        "revocacao_pct": 77.1,
+        "precisao_sem_tipo_pct": 100,
+        "revocacao_sem_tipo_pct": 80.7,
+        "faltando": [
+          "FOFT0|FMEC0|PRE",
+          "FOFT0|EDOR0|CO",
+          "FOFT0|FEOF0|CO",
+          "FELE0|FEEL0|CO",
+          "LSDI0|SDIG0|CO",
+          "EAPR0|LELE1|CO",
+          "FSSI0|ALIN0|CO",
+          "AEDA0|APCO0|PRE",
+          "POOB0|APCO0|PRE",
+          "APAL0|MDIS0|PRE",
+          "APAL0|AEDA0|PRE",
+          "APAL0|POOB0|PRE",
+          "MNUM1|APCO0|PRE",
+          "MNUM1|EDOR0|PRE",
+          "LFAU0|MDIS0|PRE",
+          "LFAU0|APAL0|PRE",
+          "OCOM0|SDIG0|PRE",
+          "OCOM0|LSDI0|PRE",
+          "TCOM0|LFAU0|PRE",
+          "COMP0|TCOM0|PRE",
+          "BDAD0|POOB0|CO",
+          "DWEB2|POOB0|PRE",
+          "AGRA0|APAL0|PRE",
+          "IART0|AGRA0|PRE",
+          "CEVO0|APAL0|PRE"
+        ],
+        "a_mais": [
+          "FOFT0|EDOR0|PRE",
+          "LSDI0|SDIG0|PRE",
+          "EAPR0|LELE1|PRE",
+          "FSSI0|ALIN0|PRE"
+        ]
+      },
+      "erros_de_campo": [
+        {
+          "sigla": "AEDA0",
+          "campo": "periodo",
+          "esperado": 2,
+          "obtido": null
+        },
+        {
+          "sigla": "APAL0",
+          "campo": "periodo",
+          "esperado": 4,
+          "obtido": null
+        },
+        {
+          "sigla": "LFAU0",
+          "campo": "periodo",
+          "esperado": 6,
+          "obtido": null
+        },
+        {
+          "sigla": "MNUM1",
+          "campo": "periodo",
+          "esperado": 5,
+          "obtido": null
+        },
+        {
+          "sigla": "POOB0",
+          "campo": "periodo",
+          "esperado": 3,
+          "obtido": null
+        },
+        {
+          "sigla": "TCOM0",
+          "campo": "periodo",
+          "esperado": 7,
+          "obtido": null
+        }
+      ],
+      "invariantes_gradment": {
+        "codigos_validos": true,
+        "codigos_unicos": true,
+        "obrigatorias_com_ch": true,
+        "sem_obrigatoria_para_optativa": true,
+        "grafo_aciclico": true
+      },
+      "mesmo_modelo_ia1_ia2": true,
+      "avaliacao_juiza": {
+        "modelo_juiza": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "divergencias": 27,
+        "acerto_estrategias_pct": {
+          "juiza": 51.9,
+          "sempre_ia1": 77.8,
+          "sempre_ia2": 51.9,
+          "oraculo_melhor_das_duas": 100
+        },
+        "efeito": {
+          "corrigiu": 11,
+          "piorou": 13,
+          "manteve_certo": 3,
+          "manteve_errado": 0
+        },
+        "divergencias_so_de_ementa": 7,
+        "pioras_em_divergencias_so_de_ementa": 5,
+        "itens": [
+          {
+            "tipo": "disciplina",
+            "id": "DISC_01",
+            "sigla": "AEDA0",
+            "nome": "Algoritmos e Estruturas de Dados",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 85 (Quadro 15)",
+            "esperado": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_02",
+            "sigla": "POOB0",
+            "nome": "Programação Orientada a Objetos",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 85 (Quadro 15)",
+            "esperado": {
+              "periodo": 3,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 3,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 3,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_03",
+            "sigla": "APAL0",
+            "nome": "Análise e Projeto de Algoritmos",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 85 (Quadro 15)",
+            "esperado": {
+              "periodo": 4,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 4,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 4,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_04",
+            "sigla": "LSDI0",
+            "nome": "Laboratório de Sistemas Digitais",
+            "motivo": "período divergente (IA1=4 vs IA2=5)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 61-62 (Quadro 12)",
+            "esperado": {
+              "periodo": 5,
+              "carga_horaria": 30
+            },
+            "ia1": {
+              "periodo": 4,
+              "carga_horaria": 30
+            },
+            "ia2": {
+              "periodo": 5,
+              "carga_horaria": 30
+            },
+            "final": {
+              "periodo": 5,
+              "carga_horaria": 30
+            },
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_05",
+            "sigla": "SDIG0",
+            "nome": "Sistemas Digitais",
+            "motivo": "período divergente (IA1=5 vs IA2=6)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "ADOTAR_IA2",
+            "pagina_citada": "Página 61 (Quadro 12)",
+            "esperado": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 5,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_06",
+            "sigla": "MNUM1",
+            "nome": "Métodos Numéricos I",
+            "motivo": "período divergente (IA1=5 vs IA2=6); carga_horaria divergente/inválida (IA1=60h vs IA2=50h); texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": false,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 85 (Quadro 15)",
+            "esperado": {
+              "periodo": 5,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 5,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 6,
+              "carga_horaria": 50
+            },
+            "final": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_07",
+            "sigla": "LFAU0",
+            "nome": "Linguagens Formais e Autômatos",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 85 (Quadro 15)",
+            "esperado": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_08",
+            "sigla": "OCOM0",
+            "nome": "Organização de Computadores",
+            "motivo": "período divergente (IA1=6 vs IA2=7); texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": false,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 89-90 (Quadros 21-22)",
+            "esperado": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_09",
+            "sigla": "TCOM0",
+            "nome": "Teoria da Computação",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 89-90 (Quadros 21-22)",
+            "esperado": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_10",
+            "sigla": "IART0",
+            "nome": "Inteligência Artificial",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "ADOTAR_IA2",
+            "pagina_citada": "Página 83 (Quadro 12)",
+            "esperado": {
+              "periodo": 8,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 8,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 8,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 8,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_11",
+            "sigla": "CEVO0",
+            "nome": "Computação Evolucionista",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 46 e 85 (Quadros 11 e 15)",
+            "esperado": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_12",
+            "sigla": "ESOF2",
+            "nome": "Engenharia de Software II",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 76-77 (Quadro 12)",
+            "esperado": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia2": null,
+            "final": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_13",
+            "sigla": "ACOM0",
+            "nome": "Arquitetura de Computadores",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 89-90 (Quadros 21-22)",
+            "esperado": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia2": null,
+            "final": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_14",
+            "sigla": "OCOM0",
+            "nome": "Organização de Computadores",
+            "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Página 4 (Lista de Abreviaturas) e Página 89-90 (Quadros 21-22)",
+            "esperado": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1": null,
+            "ia2": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_01",
+            "aresta": "FOFT0 → FEOF0",
+            "motivo": "Dependência CO apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 51 (Quadro 12)",
+            "esperado": "CO",
+            "ia1": "CO",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_02",
+            "aresta": "FELE0 → FEEL0",
+            "motivo": "Dependência CO apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 52 (Quadro 12)",
+            "esperado": "CO",
+            "ia1": "CO",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_03",
+            "aresta": "COMP0 → TCOM0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 73 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_04",
+            "aresta": "DWEB1 → APCO0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 75 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_05",
+            "aresta": "ESOF2 → ESOF1",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 76-77 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_06",
+            "aresta": "IART0 → AGRA0",
+            "motivo": "Tipo de dependência divergente (IA1=CO vs IA2=PRE)",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 83 (Quadro 12) e Página 85 (Quadro 15)",
+            "esperado": "PRE",
+            "ia1": "CO",
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_07",
+            "aresta": "FOFT0 → FMEC0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 51 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_08",
+            "aresta": "SOPE1 → APCO0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 78 (Quadro 12)",
+            "esperado": "não existe",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_09",
+            "aresta": "RCOM0 → APCO0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 78-79 (Quadro 12)",
+            "esperado": "não existe",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_10",
+            "aresta": "?ORGA01 → SDIG0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 4 (Lista de Abreviaturas)",
+            "esperado": "não existe",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_11",
+            "aresta": "?ORGA01 → LSDI0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 4 (Lista de Abreviaturas)",
+            "esperado": "não existe",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_12",
+            "aresta": "TCOM0 → LFAU0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 85 (Quadro 15)",
+            "esperado": "PRE",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_13",
+            "aresta": "CEVO0 → APAL0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 85 (Quadro 15)",
+            "esperado": "PRE",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          }
+        ]
+      }
+    },
+    {
+      "caso": "cefet-engcomp",
+      "sucesso": true,
+      "inicio": "2026-11-05T17:00:58Z",
+      "segundos": 456.431126,
+      "extracao": {
+        "formato": "pdf",
+        "paginas": 190,
+        "paginas_ocr": 0,
+        "recortado_por_tamanho": true,
+        "caracteres": 124437
+      },
+      "execucao": "cefet-engcomp-02",
+      "status_consenso": "DESEMPATADO_PELA_3A_IA",
+      "divergencias_detectadas": 31,
+      "modelos": {
+        "ia1": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia2": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia3": "gemini/gemini-3.6-flash"
+      },
+      "juiza": {
+        "provider": "openrouter",
+        "model": "nvidia/nemotron-3.5-super-vl:free",
+        "decisoes_disciplinas": 10,
+        "decisoes_dependencias": 21
+      },
+      "correcoes_validador": 0,
+      "disciplinas": {
+        "gabarito": 99,
+        "extraidas": 99,
+        "casadas": 99,
+        "precisao_pct": 100,
+        "revocacao_pct": 100,
+        "classificacao_obrig_opt_pct": 100,
+        "periodo_exato_pct": 99,
+        "carga_horaria_horas_aula_pct": 100,
+        "carga_horaria_em_horas_relogio": 0,
+        "faltando": [],
+        "extras": []
+      },
+      "requisitos": {
+        "gabarito": 109,
+        "gabarito_obrig_para_optativa_excluidas": 0,
+        "extraidos": 97,
+        "precisao_pct": 94.8,
+        "revocacao_pct": 84.4,
+        "precisao_sem_tipo_pct": 95.9,
+        "revocacao_sem_tipo_pct": 85.3,
+        "faltando": [
+          "FEME0|FMEC0|CO",
+          "FOFT0|EDOR0|CO",
+          "FOFT0|FEOF0|CO",
+          "FELE0|FEEL0|CO",
+          "LSDI0|SDIG0|CO",
+          "AEDA0|APCO0|PRE",
+          "POOB0|APCO0|PRE",
+          "APAL0|MDIS0|PRE",
+          "MNUM1|APCO0|PRE",
+          "MNUM1|EDOR0|PRE",
+          "LFAU0|MDIS0|PRE",
+          "LFAU0|APAL0|PRE",
+          "OCOM0|SDIG0|PRE",
+          "OCOM0|LSDI0|PRE",
+          "TCOM0|LFAU0|PRE",
+          "LPRO0|POOB0|PRE",
+          "DWEB1|APCO0|PRE"
+        ],
+        "a_mais": [
+          "FOFT0|EDOR0|PRE",
+          "SOPE1|APCO0|PRE",
+          "SOPE1|EDOR0|PRE",
+          "RCOM0|APCO0|PRE",
+          "RCOM0|EDOR0|PRE"
+        ]
+      },
+      "erros_de_campo": [
+        {
+          "sigla": "LSDI0",
+          "campo": "periodo",
+          "esperado": 5,
+          "obtido": 4
+        }
+      ],
+      "invariantes_gradment": {
+        "codigos_validos": true,
+        "codigos_unicos": true,
+        "obrigatorias_com_ch": true,
+        "sem_obrigatoria_para_optativa": true,
+        "grafo_aciclico": true
+      },
+      "mesmo_modelo_ia1_ia2": true,
+      "avaliacao_juiza": {
+        "modelo_juiza": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "divergencias": 31,
+        "acerto_estrategias_pct": {
+          "juiza": 74.2,
+          "sempre_ia1": 80.6,
+          "sempre_ia2": 51.6,
+          "oraculo_melhor_das_duas": 100
+        },
+        "efeito": {
+          "corrigiu": 13,
+          "piorou": 8,
+          "manteve_certo": 10,
+          "manteve_errado": 0
+        },
+        "divergencias_so_de_ementa": 10,
+        "pioras_em_divergencias_so_de_ementa": 0,
+        "itens": [
+          {
+            "tipo": "disciplina",
+            "id": "DISC_01",
+            "sigla": "AEDA0",
+            "nome": "Algoritmos e Estruturas de Dados",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 46 (Quadro 11)",
+            "esperado": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_02",
+            "sigla": "POOB0",
+            "nome": "Programação Orientada a Objetos",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 88 (Quadro 18)",
+            "esperado": {
+              "periodo": 3,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 3,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 3,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 3,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_03",
+            "sigla": "APAL0",
+            "nome": "Análise e Projeto de Algoritmos",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 88 (Quadro 18)",
+            "esperado": {
+              "periodo": 4,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 4,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 4,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 4,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_04",
+            "sigla": "MNUM1",
+            "nome": "Métodos Numéricos I",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 89 (Quadro 20)",
+            "esperado": {
+              "periodo": 5,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 5,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 5,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 5,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_05",
+            "sigla": "LFAU0",
+            "nome": "Linguagens Formais e Autômatos",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 89 (Quadro 21)",
+            "esperado": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_06",
+            "sigla": "OCOM0",
+            "nome": "Organização de Computadores",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 89 (Quadro 21)",
+            "esperado": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_07",
+            "sigla": "ACOM0",
+            "nome": "Arquitetura de Computadores",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 90 (Quadro 22)",
+            "esperado": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_08",
+            "sigla": "TCOM0",
+            "nome": "Teoria da Computação",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 90 (Quadro 22)",
+            "esperado": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_09",
+            "sigla": "IART0",
+            "nome": "Inteligência Artificial",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 91 (Quadro 23)",
+            "esperado": {
+              "periodo": 8,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 8,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 8,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 8,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_10",
+            "sigla": "CEVO0",
+            "nome": "Computação Evolucionista",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 86 (Quadro 15)",
+            "esperado": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_01",
+            "aresta": "FEME0 → CFVR0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 51 (Quadro 12)",
+            "esperado": "não existe",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_02",
+            "aresta": "FEME0 → GAAL0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 51 (Quadro 12)",
+            "esperado": "não existe",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_03",
+            "aresta": "FOFT0 → FEOF0",
+            "motivo": "Dependência CO apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 51 (Quadro 12)",
+            "esperado": "CO",
+            "ia1": "CO",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_04",
+            "aresta": "FELE0 → FEEL0",
+            "motivo": "Dependência CO apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 52 (Quadro 12)",
+            "esperado": "CO",
+            "ia1": "CO",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_05",
+            "aresta": "DWEB1 → APCO0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 75 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_06",
+            "aresta": "AEDA0 → APCO0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 87 (Quadro 17)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_07",
+            "aresta": "LSDI0 → SDIG0",
+            "motivo": "Tipo de dependência divergente (IA1=CO vs IA2=PRE)",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 62 (Quadro 12)",
+            "esperado": "CO",
+            "ia1": "CO",
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_08",
+            "aresta": "LPRO0 → POOB0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 73 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_09",
+            "aresta": "LPRO0 → AEDA0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 73 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_10",
+            "aresta": "CGRA0 → APAL0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 74 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_11",
+            "aresta": "CGRA0 → ALIN0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 74 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_12",
+            "aresta": "CGRA0 → MNUM1",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 74 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_13",
+            "aresta": "MNUM2 → MNUM1",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 74 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_14",
+            "aresta": "PDIM0 → APAL0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 74 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_15",
+            "aresta": "PDIM0 → ALIN0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 74 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_16",
+            "aresta": "PDIM0 → MNUM1",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 74 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_17",
+            "aresta": "DASI0 → AEDA0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 77 (Quadro 12)",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_18",
+            "aresta": "FEME0 → FMEC0",
+            "motivo": "Dependência CO apontada apenas pela IA 2",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 51 (Quadro 12)",
+            "esperado": "CO",
+            "ia1": null,
+            "ia2": "CO",
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_19",
+            "aresta": "APAL0 → MDIS0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 88 (Quadro 18)",
+            "esperado": "PRE",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_20",
+            "aresta": "APAL0 → AEDA0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 88 (Quadro 18)",
+            "esperado": "PRE",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": "PRE",
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_21",
+            "aresta": "APAL0 → POOB0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 88 (Quadro 18)",
+            "esperado": "PRE",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": "PRE",
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          }
+        ]
+      }
+    },
+    {
+      "caso": "cefet-engcomp",
+      "sucesso": true,
+      "inicio": "2026-11-05T17:08:35Z",
+      "segundos": 434.46006,
+      "extracao": {
+        "formato": "pdf",
+        "paginas": 190,
+        "paginas_ocr": 0,
+        "recortado_por_tamanho": true,
+        "caracteres": 124437
+      },
+      "execucao": "cefet-engcomp-03",
+      "status_consenso": "DESEMPATADO_PELA_3A_IA",
+      "divergencias_detectadas": 36,
+      "modelos": {
+        "ia1": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia2": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia3": "gemini/gemini-3.6-flash"
+      },
+      "juiza": {
+        "provider": "gemini",
+        "model": "gemini-3.6-flash",
+        "decisoes_disciplinas": 13,
+        "decisoes_dependencias": 23
+      },
+      "correcoes_validador": 2,
+      "disciplinas": {
+        "gabarito": 99,
+        "extraidas": 99,
+        "casadas": 99,
+        "precisao_pct": 100,
+        "revocacao_pct": 100,
+        "classificacao_obrig_opt_pct": 100,
+        "periodo_exato_pct": 100,
+        "carga_horaria_horas_aula_pct": 100,
+        "carga_horaria_em_horas_relogio": 0,
+        "faltando": [],
+        "extras": []
+      },
+      "requisitos": {
+        "gabarito": 109,
+        "gabarito_obrig_para_optativa_excluidas": 0,
+        "extraidos": 94,
+        "precisao_pct": 97.9,
+        "revocacao_pct": 84.4,
+        "precisao_sem_tipo_pct": 100,
+        "revocacao_sem_tipo_pct": 86.2,
+        "faltando": [
+          "FOFT0|EDOR0|CO",
+          "FOFT0|FEOF0|CO",
+          "FELE0|FEEL0|CO",
+          "LSDI0|SDIG0|CO",
+          "FSSI0|ALIN0|CO",
+          "AEDA0|APCO0|PRE",
+          "POOB0|APCO0|PRE",
+          "APAL0|MDIS0|PRE",
+          "APAL0|AEDA0|PRE",
+          "APAL0|POOB0|PRE",
+          "MNUM1|APCO0|PRE",
+          "MNUM1|EDOR0|PRE",
+          "LFAU0|MDIS0|PRE",
+          "LFAU0|APAL0|PRE",
+          "OCOM0|LSDI0|PRE",
+          "IART0|AGRA0|PRE",
+          "CEVO0|APAL0|PRE"
+        ],
+        "a_mais": [
+          "FOFT0|EDOR0|PRE",
+          "LSDI0|SDIG0|PRE"
+        ]
+      },
+      "erros_de_campo": [],
+      "invariantes_gradment": {
+        "codigos_validos": true,
+        "codigos_unicos": true,
+        "obrigatorias_com_ch": true,
+        "sem_obrigatoria_para_optativa": true,
+        "grafo_aciclico": true
+      },
+      "mesmo_modelo_ia1_ia2": true,
+      "avaliacao_juiza": {
+        "modelo_juiza": "gemini/gemini-3.6-flash",
+        "divergencias": 36,
+        "acerto_estrategias_pct": {
+          "juiza": 91.7,
+          "sempre_ia1": 50,
+          "sempre_ia2": 61.1,
+          "oraculo_melhor_das_duas": 94.4
+        },
+        "efeito": {
+          "corrigiu": 27,
+          "piorou": 1,
+          "manteve_certo": 6,
+          "manteve_errado": 2
+        },
+        "divergencias_so_de_ementa": 6,
+        "pioras_em_divergencias_so_de_ementa": 0,
+        "itens": [
+          {
+            "tipo": "disciplina",
+            "id": "DISC_01",
+            "sigla": "FEME0",
+            "nome": "Fundamentos de Mecânica",
+            "motivo": "carga_horaria divergente/inválida (IA1=60h vs IA2=30h); texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": false,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 51, Quadro 12 / Página 87, Quadro 17",
+            "esperado": {
+              "periodo": 2,
+              "carga_horaria": 30
+            },
+            "ia1": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 2,
+              "carga_horaria": 30
+            },
+            "final": {
+              "periodo": 2,
+              "carga_horaria": 30
+            },
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_02",
+            "sigla": "AEDA0",
+            "nome": "Algoritmos e Estruturas de Dados",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 87, Quadro 17",
+            "esperado": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_03",
+            "sigla": "POOB0",
+            "nome": "Programação Orientada a Objetos",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 88, Quadro 18",
+            "esperado": {
+              "periodo": 3,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 3,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 3,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 3,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_04",
+            "sigla": "APAL0",
+            "nome": "Análise e Projeto de Algoritmos",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 88, Quadro 19",
+            "esperado": {
+              "periodo": 4,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 4,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 4,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 4,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_05",
+            "sigla": "FSSI0",
+            "nome": "Fundamentos de Sinais e Sistemas",
+            "motivo": "período divergente (IA1=4 vs IA2=Optativa/null)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 64, Quadro 12 / Página 86, Quadro 15",
+            "esperado": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 4,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_06",
+            "sigla": "MNUM1",
+            "nome": "Métodos Numéricos I",
+            "motivo": "carga_horaria divergente/inválida (IA1=60h vs IA2=50h); texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": false,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 89, Quadro 20",
+            "esperado": {
+              "periodo": 5,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 5,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 5,
+              "carga_horaria": 50
+            },
+            "final": {
+              "periodo": 5,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_07",
+            "sigla": "LFAU0",
+            "nome": "Linguagens Formais e Autômatos",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 89, Quadro 21",
+            "esperado": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_08",
+            "sigla": "OCOM0",
+            "nome": "Organização de Computadores",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 89, Quadro 21",
+            "esperado": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 6,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_09",
+            "sigla": "CEVO0",
+            "nome": "Computação Evolucionista",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 46, Quadro 11 / Página 86, Quadro 15",
+            "esperado": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_10",
+            "sigla": "TCOM0",
+            "nome": "Teoria da Computação",
+            "motivo": "período divergente (IA1=Optativa/null vs IA2=7); texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": false,
+            "acao_juiza": "ADOTAR_IA2",
+            "pagina_citada": "Página 90, Quadro 22",
+            "esperado": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 60
+            },
+            "ia2": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_11",
+            "sigla": "FEME0",
+            "nome": "Física Experimental - Mecânica",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Página 51, Quadro 12 / Página 87, Quadro 17",
+            "esperado": {
+              "periodo": 2,
+              "carga_horaria": 30
+            },
+            "ia1": {
+              "periodo": 2,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": {
+              "periodo": 2,
+              "carga_horaria": 30
+            },
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_12",
+            "sigla": "FMEC0",
+            "nome": "Fundamentos de Mecânica",
+            "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "ADOTAR_IA2",
+            "pagina_citada": "Página 50, Quadro 12 / Página 87, Quadro 17",
+            "esperado": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "ia1": null,
+            "ia2": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 2,
+              "carga_horaria": 60
+            },
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_13",
+            "sigla": "ACOM0",
+            "nome": "Arquitetura de Computadores",
+            "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "ADOTAR_IA2",
+            "pagina_citada": "Página 90, Quadro 22",
+            "esperado": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia1": null,
+            "ia2": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "final": {
+              "periodo": 7,
+              "carga_horaria": 60
+            },
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_01",
+            "aresta": "?FEME0LAB → CFVR0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 51, Quadro 12 / Página 87, Quadro 17",
+            "esperado": "não existe",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_02",
+            "aresta": "?FEME0LAB → GAAL0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 51, Quadro 12 / Página 87, Quadro 17",
+            "esperado": "não existe",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_03",
+            "aresta": "FOFT0 → ?FEME0LAB",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 51, Quadro 12 / Página 88, Quadro 18",
+            "esperado": "não existe",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_04",
+            "aresta": "FOFT0 → FEOF0",
+            "motivo": "Dependência CO apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_CO",
+            "pagina_citada": "Página 51, Quadro 12 / Página 88, Quadro 18",
+            "esperado": "CO",
+            "ia1": "CO",
+            "ia2": null,
+            "final": "CO",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_05",
+            "aresta": "FELE0 → FEEL0",
+            "motivo": "Dependência CO apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_CO",
+            "pagina_citada": "Página 52, Quadro 12 / Página 88, Quadro 19",
+            "esperado": "CO",
+            "ia1": "CO",
+            "ia2": null,
+            "final": "CO",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_06",
+            "aresta": "EAPR0 → LELE1",
+            "motivo": "Tipo de dependência divergente (IA1=CO vs IA2=PRE)",
+            "acao_juiza": "INCLUIR_CO",
+            "pagina_citada": "Página 64, Quadro 12 / Página 86, Quadro 15",
+            "esperado": "CO",
+            "ia1": "CO",
+            "ia2": "PRE",
+            "final": "CO",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_07",
+            "aresta": "DWEB1 → APCO0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 75, Quadro 12 / Página 87, Quadro 17",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_08",
+            "aresta": "DWEB2 → BDAD0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 76, Quadro 12 / Página 88, Quadro 19",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_09",
+            "aresta": "DWEB2 → POOB0",
+            "motivo": "Tipo de dependência divergente (IA1=CO vs IA2=PRE)",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 76, Quadro 12 / Página 88, Quadro 19",
+            "esperado": "PRE",
+            "ia1": "CO",
+            "ia2": "PRE",
+            "final": "PRE",
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_10",
+            "aresta": "IART0 → APAL0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 90, Quadro 23",
+            "esperado": "não existe",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_11",
+            "aresta": "OCOM0 → SDIG0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 89, Quadro 21",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_12",
+            "aresta": "OCOM0 → LSDI0",
+            "motivo": "Dependência CO apontada apenas pela IA 1",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 89, Quadro 21",
+            "esperado": "PRE",
+            "ia1": "CO",
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": false,
+            "final_certo": false,
+            "efeito_juiza": "MANTEVE_ERRADO"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_13",
+            "aresta": "TCOM0 → LFAU0",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 90, Quadro 22",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_14",
+            "aresta": "FMEC0 → CFVR0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 50, Quadro 12 / Página 87, Quadro 17",
+            "esperado": "PRE",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": "PRE",
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_15",
+            "aresta": "FMEC0 → GAAL0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 50, Quadro 12 / Página 87, Quadro 17",
+            "esperado": "PRE",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": "PRE",
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_16",
+            "aresta": "FEME0 → FMEC0",
+            "motivo": "Dependência CO apontada apenas pela IA 2",
+            "acao_juiza": "INCLUIR_CO",
+            "pagina_citada": "Página 51, Quadro 12 / Página 87, Quadro 17",
+            "esperado": "CO",
+            "ia1": null,
+            "ia2": "CO",
+            "final": "CO",
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_17",
+            "aresta": "FOFT0 → FMEC0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 51, Quadro 12 / Página 88, Quadro 18",
+            "esperado": "PRE",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": "PRE",
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_18",
+            "aresta": "FSSI0 → EDOR0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 64, Quadro 12 / Página 86, Quadro 15",
+            "esperado": "PRE",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": "PRE",
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_19",
+            "aresta": "FSSI0 → ALIN0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 64, Quadro 12 / Página 86, Quadro 15",
+            "esperado": "CO",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": false,
+            "final_certo": false,
+            "efeito_juiza": "MANTEVE_ERRADO"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_20",
+            "aresta": "DWEB2 → ESOF1",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 76, Quadro 12",
+            "esperado": "não existe",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_21",
+            "aresta": "SOPE1 → APCO0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 78, Quadro 12 / Página 89, Quadro 20",
+            "esperado": "não existe",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_22",
+            "aresta": "SOPE1 → EDOR0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 78, Quadro 12 / Página 89, Quadro 20",
+            "esperado": "não existe",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "requisito",
+            "id": "DEP_23",
+            "aresta": "IART0 → AGRA0",
+            "motivo": "Dependência PRE apontada apenas pela IA 2",
+            "acao_juiza": "EXCLUIR",
+            "pagina_citada": "Página 90, Quadro 23",
+            "esperado": "PRE",
+            "ia1": null,
+            "ia2": "PRE",
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          }
+        ]
+      }
+    },
+    {
+      "caso": "sintetico",
+      "sucesso": true,
+      "inicio": "",
+      "segundos": 39.005813,
+      "extracao": {
+        "formato": "pdf",
+        "paginas": 2,
+        "paginas_ocr": 0,
+        "recortado_por_tamanho": false,
+        "caracteres": 4078
+      },
+      "execucao": "sintetico-01",
+      "status_consenso": "CONSENSO_DIRETO_IA1_IA2",
+      "divergencias_detectadas": 0,
+      "modelos": {
+        "ia1": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia2": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia3": null
+      },
+      "juiza": null,
+      "correcoes_validador": 0,
+      "disciplinas": {
+        "gabarito": 10,
+        "extraidas": 10,
+        "casadas": 10,
+        "precisao_pct": 100,
+        "revocacao_pct": 100,
+        "classificacao_obrig_opt_pct": 100,
+        "periodo_exato_pct": 100,
+        "carga_horaria_horas_aula_pct": 100,
+        "carga_horaria_em_horas_relogio": 0,
+        "faltando": [],
+        "extras": []
+      },
+      "requisitos": {
+        "gabarito": 11,
+        "gabarito_obrig_para_optativa_excluidas": 0,
+        "extraidos": 10,
+        "precisao_pct": 100,
+        "revocacao_pct": 90.9,
+        "precisao_sem_tipo_pct": 100,
+        "revocacao_sem_tipo_pct": 90.9,
+        "faltando": [
+          "TCC|DCC301|PRE"
+        ],
+        "a_mais": []
+      },
+      "erros_de_campo": [],
+      "invariantes_gradment": {
+        "codigos_validos": true,
+        "codigos_unicos": true,
+        "obrigatorias_com_ch": true,
+        "sem_obrigatoria_para_optativa": true,
+        "grafo_aciclico": true
+      },
+      "mesmo_modelo_ia1_ia2": true,
+      "avaliacao_juiza": null
+    },
+    {
+      "caso": "sintetico",
+      "sucesso": true,
+      "inicio": "2026-11-05T16:57:57Z",
+      "segundos": 42.449031,
+      "extracao": {
+        "formato": "pdf",
+        "paginas": 2,
+        "paginas_ocr": 0,
+        "recortado_por_tamanho": false,
+        "caracteres": 4078
+      },
+      "execucao": "sintetico-02",
+      "status_consenso": "DESEMPATADO_PELA_3A_IA",
+      "divergencias_detectadas": 1,
+      "modelos": {
+        "ia1": "gemini/gemini-3.6-flash",
+        "ia2": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia3": "groq/openai/gpt-oss-120b"
+      },
+      "juiza": {
+        "provider": "groq",
+        "model": "openai/gpt-oss-120b",
+        "decisoes_disciplinas": 0,
+        "decisoes_dependencias": 1
+      },
+      "correcoes_validador": 0,
+      "disciplinas": {
+        "gabarito": 10,
+        "extraidas": 10,
+        "casadas": 10,
+        "precisao_pct": 100,
+        "revocacao_pct": 100,
+        "classificacao_obrig_opt_pct": 100,
+        "periodo_exato_pct": 100,
+        "carga_horaria_horas_aula_pct": 100,
+        "carga_horaria_em_horas_relogio": 0,
+        "faltando": [],
+        "extras": []
+      },
+      "requisitos": {
+        "gabarito": 11,
+        "gabarito_obrig_para_optativa_excluidas": 0,
+        "extraidos": 11,
+        "precisao_pct": 100,
+        "revocacao_pct": 100,
+        "precisao_sem_tipo_pct": 100,
+        "revocacao_sem_tipo_pct": 100,
+        "faltando": [],
+        "a_mais": []
+      },
+      "erros_de_campo": [],
+      "invariantes_gradment": {
+        "codigos_validos": true,
+        "codigos_unicos": true,
+        "obrigatorias_com_ch": true,
+        "sem_obrigatoria_para_optativa": true,
+        "grafo_aciclico": true
+      },
+      "mesmo_modelo_ia1_ia2": false,
+      "avaliacao_juiza": {
+        "modelo_juiza": "groq/openai/gpt-oss-120b",
+        "divergencias": 1,
+        "acerto_estrategias_pct": {
+          "juiza": 100,
+          "sempre_ia1": 100,
+          "sempre_ia2": 0,
+          "oraculo_melhor_das_duas": 100
+        },
+        "efeito": {
+          "corrigiu": 1,
+          "piorou": 0,
+          "manteve_certo": 0,
+          "manteve_errado": 0
+        },
+        "divergencias_so_de_ementa": 0,
+        "pioras_em_divergencias_so_de_ementa": 0,
+        "itens": [
+          {
+            "tipo": "requisito",
+            "id": "DEP_01",
+            "aresta": "TCC → DCC301",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 1",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          }
+        ]
+      }
+    },
+    {
+      "caso": "sintetico",
+      "sucesso": true,
+      "inicio": "2026-11-05T16:58:40Z",
+      "segundos": 60.08337,
+      "extracao": {
+        "formato": "pdf",
+        "paginas": 2,
+        "paginas_ocr": 0,
+        "recortado_por_tamanho": false,
+        "caracteres": 4078
+      },
+      "execucao": "sintetico-03",
+      "status_consenso": "DESEMPATADO_PELA_3A_IA",
+      "divergencias_detectadas": 1,
+      "modelos": {
+        "ia1": "gemini/gemini-3.6-flash",
+        "ia2": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia3": "groq/openai/gpt-oss-120b"
+      },
+      "juiza": {
+        "provider": "groq",
+        "model": "openai/gpt-oss-120b",
+        "decisoes_disciplinas": 0,
+        "decisoes_dependencias": 1
+      },
+      "correcoes_validador": 0,
+      "disciplinas": {
+        "gabarito": 10,
+        "extraidas": 10,
+        "casadas": 10,
+        "precisao_pct": 100,
+        "revocacao_pct": 100,
+        "classificacao_obrig_opt_pct": 100,
+        "periodo_exato_pct": 100,
+        "carga_horaria_horas_aula_pct": 100,
+        "carga_horaria_em_horas_relogio": 0,
+        "faltando": [],
+        "extras": []
+      },
+      "requisitos": {
+        "gabarito": 11,
+        "gabarito_obrig_para_optativa_excluidas": 0,
+        "extraidos": 11,
+        "precisao_pct": 100,
+        "revocacao_pct": 100,
+        "precisao_sem_tipo_pct": 100,
+        "revocacao_sem_tipo_pct": 100,
+        "faltando": [],
+        "a_mais": []
+      },
+      "erros_de_campo": [],
+      "invariantes_gradment": {
+        "codigos_validos": true,
+        "codigos_unicos": true,
+        "obrigatorias_com_ch": true,
+        "sem_obrigatoria_para_optativa": true,
+        "grafo_aciclico": true
+      },
+      "mesmo_modelo_ia1_ia2": false,
+      "avaliacao_juiza": {
+        "modelo_juiza": "groq/openai/gpt-oss-120b",
+        "divergencias": 1,
+        "acerto_estrategias_pct": {
+          "juiza": 100,
+          "sempre_ia1": 100,
+          "sempre_ia2": 0,
+          "oraculo_melhor_das_duas": 100
+        },
+        "efeito": {
+          "corrigiu": 1,
+          "piorou": 0,
+          "manteve_certo": 0,
+          "manteve_errado": 0
+        },
+        "divergencias_so_de_ementa": 0,
+        "pioras_em_divergencias_so_de_ementa": 0,
+        "itens": [
+          {
+            "tipo": "requisito",
+            "id": "DEP_01",
+            "aresta": "TCC → DCC301",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 1",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          }
+        ]
+      }
+    },
+    {
+      "caso": "sintetico",
+      "sucesso": true,
+      "inicio": "2026-11-05T16:59:40Z",
+      "segundos": 49.222615,
+      "extracao": {
+        "formato": "pdf",
+        "paginas": 2,
+        "paginas_ocr": 0,
+        "recortado_por_tamanho": false,
+        "caracteres": 4078
+      },
+      "execucao": "sintetico-04",
+      "status_consenso": "DESEMPATADO_PELA_3A_IA",
+      "divergencias_detectadas": 1,
+      "modelos": {
+        "ia1": "gemini/gemini-3.6-flash",
+        "ia2": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia3": "groq/openai/gpt-oss-120b"
+      },
+      "juiza": {
+        "provider": "groq",
+        "model": "openai/gpt-oss-120b",
+        "decisoes_disciplinas": 0,
+        "decisoes_dependencias": 1
+      },
+      "correcoes_validador": 0,
+      "disciplinas": {
+        "gabarito": 10,
+        "extraidas": 10,
+        "casadas": 10,
+        "precisao_pct": 100,
+        "revocacao_pct": 100,
+        "classificacao_obrig_opt_pct": 100,
+        "periodo_exato_pct": 100,
+        "carga_horaria_horas_aula_pct": 100,
+        "carga_horaria_em_horas_relogio": 0,
+        "faltando": [],
+        "extras": []
+      },
+      "requisitos": {
+        "gabarito": 11,
+        "gabarito_obrig_para_optativa_excluidas": 0,
+        "extraidos": 11,
+        "precisao_pct": 100,
+        "revocacao_pct": 100,
+        "precisao_sem_tipo_pct": 100,
+        "revocacao_sem_tipo_pct": 100,
+        "faltando": [],
+        "a_mais": []
+      },
+      "erros_de_campo": [],
+      "invariantes_gradment": {
+        "codigos_validos": true,
+        "codigos_unicos": true,
+        "obrigatorias_com_ch": true,
+        "sem_obrigatoria_para_optativa": true,
+        "grafo_aciclico": true
+      },
+      "mesmo_modelo_ia1_ia2": false,
+      "avaliacao_juiza": {
+        "modelo_juiza": "groq/openai/gpt-oss-120b",
+        "divergencias": 1,
+        "acerto_estrategias_pct": {
+          "juiza": 100,
+          "sempre_ia1": 100,
+          "sempre_ia2": 0,
+          "oraculo_melhor_das_duas": 100
+        },
+        "efeito": {
+          "corrigiu": 1,
+          "piorou": 0,
+          "manteve_certo": 0,
+          "manteve_errado": 0
+        },
+        "divergencias_so_de_ementa": 0,
+        "pioras_em_divergencias_so_de_ementa": 0,
+        "itens": [
+          {
+            "tipo": "requisito",
+            "id": "DEP_01",
+            "aresta": "TCC → DCC301",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 1",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          }
+        ]
+      }
+    },
+    {
+      "caso": "sintetico",
+      "sucesso": true,
+      "inicio": "2026-11-05T17:00:30Z",
+      "segundos": 28.164414,
+      "extracao": {
+        "formato": "pdf",
+        "paginas": 2,
+        "paginas_ocr": 0,
+        "recortado_por_tamanho": false,
+        "caracteres": 4078
+      },
+      "execucao": "sintetico-05",
+      "status_consenso": "DESEMPATADO_PELA_3A_IA",
+      "divergencias_detectadas": 1,
+      "modelos": {
+        "ia1": "gemini/gemini-3.6-flash",
+        "ia2": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia3": "groq/openai/gpt-oss-120b"
+      },
+      "juiza": {
+        "provider": "groq",
+        "model": "openai/gpt-oss-120b",
+        "decisoes_disciplinas": 0,
+        "decisoes_dependencias": 1
+      },
+      "correcoes_validador": 0,
+      "disciplinas": {
+        "gabarito": 10,
+        "extraidas": 10,
+        "casadas": 10,
+        "precisao_pct": 100,
+        "revocacao_pct": 100,
+        "classificacao_obrig_opt_pct": 100,
+        "periodo_exato_pct": 100,
+        "carga_horaria_horas_aula_pct": 100,
+        "carga_horaria_em_horas_relogio": 0,
+        "faltando": [],
+        "extras": []
+      },
+      "requisitos": {
+        "gabarito": 11,
+        "gabarito_obrig_para_optativa_excluidas": 0,
+        "extraidos": 11,
+        "precisao_pct": 100,
+        "revocacao_pct": 100,
+        "precisao_sem_tipo_pct": 100,
+        "revocacao_sem_tipo_pct": 100,
+        "faltando": [],
+        "a_mais": []
+      },
+      "erros_de_campo": [],
+      "invariantes_gradment": {
+        "codigos_validos": true,
+        "codigos_unicos": true,
+        "obrigatorias_com_ch": true,
+        "sem_obrigatoria_para_optativa": true,
+        "grafo_aciclico": true
+      },
+      "mesmo_modelo_ia1_ia2": false,
+      "avaliacao_juiza": {
+        "modelo_juiza": "groq/openai/gpt-oss-120b",
+        "divergencias": 1,
+        "acerto_estrategias_pct": {
+          "juiza": 100,
+          "sempre_ia1": 100,
+          "sempre_ia2": 0,
+          "oraculo_melhor_das_duas": 100
+        },
+        "efeito": {
+          "corrigiu": 1,
+          "piorou": 0,
+          "manteve_certo": 0,
+          "manteve_errado": 0
+        },
+        "divergencias_so_de_ementa": 0,
+        "pioras_em_divergencias_so_de_ementa": 0,
+        "itens": [
+          {
+            "tipo": "requisito",
+            "id": "DEP_01",
+            "aresta": "TCC → DCC301",
+            "motivo": "Dependência PRE apontada apenas pela IA 1",
+            "acao_juiza": "INCLUIR_PRE",
+            "pagina_citada": "Página 1",
+            "esperado": "PRE",
+            "ia1": "PRE",
+            "ia2": null,
+            "final": "PRE",
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          }
+        ]
+      }
+    },
+    {
+      "caso": "unifei-eco",
+      "sucesso": true,
+      "inicio": "2026-11-05T17:16:00Z",
+      "segundos": 381.046472,
+      "extracao": {
+        "formato": "pdf",
+        "paginas": 136,
+        "paginas_ocr": 0,
+        "recortado_por_tamanho": true,
+        "caracteres": 122493
+      },
+      "execucao": "unifei-eco-01",
+      "status_consenso": "DESEMPATADO_PELA_3A_IA",
+      "divergencias_detectadas": 35,
+      "modelos": {
+        "ia1": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia2": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "ia3": "gemini/gemini-3.6-flash"
+      },
+      "juiza": {
+        "provider": "openrouter",
+        "model": "nvidia/nemotron-3.5-super-vl:free",
+        "decisoes_disciplinas": 28,
+        "decisoes_dependencias": 7
+      },
+      "correcoes_validador": 8,
+      "disciplinas": {
+        "gabarito": 74,
+        "extraidas": 87,
+        "casadas": 73,
+        "precisao_pct": null,
+        "revocacao_pct": 98.6,
+        "classificacao_obrig_opt_pct": 100,
+        "periodo_exato_pct": 98.6,
+        "carga_horaria_horas_aula_pct": 100,
+        "carga_horaria_em_horas_relogio": 0,
+        "faltando": [
+          "ELTI2220 Projeto Aplicado de Eletrônica"
+        ],
+        "extras": [
+          "EELI26 Materiais Elétricos",
+          "FISI2304 Fundamentos de Eletromagnetismo",
+          "PDS01 Processamento Digital de Sinais",
+          "ECO044 Programação de Dispositivos Móveis",
+          "ECOI24 Computação Gráfica e Processamento Digital de Imagens",
+          "ECOI34 Circuito CMOS em Inversão Fraca",
+          "ECOI35 Desenvolvimento de Sistemas WEB",
+          "ECOI36 Fluxo de Projeto de Circuitos Integrados",
+          "ECOI37 Mineração de Dados",
+          "EELI04 Eletricidade Aplicada I",
+          "EELI05 Laboratório Eletricidade Aplicada I",
+          "ELTI2234 Circuitos Integrados Digitais",
+          "ELTI2235 Laboratório de Circuitos Integrados Digitais",
+          "EPRI30 Pesquisa Operacional"
+        ]
+      },
+      "requisitos": {
+        "sem_gabarito": true,
+        "extraidos": 60
+      },
+      "erros_de_campo": [
+        {
+          "sigla": "ELTI2216",
+          "campo": "periodo",
+          "esperado": 7,
+          "obtido": 6
+        }
+      ],
+      "invariantes_gradment": {
+        "codigos_validos": true,
+        "codigos_unicos": true,
+        "obrigatorias_com_ch": true,
+        "sem_obrigatoria_para_optativa": true,
+        "grafo_aciclico": true
+      },
+      "mesmo_modelo_ia1_ia2": true,
+      "avaliacao_juiza": {
+        "modelo_juiza": "openrouter/nvidia/nemotron-3.5-super-vl:free",
+        "divergencias": 28,
+        "acerto_estrategias_pct": {
+          "juiza": 89.3,
+          "sempre_ia1": 28.6,
+          "sempre_ia2": 85.7,
+          "oraculo_melhor_das_duas": 100
+        },
+        "efeito": {
+          "corrigiu": 21,
+          "piorou": 3,
+          "manteve_certo": 4,
+          "manteve_errado": 0
+        },
+        "divergencias_so_de_ementa": 3,
+        "pioras_em_divergencias_so_de_ementa": 0,
+        "itens": [
+          {
+            "tipo": "disciplina",
+            "id": "DISC_01",
+            "sigla": "ECOI2209",
+            "nome": "Linguagens de Programação",
+            "motivo": "período divergente (IA1=5 vs IA2=4)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 50 (Matriz Curricular) e Página 80 (Ementário)",
+            "esperado": {
+              "periodo": 5,
+              "carga_horaria": 64
+            },
+            "ia1": {
+              "periodo": 5,
+              "carga_horaria": 64
+            },
+            "ia2": {
+              "periodo": 4,
+              "carga_horaria": 64
+            },
+            "final": {
+              "periodo": 5,
+              "carga_horaria": 64
+            },
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_02",
+            "sigla": "TCCI",
+            "nome": "Trabalho de Conclusão de Curso I",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 50 (Matriz Curricular) e Páginas 46-47 (TCC)",
+            "esperado": {
+              "periodo": 8,
+              "carga_horaria": 51
+            },
+            "ia1": {
+              "periodo": 8,
+              "carga_horaria": 51
+            },
+            "ia2": {
+              "periodo": 8,
+              "carga_horaria": 51
+            },
+            "final": {
+              "periodo": 8,
+              "carga_horaria": 51
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_03",
+            "sigla": "EPRIB002",
+            "nome": "Introdução à Economia",
+            "motivo": "carga_horaria divergente/inválida (IA1=32h vs IA2=48h)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "ADOTAR_IA2",
+            "pagina_citada": "Página 125 (Ementário - Introdução à Economia)",
+            "esperado": {
+              "periodo": 9,
+              "carga_horaria": 32
+            },
+            "ia1": {
+              "periodo": 9,
+              "carga_horaria": 32
+            },
+            "ia2": {
+              "periodo": 9,
+              "carga_horaria": 48
+            },
+            "final": {
+              "periodo": 9,
+              "carga_horaria": 48
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_04",
+            "sigla": "TCCII",
+            "nome": "Trabalho de Conclusão de Curso II",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 50 (Matriz Curricular) e Páginas 46-47 (TCC)",
+            "esperado": {
+              "periodo": 9,
+              "carga_horaria": 77
+            },
+            "ia1": {
+              "periodo": 9,
+              "carga_horaria": 77
+            },
+            "ia2": {
+              "periodo": 9,
+              "carga_horaria": 77
+            },
+            "final": {
+              "periodo": 9,
+              "carga_horaria": 77
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_05",
+            "sigla": "EST",
+            "nome": "Estágio Supervisionado",
+            "motivo": "texto da ementa substancialmente divergente entre IA 1 e IA 2",
+            "so_ementa_divergia": true,
+            "acao_juiza": "CORRIGIR_PELO_PPC",
+            "pagina_citada": "Página 44 (Estágio Supervisionado)",
+            "esperado": {
+              "periodo": 10,
+              "carga_horaria": 175
+            },
+            "ia1": {
+              "periodo": 10,
+              "carga_horaria": 175
+            },
+            "ia2": {
+              "periodo": 10,
+              "carga_horaria": 175
+            },
+            "final": {
+              "periodo": 10,
+              "carga_horaria": 175
+            },
+            "ia1_certa": true,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "MANTEVE_CERTO"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_06",
+            "sigla": "EELI04",
+            "nome": "Eletricidade Aplicada I",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 63 (Ementário - EELi04)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 32
+            },
+            "ia2": null,
+            "final": {
+              "periodo": null,
+              "carga_horaria": 32
+            },
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_07",
+            "sigla": "EELI05",
+            "nome": "Laboratório Eletricidade Aplicada I",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "ADOTAR_IA1",
+            "pagina_citada": "Página 64 (Ementário - EELi05)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 16
+            },
+            "ia2": null,
+            "final": {
+              "periodo": null,
+              "carga_horaria": 16
+            },
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_08",
+            "sigla": "NATCOMP01",
+            "nome": "Natural Computing",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_09",
+            "sigla": "MARAT1",
+            "nome": "Maratona de Programação I",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_10",
+            "sigla": "MARAT2",
+            "nome": "Maratona de Programação II",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_11",
+            "sigla": "TOPBD1",
+            "nome": "Tópicos em Banco de Dados",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_12",
+            "sigla": "TOPDES1",
+            "nome": "Tópicos em Desenvolvimento de Software I",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_13",
+            "sigla": "TOPDES2",
+            "nome": "Tópicos em Desenvolvimento de Software II",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_14",
+            "sigla": "AGRUESP01",
+            "nome": "Introdução ao Algoritmo de Agrupamento Espectral",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_15",
+            "sigla": "EMPRE01",
+            "nome": "Empreendedorismo",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_16",
+            "sigla": "BIGDATAR01",
+            "nome": "Introdução ao Big Data em R",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_17",
+            "sigla": "GESTONG01",
+            "nome": "Gestão de ONG’s",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_18",
+            "sigla": "LIBRAS01",
+            "nome": "Libras - Língua brasileira de sinais",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_19",
+            "sigla": "MAQELECI1",
+            "nome": "Máquinas elétricas I",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_20",
+            "sigla": "ROBOTICA01",
+            "nome": "Robótica",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_21",
+            "sigla": "SEMINFRA01",
+            "nome": "Seminários de internacionalização - França",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_22",
+            "sigla": "SEMINANG01",
+            "nome": "Seminários de internacionalização - países anglofônicos",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_23",
+            "sigla": "VISCOMP01",
+            "nome": "Visão computacional",
+            "motivo": "Disciplina extraída apenas pela IA 1 (ausente na IA 2)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": {
+              "periodo": null,
+              "carga_horaria": 30
+            },
+            "ia2": null,
+            "final": null,
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_24",
+            "sigla": "ECOI2209",
+            "nome": "Linguagens de Programação",
+            "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Página 50 (Matriz Curricular) e Página 80 (Ementário)",
+            "esperado": {
+              "periodo": 5,
+              "carga_horaria": 64
+            },
+            "ia1": null,
+            "ia2": {
+              "periodo": 5,
+              "carga_horaria": 64
+            },
+            "final": {
+              "periodo": 5,
+              "carga_horaria": 64
+            },
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_25",
+            "sigla": "EELI2240",
+            "nome": "Materiais Elétricos",
+            "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "ADOTAR_IA2",
+            "pagina_citada": "Página 50 (Matriz Curricular) e Página 81 (Ementário - EELi26)",
+            "esperado": {
+              "periodo": 5,
+              "carga_horaria": 32
+            },
+            "ia1": null,
+            "ia2": {
+              "periodo": 5,
+              "carga_horaria": 32
+            },
+            "final": {
+              "periodo": 4,
+              "carga_horaria": 32
+            },
+            "ia1_certa": false,
+            "ia2_certa": true,
+            "final_certo": false,
+            "efeito_juiza": "PIOROU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_26",
+            "sigla": "OPT01",
+            "nome": "Optativa I",
+            "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": null,
+            "ia2": {
+              "periodo": null,
+              "carga_horaria": 64
+            },
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_27",
+            "sigla": "OPT02",
+            "nome": "Optativa II",
+            "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": null,
+            "ia2": {
+              "periodo": null,
+              "carga_horaria": 64
+            },
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          },
+          {
+            "tipo": "disciplina",
+            "id": "DISC_28",
+            "sigla": "OPT03",
+            "nome": "Optativa III",
+            "motivo": "Disciplina extraída apenas pela IA 2 (ausente na IA 1)",
+            "so_ementa_divergia": false,
+            "acao_juiza": "DESCARTAR_DISCIPLINA",
+            "pagina_citada": "Páginas 29-30 (Lista de Optativas do PPC)",
+            "esperado": "não existe no PPC",
+            "ia1": null,
+            "ia2": {
+              "periodo": null,
+              "carga_horaria": 64
+            },
+            "final": null,
+            "ia1_certa": true,
+            "ia2_certa": false,
+            "final_certo": true,
+            "efeito_juiza": "CORRIGIU"
+          }
+        ]
+      }
+    }
+  ]
+}
