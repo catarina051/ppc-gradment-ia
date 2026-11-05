@@ -15,6 +15,17 @@ import sys
 
 import pymupdf
 
+# Inconsistências DENTRO do próprio PPC, conferidas no PDF: as duas leituras são aceitas.
+INCONSISTENCIAS_DO_PPC = {
+    "EPRIB002": {
+        "cargas_aceitas": [32, 48],
+        "nota": "Matriz do 9º período diz 32h; a ficha (código EPRi04, p. 125) diz 48h.",
+    },
+}
+# Observado, mas NÃO aceito como desculpa: as fichas de "Projeto Aplicado de Eletrônica" (p. 100) e de
+# "Processamento Digital de Sinais" (p. 110) usam o mesmo código ELTi2216; a matriz desambigua
+# (ELTI2220 x ELTI2216), então fundir as duas continua contando como erro do pipeline.
+
 LINHA_RE = re.compile(r"^\s*([A-Z]{2,5}\d{2,4}|TCC I+|EST)\s{2,}(.*?)\s{2,}(\d+)\s+(\d+)\s*$")
 TEXTO_SOLTO_RE = re.compile(r"^\s{4,}(\S.*?)\s*$")
 
@@ -52,10 +63,15 @@ def main(caminho_pdf: str, caminho_saida: str) -> None:
             "carga_horaria_horas_relogio": None,
         })
 
+    for d in disciplinas:
+        if d["sigla"] in INCONSISTENCIAS_DO_PPC:
+            d.update(INCONSISTENCIAS_DO_PPC[d["sigla"]])
+
     gabarito = {
         "fonte": caminho_pdf.split("/")[-1],
         "metodo": "parser deterministico das tabelas 'Xo Período' (sem LLM); gabarito PARCIAL",
         "parcial": True,
+        "inconsistencias_do_ppc": INCONSISTENCIAS_DO_PPC,
         "sem_gabarito_requisitos": True,
         "total_disciplinas": len(disciplinas),
         "obrigatorias": len(disciplinas),

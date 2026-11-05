@@ -1,7 +1,16 @@
 {
-  "fonte": "unifei.pdf",
+  "fonte": "projetoPedagogicoECO_Itabira-Maio2024.pdf",
   "metodo": "parser deterministico das tabelas 'Xo Período' (sem LLM); gabarito PARCIAL",
   "parcial": true,
+  "inconsistencias_do_ppc": {
+    "EPRIB002": {
+      "cargas_aceitas": [
+        32,
+        48
+      ],
+      "nota": "Matriz do 9º período diz 32h; a ficha (código EPRi04, p. 125) diz 48h."
+    }
+  },
   "sem_gabarito_requisitos": true,
   "total_disciplinas": 74,
   "obrigatorias": 74,
@@ -656,7 +665,12 @@
       "optativa": false,
       "periodo": 9,
       "carga_horaria_horas_aula": 32,
-      "carga_horaria_horas_relogio": null
+      "carga_horaria_horas_relogio": null,
+      "cargas_aceitas": [
+        32,
+        48
+      ],
+      "nota": "Matriz do 9º período diz 32h; a ficha (código EPRi04, p. 125) diz 48h."
     },
     {
       "sigla": "HUMI2204",

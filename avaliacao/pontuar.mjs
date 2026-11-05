@@ -66,7 +66,7 @@ for (const { s, o } of pares) {
   const periodosAceitos = o.periodos_aceitos || [o.periodo ?? null];
   if (periodosAceitos.includes(s.periodo ?? null)) periodoOk++;
   else errosCampo.push({ sigla: o.sigla, campo: 'periodo', esperado: o.periodo, obtido: s.periodo });
-  if (s.carga_horaria === o.carga_horaria_horas_aula) chOk++;
+  if ((o.cargas_aceitas || [o.carga_horaria_horas_aula]).includes(s.carga_horaria)) chOk++;
   else if (s.carga_horaria === o.carga_horaria_horas_relogio) chOkRelogio++;
   else errosCampo.push({ sigla: o.sigla, campo: 'carga_horaria', esperado: o.carga_horaria_horas_aula, obtido: s.carga_horaria });
 }

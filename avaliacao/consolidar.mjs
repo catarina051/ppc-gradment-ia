@@ -32,7 +32,7 @@ function versaoCerta(v, gab) {
   if (!v) return null;
   if (!o) return false; // disciplina inexistente
   const periodoOk = (o.periodos_aceitos || [o.periodo ?? null]).includes(v.periodo ?? null);
-  return periodoOk && v.carga_horaria === o.carga_horaria_horas_aula;
+  return periodoOk && (o.cargas_aceitas || [o.carga_horaria_horas_aula]).includes(v.carga_horaria);
 }
 
 function avaliarJuiza(exec, gab, mapaCodSigla) {
@@ -80,7 +80,8 @@ function avaliarJuiza(exec, gab, mapaCodSigla) {
   const arestasOuro = new Set(gab.dependencias.map((d) => `${d.disciplina}|${d.requisito}|${d.tipo}`));
   const decisoesDep = new Map(aud.arbitragem_ia3.decisoes_dependencias.map((d) => [d.id_divergencia, d]));
   const sig = (c) => mapaCodSigla[c] || `?${c}`;
-  for (const div of aud.divergencias_iniciais.dependencias) {
+  // Sem gabarito de requisitos (ex.: UNIFEI), as decisões sobre requisitos não podem ser avaliadas
+  for (const div of gab.sem_gabarito_requisitos ? [] : aud.divergencias_iniciais.dependencias) {
     const dec = decisoesDep.get(div.id_divergencia);
     const a = sig(div.disciplina_codigo); const b = sig(div.dependencia_codigo);
     const tipoOuro = arestasOuro.has(`${a}|${b}|PRE`) ? 'PRE' : arestasOuro.has(`${a}|${b}|CO`) ? 'CO' : null;
