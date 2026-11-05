@@ -23,7 +23,7 @@
 | Juíza... | Divergências julgadas | Corrigiu | Piorou | Acerto final |
 | --- | ---: | ---: | ---: | ---: |
 | em **modelo diferente** das IAs 1 e 2 (GPT-OSS ou Gemini) | 40 | 31 | **1** | **92,5%** |
-| no **mesmo modelo** das IAs 1 e 2 (Nemotron, após fallback) | 86 | 45 | **24** | **72,1%** |
+| no **mesmo modelo** das IAs 1 e 2 (Nemotron, após fallback) | 65 | 26 | **22** | **66,2%** |
 
 ---
 
@@ -97,7 +97,7 @@ Nas três execuções, 99/99 disciplinas foram encontradas, a CH ficou 100% corr
 - Das **74 obrigatórias** da matriz, **73 foram encontradas**. Período e obrigatória × optativa ficaram 98,6% e 100% corretos, e a CH, 100%.
 - O único erro de inventário vem de um **código duplicado no próprio PPC**: as fichas de "Projeto Aplicado de Eletrônica" e de "Processamento Digital de Sinais" usam o mesmo código `ELTi2216`. O comparador pareia por código e fundiu as duas. A matriz desambigua (ELTI2220 × ELTI2216), então contei como erro do pipeline.
 - Também há uma inconsistência que **não** conta como erro: "Introdução à Economia" aparece com 32h na matriz e 48h na ficha.
-- A juíza (Nemotron, mesmo modelo) acertou 89,3% das 28 divergências de disciplina, contra 28,6% de "sempre IA 1" e 85,7% de "sempre IA 2".
+- Das 28 divergências de disciplina, só 7 envolvem obrigatórias do gabarito parcial; as outras (optativas e disciplinas que só aparecem nas fichas) não são avaliáveis. Nessas 7, a juíza (Nemotron, mesmo modelo) acertou 85,7%, com 2 correções e 1 piora. Foi igual a "sempre IA 2" e acima de "sempre IA 1" (71,4%).
 
 Isso mostra que **o pipeline funciona em um layout para o qual o GradMent não tem parser**, que é onde está o valor de negócio.
 
@@ -127,7 +127,7 @@ Isso mostra que **o pipeline funciona em um layout para o qual o GradMent não t
 ### A terceira IA (juíza) foi uma boa decisão?
 **Foi, com uma condição que eu não tinha previsto: ela precisa ser um modelo diferente das outras duas.**
 - Em modelo diferente: **92,5% de acerto, 31 correções e 1 piora**. No PPC real (execução 03), ela acertou 91,7% das divergências, contra 50% de "sempre IA 1" e 61,1% de "sempre IA 2". Nenhuma regra fixa chegaria perto.
-- No mesmo modelo: 72,1% de acerto e 24 pioras. Na execução 01, ela piorou mais do que corrigiu.
+- No mesmo modelo: 66,2% de acerto, com 26 correções e 22 pioras. Na execução 01, ela piorou mais do que corrigiu.
 - Chamar a juíza **só nas divergências** também se pagou: no sintético ela só foi chamada quando havia um erro real, e corrigiu esse erro em 100% das vezes.
 - O que **não** foi boa decisão: deixar a juíza reescrever campos em que as duas IAs concordavam, e mandar para ela divergências que eram só de texto de ementa.
 

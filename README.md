@@ -76,7 +76,7 @@ flowchart LR
 | Juíza | Corrigiu | Piorou | Acerto nas divergências |
 | --- | ---: | ---: | ---: |
 | Em modelo **diferente** (GPT-OSS / Gemini) | 31 | **1** | **92,5%** |
-| No **mesmo** modelo (fallback por cota) | 45 | 24 | 72,1% |
+| No **mesmo** modelo (fallback por cota) | 26 | 22 | 66,2% |
 
 **O que a medição me ensinou:**
 1. **Duas IAs concordando não quer dizer que estão certas.** Quando a cota do Gemini caiu, o fallback colocou as duas IAs no mesmo modelo, elas erraram igual e o erro passou direto.
