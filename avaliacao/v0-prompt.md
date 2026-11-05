@@ -1,5 +1,7 @@
 # Prompt para o v0: dashboard de resultados do PPC → GradMent
 
+Publicado em: https://gradment.vercel.app (o app busca `dashboard-dados.json` direto do GitHub).
+
 Como usar: abra [v0.dev](https://v0.dev), cole o **Prompt 1** e, logo abaixo dele, o conteúdo inteiro de [`dashboard-dados.json`](dashboard-dados.json). Depois de ver a primeira versão, use os prompts de ajuste um de cada vez.
 
 ---

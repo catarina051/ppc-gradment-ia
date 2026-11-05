@@ -86,7 +86,7 @@ flowchart LR
 
 ## Demo
 
-- Dashboard dos resultados (v0): **[link a adicionar]**
+- **Dashboard dos resultados (feito no v0):** [gradment.vercel.app](https://gradment.vercel.app). Ele lê `avaliacao/dashboard-dados.json` direto deste repositório.
 - Vídeo de até 2 min: **[a gravar]**
 - Rodar localmente: [docs/guia-tecnico.md](docs/guia-tecnico.md) (`sh scripts/implantar.sh` e depois `http://localhost:5680/form/ppc-gradment`).
 
