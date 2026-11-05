@@ -1,0 +1,1908 @@
+{
+  "fonte": "PPCEngComp-v20240719.pdf",
+  "metodo": "parser deterministico dos blocos 'Detalhamento de Disciplinas' (sem LLM)",
+  "total_disciplinas": 99,
+  "obrigatorias": 57,
+  "optativas": 42,
+  "total_dependencias": 109,
+  "requisitos_nao_resolvidos": [
+    "Atividade de TCCI"
+  ],
+  "disciplinas": [
+    {
+      "sigla": "CFVR0",
+      "nome": "Cálculo com Funções de uma Variável Real",
+      "eixo": "Matemática",
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 90,
+      "carga_horaria_horas_relogio": 75,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "GAAL0",
+      "nome": "Geometria Analítica e Álgebra Linear",
+      "eixo": "Matemática",
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "CFVV1",
+      "nome": "Cálculo com Funções de Várias Variáveis I",
+      "eixo": "Matemática",
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Cálculo com Funções de uma Variável Real / Geometria Analítica e Álgebra Linear"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "ISER0",
+      "nome": "Integração e Séries",
+      "eixo": "Matemática",
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Cálculo com Funções de uma Variável Real"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "MDIS0",
+      "nome": "Matemática Discreta",
+      "eixo": "Matemática",
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Lógica e Fundamentos para Computação"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "CFVV2",
+      "nome": "Cálculo com Funções de Várias Variáveis II",
+      "eixo": "Matemática",
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Cálculo com Funções de Várias Variáveis I / Integração e Séries"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "EDOR0",
+      "nome": "Equações Diferenciais Ordinárias",
+      "eixo": "Matemática",
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Cálculo com Funções de Várias Variáveis I / Integração e Séries"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "ESTA0",
+      "nome": "Estatística",
+      "eixo": "Matemática",
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Integração e Séries"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "ALIN0",
+      "nome": "Álgebra Linear",
+      "eixo": "Matemática",
+      "periodo_sugerido": 4,
+      "optativa": false,
+      "periodo": 4,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Geometria Analítica e Álgebra Linear"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "CFVC0",
+      "nome": "Cálculo com Funções de uma Variável Complexa",
+      "eixo": "Matemática",
+      "periodo_sugerido": 4,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Cálculo com Funções de Várias Variáveis II"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "EDPA0",
+      "nome": "Equações Diferenciais Parciais",
+      "eixo": "Matemática",
+      "periodo_sugerido": 4,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Equações Diferenciais Ordinárias"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "FMEC0",
+      "nome": "Fundamentos de Mecânica",
+      "eixo": "Física e Química",
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Cálculo com Funções de uma Variável Real / Geometria Analítica e Álgebra Linear"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "FEME0",
+      "nome": "Física Experimental - Mecânica",
+      "eixo": "Física e Química",
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": [
+        "Fundamentos de Mecânica"
+      ]
+    },
+    {
+      "sigla": "FOFT0",
+      "nome": "Fundamentos de Oscilações, Fluidos e Termodinâmica (OFT)",
+      "eixo": "Física e Química",
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Fundamentos de Mecânica"
+      ],
+      "co_nomes": [
+        "Equações Diferenciais Ordinárias / Física Experimental - Oscilações, Fluidos e Termodinâmica"
+      ]
+    },
+    {
+      "sigla": "FEOF0",
+      "nome": "Física Experimental - Oscilações, Fluidos e Termodinâmica (OFT)",
+      "eixo": "Física e Química",
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": [
+        "Fundamentos de Oscilações, Fluidos e Termodinâmica"
+      ]
+    },
+    {
+      "sigla": "FELE0",
+      "nome": "Fundamentos de Eletromagnetismo",
+      "eixo": "Física e Química",
+      "periodo_sugerido": 4,
+      "optativa": false,
+      "periodo": 4,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Fundamentos de Oscilações, Fluidos e Termodinâmica/ Cálculo com Funções de Várias Variáveis II"
+      ],
+      "co_nomes": [
+        "Física Experimental - Eletromagnetismo"
+      ]
+    },
+    {
+      "sigla": "FEEL0",
+      "nome": "Física Experimental - Eletromagnetismo",
+      "eixo": "Física e Química",
+      "periodo_sugerido": 4,
+      "optativa": false,
+      "periodo": 4,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": [
+        "Fundamentos de Eletromagnetismo"
+      ]
+    },
+    {
+      "sigla": "QUIM0",
+      "nome": "Química",
+      "eixo": "Física e Química",
+      "periodo_sugerido": 2,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "LQUI0",
+      "nome": "Laboratório de Química",
+      "eixo": "Física e Química",
+      "periodo_sugerido": 2,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": [
+        "Química"
+      ]
+    },
+    {
+      "sigla": "FFMO0",
+      "nome": "Fundamentos de Física Moderna",
+      "eixo": "Física e Química",
+      "periodo_sugerido": 5,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Fundamentos de Eletromagnetismo"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "IINS1",
+      "nome": "Inglês Instrumental I",
+      "eixo": "",
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "FTEC0",
+      "nome": "Filosofia da Tecnologia",
+      "eixo": "",
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "ISOC0",
+      "nome": "Introdução à Sociologia",
+      "eixo": "",
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "EMNE0",
+      "nome": "Empreendedorismo e Modelo de Negócios",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": false,
+      "periodo": 8,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "GAMB0",
+      "nome": "Gestão Ambiental",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": false,
+      "periodo": 8,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "PAOR0",
+      "nome": "Psicologia Aplicada às Organizações",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": false,
+      "periodo": 8,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "EAAU0",
+      "nome": "Economia Aplicada à Automação",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "FAGR0",
+      "nome": "Fundamentos do Agronegócio",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "IINS2",
+      "nome": "Inglês Instrumental II",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [
+        "Inglês Instrumental I"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "IADM0",
+      "nome": "Introdução à Administração",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "IESE0",
+      "nome": "Introdução à Engenharia de Segurança",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "IDIR0",
+      "nome": "Introdução ao Direito",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "LIBR1",
+      "nome": "Libras I",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "NQIN0",
+      "nome": "Normalização e Qualidade Industrial",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "OEMP0",
+      "nome": "Organização Empresarial",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "LIBR2",
+      "nome": "Libras II",
+      "eixo": "",
+      "periodo_sugerido": 9,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [
+        "Libras I"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "ACEL1",
+      "nome": "Análise de Circuitos Elétricos I",
+      "eixo": "Eletricidade",
+      "periodo_sugerido": 4,
+      "optativa": false,
+      "periodo": 4,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Equações Diferenciais Ordinárias, Fundamentos de Oscilações/Fluidos e Termodinâmica"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "LCEL0",
+      "nome": "Laboratório de Circuitos Elétricos",
+      "eixo": "Eletricidade",
+      "periodo_sugerido": 4,
+      "optativa": false,
+      "periodo": 4,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": [
+        "Análise de Circuitos Elétricos I"
+      ]
+    },
+    {
+      "sigla": "MELE0",
+      "nome": "Materiais Elétricos",
+      "eixo": "Eletricidade",
+      "periodo_sugerido": 4,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [
+        "Química, Fundamentos de Oscilações/Fluidos e Termodinâmica"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "ACEL2",
+      "nome": "Análise de Circuitos Elétricos II",
+      "eixo": "Eletricidade",
+      "periodo_sugerido": 5,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Análise de Circuitos Elétricos I"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "ELET1",
+      "nome": "Eletrônica I",
+      "eixo": "Eletrônica",
+      "periodo_sugerido": 5,
+      "optativa": false,
+      "periodo": 5,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Análise de Circuitos Elétricos I"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "LELE1",
+      "nome": "Laboratório de Eletrônica I",
+      "eixo": "Eletrônica",
+      "periodo_sugerido": 5,
+      "optativa": false,
+      "periodo": 5,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": [
+        "Eletrônica I"
+      ]
+    },
+    {
+      "sigla": "SDIG0",
+      "nome": "Sistemas Digitais",
+      "eixo": "Eletrônica",
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [],
+      "co_nomes": [
+        "Eletrônica I"
+      ]
+    },
+    {
+      "sigla": "LSDI0",
+      "nome": "Laboratório de Sistemas Digitais",
+      "eixo": "Eletrônica",
+      "periodo_sugerido": 5,
+      "optativa": false,
+      "periodo": 5,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": [
+        "Sistemas Digitais"
+      ]
+    },
+    {
+      "sigla": "PSEM0",
+      "nome": "Programação de Sistemas Embarcados",
+      "eixo": "Eletrônica",
+      "periodo_sugerido": 8,
+      "optativa": false,
+      "periodo": 8,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [
+        "Eletrônica I / Sistemas Digitais"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "LPSE0",
+      "nome": "Laboratório de Programação de Sistemas Embarcados",
+      "eixo": "Eletrônica",
+      "periodo_sugerido": 8,
+      "optativa": false,
+      "periodo": 8,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": [
+        "Programação de Sistemas Embarcados"
+      ]
+    },
+    {
+      "sigla": "ELET2",
+      "nome": "Eletrônica II",
+      "eixo": "Eletrônica",
+      "periodo_sugerido": 7,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Eletrônica I / Laboratório de Eletrônica I / Análise de Circuitos Elétricos II"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "EPOT0",
+      "nome": "Eletrônica de Potência",
+      "eixo": "Eletrônica",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Eletrônica I / Fundamentos de Sinais e Sistemas"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "LEPO0",
+      "nome": "Laboratório de Eletrônica de Potência",
+      "eixo": "Eletrônica",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": [
+        "Eletrônica de Potência"
+      ]
+    },
+    {
+      "sigla": "EAPR0",
+      "nome": "Eletrônica Aplicada a Projetos",
+      "eixo": "Eletrônica",
+      "periodo_sugerido": 9,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Eletrônica de Potência / Programação de Sistemas Embarcados"
+      ],
+      "co_nomes": [
+        "Laboratório de Eletrônica I"
+      ]
+    },
+    {
+      "sigla": "MCCE0",
+      "nome": "Modelagem e Controle de Conversores Estáticos",
+      "eixo": "Eletrônica",
+      "periodo_sugerido": 9,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Eletrônica de Potência / Fundamentos de Sinais e Sistemas"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "FSSI0",
+      "nome": "Fundamentos de Sinais e Sistemas",
+      "eixo": "Controle de Processos",
+      "periodo_sugerido": 4,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Equações Diferenciais Ordinárias"
+      ],
+      "co_nomes": [
+        "Álgebra Linear"
+      ]
+    },
+    {
+      "sigla": "CAUT1",
+      "nome": "Controle Automático I",
+      "eixo": "Controle de Processos",
+      "periodo_sugerido": 5,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 90,
+      "carga_horaria_horas_relogio": 75,
+      "pre_nomes": [
+        "Fundamentos de Sinais e Sistemas"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "LCAU1",
+      "nome": "Laboratório de Controle Automático I",
+      "eixo": "Controle de Processos",
+      "periodo_sugerido": 5,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": [
+        "Controle Automático I"
+      ]
+    },
+    {
+      "sigla": "CAUT2",
+      "nome": "Controle Automático II",
+      "eixo": "Controle de Processos",
+      "periodo_sugerido": 6,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Controle Automático I"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "LCAU2",
+      "nome": "Laboratório de Controle Automático II",
+      "eixo": "Controle de Processos",
+      "periodo_sugerido": 6,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [
+        "Controle Automático I /Laboratório de Controle Automático I"
+      ],
+      "co_nomes": [
+        "Controle Automático II"
+      ]
+    },
+    {
+      "sigla": "IIND0",
+      "nome": "Instrumentação Industrial",
+      "eixo": "Controle de Processos",
+      "periodo_sugerido": 6,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Controle Automático I"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "LIIN0",
+      "nome": "Laboratório de Instrumentação Industrial",
+      "eixo": "Controle de Processos",
+      "periodo_sugerido": 6,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [
+        "Controle Automático I"
+      ],
+      "co_nomes": [
+        "Instrumentação Industrial"
+      ]
+    },
+    {
+      "sigla": "CSPEC0",
+      "nome": "Contexto Social e Profissional da Engenharia de Computação",
+      "eixo": "",
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "IEEC0",
+      "nome": "Introdução à Experimentação em Engenharia de Computação",
+      "eixo": "",
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "MCIE0",
+      "nome": "Metodologia Científica",
+      "eixo": "",
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "MPES0",
+      "nome": "Metodologia da Pesquisa",
+      "eixo": "",
+      "periodo_sugerido": 9,
+      "optativa": false,
+      "periodo": 9,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "APCO0",
+      "nome": "Algoritmos e Programação de Computadores",
+      "eixo": "",
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "LFCO0",
+      "nome": "Lógica e Fundamentos para Computação",
+      "eixo": "",
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "AEDA0",
+      "nome": "Algoritmos e Estruturas de Dados",
+      "eixo": "",
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Algoritmos e Programação de Computadores"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "POOB0",
+      "nome": "Programação Orientada a Objetos",
+      "eixo": "",
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Algoritmos e Programação de Computadores"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "APAL0",
+      "nome": "Análise e Projeto de Algoritmos",
+      "eixo": "",
+      "periodo_sugerido": 4,
+      "optativa": false,
+      "periodo": 4,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Matemática Discreta / Algoritmos e Estruturas de Dados / Programação Orientada a Objetos"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "MNUM1",
+      "nome": "Métodos Numéricos I",
+      "eixo": "",
+      "periodo_sugerido": 5,
+      "optativa": false,
+      "periodo": 5,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Algoritmos e Programação de Computadores / Equações Diferenciais Ordinárias"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "LFAU0",
+      "nome": "Linguagens Formais e Autômatos",
+      "eixo": "",
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Matemática Discreta / Análise e Projeto de Algoritmos"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "OCOM0",
+      "nome": "Organização de Computadores",
+      "eixo": "",
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Sistemas Digitais / Laboratório de Sistemas Digitais"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "ACOM0",
+      "nome": "Arquitetura de Computadores",
+      "eixo": "",
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "TCOM0",
+      "nome": "Teoria da Computação",
+      "eixo": "",
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Linguagens Formais e Autômatos"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "COMP0",
+      "nome": "Compiladores",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": false,
+      "periodo": 8,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Teoria da Computação"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "LPRO0",
+      "nome": "Linguagens de Programação",
+      "eixo": "",
+      "periodo_sugerido": 6,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Programação Orientada a Objetos / Algoritmos e Estruturas de Dados"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "CGRA0",
+      "nome": "Computação Gráfica",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Análise e Projeto de Algoritmos / Álgebra Linear / Métodos Numéricos I"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "MNUM2",
+      "nome": "Métodos Numéricos II",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [
+        "Métodos Numéricos I"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "PDIM0",
+      "nome": "Processamento Digital de Imagens",
+      "eixo": "",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Análise e Projeto de Algoritmos / Álgebra Linear / Métodos Numéricos I"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "DWEB1",
+      "nome": "Desenvolvimento Web I",
+      "eixo": "Engenharia de Software e Banco de Dados",
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [
+        "Algoritmos e Programação de Computadores"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "BDAD0",
+      "nome": "Banco de Dados",
+      "eixo": "Engenharia de Software e Banco de Dados",
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Algoritmos e Programação de Computadores"
+      ],
+      "co_nomes": [
+        "Programação Orientada a Objetos"
+      ]
+    },
+    {
+      "sigla": "DWEB2",
+      "nome": "Desenvolvimento Web II",
+      "eixo": "Engenharia de Software e Banco de Dados",
+      "periodo_sugerido": 4,
+      "optativa": false,
+      "periodo": 4,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Desenvolvimento Web I / Banco de Dados / Programação Orientada a Objetos"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "ESOF1",
+      "nome": "Engenharia de Software I",
+      "eixo": "Engenharia de Software e Banco de Dados",
+      "periodo_sugerido": 5,
+      "optativa": false,
+      "periodo": 5,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Desenvolvimento Web II"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "ESOF2",
+      "nome": "Engenharia de Software II",
+      "eixo": "Engenharia de Software e Banco de Dados",
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Engenharia de Software I"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "PDMO0",
+      "nome": "Programação para Dispositivos Móveis",
+      "eixo": "Engenharia de Software e Banco de Dados",
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Desenvolvimento Web II"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "DASI0",
+      "nome": "Desenvolvimento Ágil de Sistemas",
+      "eixo": "Engenharia de Software e Banco de Dados",
+      "periodo_sugerido": 5,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [
+        "Algoritmos e Estruturas de Dados"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "BDID0",
+      "nome": "Banco de Dados para Internet das Coisas",
+      "eixo": "Engenharia de Software e Banco de Dados",
+      "periodo_sugerido": 10,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 45,
+      "carga_horaria_horas_relogio": 38,
+      "pre_nomes": [
+        "Banco de Dados / Introdução à Internet das Coisas"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "SOPE1",
+      "nome": "Sistemas Operacionais I",
+      "eixo": "Redes e Sistemas Distribuídos",
+      "periodo_sugerido": 5,
+      "optativa": false,
+      "periodo": 5,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "RCOM0",
+      "nome": "Redes de Computadores",
+      "eixo": "Redes e Sistemas Distribuídos",
+      "periodo_sugerido": 6,
+      "optativa": false,
+      "periodo": 6,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [],
+      "co_nomes": []
+    },
+    {
+      "sigla": "STRE0",
+      "nome": "Sistemas de Tempo Real",
+      "eixo": "Redes e Sistemas Distribuídos",
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [
+        "Sistemas Operacionais I"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "LSTR0",
+      "nome": "Laboratório de Sistemas de Tempo Real",
+      "eixo": "Redes e Sistemas Distribuídos",
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [],
+      "co_nomes": [
+        "Sistemas de Tempo Real"
+      ]
+    },
+    {
+      "sigla": "SDIS0",
+      "nome": "Sistemas Distribuídos",
+      "eixo": "Redes e Sistemas Distribuídos",
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Redes de Computadores / Sistemas Operacionais I"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "MADE0",
+      "nome": "Modelagem e Avaliação de Desempenho",
+      "eixo": "Redes e Sistemas Distribuídos",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Redes de Computadores"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "RSSF0",
+      "nome": "Redes de Sensores Sem Fio",
+      "eixo": "Redes e Sistemas Distribuídos",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Redes de Computadores"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "SOPE2",
+      "nome": "Sistemas Operacionais II",
+      "eixo": "Redes e Sistemas Distribuídos",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": 25,
+      "pre_nomes": [
+        "Sistemas Operacionais I"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "IIDC0",
+      "nome": "Introdução à Internet das Coisas",
+      "eixo": "Redes e Sistemas Distribuídos",
+      "periodo_sugerido": 9,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 45,
+      "carga_horaria_horas_relogio": 38,
+      "pre_nomes": [],
+      "co_nomes": [
+        "Atividade de TCCI"
+      ]
+    },
+    {
+      "sigla": "AGRA0",
+      "nome": "Algoritmos em Grafos",
+      "eixo": "Sistemas Inteligentes",
+      "periodo_sugerido": 7,
+      "optativa": false,
+      "periodo": 7,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Análise e Projeto de Algoritmos"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "IART0",
+      "nome": "Inteligência Artificial",
+      "eixo": "Sistemas Inteligentes",
+      "periodo_sugerido": 8,
+      "optativa": false,
+      "periodo": 8,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Algoritmos em Grafos"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "CEVO0",
+      "nome": "Computação Evolucionista",
+      "eixo": "Sistemas Inteligentes",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Análise e Projeto de Algoritmos"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "POPE0",
+      "nome": "Pesquisa Operacional",
+      "eixo": "Sistemas Inteligentes",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Métodos Numéricos I / Geometria Analítica e Álgebra Linear"
+      ],
+      "co_nomes": []
+    },
+    {
+      "sigla": "RNAR0",
+      "nome": "Redes Neurais Artificiais",
+      "eixo": "Sistemas Inteligentes",
+      "periodo_sugerido": 8,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": 50,
+      "pre_nomes": [
+        "Análise e Projeto de Algoritmos"
+      ],
+      "co_nomes": []
+    }
+  ],
+  "dependencias": [
+    {
+      "disciplina": "CFVV1",
+      "requisito": "CFVR0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "CFVV1",
+      "requisito": "GAAL0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "ISER0",
+      "requisito": "CFVR0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "MDIS0",
+      "requisito": "LFCO0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "CFVV2",
+      "requisito": "CFVV1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "CFVV2",
+      "requisito": "ISER0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "EDOR0",
+      "requisito": "CFVV1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "EDOR0",
+      "requisito": "ISER0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "ESTA0",
+      "requisito": "ISER0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "ALIN0",
+      "requisito": "GAAL0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "CFVC0",
+      "requisito": "CFVV2",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "EDPA0",
+      "requisito": "EDOR0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "FMEC0",
+      "requisito": "CFVR0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "FMEC0",
+      "requisito": "GAAL0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "FEME0",
+      "requisito": "FMEC0",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "FOFT0",
+      "requisito": "FMEC0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "FOFT0",
+      "requisito": "EDOR0",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "FOFT0",
+      "requisito": "FEOF0",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "FEOF0",
+      "requisito": "FOFT0",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "FELE0",
+      "requisito": "FOFT0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "FELE0",
+      "requisito": "CFVV2",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "FELE0",
+      "requisito": "FEEL0",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "FEEL0",
+      "requisito": "FELE0",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "LQUI0",
+      "requisito": "QUIM0",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "FFMO0",
+      "requisito": "FELE0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "IINS2",
+      "requisito": "IINS1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LIBR2",
+      "requisito": "LIBR1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "ACEL1",
+      "requisito": "EDOR0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "ACEL1",
+      "requisito": "FOFT0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LCEL0",
+      "requisito": "ACEL1",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "MELE0",
+      "requisito": "QUIM0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "MELE0",
+      "requisito": "FOFT0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "ACEL2",
+      "requisito": "ACEL1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "ELET1",
+      "requisito": "ACEL1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LELE1",
+      "requisito": "ELET1",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "SDIG0",
+      "requisito": "ELET1",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "LSDI0",
+      "requisito": "SDIG0",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "PSEM0",
+      "requisito": "ELET1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "PSEM0",
+      "requisito": "SDIG0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LPSE0",
+      "requisito": "PSEM0",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "ELET2",
+      "requisito": "ELET1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "ELET2",
+      "requisito": "LELE1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "ELET2",
+      "requisito": "ACEL2",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "EPOT0",
+      "requisito": "ELET1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "EPOT0",
+      "requisito": "FSSI0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LEPO0",
+      "requisito": "EPOT0",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "EAPR0",
+      "requisito": "EPOT0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "EAPR0",
+      "requisito": "PSEM0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "EAPR0",
+      "requisito": "LELE1",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "MCCE0",
+      "requisito": "EPOT0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "MCCE0",
+      "requisito": "FSSI0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "FSSI0",
+      "requisito": "EDOR0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "FSSI0",
+      "requisito": "ALIN0",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "CAUT1",
+      "requisito": "FSSI0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LCAU1",
+      "requisito": "CAUT1",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "CAUT2",
+      "requisito": "CAUT1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LCAU2",
+      "requisito": "CAUT1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LCAU2",
+      "requisito": "LCAU1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LCAU2",
+      "requisito": "CAUT2",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "IIND0",
+      "requisito": "CAUT1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LIIN0",
+      "requisito": "CAUT1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LIIN0",
+      "requisito": "IIND0",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "AEDA0",
+      "requisito": "APCO0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "POOB0",
+      "requisito": "APCO0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "APAL0",
+      "requisito": "MDIS0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "APAL0",
+      "requisito": "AEDA0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "APAL0",
+      "requisito": "POOB0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "MNUM1",
+      "requisito": "APCO0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "MNUM1",
+      "requisito": "EDOR0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LFAU0",
+      "requisito": "MDIS0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LFAU0",
+      "requisito": "APAL0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "OCOM0",
+      "requisito": "SDIG0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "OCOM0",
+      "requisito": "LSDI0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "TCOM0",
+      "requisito": "LFAU0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "COMP0",
+      "requisito": "TCOM0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LPRO0",
+      "requisito": "POOB0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LPRO0",
+      "requisito": "AEDA0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "CGRA0",
+      "requisito": "APAL0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "CGRA0",
+      "requisito": "ALIN0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "CGRA0",
+      "requisito": "MNUM1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "MNUM2",
+      "requisito": "MNUM1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "PDIM0",
+      "requisito": "APAL0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "PDIM0",
+      "requisito": "ALIN0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "PDIM0",
+      "requisito": "MNUM1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "DWEB1",
+      "requisito": "APCO0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "BDAD0",
+      "requisito": "APCO0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "BDAD0",
+      "requisito": "POOB0",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "DWEB2",
+      "requisito": "DWEB1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "DWEB2",
+      "requisito": "BDAD0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "DWEB2",
+      "requisito": "POOB0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "ESOF1",
+      "requisito": "DWEB2",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "ESOF2",
+      "requisito": "ESOF1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "PDMO0",
+      "requisito": "DWEB2",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "DASI0",
+      "requisito": "AEDA0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "BDID0",
+      "requisito": "BDAD0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "BDID0",
+      "requisito": "IIDC0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "STRE0",
+      "requisito": "SOPE1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "LSTR0",
+      "requisito": "STRE0",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "SDIS0",
+      "requisito": "RCOM0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "SDIS0",
+      "requisito": "SOPE1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "MADE0",
+      "requisito": "RCOM0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "RSSF0",
+      "requisito": "RCOM0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "SOPE2",
+      "requisito": "SOPE1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "AGRA0",
+      "requisito": "APAL0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "IART0",
+      "requisito": "AGRA0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "CEVO0",
+      "requisito": "APAL0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "POPE0",
+      "requisito": "MNUM1",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "POPE0",
+      "requisito": "GAAL0",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "RNAR0",
+      "requisito": "APAL0",
+      "tipo": "PRE"
+    }
+  ]
+}

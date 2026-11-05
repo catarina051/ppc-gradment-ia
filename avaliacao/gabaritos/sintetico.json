@@ -1,0 +1,168 @@
+{
+  "fonte": "samples/ppc-ciencia-computacao.txt",
+  "metodo": "gabarito escrito a mao a partir do PPC sintetico",
+  "total_disciplinas": 10,
+  "obrigatorias": 8,
+  "optativas": 2,
+  "total_dependencias": 11,
+  "observacao": "O requisito \"ter integralizado 1.200 horas\" do TCC e nao-disciplinar e por isso NAO entra como aresta; a aresta TCC -> DCC-301 entra.",
+  "disciplinas": [
+    {
+      "sigla": "MAT101",
+      "nome": "Cálculo I",
+      "eixo": null,
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "DCC101",
+      "nome": "Algoritmos e Programação de Computadores",
+      "eixo": null,
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "DCC102",
+      "nome": "Laboratório de Programação",
+      "eixo": null,
+      "periodo_sugerido": 1,
+      "optativa": false,
+      "periodo": 1,
+      "carga_horaria_horas_aula": 30,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "MAT102",
+      "nome": "Cálculo II",
+      "eixo": null,
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "DCC201",
+      "nome": "Algoritmos e Estruturas de Dados",
+      "eixo": null,
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "DCC202",
+      "nome": "Banco de Dados I",
+      "eixo": null,
+      "periodo_sugerido": 2,
+      "optativa": false,
+      "periodo": 2,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "DCC301",
+      "nome": "Engenharia de Software I",
+      "eixo": null,
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "TCC",
+      "nome": "Trabalho de Conclusão de Curso I",
+      "eixo": null,
+      "periodo_sugerido": 3,
+      "optativa": false,
+      "periodo": 3,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "DCC810",
+      "nome": "Tópicos Especiais em Inteligência Artificial",
+      "eixo": null,
+      "periodo_sugerido": null,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": null
+    },
+    {
+      "sigla": "DCC820",
+      "nome": "Computação em Nuvem e Sistemas Distribuídos",
+      "eixo": null,
+      "periodo_sugerido": null,
+      "optativa": true,
+      "periodo": null,
+      "carga_horaria_horas_aula": 60,
+      "carga_horaria_horas_relogio": null
+    }
+  ],
+  "dependencias": [
+    {
+      "disciplina": "DCC102",
+      "requisito": "DCC101",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "MAT102",
+      "requisito": "MAT101",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "DCC201",
+      "requisito": "DCC101",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "DCC201",
+      "requisito": "DCC102",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "DCC202",
+      "requisito": "DCC101",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "DCC202",
+      "requisito": "DCC201",
+      "tipo": "CO"
+    },
+    {
+      "disciplina": "DCC301",
+      "requisito": "DCC201",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "DCC301",
+      "requisito": "DCC202",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "TCC",
+      "requisito": "DCC301",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "DCC810",
+      "requisito": "DCC201",
+      "tipo": "PRE"
+    },
+    {
+      "disciplina": "DCC820",
+      "requisito": "DCC202",
+      "tipo": "PRE"
+    }
+  ]
+}
