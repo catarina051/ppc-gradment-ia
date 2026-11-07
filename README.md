@@ -101,6 +101,10 @@ flowchart LR
 
 ## Demo
 
+![Formulário do n8n: envio do PPC sintético, divergência entre Gemini e Nemotron arbitrada pela juíza no GPT-OSS (Groq) e matriz consolidada](docs/img/demo-formulario.gif)
+
+*Execução real em 07/11/2026 com o [PPC sintético](samples/ppc-ciencia-computacao.pdf): IA 1 no Gemini, IA 2 no Nemotron (OpenRouter), juíza no GPT-OSS 120B (Groq). As duas IAs divergiram em 1 pré-requisito, e a juíza o manteve citando a página do PPC. A espera de 17 s foi acelerada no GIF.*
+
 - **Dashboard dos resultados (feito no v0):** [gradment.vercel.app](https://gradment.vercel.app). Ele lê `avaliacao/dashboard-dados.json` direto deste repositório.
 - Rodar localmente: [docs/guia-tecnico.md](docs/guia-tecnico.md) (`sh scripts/implantar.sh` e depois `http://localhost:5680/form/ppc-gradment`).
 
