@@ -2,11 +2,11 @@
 
 > **Atualização:** digitar à mão **não era o processo real** antes do pipeline. O processo era mandar o PPC para um LLM no chat. A comparação certa, com qualidade e custo em tokens do Claude, está em [RESULTADOS.md, seção 4](../RESULTADOS.md#4-comparação-com-o-processo-anterior-mandar-o-ppc-para-um-llm-no-chat). Este arquivo fica como registro do volume de trabalho de um PPC.
 
-> **Resumo honesto:** o tempo manual *humano* continua `[A MEDIR]`. Esta pasta registra uma tentativa real de fazer a importação "à mão" e o que ela permite afirmar com segurança: **o volume de trabalho (medido)** e **um piso de tempo só de digitação (calculado, com premissa explícita)**.
+> **Resumo honesto:** o tempo manual *humano* não foi medido. Esta pasta registra uma tentativa real de fazer a importação "à mão" e o que ela permite afirmar com segurança: **o volume de trabalho (medido)** e **um piso de tempo só de digitação (calculado, com premissa explícita)**.
 
 ## O que foi feito
 
-Transcrevi à mão o **2º período** do PPC real de Eng. de Computação do CEFET-MG (`PPCEngComp-v20240719.pdf`), sem usar o pipeline nem o gabarito. Foram 7 disciplinas com código, nome, período, eixo, CH e ementa, e os pré e correquisitos no formato JSON do GradMent. O resultado está em [periodo2-transcrito-a-mao.json](periodo2-transcrito-a-mao.json).
+Pedi ao Claude que transcrevesse, como se fosse à mão, o **2º período** do PPC real de Eng. de Computação do CEFET-MG (`PPCEngComp-v20240719.pdf`), sem usar o pipeline nem o gabarito. Foram 7 disciplinas com código, nome, período, eixo, CH e ementa, e os pré e correquisitos no formato JSON do GradMent. O resultado está em [periodo2-transcrito-a-mao.json](periodo2-transcrito-a-mao.json).
 
 | Medida | Resultado |
 | --- | --- |
@@ -15,7 +15,7 @@ Transcrevi à mão o **2º período** do PPC real de Eng. de Computação do CEF
 | Por que tantas consultas | Na tabela do período, "Não há" aparece quebrado em volta dos códigos (`Não` / `APCO0` / `há`), então não dá para saber se o código é pré ou correquisito. É preciso abrir a ficha de cada disciplina. |
 | Caracteres digitados (sem ementa) | 497 |
 | Caracteres de ementa | 2.568 |
-| Tempo que **eu (Claude)** levei | 29 s. **Não é tempo humano**: um modelo lê e escreve em velocidade de máquina. Está registrado só por transparência. |
+| Tempo que o Claude levou nessa tentativa | 29 s. **Não é tempo humano**: um modelo lê e escreve em velocidade de máquina. Registrei só por transparência. |
 
 ## Volume do PPC inteiro (medido)
 

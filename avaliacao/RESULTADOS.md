@@ -1,6 +1,6 @@
 # Resultados medidos
 
-> Todos os números vêm de **9 execuções reais** do pipeline, mais 3 tentativas do processo anterior (um modelo só) e uma contagem oficial de tokens do Claude, (n8n + APIs gratuitas), feitas em 05/11/2026 e pontuadas contra um **gabarito gerado sem LLM**. Nada aqui é estimativa, exceto o que está marcado como `[A MEDIR]`.
+> Todos os números vêm de **9 execuções reais** do pipeline, mais 3 tentativas do processo anterior (um modelo só) e uma contagem oficial de tokens do Claude, (n8n + APIs gratuitas), feitas em 05/11/2026 e pontuadas contra um **gabarito gerado sem LLM**. Nada aqui é estimativa. O único valor calculado, e não medido, é o piso de tempo de digitação em [manual/TEMPO-MANUAL.md](manual/TEMPO-MANUAL.md), com a premissa explícita.
 >
 > Para reproduzir: `sh avaliacao/rodar.sh <rótulo> <ppc> <n>` e depois `node avaliacao/consolidar.mjs`. Dados completos em [resultados.json](resultados.json); dados do dashboard em [dashboard-dados.json](dashboard-dados.json).
 
@@ -147,7 +147,7 @@ O custo do Claude é um **piso de uma única tentativa**: não inclui tokens de 
 O processo a comparar é **pedir a um LLM no chat**, não digitar à mão (seção 4).
 - **Dinheiro (medido):** cada PPC convertido pelo Claude custa no mínimo **US$ 3,08 com o Opus 5.5 e o PDF anexado** (520.738 tokens de entrada e 49.905 de saída). O pipeline usa só cotas gratuitas: **US$ 0**.
 - **Retrabalho evitado:** a saída do modelo único **não importa no GradMent** (código duplicado e ciclos) e erra a natureza de 42 optativas e a CH de 54 disciplinas. Cada um desses erros vira uma rodada de correção no chat ou uma conferência manual. O pipeline já entrega o JSON validado nas 7 regras.
-- **Tempo de máquina:** praticamente igual (5 min 29 s contra 7 min 12 s). O ganho não está no relógio da máquina, e sim em **não precisar corrigir a saída**. O tempo dessa correção no processo anterior ainda é `[A MEDIR]`.
+- **Tempo de máquina:** praticamente igual (5 min 29 s contra 7 min 12 s). O ganho não está no relógio da máquina, e sim em **não precisar corrigir a saída**. O tempo dessa correção no processo anterior não foi medido; só existe o piso de digitação calculado em [manual/TEMPO-MANUAL.md](manual/TEMPO-MANUAL.md).
 - Também registrei uma tentativa de transcrição manual ([manual/TEMPO-MANUAL.md](manual/TEMPO-MANUAL.md)). Ela mostra o volume de trabalho (cerca de 6.700 caracteres de campos e 46 mil de ementas), mas digitar à mão não era o processo real.
 
 ### Isso realmente ajuda o GradMent?

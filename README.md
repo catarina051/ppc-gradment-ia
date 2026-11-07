@@ -102,7 +102,6 @@ flowchart LR
 ## Demo
 
 - **Dashboard dos resultados (feito no v0):** [gradment.vercel.app](https://gradment.vercel.app). Ele lê `avaliacao/dashboard-dados.json` direto deste repositório.
-- Vídeo de até 2 min: **[a gravar]**
 - Rodar localmente: [docs/guia-tecnico.md](docs/guia-tecnico.md) (`sh scripts/implantar.sh` e depois `http://localhost:5680/form/ppc-gradment`).
 
 ## O que eu faria a seguir
@@ -112,8 +111,8 @@ flowchart LR
 3. Não mandar à juíza divergências apenas de texto de ementa.
 4. Cortar o PPC em bloco contíguo, sem escolher páginas soltas.
 5. Na dúvida, incluir o requisito e sinalizar (a juíza acerta só 42% das exclusões).
-6. Cronometrar o tempo de correção da saída no processo anterior e o tempo de revisão da saída do pipeline (hoje `[A MEDIR]`).
+6. Cronometrar o tempo de correção da saída no processo anterior e o tempo de revisão da saída do pipeline. Hoje só existe o piso de tempo de digitação, calculado, e não um tempo humano medido.
 
 ---
 
-<sub>Construído com assistência de IA (Claude Code). Os dados do repositório são um PPC sintético e trechos estruturados de PPCs públicos. Não há dado pessoal de alunos.</sub>
+<sub>Histórico do repositório: 43 commits, todos de 05/11/2026 (de 13:56 a 15:25). Construído com assistência de IA (Claude Code). Os dados do repositório são um PPC sintético e trechos estruturados de PPCs públicos. Não há dado pessoal de alunos.</sub>
