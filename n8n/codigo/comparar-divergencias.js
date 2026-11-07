@@ -401,7 +401,7 @@ if (houveDivergencia && !simularIa3) {
       body: {
         model: cfg3.model,
         max_tokens: 16384,
-        temperature: 0,
+        fallbacks: 'default',
         system: `${promptIa3}\n\n## Schema JSON Obrigatório de Resposta\n${JSON.stringify(schemaJuiza)}`,
         messages: [{ role: 'user', content: msgJuiza }],
       },

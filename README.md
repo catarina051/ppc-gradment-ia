@@ -1,5 +1,7 @@
 # PPC → GradMent: duas IAs que leem, uma juíza que desempata
 
+[![testes](https://github.com/catarina051/ppc-gradment-ia/actions/workflows/testes.yml/badge.svg)](https://github.com/catarina051/ppc-gradment-ia/actions/workflows/testes.yml)
+
 > Automação em **n8n** que orquestra **três LLMs de provedores diferentes** para transformar o Projeto Pedagógico de Curso (PPC) de qualquer universidade na matriz curricular que o GradMent importa. Tudo foi **medido contra um gabarito**, inclusive o que deu errado.
 
 ## Competências demonstradas
@@ -7,7 +9,7 @@
 | Competência | Como aparece aqui |
 | --- | --- |
 | **Automação com n8n** | Workflow de 42 nós com formulário web e API REST. Os Code nodes ficam em arquivos testáveis e o JSON do workflow é gerado por script. |
-| **Orquestração de múltiplos LLMs** | Extratora, auditora e juíza em provedores diferentes (Gemini, OpenRouter, Groq), com fallback automático. A juíza só é acionada quando há divergência. |
+| **Orquestração de múltiplos LLMs** | Extratora, auditora e juíza em provedores diferentes (Gemini, OpenRouter, Groq), com fallback automático. A juíza só é acionada quando há divergência. Cada papel aceita 6 provedores, trocados no `.env`: Gemini, OpenRouter, Groq, Mistral, OpenAI (GPT) e Anthropic (Claude). |
 | **Prompt engineering** | Métodos de leitura opostos para gerar diversidade, JSON Schema estrito, defesa contra *prompt injection* e decisões com a página do PPC citada como evidência. |
 | **API sem backend próprio** | `POST /webhook/converter-ppc` devolve o JSON pronto para o endpoint do GradMent, sem mudar uma linha do backend PHP. |
 | **Análise de dados com IA** | Gabarito sem LLM, precisão e revocação por campo, auditoria de cada decisão da juíza e o dashboard de resultados. |
@@ -47,6 +49,7 @@ flowchart LR
 
 - **LLM onde há ambiguidade, código onde há regra:** ler um PPC é ambíguo. Comparar duas listas e validar regras de negócio não é, então essas etapas são código testado.
 - **Custo zero:** só cotas gratuitas (Gemini, OpenRouter `:free`, Groq), com fallback entre elas.
+- **Provedor por papel, sem mudar código:** `IA1_PROVIDER`, `IA2_PROVIDER` e `IA3_PROVIDER` aceitam `gemini`, `openrouter`, `groq`, `mistral`, `openai` ou `anthropic`, e cada um pode ter o seu `IA*_MODEL`. Com `anthropic`, o padrão é o Claude Opus 5.5 com *fallback* do lado do servidor em caso de recusa. Os resultados medidos abaixo usaram só as cotas gratuitas; **o pipeline ainda não foi medido com Claude ou GPT** em nenhum dos papéis.
 
 ## Prompts e decisões
 

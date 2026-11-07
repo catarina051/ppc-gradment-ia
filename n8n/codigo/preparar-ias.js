@@ -10,7 +10,7 @@ const MODELOS_PADRAO = {
     groq: 'openai/gpt-oss-120b',
     mistral: 'mistral-small-latest',
     openai: 'gpt-4.1-mini',
-    anthropic: 'claude-sonnet-4-20250514',
+    anthropic: 'claude-opus-5-5',
   },
   ia2: {
     gemini: 'gemini-3.5-flash-lite',
@@ -18,7 +18,7 @@ const MODELOS_PADRAO = {
     groq: 'openai/gpt-oss-120b',
     mistral: 'mistral-small-latest',
     openai: 'gpt-4.1-mini',
-    anthropic: 'claude-sonnet-4-20250514',
+    anthropic: 'claude-opus-5-5',
   },
   ia3: {
     gemini: 'gemini-3.6-flash',
@@ -26,7 +26,7 @@ const MODELOS_PADRAO = {
     groq: 'openai/gpt-oss-120b',
     mistral: 'mistral-large-latest',
     openai: 'gpt-4.1',
-    anthropic: 'claude-sonnet-4-20250514',
+    anthropic: 'claude-opus-5-5',
   },
 };
 
@@ -120,7 +120,7 @@ function montarHttpPayload(cfg, systemPrompt, schema, mensagemUsuario) {
       body: {
         model: cfg.model,
         max_tokens: 32768,
-        temperature: 0,
+        fallbacks: 'default', // recusa de segurança: a API tenta outro modelo sozinha
         system: `${systemPrompt}\n\n## Schema JSON Obrigatório de Resposta\n${JSON.stringify(schema)}`,
         messages: [{ role: 'user', content: mensagemUsuario }],
       },

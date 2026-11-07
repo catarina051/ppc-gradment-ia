@@ -98,8 +98,7 @@ async function testarSlot(cfg) {
     headers['anthropic-version'] = '2023-06-01';
     body = {
       model: cfg.model,
-      max_tokens: 32,
-      temperature: 0,
+      max_tokens: 1024, // o pensamento adaptativo também consome tokens de saída
       messages: [{ role: 'user', content: 'Responda apenas {"ok": true}' }],
     };
   } else {

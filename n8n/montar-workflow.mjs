@@ -69,7 +69,7 @@ const continuar = { onError: 'continueRegularOutput' };
 
 // Nó HTTP multi-provedor (Gemini, OpenAI, Anthropic, OpenRouter) sem gravar chaves no JSON do workflow
 function httpIa(name, position, slotCampo) {
-  const exprHeaders = `={{ JSON.stringify($json.${slotCampo}.provider === 'gemini' ? { 'x-goog-api-key': $env[$json.${slotCampo}.env_key] || '' } : $json.${slotCampo}.provider === 'anthropic' ? { 'x-api-key': $env[$json.${slotCampo}.env_key] || '', 'anthropic-version': '2023-06-01' } : Object.assign({ Authorization: 'Bearer ' + ($env[$json.${slotCampo}.env_key] || '') }, $json.${slotCampo}.provider === 'openrouter' ? { 'HTTP-Referer': 'http://localhost:5680', 'X-Title': 'PPC GradMent IA' } : {})) }}`;
+  const exprHeaders = `={{ JSON.stringify($json.${slotCampo}.provider === 'gemini' ? { 'x-goog-api-key': $env[$json.${slotCampo}.env_key] || '' } : $json.${slotCampo}.provider === 'anthropic' ? { 'x-api-key': $env[$json.${slotCampo}.env_key] || '', 'anthropic-version': '2023-06-01', 'anthropic-beta': 'server-side-fallback-2026-07-01' } : Object.assign({ Authorization: 'Bearer ' + ($env[$json.${slotCampo}.env_key] || '') }, $json.${slotCampo}.provider === 'openrouter' ? { 'HTTP-Referer': 'http://localhost:5680', 'X-Title': 'PPC GradMent IA' } : {})) }}`;
   no(name, 'n8n-nodes-base.httpRequest', 4.2, position, {
     method: 'POST',
     url: `={{ $json.${slotCampo}.url }}`,

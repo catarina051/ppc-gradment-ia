@@ -179,7 +179,7 @@ test('parsers multi-provedor: lê Gemini (ignorando thought nativo), OpenAI e An
         },
       },
     },
-    nos: { 'Preparar IAs': { json: { ia2: { provider: 'anthropic', model: 'claude-sonnet-4' } } } },
+    nos: { 'Preparar IAs': { json: { ia2: { provider: 'anthropic', model: 'claude-opus-5-5' } } } },
   });
   assert.equal(respAnthropic.json.erro, null);
   assert.equal(respAnthropic.json.resultado.disciplinas[0].codigo, 'CALC1');

@@ -1,0 +1,21 @@
+name: testes
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Workflow gerado em dia com o código dos nós
+        run: |
+          node n8n/montar-workflow.mjs
+          git diff --exit-code workflows/
+      - name: Testes (comparação, juíza, invariantes do GradMent, templates, workflow)
+        run: node --test tests/*.test.mjs
