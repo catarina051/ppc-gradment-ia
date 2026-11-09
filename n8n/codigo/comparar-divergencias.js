@@ -450,6 +450,8 @@ return [{
     simular_ia3: simularIa3,
     alerta_instrucao_suspeita: Boolean(r1?.alerta_instrucao_suspeita || r2?.alerta_instrucao_suspeita),
     extracao: prep.extracao,
+    // Registro da leitura em blocos de cada IA (páginas, modelo por bloco, cobertura)
+    leitura: { ia1: respIa1.leitura || null, ia2: respIa2.leitura || null },
     modelos_executados: {
       ia1: { provider: respIa1.provider, model: respIa1.model, verificacao: r1?.verificacao_inicial || null },
       ia2: { provider: respIa2.provider, model: respIa2.model, verificacao: r2?.verificacao_inicial || null },

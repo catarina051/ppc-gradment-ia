@@ -23,6 +23,8 @@ return [{
       paginas: corpo.paginas || 1,
       paginas_ocr: corpo.paginas_ocr || 0,
       recortado_por_tamanho: Boolean(corpo.recortado_por_tamanho),
+      leitura_integral: corpo.leitura_integral !== false,
+      paginas_sem_texto: Array.isArray(corpo.paginas_sem_texto) ? corpo.paginas_sem_texto : [],
       caracteres: corpo.caracteres || corpo.texto.length,
     },
   },

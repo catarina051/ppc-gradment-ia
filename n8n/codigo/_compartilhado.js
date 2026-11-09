@@ -392,3 +392,396 @@ function grafoTemCicloAoAdicionar(adjacencia, origem, destino) {
   return false;
 }
 
+
+// ============================================================================================
+// LEITURA EM BLOCOS: cada IA lê o PPC inteiro, de bloco em bloco de páginas, e os resultados são fundidos.
+// ============================================================================================
+
+// Divide o texto (com marcadores "--- [PÁGINA N] ---") em blocos de ~alvoChars, repetindo a última página de
+// um bloco no início do próximo para não perder disciplina partida na quebra. Página gigante vira sub-blocos.
+function dividirEmBlocos(texto, alvoChars = 60000) {
+  const partes = String(texto).split(/(?=--- \[PÁGINA \d+\] ---)/).filter((p) => p.trim());
+  const paginas = partes.map((p) => {
+    const m = p.match(/^--- \[PÁGINA (\d+)\] ---/);
+    return { num: m ? Number(m[1]) : 1, texto: p };
+  });
+  // Página única enorme (ex.: TXT/DOCX sem quebra): fatia por linhas, mantendo o número da página
+  const unidades = [];
+  for (const pg of paginas) {
+    if (pg.texto.length <= alvoChars * 1.5) { unidades.push(pg); continue; }
+    const linhas = pg.texto.split('\n');
+    let atual = [];
+    let tam = 0;
+    for (const ln of linhas) {
+      if (tam + ln.length > alvoChars && atual.length) {
+        unidades.push({ num: pg.num, texto: atual.join('\n') });
+        atual = atual.slice(-15); // sobreposição de ~15 linhas
+        tam = atual.join('\n').length;
+      }
+      atual.push(ln);
+      tam += ln.length + 1;
+    }
+    if (atual.length) unidades.push({ num: pg.num, texto: atual.join('\n') });
+  }
+  const blocos = [];
+  let i = 0;
+  while (i < unidades.length) {
+    const ini = i;
+    let tam = 0;
+    while (i < unidades.length && (i === ini || tam + unidades[i].texto.length <= alvoChars)) {
+      tam += unidades[i].texto.length;
+      i += 1;
+    }
+    const fatia = unidades.slice(ini, i);
+    blocos.push({ inicio: fatia[0].num, fim: fatia[fatia.length - 1].num, texto: fatia.map((u) => u.texto).join('\n') });
+    if (i < unidades.length && i - ini > 1) i -= 1; // repete a última unidade no próximo bloco
+  }
+  return blocos;
+}
+
+// Monta a requisição HTTP para o provedor (Gemini, Anthropic ou compatível com OpenAI)
+function requisicaoLLM(cand, systemPrompt, schema, mensagem, envObj) {
+  const chave = String(envObj[cand.env_key] || '').trim();
+  if (cand.provider === 'gemini') {
+    const base = (cand.base_url || 'https://generativelanguage.googleapis.com/v1beta').replace(/\/+$/, '');
+    const genCfg = { temperature: 0, maxOutputTokens: 65536, responseMimeType: 'application/json', responseSchema: schema };
+    if (/^gemini-3\./i.test(cand.model) && !/lite/i.test(cand.model)) genCfg.thinkingConfig = { thinkingBudget: 0 };
+    return {
+      url: `${base}/models/${cand.model}:generateContent`,
+      headers: { 'Content-Type': 'application/json', 'x-goog-api-key': chave },
+      body: { systemInstruction: { parts: [{ text: systemPrompt }] }, contents: [{ role: 'user', parts: [{ text: mensagem }] }], generationConfig: genCfg },
+    };
+  }
+  const sys = `${systemPrompt}\n\n## Schema JSON Obrigatório de Resposta\n${JSON.stringify(schema)}`;
+  if (cand.provider === 'anthropic') {
+    const base = (cand.base_url || 'https://api.anthropic.com/v1').replace(/\/+$/, '');
+    return {
+      url: `${base}/messages`,
+      headers: { 'Content-Type': 'application/json', 'x-api-key': chave, 'anthropic-version': '2023-06-01' },
+      body: { model: cand.model, max_tokens: 32768, system: sys, messages: [{ role: 'user', content: mensagem }] },
+    };
+  }
+  const BASES = { openrouter: 'https://openrouter.ai/api/v1', groq: 'https://api.groq.com/openai/v1', mistral: 'https://api.mistral.ai/v1', openai: 'https://api.openai.com/v1' };
+  const base = (cand.base_url || BASES[cand.provider] || BASES.openai).replace(/\/+$/, '');
+  const headers = { 'Content-Type': 'application/json', Authorization: `Bearer ${chave}` };
+  if (cand.provider === 'openrouter') { headers['HTTP-Referer'] = 'http://localhost:5680'; headers['X-Title'] = 'PPC GradMent IA'; }
+  const body = {
+    model: cand.model,
+    temperature: 0,
+    max_tokens: cand.provider === 'groq' || cand.provider === 'mistral' ? 16384 : 65536,
+    response_format: { type: 'json_object' },
+    messages: [{ role: 'system', content: sys }, { role: 'user', content: mensagem }],
+  };
+  if (cand.provider === 'openrouter') body.reasoning = { enabled: false };
+  if (cand.provider === 'groq' && /gpt-oss/i.test(cand.model)) body.reasoning_effort = 'low';
+  return { url: `${base}/chat/completions`, headers, body };
+}
+
+async function enviarHttpLLM(req, helpersN8n, timeoutMs = 600000) {
+  if (helpersN8n?.httpRequest) {
+    const r = await helpersN8n.httpRequest({
+      method: 'POST', url: req.url, headers: req.headers, body: JSON.stringify(req.body),
+      returnFullResponse: true, ignoreHttpStatusErrors: true, timeout: timeoutMs,
+    });
+    let corpo = r.body ?? r;
+    if (typeof corpo === 'string') { try { corpo = JSON.parse(corpo); } catch { corpo = { error: corpo }; } }
+    return { statusCode: r.statusCode ?? 200, body: corpo };
+  }
+  const r = await fetch(req.url, { method: 'POST', headers: req.headers, body: JSON.stringify(req.body), signal: AbortSignal.timeout(timeoutMs) });
+  const texto = await r.text();
+  let corpo;
+  try { corpo = JSON.parse(texto); } catch { corpo = { error: texto }; }
+  return { statusCode: r.status, body: corpo };
+}
+
+// Candidatos para um slot: o configurado primeiro, depois reservas gratuitas. Reservas no MESMO modelo da
+// outra IA ficam por último, para preservar a diversidade (sem ela a verificação dupla perde força).
+function candidatosLLM(cfg, envObj, evitarModelo) {
+  const tem = (k) => Boolean(String(envObj[k] || '').trim());
+  const lista = [{ ...cfg }];
+  const add = (provider, model, envKey) => {
+    if (tem(envKey) && !lista.some((c) => c.provider === provider && c.model === model)) lista.push({ provider, model, env_key: envKey, base_url: '' });
+  };
+  add('gemini', 'gemini-3.6-flash', 'GEMINI_API_KEY');
+  add('gemini', 'gemini-3.5-flash-lite', 'GEMINI_API_KEY');
+  add('openrouter', 'nvidia/nemotron-3.5-super-vl:free', 'OPENROUTER_API_KEY');
+  add('openrouter', 'nvidia/nemotron-3.5-lightning:free', 'OPENROUTER_API_KEY');
+  const id = (c) => `${c.provider}/${c.model}`;
+  const resto = lista.slice(1);
+  return [lista[0], ...resto.filter((c) => id(c) !== evitarModelo), ...resto.filter((c) => id(c) === evitarModelo)];
+}
+
+// Chama o LLM com o configurado e, se falhar, com as reservas. Lança erro só se TODAS falharem.
+async function chamarLLMComReservas(cfg, systemPrompt, schema, mensagem, envObj, helpersN8n, evitarModelo) {
+  const erros = [];
+  for (const cand of candidatosLLM(cfg, envObj, evitarModelo)) {
+    for (let tentativa = 1; tentativa <= 2; tentativa++) {
+      try {
+        const resp = await enviarHttpLLM(requisicaoLLM(cand, systemPrompt, schema, mensagem, envObj), helpersN8n);
+        const { dados } = extrairJsonRespostaLLM(resp, cand.provider);
+        return { dados, provider: cand.provider, model: cand.model, tentativas: erros.length + 1 };
+      } catch (e) {
+        const msg = String(e?.message || e);
+        erros.push(`${cand.provider}/${cand.model}: ${msg.slice(0, 160)}`);
+        const transitorio = /\b(429|500|502|503|504)\b|high demand|overloaded|rate|timeout|vazia/i.test(msg);
+        if (!transitorio) break; // erro definitivo neste modelo: passa para o próximo candidato
+        const espera = Number(envObj.PPC_ESPERA_RETENTATIVA_MS ?? 1500);
+        await new Promise((r) => setTimeout(r, espera * tentativa));
+      }
+    }
+  }
+  throw new Error(`todos os modelos falharam (${erros.slice(-4).join(' | ')})`);
+}
+
+// Funde as extrações de vários blocos de UMA IA num resultado único, como se o PPC tivesse sido lido de uma vez.
+function mesclarExtracoesBlocos(resultados) {
+  const normCod = (s) => semAcentos(s ?? '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+  const grupos = [];
+  const porExt = new Map();
+  const porNome = new Map();
+  const porCodBloco = []; // por bloco: código local -> grupo
+  resultados.forEach((r, b) => {
+    const mapaLocal = new Map();
+    porCodBloco.push(mapaLocal);
+    for (const d of Array.isArray(r?.disciplinas) ? r.disciplinas : []) {
+      if (!d || !String(d.nome || '').trim()) continue;
+      const ext = normCod(d.codigo_externo);
+      const nome = chaveNomeDisciplina(d.nome);
+      let g = ext.length >= 3 ? porExt.get(ext) : undefined;
+      if (!g && nome.length >= 3 && porNome.has(nome)) {
+        const cand = porNome.get(nome);
+        if (!ext || !cand.ext || cand.ext === ext) g = cand;
+      }
+      if (!g) { g = { ext: '', itens: [] }; grupos.push(g); }
+      if (ext && !g.ext) g.ext = ext;
+      if (ext.length >= 3) porExt.set(ext, g);
+      if (nome.length >= 3 && !porNome.has(nome)) porNome.set(nome, g);
+      g.itens.push({ ...d, _bloco: b });
+      if (d.codigo) mapaLocal.set(normCod(d.codigo), g);
+      if (ext) mapaLocal.set(ext, g);
+    }
+  });
+
+  const moda = (vals) => {
+    const cont = new Map();
+    vals.forEach((v) => { const k = JSON.stringify(v); cont.set(k, (cont.get(k) || 0) + 1); });
+    let melhor = null;
+    let n = -1;
+    for (const [k, c] of cont) if (c > n) { melhor = JSON.parse(k); n = c; }
+    return melhor;
+  };
+  const modaMaior = (vals) => {
+    const cont = new Map();
+    vals.forEach((v) => cont.set(v, (cont.get(v) || 0) + 1));
+    return [...cont.entries()].sort((a, b) => b[1] - a[1] || b[0] - a[0])[0][0];
+  };
+  const disciplinas = grupos.map((g) => {
+    const it = g.itens;
+    // Período: só votam os blocos em que o período/natureza aparece (periodo_explicito !== false)
+    const explicitos = it.filter((x) => x.periodo_explicito !== false);
+    const votos = (explicitos.length ? explicitos : it)
+      .map((x) => (Number.isInteger(Number(x.periodo)) && Number(x.periodo) > 0 ? Number(x.periodo) : null));
+    // Empate entre "optativa" (null) e um período: vence optativa. Fichas de optativas costumam trazer um
+    // "período sugerido", enquanto obrigatórias recebem o mesmo período em todos os blocos.
+    const contPer = new Map();
+    votos.forEach((v) => contPer.set(v, (contPer.get(v) || 0) + 1));
+    const maxPer = Math.max(...contPer.values());
+    let periodo = contPer.get(null) === maxPer ? null : moda(votos);
+    if (periodo === null && !explicitos.length && votos.some((v) => v !== null)) periodo = moda(votos.filter((v) => v !== null));
+    // Carga horária: valores < 10 parecem créditos e só valem se não houver outro; votam os blocos com período
+    // explícito (matriz/ficha); no empate vence o MAIOR (horas-aula > horas-relógio, padrão do GradMent).
+    const baseCh = (explicitos.length ? explicitos : it).map((x) => Math.round(Number(x.carga_horaria) || 0)).filter((v) => v > 0);
+    const plausiveis = baseCh.filter((v) => v >= 10);
+    const chs = plausiveis.length ? plausiveis : baseCh;
+    const maisLongo = (campo) => it.map((x) => String(x[campo] ?? '').trim()).sort((a, b) => b.length - a.length)[0] || null;
+    return {
+      codigo: moda(it.map((x) => String(x.codigo || '').toUpperCase()).filter(Boolean)) || '',
+      codigo_externo: moda(it.map((x) => x.codigo_externo).filter(Boolean)) || null,
+      nome: maisLongo('nome'),
+      periodo,
+      eixo: moda(it.map((x) => x.eixo).filter(Boolean)) || null,
+      carga_horaria: chs.length ? modaMaior(chs) : 0,
+      ementa: maisLongo('ementa'),
+      _grupo: g,
+    };
+  });
+  // Código de saída único por disciplina fundida (o comparador e o validador ainda normalizam depois)
+  const usados = new Set();
+  for (const d of disciplinas) {
+    const base = normCod(d.codigo) || normCod(d.codigo_externo) || 'DISC1';
+    let k = base;
+    let n = 2;
+    while (usados.has(k)) k = `${base}${n++}`;
+    usados.add(k);
+    d.codigo = k;
+    d._grupo.codigoFinal = k;
+  }
+
+  // Requisitos: resolve o código local do bloco; se a disciplina estiver em outro bloco, procura pelo
+  // código oficial ou pelo nome em todo o PPC.
+  const globalPorCod = new Map();
+  for (const g of grupos) {
+    for (const x of g.itens) {
+      if (x.codigo) globalPorCod.set(normCod(x.codigo), g);
+      if (x.codigo_externo) globalPorCod.set(normCod(x.codigo_externo), g);
+    }
+  }
+  const resolver = (cod, b) => {
+    const k = normCod(cod);
+    return porCodBloco[b].get(k) || porExt.get(k) || globalPorCod.get(k) || porNome.get(chaveNomeDisciplina(cod)) || null;
+  };
+  const votosDep = new Map();
+  let naoResolvidos = 0;
+  resultados.forEach((r, b) => {
+    for (const dep of Array.isArray(r?.dependencias) ? r.dependencias : []) {
+      const a = resolver(dep.disciplina_codigo, b);
+      const req = resolver(dep.dependencia_codigo, b);
+      const tipo = String(dep.tipo || '').toUpperCase() === 'CO' ? 'CO' : 'PRE';
+      if (!a || !req || a === req) { naoResolvidos += 1; continue; }
+      const k = `${a.codigoFinal}>${req.codigoFinal}`;
+      if (!votosDep.has(k)) votosDep.set(k, { disciplina_codigo: a.codigoFinal, dependencia_codigo: req.codigoFinal, tipos: [] });
+      votosDep.get(k).tipos.push(tipo);
+    }
+  });
+  const dependencias = [...votosDep.values()].map((v) => {
+    const co = v.tipos.filter((t) => t === 'CO').length;
+    return { disciplina_codigo: v.disciplina_codigo, dependencia_codigo: v.dependencia_codigo, tipo: co > v.tipos.length - co ? 'CO' : 'PRE' };
+  });
+
+  const validos = resultados.filter(Boolean);
+  const nomeCurso = moda(validos.map((r) => r.curso?.nome_curso).filter(Boolean)) || '';
+  const obrig = disciplinas.filter((d) => d.periodo !== null);
+  return {
+    e_ppc_valido: validos.some((r) => r.e_ppc_valido),
+    alerta_instrucao_suspeita: validos.some((r) => r.alerta_instrucao_suspeita),
+    verificacao_inicial: {
+      nome_curso_identificado: nomeCurso,
+      regra_conversao_creditos: validos.map((r) => r.verificacao_inicial?.regra_conversao_creditos).find(Boolean) || '',
+      total_periodos_obrigatorios: obrig.length ? Math.max(...obrig.map((d) => d.periodo)) : 0,
+      total_obrigatorias_contadas: obrig.length,
+      total_optativas_contadas: disciplinas.length - obrig.length,
+      observacoes: `Lido em ${resultados.length} bloco(s) e fundido. ${naoResolvidos} requisito(s) sem disciplina correspondente foram descartados.`,
+    },
+    curso: { nome_curso: nomeCurso, ano_periodo: moda(validos.map((r) => r.curso?.ano_periodo).filter(Boolean)) || '' },
+    disciplinas: disciplinas.map(({ _grupo, ...d }) => d),
+    dependencias,
+    _requisitos_nao_resolvidos: naoResolvidos,
+  };
+}
+
+// Lê o PPC INTEIRO com uma IA, em loop de blocos de páginas, e devolve o resultado fundido + o registro da
+// leitura. Se qualquer bloco falhar mesmo com as reservas, devolve erro: nunca há resultado parcial.
+async function lerPpcEmBlocos(slot, prep, envObj, helpersN8n, fsMod) {
+  const cfg = prep[slot];
+  const outro = prep[slot === 'ia1' ? 'ia2' : 'ia1'] || {};
+  const evitarModelo = outro.provider ? `${outro.provider}/${outro.model}` : '';
+  const arquivoPrompt = slot === 'ia1' ? 'ia1-extratora-matriz.md' : 'ia2-auditora-ementario.md';
+  const systemPrompt = fsMod.readFileSync(`/data/prompts/${arquivoPrompt}`, 'utf8');
+  const schema = JSON.parse(fsMod.readFileSync('/data/prompts/schema-extracao.json', 'utf8'));
+  const rotulo = slot === 'ia1' ? 'IA 1' : 'IA 2';
+
+  const texto = String(prep.texto_sanitizado || '');
+  const paginasNoTexto = [...new Set([...texto.matchAll(/--- \[PÁGINA (\d+)\] ---/g)].map((m) => Number(m[1])))];
+  const totalPaginas = Number(prep.extracao?.paginas) || (paginasNoTexto.length ? Math.max(...paginasNoTexto) : 1);
+  const blocos = dividirEmBlocos(texto, Number(prep.chars_por_bloco) || 60000);
+
+  const instrucoes = [
+    '<instrucoes_do_trecho>',
+    'Este é um TRECHO de um PPC maior, lido em blocos. Extraia TODAS as disciplinas e TODOS os pré/correquisitos que aparecem NESTE trecho,',
+    'inclusive disciplinas que aparecem só como linha da matriz, só como ficha do ementário ou só numa tabela de requisitos.',
+    'Preencha apenas o que o trecho mostra. Em cada disciplina, informe periodo_explicito=true se o período ou a natureza',
+    '(obrigatória/optativa) aparece neste trecho, e false se o trecho só traz a ementa ou uma citação da disciplina.',
+    'Requisitos podem apontar para disciplinas de outros trechos: use o código oficial do PPC (ou o nome exato) da disciplina requisito.',
+    'Só registre uma disciplina se o trecho trouxer DADO CURRICULAR dela: linha de matriz, ficha/ementa, carga horária, período ou requisito.',
+    'NÃO extraia disciplinas citadas apenas pelo nome em sumários, listas de bibliografia/referências, matrizes antigas',
+    '("projeto original"), tabelas de equivalência ou de outros cursos.',
+    'Se o trecho mostrar a carga horária em horas-aula e em horas (relógio), use a de horas-aula; créditos devem ser convertidos em horas.',
+    'Não invente nada que não esteja no trecho. Se o trecho não tiver conteúdo curricular, devolva listas vazias.',
+    '</instrucoes_do_trecho>',
+  ].join('\n');
+
+  const registros = new Array(blocos.length);
+  const extracoes = new Array(blocos.length);
+  const falhas = [];
+  let proximo = 0;
+  async function trabalhador() {
+    while (proximo < blocos.length) {
+      const i = proximo++;
+      const b = blocos[i];
+      const mensagem = [
+        '<contexto_execucao>',
+        `curso_id_gradment: ${prep.curso_id}`,
+        `ano_periodo_padrao: ${prep.ano_periodo}`,
+        `nome_curso_esperado: ${prep.nome_curso_esperado || '(extrair do PPC)'}`,
+        `trecho: páginas ${b.inicio} a ${b.fim} (bloco ${i + 1} de ${blocos.length}); o PPC tem ${totalPaginas} páginas`,
+        '</contexto_execucao>',
+        instrucoes,
+        '<ppc_documento>',
+        b.texto,
+        '</ppc_documento>',
+      ].join('\n');
+      try {
+        const r = await chamarLLMComReservas(cfg, systemPrompt, schema, mensagem, envObj, helpersN8n, evitarModelo);
+        extracoes[i] = r.dados;
+        registros[i] = {
+          bloco: i + 1,
+          paginas: `${b.inicio}–${b.fim}`,
+          inicio: b.inicio,
+          fim: b.fim,
+          provider: r.provider,
+          model: r.model,
+          reserva: r.provider !== cfg.provider || r.model !== cfg.model,
+          mesmo_modelo_da_outra_ia: `${r.provider}/${r.model}` === evitarModelo,
+          disciplinas: Array.isArray(r.dados?.disciplinas) ? r.dados.disciplinas.length : 0,
+          dependencias: Array.isArray(r.dados?.dependencias) ? r.dados.dependencias.length : 0,
+        };
+      } catch (e) {
+        falhas.push(`páginas ${b.inicio}–${b.fim}: ${String(e?.message || e).slice(0, 220)}`);
+      }
+    }
+  }
+  // Dois blocos em paralelo por IA: rápido sem estourar os limites por minuto das cotas gratuitas
+  await Promise.all([trabalhador(), trabalhador()]);
+
+  if (falhas.length) {
+    return {
+      slot, provider: cfg.provider, model: cfg.model, simulado: false, resultado: null,
+      erro: `${rotulo} não conseguiu ler ${falhas.length} de ${blocos.length} bloco(s) do PPC (${falhas.join(' ; ')}). `
+        + 'Nenhum resultado parcial foi gerado: tente de novo em alguns minutos.',
+    };
+  }
+
+  // Garantia de cobertura: toda página com texto precisa estar em algum bloco lido com sucesso
+  const cobertas = new Set();
+  registros.forEach((r) => { for (let p = r.inicio; p <= r.fim; p++) cobertas.add(p); });
+  const naoCobertas = paginasNoTexto.filter((p) => !cobertas.has(p));
+  if (naoCobertas.length) {
+    return {
+      slot, provider: cfg.provider, model: cfg.model, simulado: false, resultado: null,
+      erro: `${rotulo}: as páginas ${naoCobertas.slice(0, 20).join(', ')} não foram lidas. Nenhum resultado parcial foi gerado.`,
+    };
+  }
+
+  const resultado = mesclarExtracoesBlocos(extracoes);
+  const contagem = new Map();
+  registros.forEach((r) => { const k = `${r.provider}/${r.model}`; contagem.set(k, (contagem.get(k) || 0) + 1); });
+  const [principal] = [...contagem.entries()].sort((a, b) => b[1] - a[1])[0];
+  const [provPrincipal, ...resto] = principal.split('/');
+  return {
+    slot,
+    provider: provPrincipal,
+    model: resto.join('/'),
+    simulado: false,
+    erro: null,
+    resultado,
+    leitura: {
+      paginas_total: totalPaginas,
+      paginas_com_texto: paginasNoTexto.length,
+      paginas_lidas: cobertas.size,
+      cobertura_completa: true,
+      blocos: registros,
+      modelos_usados: Object.fromEntries(contagem),
+      requisitos_nao_resolvidos: resultado._requisitos_nao_resolvidos,
+    },
+  };
+}

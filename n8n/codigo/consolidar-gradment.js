@@ -168,6 +168,7 @@ const relatorioAuditoria = {
   simulado: Boolean(j.simulado),
   alerta_instrucao_suspeita: Boolean(j.alerta_instrucao_suspeita),
   documento_entrada: j.extracao || null,
+  leitura_em_blocos: j.leitura || null,
   modelos: j.modelos_executados,
   divergencias_iniciais: j.houve_divergencia ? j.divergencias : null,
   arbitragem_ia3: j.auditoria_ia3 || { acionada: false },

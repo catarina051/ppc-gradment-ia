@@ -1,5 +1,4 @@
 // Resolve os provedores configurados no .env e monta as requisições independentes da IA 1 e da IA 2.
-const fs = require('fs');
 const j = $input.first().json;
 
 const PROVEDORES_VALIDOS = ['gemini', 'openrouter', 'groq', 'mistral', 'openai', 'anthropic'];
@@ -89,76 +88,6 @@ function resolverSlotIA(slot, padraoProv) {
   return null;
 }
 
-function montarHttpPayload(cfg, systemPrompt, schema, mensagemUsuario) {
-  if (cfg.provider === 'gemini') {
-    const base = (cfg.base_url || 'https://generativelanguage.googleapis.com/v1beta').replace(/\/+$/, '');
-    const genCfg = {
-      temperature: 0,
-      maxOutputTokens: 65536,
-      responseMimeType: 'application/json',
-      responseSchema: schema,
-    };
-    if (/^gemini-3\./i.test(cfg.model) && !/lite/i.test(cfg.model)) {
-      genCfg.thinkingConfig = { thinkingBudget: 0 };
-    }
-    return {
-      ...cfg,
-      url: `${base}/models/${cfg.model}:generateContent`,
-      body: {
-        systemInstruction: { parts: [{ text: systemPrompt }] },
-        contents: [{ role: 'user', parts: [{ text: mensagemUsuario }] }],
-        generationConfig: genCfg,
-      },
-    };
-  }
-
-  if (cfg.provider === 'anthropic') {
-    const base = (cfg.base_url || 'https://api.anthropic.com/v1').replace(/\/+$/, '');
-    return {
-      ...cfg,
-      url: `${base}/messages`,
-      body: {
-        model: cfg.model,
-        max_tokens: 32768,
-        fallbacks: 'default', // recusa de segurança: a API tenta outro modelo sozinha
-        system: `${systemPrompt}\n\n## Schema JSON Obrigatório de Resposta\n${JSON.stringify(schema)}`,
-        messages: [{ role: 'user', content: mensagemUsuario }],
-      },
-    };
-  }
-
-  // openrouter, groq, mistral ou openai (API Chat Completions compatível)
-  const URLS_BASE = {
-    openrouter: 'https://openrouter.ai/api/v1',
-    groq: 'https://api.groq.com/openai/v1',
-    mistral: 'https://api.mistral.ai/v1',
-    openai: 'https://api.openai.com/v1',
-  };
-  const padraoBase = URLS_BASE[cfg.provider] || URLS_BASE.openai;
-  const maxTokensSaida = cfg.provider === 'openrouter' ? 65536 : (cfg.provider === 'groq' || cfg.provider === 'mistral' ? 16384 : 32768);
-  const base = (cfg.base_url || padraoBase).replace(/\/+$/, '');
-  const bodyChat = {
-    model: cfg.model,
-    temperature: 0,
-    max_tokens: maxTokensSaida,
-    response_format: { type: 'json_object' },
-    messages: [
-      { role: 'system', content: `${systemPrompt}\n\n## Schema JSON Obrigatório de Resposta\n${JSON.stringify(schema)}` },
-      { role: 'user', content: mensagemUsuario },
-    ],
-  };
-  if (cfg.provider === 'openrouter') {
-    bodyChat.reasoning = { enabled: false };
-  } else if (cfg.provider === 'groq' && /gpt-oss/i.test(cfg.model)) {
-    bodyChat.reasoning_effort = 'low';
-  }
-  return {
-    ...cfg,
-    url: `${base}/chat/completions`,
-    body: bodyChat,
-  };
-}
-
 const textoSanitizado = String(j.texto_ppc || '')
   .replace(/<\/?\s*(ppc_documento|contexto_execucao)\s*>/gi, '')
   .trim();
@@ -172,21 +101,6 @@ if (textoSanitizado.length < 50) {
     },
   }];
 }
-
-const promptIa1 = fs.readFileSync('/data/prompts/ia1-extratora-matriz.md', 'utf8');
-const promptIa2 = fs.readFileSync('/data/prompts/ia2-auditora-ementario.md', 'utf8');
-const schemaExtracao = JSON.parse(fs.readFileSync('/data/prompts/schema-extracao.json', 'utf8'));
-
-const mensagemUsuario = [
-  '<contexto_execucao>',
-  `curso_id_gradment: ${j.curso_id}`,
-  `ano_periodo_padrao: ${j.ano_periodo}`,
-  `nome_curso_esperado: ${j.nome_curso_esperado || '(extrair do PPC)'}`,
-  '</contexto_execucao>',
-  '<ppc_documento>',
-  textoSanitizado,
-  '</ppc_documento>',
-].join('\n');
 
 const cfgIa1 = resolverSlotIA('ia1', 'gemini');
 const cfgIa2 = resolverSlotIA('ia2', 'openrouter');
@@ -216,8 +130,10 @@ return [{
     texto_sanitizado: textoSanitizado,
     simular,
     cenario_simulacao: cenarioSimulacao,
-    ia1: cfgIa1 ? montarHttpPayload(cfgIa1, promptIa1, schemaExtracao, mensagemUsuario) : { slot: 'ia1', provider: 'simulado', model: 'simulado-matriz-v1' },
-    ia2: cfgIa2 ? montarHttpPayload(cfgIa2, promptIa2, schemaExtracao, mensagemUsuario) : { slot: 'ia2', provider: 'simulado', model: 'simulado-ementario-v1' },
+    // Só a configuração: os nós "IA 1/IA 2 — Ler PPC em blocos" montam uma requisição por bloco de páginas
+    ia1: cfgIa1 ? { ...cfgIa1 } : { slot: 'ia1', provider: 'simulado', model: 'simulado-matriz-v1' },
+    ia2: cfgIa2 ? { ...cfgIa2 } : { slot: 'ia2', provider: 'simulado', model: 'simulado-ementario-v1' },
+    chars_por_bloco: 60000,
     ia3_config: cfgIa3 || { slot: 'ia3', provider: 'simulado', model: 'simulado-juiza-v1' },
   },
 }];

@@ -19,7 +19,7 @@ export function codigo(nome) {
   return bruto.startsWith('// @usa-compartilhado') ? `${compartilhado}\n\n${bruto}` : bruto;
 }
 
-export async function executarTodos(nome, { entradas = [{ json: {} }], nos = {}, env = {} } = {}) {
+export async function executarTodos(nome, { entradas = [{ json: {} }], nos = {}, env = {}, httpRequest } = {}) {
   const lista = Array.isArray(entradas) ? entradas : [entradas];
   const $input = {
     first: () => lista[0],
@@ -32,6 +32,7 @@ export async function executarTodos(nome, { entradas = [{ json: {} }], nos = {},
   const helpers = {
     getBinaryDataBuffer: async (idx, prop) => lista[idx].binary[prop].buffer,
     prepareBinaryData: async (buffer, fileName, mimeType) => ({ buffer, fileName, mimeType }),
+    ...(httpRequest ? { httpRequest } : {}),
   };
   const fn = new AsyncFunction('$input', '$', '$env', 'require', codigo(nome));
   return fn.call({ helpers }, $input, $, env, (m) => (m === 'fs' ? fsData : null));

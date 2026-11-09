@@ -39,6 +39,8 @@ services:
       IA3_BASE_URL: ${IA3_BASE_URL:-}
       N8N_BLOCK_ENV_ACCESS_IN_NODE: "false"
       NODE_FUNCTION_ALLOW_BUILTIN: fs,path,zlib
+      # A leitura em blocos roda dentro de um Code node e pode levar vários minutos num PPC grande
+      N8N_RUNNERS_TASK_TIMEOUT: "3600"
       # Sem persistência de payloads no histórico do SQLite
       EXECUTIONS_DATA_SAVE_ON_SUCCESS: none
       EXECUTIONS_DATA_SAVE_ON_ERROR: none
