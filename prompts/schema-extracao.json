@@ -66,8 +66,14 @@
           "description": "Ano/período da matriz (ex.: 2026.1)"
         }
       },
-      "required": ["nome_curso", "ano_periodo"],
-      "propertyOrdering": ["nome_curso", "ano_periodo"]
+      "required": [
+        "nome_curso",
+        "ano_periodo"
+      ],
+      "propertyOrdering": [
+        "nome_curso",
+        "ano_periodo"
+      ]
     },
     "disciplinas": {
       "type": "array",
@@ -105,6 +111,10 @@
             "type": "string",
             "nullable": true,
             "description": "Texto descritivo limpo da ementa curricular (incluindo observação textual se houver requisito não-disciplinar como horas mínimas)"
+          },
+          "periodo_explicito": {
+            "type": "boolean",
+            "description": "Leitura em blocos: true se o período (ou a natureza obrigatória/optativa) da disciplina aparece NESTE trecho do PPC; false se o trecho só mostra a ementa ou uma citação dela"
           }
         },
         "required": [
@@ -121,6 +131,7 @@
           "codigo_externo",
           "nome",
           "periodo",
+          "periodo_explicito",
           "eixo",
           "carga_horaria",
           "ementa"
@@ -142,12 +153,23 @@
           },
           "tipo": {
             "type": "string",
-            "enum": ["PRE", "CO"],
+            "enum": [
+              "PRE",
+              "CO"
+            ],
             "description": "PRE para pré-requisito; CO para correquisito"
           }
         },
-        "required": ["disciplina_codigo", "dependencia_codigo", "tipo"],
-        "propertyOrdering": ["disciplina_codigo", "dependencia_codigo", "tipo"]
+        "required": [
+          "disciplina_codigo",
+          "dependencia_codigo",
+          "tipo"
+        ],
+        "propertyOrdering": [
+          "disciplina_codigo",
+          "dependencia_codigo",
+          "tipo"
+        ]
       }
     }
   },
@@ -168,4 +190,3 @@
     "dependencias"
   ]
 }
-
