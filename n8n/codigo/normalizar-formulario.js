@@ -43,10 +43,12 @@ const modoExecucaoRaw = String(j[ROTULOS.modoExecucao] ?? '');
 const gerarPdfs = !formatoSaida.startsWith('Apenas JSON');
 const incluirJson = !formatoSaida.startsWith('Apenas os 4 PDFs');
 
+// Modos de demonstração devolvem um exemplo fixo e NÃO leem o PDF (servem para testar o fluxo sem chaves).
+// Os rótulos antigos ("Simular ...") continuam aceitos para quem chama com eles.
 let modoTeste = 'real';
-if (modoExecucaoRaw.startsWith('Simular Divergência')) {
+if (modoExecucaoRaw.startsWith('Demonstração: divergência') || modoExecucaoRaw.startsWith('Simular Divergência')) {
   modoTeste = 'simular_divergencia';
-} else if (modoExecucaoRaw.startsWith('Simular Consenso')) {
+} else if (modoExecucaoRaw.startsWith('Demonstração: consenso') || modoExecucaoRaw.startsWith('Simular Consenso')) {
   modoTeste = 'simular_consenso';
 }
 

@@ -79,7 +79,7 @@ function httpIa(name, position, slotCampo) {
     sendBody: true,
     specifyBody: 'json',
     jsonBody: `={{ JSON.stringify($json.${slotCampo}.body) }}`,
-    options: { ...respostaJson, timeout: 240000 },
+    options: { ...respostaJson, timeout: 600000 },
   }, continuar);
 }
 
@@ -161,9 +161,9 @@ no('Formulário PPC', 'n8n-nodes-base.formTrigger', 2.1, [0, 0], {
         requiredField: true,
         fieldOptions: {
           values: [
-            { option: 'Automático (usar IAs configuradas no .env)' },
-            { option: 'Simular Consenso Direto (teste sem gastar créditos)' },
-            { option: 'Simular Divergência + Desempate na 3ª IA (teste completo)' },
+            { option: 'Analisar o meu PPC (IAs reais, cotas gratuitas)' },
+            { option: 'Demonstração: consenso (dados FICTÍCIOS, não lê o seu PDF)' },
+            { option: 'Demonstração: divergência + juíza (dados FICTÍCIOS, não lê o seu PDF)' },
           ],
         },
       },
@@ -194,7 +194,8 @@ no('Extrair texto do PPC', 'n8n-nodes-base.httpRequest', 4.2, [960, 0], {
   sendBody: true,
   contentType: 'binaryData',
   inputDataFieldName: 'ppc_arquivo',
-  options: { ...respostaJson, timeout: 120000 },
+  // OCR em todas as páginas sem texto (leitura integral) pode levar minutos em PDFs escaneados
+  options: { ...respostaJson, timeout: 900000 },
 }, continuar);
 
 code('Pós-extração', 'pos-extracao', [1200, 0]);
@@ -208,11 +209,10 @@ se('Texto do PPC ok?', [1920, 160], semErro);
 se('Modo demonstração?', [2160, 160], verdadeiro('simular'));
 code('Simular IA 1 e IA 2', 'simular-analises', [2420, -140]);
 
-httpIa('IA 1 — Analisar PPC', [2420, 120], 'ia1');
-code('Parsear IA 1', 'parsear-ia1', [2660, 120]);
+// Cada IA lê o PPC inteiro em loop de blocos de páginas (com reservas) e funde os blocos num resultado único
+code('IA 1 — Ler PPC em blocos', 'ia1-em-blocos', [2540, 120]);
 
-httpIa('IA 2 — Analisar PPC', [2420, 340], 'ia2');
-code('Parsear IA 2', 'parsear-ia2', [2660, 340]);
+code('IA 2 — Ler PPC em blocos', 'ia2-em-blocos', [2540, 340]);
 
 no('Unir Análises (IA 1 + IA 2)', 'n8n-nodes-base.merge', 3.2, [2900, 220], {
   mode: 'append',
@@ -295,14 +295,12 @@ liga('Texto do PPC ok?', 'Modo demonstração?', 0);
 liga('Texto do PPC ok?', 'Formatar erro', 1);
 
 liga('Modo demonstração?', 'Simular IA 1 e IA 2', 0);
-liga('Modo demonstração?', 'IA 1 — Analisar PPC', 1);
-liga('Modo demonstração?', 'IA 2 — Analisar PPC', 1);
+liga('Modo demonstração?', 'IA 1 — Ler PPC em blocos', 1);
+liga('Modo demonstração?', 'IA 2 — Ler PPC em blocos', 1);
 
 liga('Simular IA 1 e IA 2', 'Comparar IAs e Detectar Divergências');
-liga('IA 1 — Analisar PPC', 'Parsear IA 1');
-liga('IA 2 — Analisar PPC', 'Parsear IA 2');
-liga('Parsear IA 1', 'Unir Análises (IA 1 + IA 2)', 0, 0);
-liga('Parsear IA 2', 'Unir Análises (IA 1 + IA 2)', 0, 1);
+liga('IA 1 — Ler PPC em blocos', 'Unir Análises (IA 1 + IA 2)', 0, 0);
+liga('IA 2 — Ler PPC em blocos', 'Unir Análises (IA 1 + IA 2)', 0, 1);
 liga('Unir Análises (IA 1 + IA 2)', 'Comparar IAs e Detectar Divergências');
 
 liga('Comparar IAs e Detectar Divergências', 'Leitura das IAs ok?');
