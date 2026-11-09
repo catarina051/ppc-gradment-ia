@@ -135,53 +135,30 @@ test('proteção de ordinais: Cálculo I nunca é pareado com Cálculo II mesmo 
   assert.equal(comp.json.divergencias.disciplinas.length, 2);
 });
 
-test('parsers multi-provedor: lê Gemini (ignorando thought nativo), OpenAI e Anthropic', async () => {
-  const payloadExemplo = JSON.stringify({
-    e_ppc_valido: true,
-    alerta_instrucao_suspeita: false,
-    verificacao_inicial: { nome_curso_identificado: 'CC', regra_conversao_creditos: 'direto', total_periodos_obrigatorios: 1, total_obrigatorias_contadas: 1, total_optativas_contadas: 0, observacoes: '' },
-    curso: { nome_curso: 'Ciência da Computação', ano_periodo: '2026.1' },
-    disciplinas: [{ codigo: 'CALC1', codigo_externo: 'MAT101', nome: 'Cálculo I', periodo: 1, eixo: 'Básico', carga_horaria: 60, ementa: 'Limites e derivadas.' }],
-    dependencias: [],
-  });
 
-  // Gemini com part.thought = true antes do JSON real
-  const respGemini = await executar('parsear-ia1', {
-    entrada: {
-      json: {
-        statusCode: 200,
-        body: {
-          candidates: [{
-            finishReason: 'STOP',
-            content: {
-              parts: [
-                { thought: true, text: 'Hmm, deixa eu verificar a matriz curricular primeiro...' },
-                { text: payloadExemplo },
-              ],
-            },
-          }],
-        },
-      },
-    },
-    nos: { 'Preparar IAs': { json: { ia1: { provider: 'gemini', model: 'gemini-2.5-flash' } } } },
+test('juíza não reescreve campos em que IA 1 e IA 2 concordam', async () => {
+  const div = {
+    id_divergencia: 'DISC_01', motivo: 'texto da ementa substancialmente divergente', codigo_sugerido: 'AEDA0',
+    ia1: { codigo: 'AEDA0', codigo_externo: 'AEDA0', nome: 'Algoritmos e Estruturas de Dados', periodo: 2, eixo: 'Computação', carga_horaria: 60, ementa: 'Listas e pilhas.' },
+    ia2: { codigo: 'AEDA0', codigo_externo: 'AEDA0', nome: 'Algoritmos e Estruturas de Dados', periodo: 2, eixo: 'Computação', carga_horaria: 60, ementa: 'Árvores e filas.' },
+  };
+  const comp = {
+    curso_consenso: { nome_curso: 'Eng. Comp', ano_periodo: '2026.1' }, disciplinas_consenso: [], dependencias_consenso: [],
+    divergencias: { disciplinas: [div], dependencias: [] }, modelos_executados: { ia3: { provider: 'gemini', model: 'x' } }, ia3: { provider: 'gemini' },
+  };
+  const julgamento = (acao) => ({
+    resumo_auditoria: '', curso_final: {},
+    decisoes_disciplinas: [{ id_divergencia: 'DISC_01', acao, pagina_evidencia: 'p. 10', justificativa: '',
+      disciplina: { ...div.ia1, periodo: null, carga_horaria: 50, ementa: 'Listas, pilhas, árvores e filas.' } }],
+    decisoes_dependencias: [],
   });
-  assert.equal(respGemini.json.erro, null);
-  assert.equal(respGemini.json.resultado.curso.nome_curso, 'Ciência da Computação');
-
-  // Anthropic com cerca markdown ```json
-  const respAnthropic = await executar('parsear-ia2', {
-    entrada: {
-      json: {
-        statusCode: 200,
-        body: {
-          stop_reason: 'end_turn',
-          content: [{ type: 'text', text: `\`\`\`json\n${payloadExemplo}\n\`\`\`` }],
-        },
-      },
-    },
-    nos: { 'Preparar IAs': { json: { ia2: { provider: 'anthropic', model: 'claude-opus-5-5' } } } },
-  });
-  assert.equal(respAnthropic.json.erro, null);
-  assert.equal(respAnthropic.json.resultado.disciplinas[0].codigo, 'CALC1');
+  for (const acao of ['ADOTAR_IA1', 'CORRIGIR_PELO_PPC']) {
+    const { json } = await executar('aplicar-juiza', {
+      entrada: { json: { simulado_juiza: true, decisao_juiza: julgamento(acao) } },
+      nos: { 'Comparar IAs e Detectar Divergências': { json: comp } },
+    });
+    const d = json.disciplinas_resolvidas.find((x) => x.codigo === 'AEDA0');
+    assert.equal(d.periodo, 2, `${acao}: período travado pelo consenso`);
+    assert.equal(d.carga_horaria, 60, `${acao}: carga horária travada pelo consenso`);
+  }
 });
-

@@ -26,9 +26,11 @@ Para cada item em `<divergencias_detectadas>`:
 ## Regras Inegociáveis do GradMent na Decisão Final
 
 1. **Obrigatória (`periodo` = `1..12`) vs. Optativa (`periodo` = `null`).**
-2. **`carga_horaria` sempre inteira positiva (`> 0`).** Se o PPC estiver em créditos, aplique a conversão oficial do curso.
+2. **`carga_horaria` sempre inteira positiva (`> 0`).** Se o PPC estiver em créditos, aplique a conversão oficial do curso. Se o PPC trouxer a carga em **horas-aula e em horas (relógio)**, use **horas-aula** (é a unidade do histórico escolar e do GradMent).
+2.1. **Não altere o que as duas IAs concordam:** em cada divergência, decida apenas o campo divergente; campos iguais na IA 1 e na IA 2 são mantidos.
 3. **PROIBIDO Obrigatória depender de Optativa:** Se uma obrigatória parecer exigir uma optativa, defina `incluir: false` na dependência e explique na justificativa.
 4. **Código (`codigo`) compatível com `^[A-Z]{2,}[A-Z0-9]*\d[A-Z0-9]*$`** (máx. 20 caracteres, apenas letras maiúsculas e números, iniciando com >= 2 letras e contendo >= 1 dígito, sem símbolos).
+4.1. **Na dúvida sobre um pré/correquisito disciplinar, inclua-o** (`incluir: true`) e explique a dúvida na justificativa: um requisito a mais é conferido na revisão humana; um requisito perdido passa despercebido.
 5. **Requisitos não-disciplinares** (horas mínimas, percentual de curso, período mínimo) NUNCA entram como `dependencias` (`incluir: false`); devem constar como texto na `ementa` da disciplina.
 6. **Grafo sem ciclos** (`PRE` ou `CO` apenas).
 

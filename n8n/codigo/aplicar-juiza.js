@@ -71,10 +71,22 @@ for (const div of comp.divergencias.disciplinas) {
 
   if (dec.acao === 'DESCARTAR_DISCIPLINA') continue;
 
+  // Consenso travado: ao adotar uma IA, vale a versão dela, sem campos reescritos pela juíza; ao corrigir
+  // pelo PPC, a juíza só pode mudar os campos em que IA 1 e IA 2 discordaram (na avaliação, a juíza
+  // reescrevia campos em que as duas concordavam e trocava horas-aula por horas-relógio).
   let escolhida = dec.disciplina;
-  if (dec.acao === 'ADOTAR_IA1' && div.ia1) escolhida = dec.disciplina || div.ia1;
-  else if (dec.acao === 'ADOTAR_IA2' && div.ia2) escolhida = dec.disciplina || div.ia2;
+  if (dec.acao === 'ADOTAR_IA1' && div.ia1) escolhida = div.ia1;
+  else if (dec.acao === 'ADOTAR_IA2' && div.ia2) escolhida = div.ia2;
   else if (!escolhida) escolhida = div.ia1 || div.ia2;
+  else if (div.ia1 && div.ia2) {
+    const travado = { ...escolhida };
+    for (const campo of ['periodo', 'carga_horaria', 'codigo_externo', 'nome', 'eixo']) {
+      const v1 = div.ia1[campo] ?? null;
+      const v2 = div.ia2[campo] ?? null;
+      if (v1 !== null && String(v1) === String(v2)) travado[campo] = v1;
+    }
+    escolhida = travado;
+  }
 
   if (escolhida) {
     disciplinasResolvidas.push({
