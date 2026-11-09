@@ -23,9 +23,10 @@ import pymupdf
 TAMANHO_MAXIMO_BYTES = 50 * 1024 * 1024  # 50 MiB
 TAMANHO_MAXIMO_XML_DOCX = 80 * 1024 * 1024  # Proteção contra zip-bomb
 OCR_LIMITE_CARACTERES_PAGINA = 140
-OCR_MAX_PAGINAS = 80
-OCR_MAX_PAGINAS_PDF_DIGITAL = 5
-LIMITE_TEXTO_INTEGRAL_CHARS = 125_000
+# Leitura integral: TODAS as páginas vão para as IAs. Nunca se recorta o documento; acima deste teto de
+# segurança (~450 mil tokens, muito acima de um PPC típico de 300 mil caracteres) o extrator recusa com
+# erro claro em vez de mandar um texto parcial.
+LIMITE_LEITURA_INTEGRAL_CHARS = 1_500_000
 
 PALAVRAS_CURRICULO_RE = re.compile(
     r"(matriz\s+curricular|estrutura\s+curricular|quadro\s+curricular|grade\s+curricular|"
@@ -107,41 +108,18 @@ def _ocr_pagina(page: pymupdf.Page) -> str:
     return ""
 
 
-def _montar_texto_focado(paginas: list[tuple[int, str]]) -> tuple[str, bool]:
-    texto_integral = "\n\n".join(
-        f"--- [PÁGINA {num}] ---\n{conteudo}" for num, conteudo in paginas if conteudo
-    )
-    if len(texto_integral) <= LIMITE_TEXTO_INTEGRAL_CHARS:
-        return texto_integral, False
-
-    # Mantém as páginas iniciais (identificação do curso/ano/conversão de créditos) + páginas com densidade curricular
-    indices_fixos: set[int] = set(range(min(4, len(paginas))))
-    pontuacoes: list[tuple[int, int]] = []
-    for idx, (_num, conteudo) in enumerate(paginas):
-        if not conteudo:
-            continue
-        achados = PALAVRAS_CURRICULO_RE.findall(conteudo)
-        if achados:
-            pontuacoes.append((len(achados), idx))
-
-    escolhidos: set[int] = set(indices_fixos)
-    chars_acumulados = sum(len(paginas[i][1]) + 30 for i in escolhidos if paginas[i][1])
-
-    # Prioriza páginas com maior densidade de termos de matriz/ementário/pré-requisitos, preservando vizinhança imediata
-    for score, idx in sorted(pontuacoes, key=lambda par: (-par[0], par[1])):
-        candidatos = [idx] + ([idx - 1, idx + 1] if score >= 3 else [])
-        for c in candidatos:
-            if 0 <= c < len(paginas) and c not in escolhidos and paginas[c][1]:
-                tam = len(paginas[c][1]) + 30
-                if chars_acumulados + tam <= LIMITE_TEXTO_INTEGRAL_CHARS:
-                    escolhidos.add(c)
-                    chars_acumulados += tam
-
-    selecionadas = [paginas[i] for i in sorted(escolhidos) if paginas[i][1]]
-    texto_focado = "\n\n".join(
-        f"--- [PÁGINA {num}] ---\n{conteudo}" for num, conteudo in selecionadas
-    )
-    return texto_focado[:LIMITE_TEXTO_INTEGRAL_CHARS], True
+def _montar_texto_integral(paginas: list[tuple[int, str]]) -> str:
+    """Junta TODAS as páginas com o marcador de página. Se não couber, recusa: nunca envia texto parcial."""
+    texto = "\n\n".join(f"--- [PÁGINA {num}] ---\n{conteudo}" for num, conteudo in paginas if conteudo)
+    if len(texto) > LIMITE_LEITURA_INTEGRAL_CHARS:
+        total = f"{len(texto):,}".replace(",", ".")
+        teto = f"{LIMITE_LEITURA_INTEGRAL_CHARS:,}".replace(",", ".")
+        raise ErroExtracao(
+            f"O documento tem {total} caracteres de texto, acima do limite de leitura integral ({teto}). "
+            "Para não analisar o PPC pela metade, envie só a parte curricular (matriz, ementário e quadros "
+            "de pré-requisitos)."
+        )
+    return texto
 
 
 def extrair_pdf(dados: bytes) -> dict:
@@ -155,45 +133,30 @@ def extrair_pdf(dados: bytes) -> dict:
 
     # Passo 1: extração nativa rápida de todas as páginas (< 0,5s mesmo em PDFs de 250 páginas)
     textos_nativos: list[str] = []
-    paginas_com_texto = 0
-    chars_nativos_total = 0
     for idx in range(doc.page_count):
-        txt = _limpar_espacos(doc[idx].get_text("text", sort=True) or "")
-        textos_nativos.append(txt)
-        if len(txt) >= OCR_LIMITE_CARACTERES_PAGINA:
-            paginas_com_texto += 1
-            chars_nativos_total += len(txt)
+        textos_nativos.append(_limpar_espacos(doc[idx].get_text("text", sort=True) or ""))
 
-    # Passo 2: se o PDF já é digital (muitas páginas com texto nativo), limita OCR apenas a eventuais quadros em imagem
-    # próximos de seções curriculares, evitando gastar minutos em dezenas de anexos/portarias escaneadas.
-    pdf_ja_digital = paginas_com_texto >= 8 and chars_nativos_total >= 12_000
-    limite_ocr = OCR_MAX_PAGINAS_PDF_DIGITAL if pdf_ja_digital else OCR_MAX_PAGINAS
-
+    # Passo 2: OCR em TODA página sem texto nativo que tenha imagem (quadros escaneados, anexos). Sem limite de
+    # páginas: a leitura precisa ser integral. Páginas sem texto e sem imagem são realmente vazias.
     paginas_extraidas: list[tuple[int, str]] = []
     paginas_ocr = 0
+    paginas_sem_texto: list[int] = []
 
     for idx in range(doc.page_count):
         texto = textos_nativos[idx]
-        if len(texto) < OCR_LIMITE_CARACTERES_PAGINA and paginas_ocr < limite_ocr:
-            vizinho_curricular = True
-            if pdf_ja_digital:
-                vizinhos = [
-                    textos_nativos[v]
-                    for v in (idx - 2, idx - 1, idx + 1, idx + 2)
-                    if 0 <= v < doc.page_count
-                ]
-                vizinho_curricular = idx < 3 or any(PALAVRAS_CURRICULO_RE.search(vt) for vt in vizinhos)
-            if vizinho_curricular and len(doc[idx].get_images(full=False)) > 0:
-                texto_ocr = _limpar_espacos(_ocr_pagina(doc[idx]))
-                if len(texto_ocr) > len(texto):
-                    texto = texto_ocr
-                    paginas_ocr += 1
+        if len(texto) < OCR_LIMITE_CARACTERES_PAGINA and len(doc[idx].get_images(full=False)) > 0:
+            texto_ocr = _limpar_espacos(_ocr_pagina(doc[idx]))
+            if len(texto_ocr) > len(texto):
+                texto = texto_ocr
+                paginas_ocr += 1
+        if len(texto.strip()) < 20:
+            paginas_sem_texto.append(idx + 1)
         paginas_extraidas.append((idx + 1, texto))
 
     total_paginas = doc.page_count
     doc.close()
 
-    texto_final, recortado = _montar_texto_focado(paginas_extraidas)
+    texto_final = _montar_texto_integral(paginas_extraidas)
     if len(texto_final.strip()) < 80:
         raise ErroExtracao(
             "Não foi possível extrair texto suficiente do PDF (documento vazio ou ilegível)."
@@ -203,7 +166,9 @@ def extrair_pdf(dados: bytes) -> dict:
         "formato": "pdf",
         "paginas": total_paginas,
         "paginas_ocr": paginas_ocr,
-        "recortado_por_tamanho": recortado,
+        "paginas_sem_texto": paginas_sem_texto,
+        "leitura_integral": True,
+        "recortado_por_tamanho": False,
         "caracteres": len(texto_final),
         "texto": texto_final,
     }
@@ -287,12 +252,14 @@ def extrair_docx(dados: bytes) -> dict:
     if atual:
         fatias.append((num_bloco, "\n".join(atual)))
 
-    texto_final, recortado = _montar_texto_focado(fatias)
+    texto_final = _montar_texto_integral(fatias)
     return {
         "formato": "docx",
         "paginas": len(fatias),
         "paginas_ocr": 0,
-        "recortado_por_tamanho": recortado,
+        "paginas_sem_texto": [],
+        "leitura_integral": True,
+        "recortado_por_tamanho": False,
         "caracteres": len(texto_final),
         "texto": texto_final,
     }
@@ -308,12 +275,14 @@ def extrair_texto_puro(dados: bytes) -> dict:
     if len(texto) < 50:
         raise ErroExtracao("O arquivo de texto enviado é muito curto para ser um PPC.")
 
-    texto_paginado = f"--- [PÁGINA 1] ---\n{texto[:LIMITE_TEXTO_INTEGRAL_CHARS]}"
+    texto_paginado = _montar_texto_integral([(1, texto)])
     return {
         "formato": "txt",
         "paginas": 1,
         "paginas_ocr": 0,
-        "recortado_por_tamanho": len(texto) > LIMITE_TEXTO_INTEGRAL_CHARS,
+        "paginas_sem_texto": [],
+        "leitura_integral": True,
+        "recortado_por_tamanho": False,
         "caracteres": len(texto_paginado),
         "texto": texto_paginado,
     }

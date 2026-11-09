@@ -109,3 +109,27 @@ def test_poda_bibliografia_preservando_proxima_disciplina():
     assert "GUIDORIZZI" not in res["texto"]
 
 
+
+
+def test_leitura_integral_nao_recorta_ppc_grande():
+    # 300 mil caracteres (acima do antigo limite de 125 mil): todo o texto precisa chegar às IAs
+    linha = "1º Período: DCC101 Algoritmos (60h). Pré-requisito: nenhum. Ementa: lógica e estruturas.\n"
+    txt = ("PPC de Ciência da Computação\n" + linha * 3400 + "ÚLTIMA DISCIPLINA: DCC999 Projeto Final (60h)").encode("utf-8")
+    res = extrair_documento(txt, "ppc.txt")
+    assert res["leitura_integral"] is True
+    assert res["recortado_por_tamanho"] is False
+    assert "DCC999" in res["texto"], "o fim do documento não pode ser cortado"
+
+
+def test_recusa_em_vez_de_recortar_acima_do_teto(monkeypatch):
+    import app
+    monkeypatch.setattr(app, "LIMITE_LEITURA_INTEGRAL_CHARS", 1_000)
+    with pytest.raises(ErroExtracao, match="limite de leitura integral"):
+        extrair_documento(("Matriz curricular " * 200).encode("utf-8"), "ppc.txt")
+
+
+def test_pdf_informa_paginas_sem_texto():
+    pdf = _criar_pdf_bytes(["PROJETO PEDAGÓGICO DO CURSO\nMatriz curricular 1º período: Cálculo I 60h", "", "Ementário: Cálculo I"])
+    res = extrair_documento(pdf, "ppc.pdf")
+    assert res["leitura_integral"] is True
+    assert res["paginas_sem_texto"] == [2]
