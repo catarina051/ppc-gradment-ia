@@ -548,12 +548,15 @@ function mesclarExtracoesBlocos(resultados) {
       if (!d || !String(d.nome || '').trim()) continue;
       const ext = normCod(d.codigo_externo);
       const nome = chaveNomeDisciplina(d.nome);
-      let g = ext.length >= 3 ? porExt.get(ext) : undefined;
-      if (!g && nome.length >= 3 && porNome.has(nome)) {
-        const cand = porNome.get(nome);
-        if (!ext || !cand.ext || cand.ext === ext) g = cand;
+      // Prioridade ao NOME: o mesmo nome canônico é a mesma disciplina, mesmo que a IA tenha inventado códigos
+      // diferentes em blocos diferentes (CFVR0 x CFVR1). Pelo código só se junta se os nomes forem parecidos,
+      // para não fundir disciplinas distintas que o PPC repete com o mesmo código.
+      let g = nome.length >= 3 ? porNome.get(nome) : undefined;
+      if (!g && ext.length >= 3 && porExt.has(ext)) {
+        const cand = porExt.get(ext);
+        if (ordinaisCompativeis(cand.nome, d.nome) && similaridadeJaccardTokens(cand.nome, d.nome) >= 0.5) g = cand;
       }
-      if (!g) { g = { ext: '', itens: [] }; grupos.push(g); }
+      if (!g) { g = { ext: '', nome: d.nome, itens: [] }; grupos.push(g); }
       if (ext && !g.ext) g.ext = ext;
       if (ext.length >= 3) porExt.set(ext, g);
       if (nome.length >= 3 && !porNome.has(nome)) porNome.set(nome, g);

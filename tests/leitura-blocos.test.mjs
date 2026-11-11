@@ -200,3 +200,15 @@ test('juíza em lotes: se um lote falhar em todos os modelos, não há resultado
   });
   assert.match(json.erro, /Nenhum resultado parcial/);
 });
+
+test('mesma disciplina com códigos inventados diferentes em blocos diferentes vira uma só', async () => {
+  const httpRequest = async ({ url, body }) => {
+    const t = trechoDaRequisicao(body);
+    const r = extracaoDoTrecho(t);
+    // No ementário, a IA inventou outro código para Cálculo I (CALC1 / CALC9 no lugar de MAT101)
+    r.disciplinas.filter((x) => x.nome === 'Cálculo I' && t.includes('[PÁGINA 5]')).forEach((x) => { x.codigo = 'CALC9'; x.codigo_externo = 'CALC9'; });
+    return respostaProvedor(url, r);
+  };
+  const { json } = await executar('ia1-em-blocos', { entrada: { json: prep() }, env: ENV, httpRequest });
+  assert.equal(json.resultado.disciplinas.filter((x) => x.nome === 'Cálculo I').length, 1);
+});
