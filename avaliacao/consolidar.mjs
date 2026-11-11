@@ -15,9 +15,12 @@ const GABARITOS = {
 };
 // Processo anterior (um modelo só, PPC inteiro, sem dupla/juíza/validador) usa o mesmo gabarito do CEFET
 GABARITOS['baseline-cefet-engcomp'] = GABARITOS['cefet-engcomp'];
+// Pipeline com leitura integral em blocos de páginas (sem recorte do PDF), mesmo PPC e mesmo gabarito
+GABARITOS['blocos-cefet-engcomp'] = GABARITOS['cefet-engcomp'];
 const DESCRICAO = {
   sintetico: 'PPC sintético (10 disciplinas, 3 períodos)',
   'cefet-engcomp': 'PPC real: Eng. de Computação CEFET-MG Leopoldina (190 páginas, 99 disciplinas)',
+  'blocos-cefet-engcomp': 'PPC real CEFET-MG com leitura integral em blocos de páginas (sem recorte)',
   'baseline-cefet-engcomp': 'Processo anterior: UM modelo recebe o PPC inteiro + especificação, sem dupla, juíza ou validador',
   'unifei-eco': 'PPC real de outro layout: Eng. de Computação UNIFEI Itabira (136 páginas; gabarito parcial: 74 obrigatórias)',
 };
