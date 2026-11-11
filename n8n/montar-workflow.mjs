@@ -228,7 +228,8 @@ se('Houve divergência?', [3640, 120], verdadeiro('houve_divergencia'));
 
 se('Juíza simulada?', [3880, -40], verdadeiro('simular_ia3'));
 code('Simular IA 3 (Juíza)', 'simular-juiza', [4120, -160]);
-httpIa('IA 3 — Juíza de Divergências', [4120, 40], 'ia3');
+// A juíza também roda em lotes de divergências (uma chamada única com centenas de itens derrubava a conexão)
+code('IA 3 — Juíza em lotes', 'juiza-em-lotes', [4120, 40]);
 code('Aplicar Decisão da IA 3', 'aplicar-juiza', [4380, -40]);
 se('Juíza ok?', [4620, -40], semErro);
 
@@ -311,9 +312,9 @@ liga('Houve divergência?', 'Juíza simulada?', 0);
 liga('Houve divergência?', 'Consolidar e Validar GradMent', 1);
 
 liga('Juíza simulada?', 'Simular IA 3 (Juíza)', 0);
-liga('Juíza simulada?', 'IA 3 — Juíza de Divergências', 1);
+liga('Juíza simulada?', 'IA 3 — Juíza em lotes', 1);
 liga('Simular IA 3 (Juíza)', 'Aplicar Decisão da IA 3');
-liga('IA 3 — Juíza de Divergências', 'Aplicar Decisão da IA 3');
+liga('IA 3 — Juíza em lotes', 'Aplicar Decisão da IA 3');
 
 liga('Aplicar Decisão da IA 3', 'Juíza ok?');
 liga('Juíza ok?', 'Consolidar e Validar GradMent', 0);

@@ -507,8 +507,9 @@ function candidatosLLM(cfg, envObj, evitarModelo) {
   add('openrouter', 'nvidia/nemotron-3.5-super-vl:free', 'OPENROUTER_API_KEY');
   add('openrouter', 'nvidia/nemotron-3.5-lightning:free', 'OPENROUTER_API_KEY');
   const id = (c) => `${c.provider}/${c.model}`;
+  const evitar = new Set([].concat(evitarModelo || []));
   const resto = lista.slice(1);
-  return [lista[0], ...resto.filter((c) => id(c) !== evitarModelo), ...resto.filter((c) => id(c) === evitarModelo)];
+  return [lista[0], ...resto.filter((c) => !evitar.has(id(c))), ...resto.filter((c) => evitar.has(id(c)))];
 }
 
 // Chama o LLM com o configurado e, se falhar, com as reservas. Lança erro só se TODAS falharem.
@@ -782,6 +783,97 @@ async function lerPpcEmBlocos(slot, prep, envObj, helpersN8n, fsMod) {
       blocos: registros,
       modelos_usados: Object.fromEntries(contagem),
       requisitos_nao_resolvidos: resultado._requisitos_nao_resolvidos,
+    },
+  };
+}
+
+// Juíza em lotes: arbitra as divergências em grupos (cada lote com o PPC inteiro como evidência), com reservas.
+// Uma chamada única com centenas de divergências derrubava a conexão; se um lote falhar, não há resultado parcial.
+async function julgarEmLotes(comp, prep, envObj, helpersN8n, fsMod) {
+  const systemPrompt = fsMod.readFileSync('/data/prompts/ia3-juiza-divergencias.md', 'utf8');
+  const schema = JSON.parse(fsMod.readFileSync('/data/prompts/schema-juiza.json', 'utf8'));
+  const texto = String(prep.texto_sanitizado || '');
+  const tem = (k) => Boolean(String(envObj[k] || '').trim());
+  let cfg = { ...(prep.ia3_config || {}) };
+  // Groq gratuito não comporta o PPC inteiro: vai direto para um modelo de contexto longo
+  if (cfg.provider === 'groq' && texto.length > 24000) {
+    if (tem('GEMINI_API_KEY')) cfg = { provider: 'gemini', model: 'gemini-3.6-flash', env_key: 'GEMINI_API_KEY', base_url: '' };
+    else if (tem('OPENROUTER_API_KEY')) cfg = { provider: 'openrouter', model: 'nvidia/nemotron-3.5-super-vl:free', env_key: 'OPENROUTER_API_KEY', base_url: '' };
+  }
+  const m = comp.modelos_executados || {};
+  const evitar = [m.ia1, m.ia2].filter(Boolean).map((x) => `${x.provider}/${x.model}`);
+
+  const base = JSON.stringify({
+    disciplinas_consenso: (comp.disciplinas_consenso || []).map((d) => ({ codigo: d.codigo, codigo_externo: d.codigo_externo, nome: d.nome, periodo: d.periodo })),
+    dependencias_consenso: comp.dependencias_consenso || [],
+  });
+  const divD = comp.divergencias?.disciplinas || [];
+  const divR = comp.divergencias?.dependencias || [];
+  const POR_LOTE = Number(prep.divergencias_por_lote) || 40;
+  const lotes = [];
+  const itens = [...divD.map((d) => ({ t: 'd', d })), ...divR.map((d) => ({ t: 'r', d }))];
+  for (let i = 0; i < itens.length; i += POR_LOTE) lotes.push(itens.slice(i, i + POR_LOTE));
+  if (!lotes.length && comp.divergencias?.curso_divergente) lotes.push([]);
+
+  const decisoesD = [];
+  const decisoesR = [];
+  const resumos = [];
+  let cursoFinal = null;
+  const registros = [];
+  const falhas = [];
+  let proximo = 0;
+  async function trabalhador() {
+    while (proximo < lotes.length) {
+      const i = proximo++;
+      const lote = lotes[i];
+      const div = JSON.stringify({
+        curso_divergente: i === 0 ? comp.divergencias?.curso_divergente || null : null,
+        divergencias_disciplinas: lote.filter((x) => x.t === 'd').map((x) => x.d),
+        divergencias_dependencias: lote.filter((x) => x.t === 'r').map((x) => x.d),
+      });
+      const mensagem = [
+        '<contexto_execucao>',
+        `curso_id_gradment: ${prep.curso_id}`,
+        `ano_periodo_padrao: ${comp.curso_consenso?.ano_periodo || prep.ano_periodo}`,
+        `nome_curso_esperado: ${prep.nome_curso_esperado || '(validar pelo PPC)'}`,
+        `lote: ${i + 1} de ${lotes.length} (decida TODOS os id_divergencia deste lote)`,
+        '</contexto_execucao>',
+        '<base_consenso>', base, '</base_consenso>',
+        '<divergencias_detectadas>', div, '</divergencias_detectadas>',
+        '<ppc_documento>', texto, '</ppc_documento>',
+      ].join('\n');
+      try {
+        const r = await chamarLLMComReservas(cfg, systemPrompt, schema, mensagem, envObj, helpersN8n, evitar);
+        const j = r.dados || {};
+        decisoesD.push(...(Array.isArray(j.decisoes_disciplinas) ? j.decisoes_disciplinas : []));
+        decisoesR.push(...(Array.isArray(j.decisoes_dependencias) ? j.decisoes_dependencias : []));
+        if (j.resumo_auditoria) resumos.push(j.resumo_auditoria);
+        if (i === 0 && j.curso_final) cursoFinal = j.curso_final;
+        registros.push({ lote: i + 1, itens: lote.length, provider: r.provider, model: r.model, reserva: r.provider !== cfg.provider || r.model !== cfg.model });
+      } catch (e) {
+        falhas.push(`lote ${i + 1}: ${String(e?.message || e).slice(0, 200)}`);
+      }
+    }
+  }
+  await Promise.all([trabalhador(), trabalhador()]);
+  if (falhas.length) {
+    return { erro: `A juíza não conseguiu decidir ${falhas.length} de ${lotes.length} lote(s) de divergências (${falhas.join(' ; ')}). Nenhum resultado parcial foi gerado: tente de novo em alguns minutos.` };
+  }
+  registros.sort((a, b) => a.lote - b.lote);
+  const cont = new Map();
+  registros.forEach((r) => { const k = `${r.provider}/${r.model}`; cont.set(k, (cont.get(k) || 0) + 1); });
+  const principal = registros.length ? [...cont.entries()].sort((a, b) => b[1] - a[1])[0][0] : `${cfg.provider}/${cfg.model}`;
+  const [prov, ...mod] = principal.split('/');
+  return {
+    erro: null,
+    provider: prov,
+    model: mod.join('/'),
+    lotes: registros,
+    julgamento: {
+      resumo_auditoria: resumos.join(' '),
+      curso_final: cursoFinal,
+      decisoes_disciplinas: decisoesD,
+      decisoes_dependencias: decisoesR,
     },
   };
 }

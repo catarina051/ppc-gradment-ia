@@ -7,7 +7,16 @@ let provJuizaFinal = comp.modelos_executados?.ia3?.provider || 'simulado';
 let modJuizaFinal = comp.modelos_executados?.ia3?.model || 'simulado-juiza-v1';
 
 let julgamento;
-if (entrada.simulado_juiza && entrada.decisao_juiza) {
+let lotesJuiza = null;
+if (entrada.erro) {
+  return [{ json: { ...comp, erro: `Falha na 3ª IA Juíza: ${entrada.erro}`, status: 502 } }];
+}
+if (entrada.julgamento_lotes) {
+  julgamento = entrada.julgamento_lotes;
+  provJuizaFinal = entrada.provider;
+  modJuizaFinal = entrada.model;
+  lotesJuiza = entrada.lotes || null;
+} else if (entrada.simulado_juiza && entrada.decisao_juiza) {
   julgamento = entrada.decisao_juiza;
 } else {
   try {
@@ -167,6 +176,7 @@ return [{
       resumo: julgamento.resumo_auditoria || '',
       decisoes_disciplinas: trilhaDisciplinas,
       decisoes_dependencias: trilhaDependencias,
+      lotes: lotesJuiza,
     },
   },
 }];

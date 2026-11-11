@@ -157,3 +157,46 @@ test('optativa com "período sugerido" na ficha continua optativa no empate', as
   const { json } = await executar('ia1-em-blocos', { entrada: { json: prep() }, env: ENV, httpRequest });
   assert.equal(json.resultado.disciplinas.find((x) => x.codigo_externo === 'DCC810').periodo, null);
 });
+
+function compComDivergencias(n) {
+  const disc = Array.from({ length: n }, (_, i) => ({ id_divergencia: `DISC_${i + 1}`, motivo: 'período divergente', codigo_sugerido: `DS${i + 1}`,
+    ia1: { codigo: `DS${i + 1}`, nome: `Disciplina ${i + 1}`, periodo: 1, carga_horaria: 60 }, ia2: { codigo: `DS${i + 1}`, nome: `Disciplina ${i + 1}`, periodo: 2, carga_horaria: 60 } }));
+  return {
+    curso_consenso: { nome_curso: 'CC', ano_periodo: '2026.1' }, disciplinas_consenso: [], dependencias_consenso: [],
+    divergencias: { curso_divergente: null, disciplinas: disc, dependencias: [] },
+    modelos_executados: { ia1: { provider: 'gemini', model: 'gemini-3.5-flash-lite' }, ia2: { provider: 'openrouter', model: 'nvidia/nemotron-3.5-super-vl:free' } },
+  };
+}
+const prepJuiza = { ...prep(), divergencias_por_lote: 20, ia3_config: { provider: 'groq', model: 'openai/gpt-oss-120b', env_key: 'GROQ_API_KEY', base_url: '' } };
+const idsDoLote = (body) => [...trechoDaRequisicao(body).matchAll(/"id_divergencia":"(DISC_\d+)"/g)].map((m) => m[1]);
+
+test('juíza em lotes: decide todas as divergências, lote a lote, sem cair nos modelos das IAs', async () => {
+  const modelos = [];
+  const httpRequest = async ({ url, body }) => {
+    modelos.push(modeloDaRequisicao(url, body));
+    const decisoes = idsDoLote(body).map((id) => ({ id_divergencia: id, acao: 'ADOTAR_IA1', pagina_evidencia: 'p. 1', justificativa: '' }));
+    return respostaProvedor(url, { resumo_auditoria: 'ok', curso_final: { nome_curso: 'CC', ano_periodo: '2026.1' }, decisoes_disciplinas: decisoes, decisoes_dependencias: [] });
+  };
+  const { json } = await executar('juiza-em-lotes', {
+    entrada: { json: {} }, env: ENV, httpRequest,
+    nos: { 'Comparar IAs e Detectar Divergências': { json: compComDivergencias(50) }, 'Preparar IAs': { json: prepJuiza } },
+  });
+  assert.equal(json.erro, undefined);
+  assert.equal(json.lotes.length, 3);
+  assert.equal(json.julgamento_lotes.decisoes_disciplinas.length, 50);
+  // PPC grande demais para o Groq gratuito: a juíza vai para um modelo de contexto longo, diferente das IAs
+  assert.ok(modelos.every((m) => m === 'gemini-3.6-flash'));
+});
+
+test('juíza em lotes: se um lote falhar em todos os modelos, não há resultado parcial', async () => {
+  const httpRequest = async ({ url, body }) => {
+    if (idsDoLote(body).includes('DISC_25')) return { statusCode: 400, body: { error: { message: 'recusado' } } };
+    const decisoes = idsDoLote(body).map((id) => ({ id_divergencia: id, acao: 'ADOTAR_IA1', pagina_evidencia: 'p. 1', justificativa: '' }));
+    return respostaProvedor(url, { resumo_auditoria: '', curso_final: null, decisoes_disciplinas: decisoes, decisoes_dependencias: [] });
+  };
+  const { json } = await executar('juiza-em-lotes', {
+    entrada: { json: {} }, env: ENV, httpRequest,
+    nos: { 'Comparar IAs e Detectar Divergências': { json: compComDivergencias(50) }, 'Preparar IAs': { json: prepJuiza } },
+  });
+  assert.match(json.erro, /Nenhum resultado parcial/);
+});
