@@ -176,13 +176,8 @@ for (const par of pares) {
     motivos.push(`codigo_externo divergente (IA1="${d1.codigo_externo}" vs IA2="${d2.codigo_externo}")`);
   }
 
-  const temEm1 = Boolean(d1.ementa && d1.ementa.length >= 15);
-  const temEm2 = Boolean(d2.ementa && d2.ementa.length >= 15);
-  if (temEm1 !== temEm2) {
-    motivos.push('ementa preenchida por apenas uma das IAs');
-  } else if (temEm1 && temEm2 && similaridadeJaccardTokens(d1.ementa, d2.ementa) < 0.45) {
-    motivos.push('texto da ementa substancialmente divergente entre IA 1 e IA 2');
-  }
+  // Texto de ementa diferente (ou presente em só uma IA) não é divergência estrutural: o consenso fica com a
+  // ementa mais completa. Mandar isso à juíza só gerava trabalho e, na avaliação, reescritas indevidas.
 
   if (motivos.length > 0) {
     divergenciasDisciplinas.push({
