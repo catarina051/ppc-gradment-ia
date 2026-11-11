@@ -91,6 +91,27 @@ Nas três execuções, 99/99 disciplinas foram encontradas, a CH ficou 100% corr
 
 ---
 
+## 2b. PPC real CEFET-MG com leitura integral em blocos (versão atual)
+
+Para eliminar a causa raiz da seção 2 (o PDF cortado para 22% do texto), o pipeline passou a **ler o PPC inteiro**: o extrator manda todas as páginas, com OCR em todas as que só têm imagem, e **cada IA lê o documento em loop de blocos de ~20 páginas**, com uma página de sobreposição entre blocos. Os resultados dos blocos são **fundidos num resultado único**. Se qualquer bloco ou lote da juíza falhar em todos os modelos, **não sai resultado parcial**. A tela de revisão mostra bloco a bloco o que cada IA leu.
+
+| Execução | Versão do pipeline | Tempo | Disc. (rev / prec) | Obrig. × opt. | CH | Requisitos (prec / rev) |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| blocos-01 | 1ª versão dos blocos | 5 min 48 s | 100% / 96,1% | 100% | **32,3%** | 96,2% / 92,7% |
+| blocos-02 | intermediária | 5 min 24 s | 100% / 100% | 100% | **41,4%** | 95,5% / 77,1% |
+| blocos-03 | + consenso travado na juíza | 5 min 10 s | 100% / 100% | 94,9% | 100% | **97,2% / 94,5%** |
+| blocos-04 | **final** (todas as correções abaixo) | 15 min 32 s | 100% / 97,1% | 97,0% | 100% | 86,2% / 91,7% |
+
+O que cada rodada ensinou, e foi corrigido:
+1. **O apêndice de bibliografia virou "disciplinas".** As páginas 124 a 190 listam cada disciplina só pelo nome, seguido das referências. Lido isolado, esse bloco gerava cerca de 110 disciplinas falsas. Correção: extrair só disciplinas com dado curricular no trecho. Na versão final, esse bloco rende 0.
+2. **A juíza reescrevia o que as IAs concordavam.** Em 16 casos com IA 1 = IA 2 = 60 h, a saída final ficou 50 h (horas-relógio). Correção: **consenso travado**, a juíza só muda campos divergentes, e horas-aula quando o PPC traz as duas unidades. A carga horária voltou a 100%.
+3. **Optativas com "período sugerido".** A ficha de uma optativa do CEFET mostra um período. Correção: no empate entre "optativa" e um período, vale optativa.
+4. **Divergências só de ementa** iam para a juíza, mais de 40 por PPC. Correção: elas deixam de ser divergência, e fica a ementa mais completa. As divergências caíram de 195–271 para **52**.
+5. **A juíza numa chamada só** caiu ("socket hang up") depois de 17 minutos com cerca de 270 divergências. Correção: **juíza em lotes** de 40 divergências, cada um com o PPC inteiro. Essa tentativa falha não entrou na tabela.
+6. **Códigos inventados diferentes para a mesma disciplina** em blocos distintos geravam duplicatas. Correção: a fusão dá prioridade ao nome canônico.
+
+**Leitura honesta.** A leitura integral cumpre o objetivo: nenhuma página fica de fora, e a revocação de requisitos fica em **92% a 94%** nas rodadas com a fusão estável, contra 82% com o PDF cortado. A precisão de requisitos oscilou (86% a 97%). Na rodada final, o Gemini estava sobrecarregado, a IA 1 caiu no Nemotron (mesmo modelo da IA 2) em 2 dos 6 blocos, e as tentativas com reserva levaram o tempo a 15 min. Uma rodada que pegou a versão antiga do workflow, antes de o reinício do n8n valer, foi descartada.
+
 ## 3. PPC de outro layout (UNIFEI Itabira): 1 execução
 
 - **6 min 21 s**, com 87 disciplinas extraídas (76 obrigatórias e 11 optativas) e 60 requisitos.
@@ -166,6 +187,8 @@ O processo a comparar é **pedir a um LLM no chat**, não digitar à mão (seç�
 ---
 
 ## 6. Correções recomendadas, em ordem de impacto
+
+> **Atualização:** os itens 2, 3, 4 e 5 foram implementados (seção 2b), e o 1 foi parcialmente: as reservas evitam o modelo da outra IA, mas, sob sobrecarga, ainda podem cair nele como último recurso, e o relatório marca isso.
 
 1. **Garantir diversidade de modelo**, principalmente na juíza: o fallback não pode colocar a juíza no mesmo modelo das IAs 1 e 2. Se não houver alternativa, o relatório deve marcar `diversidade: false` e pedir revisão.
 2. **Travar os campos de consenso:** se IA 1 e IA 2 concordam no período e na CH, a juíza não pode alterá-los. Isso teria evitado as 6 obrigatórias que viraram optativas.
